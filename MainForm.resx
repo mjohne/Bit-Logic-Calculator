@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>217, 17</value>
+  </metadata>
+  <data name="imageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
+        LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
+        SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAlA4AAAJNU0Z0AUkBTAIBAQYB
+        AAFoAQIBaAECARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMAAUADAAEgAwABAQEAAQgG
+        AAEIGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEAAfABygGmAQABMwUAATMB
+        AAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEAAYABfAH/AQACUAH/AQAB
+        kwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFmAwABmQMAAcwCAAEzAwAC
+        MwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZAgABZgHMAgABZgH/AgAB
+        mQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFmAgABzAGZAgACzAIAAcwB
+        /wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEzAQABmQEAATMBAAHMAQAB
+        MwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFmAgABMwFmATMBAAEzAmYB
+        AAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFmAQABMwKZAQABMwGZAcwB
+        AAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEAATMBzAH/AQABMwH/ATMB
+        AAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFmAQABZgEAAWYBAAGZAQAB
+        ZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFmATMBzAEAAWYBMwH/AQAC
+        ZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFmAQABZgKZAQABZgGZAcwB
+        AAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEAAWYB/wIAAWYB/wEzAQAB
+        ZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZAQABmQEAAZkBAAHMAQAB
+        mQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEzAQABmQEzAWYBAAGZAWYB
+        mQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/AQABmQHMAgABmQHMATMB
+        AAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEAAZkBzAFmAQABmQH/AZkB
+        AAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHMAQABzAEAAZkBMwIAAcwC
+        MwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFmATMBAAGZAmYBAAHMAWYB
+        mQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZAQABzAGZAcwBAAHMAZkB
+        /wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/ATMBAAGZAf8BZgEAAcwB
+        /wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHMATMCAAH/AjMBAAH/ATMB
+        ZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJmAQAB/wFmAZkBAAH/AWYB
+        zAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHMAQAB/wGZAf8BAAH/AcwC
+        AAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEAAcwB/wFmAQAC/wGZAQAC
+        /wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEAASEBAAGlAQADXwEAA3cB
+        AAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7Af8BAAGkAqABAAOAAwAB
+        /wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8BABD/AfQL7wHyIwAB/wHzAQcKrgEHAfMB/wH0AQcB
+        8wn/AQcB8iMAAbwBzwrOAc8BvAIAAfQB7wO8AfAB8QHyAfMC9AH/AQcjAAG0Bc4CrQTOAa0BtAMAAbwB
+        9AHzBvQC/wG8IwABzwHOBK0C8wWtAc8DAAG8Af8I9AH/AbwjAAHPBa0B8gHzBa0BzwMAAbwB/wK8AfAB
+        vAT0Af8BvCMAAc8FrQHwAfIFrQHPAwABvAH/BPME9AH/AbwjAALPA60BpwG8AfABpwStAc8DAAG8AfQD
+        BwG8AQcDvAH0AbwjAALPA60BpwK8BKcBrQHPAwABvAH0CPEB9AG8IwABzwG0BK0ChgGnAoYBpwGtAc8D
+        AAHwAfQBBwG8BAcCvAH0AfAjAAHPAdUErQL/BK0CzwMAAfAB9AjxAfQB8CMAAbQB1QPPAa0C/wGtA88B
+        1QG0AwAB8AH0Au8BvAEHBPEB9AHwIwABtQHVBLQCzwS0AdUBtQMAAfAB9AjzAfQB8CMAAd0BtArVAbQB
+        3QMAAfAB/wj0Af8BvAH0IgAB/wHdAbUItAG1Ad0B/wMAAfQB8An/AfQB8AH/MwAB9AvyAf8gAAHzAe8M
+        7QHvAvMB7wztAe8B8wEAAQcM7QEHAgABBwztAQcBAAH/AfcB/wr0Af8B9wL/AfcB/wr0Af8B9wH/AQAB
+        9wH/CvQB/wH3AgAB9wH/CvQB/wH3AgAB7wH0BK0GvAH0Ae8CAAHvAfQErQa8AfQB7wIAAe8B9ATwBrwB
+        9AHvAgAB7wH0AfAB6wHsAe8G8wH0Ae8CAAHvAfQBrQLdAa0C9AG8AvQBvAH0Ae8CAAHvAfQBrQLdAa0C
+        9AG8AvQBvAH0Ae8CAAHvAfQB8AL0AfAC9AG8AvQBvAH0Ae8CAAHvAfQC8wHwAeoC8wPqAfMB9AHvAgAB
+        7wH/BKcCvAHwA7wB/wHvAgAB7wH/AacCCQenAf8B7wIAAe8B/wTwArwB8AO8Af8B7wIAAe8B/wPzAesD
+        8wHrAvMB/wHvAgAB7wH/AfAC/wHwAv8BvAL/AbwB/wHvAgAB7wH/AYYC3QEJAt0BuwLdAYYB/wHvAgAB
+        7wH/AfAC/wHwAv8BvAL/AbwB/wHvAgAB7wH/AfQBvAHsAe8D9AHsAvQB/wHvAgABBwH/A/AB8QK8BK0B
+        /wEHAgABBwH/B60CuwGtAf8BBwIAAQcB/wG0Aa0BhgGtArwB8AO8Af8BBwIAAQcB/wP0AewD9AHsAvQB
+        /wEHAgABBwH/AfAC/wHwAv8BrQLdAa0B/wEHAgABBwH/AfAC/wHwAv8BrQLdAa0B/wEHAgABBwH/AbQC
+        3QGtAv8BvAL/AbwB/wEHAgABBwL/Ae8B7QH3Av8B7wHtA/8BBwIAAQcB/wTwArwE1QH/AQcCAAEHAf8E
+        8AK8BNUB/wEHAgABBwH/AbQBrQGGAa0GvAH/AQcCAAEHDP8BBwIAAbwM/wG8AgABvAz/AbwCAAG8DP8B
+        vAIAAbwM/wG8AgABbwHjAUYCFwFGB+MBbwIAAW8B4wFGAhcBRgfjAW8CAAFvAeMBRgIXAUYH4wFvAgAB
+        bwHjAUYCFwFGB+MBbwIAAW8B4wG9ApQBGgTjARcC4wFvAgABbwHjAb0ClAEaBOMBFwLjAW8CAAFvAeMB
+        vQKUARoE4wEXAuMBbwIAAW8B4wG9ApQBGgTjARcC4wFvAgACFgFGAQEBRgTjAUYBAQFGAhYCAAIWAUYB
+        AQFGBOMBRgEBAUYCFgIAAhYBRgEBAUYE4wFGAQEBRgIWAgACFgFGAQEBRgTjAUYBAQFGAhYCAAIWAUYB
+        7wFGBBYBRgHvAUYCFgIAAhYBRgHvAUYEFgFGAe8BRgIWAgACFgFGAe8BRgQWAUYB7wFGAhYCAAIWAUYB
+        7wFGBBYBRgHvAUYCFgIAARoBFgFvAfABbwQWAW8B8AFvARYBGgIAARoBFgFvAfABbwQWAW8B8AFvARYB
+        GgIAARoBFgFvAfABbwQWAW8B8AFvARYBGgIAARoBFgFvAfABbwQWAW8B8AFvARYBGgQAAfMB8AHzBAAB
+        8wHwAfMGAAHzAfAB8wQAAfMB8AHzBgAB8wHwAfMEAAHzAfAB8wYAAfMB8AHzBAAB8wHwAfMDAAFCAU0B
+        PgcAAT4DAAEoAwABQAMAASADAAEBAQABAQYAAQEWAAP/BAABBwcAAQMEAAGAAQEBgAEDBAABgAEBAcAB
+        AwQAAYABAQHAAQMEAAGAAQEBwAEDBAABgAEBAcABAwQAAYABAQHAAQMEAAGAAQEBwAEDBAABgAEBAcAB
+        AwQAAYABAQHAAQMEAAGAAQEBwAEDBAABgAEBAcABAwQAAYABAQHAAQEEAAGAAQEBwAUAAv8B4AkAAYAB
+        AQGAAQEEAAGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEB
+        gAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEB
+        gAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEB
+        gAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQGAAQEBgAEBAYABAQHjAccB4wHHAeMBxwHjAccL
+</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 17</value>
+  </metadata>
+  <metadata name="statusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>108, 17</value>
+  </metadata>
+  <data name="textBoxLicense.Text" xml:space="preserve">
+    <value>GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright © 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;
+
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+Preamble
+The GNU General Public License is a free, copyleft license for software and other kinds of works.
+
+The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
+
+When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.
+
+To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.
+
+For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.
+
+Developers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.
+
+For the developers' and authors' protection, the GPL clearly explains that there is no warranty for this free software. For both users' and authors' sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.
+
+Some devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users' freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.
+
+Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.
+
+The precise terms and conditions for copying, distribution and modification follow.
+
+TERMS AND CONDITIONS
+
+0. Definitions.
+
+“This License” refers to version 3 of the GNU General Public License.
+
+“Copyright” also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
+
+“The Program” refers to any copyrightable work licensed under this License. Each licensee is addressed as “you”. “Licensees” and “recipients” may be individuals or organizations.
+
+To “modify” a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a “modified version” of the earlier work or a work “based on” the earlier work.
+
+A “covered work” means either the unmodified Program or a work based on the Program.
+
+To “propagate” a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
+
+To “convey” a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.
+
+An interactive user interface displays “Appropriate Legal Notices” to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.
+
+1. Source Code.
+
+The “source code” for a work means the preferred form of the work for making modifications to it. “Object code” means any non-source form of a work.
+
+A “Standard Interface” means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.
+
+The “System Libraries” of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A “Major Component”, in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.
+
+The “Corresponding Source” for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work's System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.
+
+The Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.
+
+The Corresponding Source for a work in source code form is that same work.
+
+2. Basic Permissions.
+
+All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
+
+You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
+
+Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
+
+3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+No covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.
+
+When you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work's users, your or third parties' legal rights to forbid circumvention of technological measures.
+
+4. Conveying Verbatim Copies.
+
+You may convey verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
+
+You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
+
+5. Conveying Modified Source Versions.
+
+You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:
+
+  a) The work must carry prominent notices stating that you modified it, and giving a relevant date.
+  b) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to “keep intact all notices”.
+  c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
+  d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.
+
+A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an “aggregate” if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
+
+6. Conveying Non-Source Forms.
+
+You may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:
+
+  a) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.
+  b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.
+  c) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.
+  d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.
+  e) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.
+
+A separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.
+
+A “User Product” is either (1) a “consumer product”, which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, “normally used” refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.
+
+“Installation Information” for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.
+
+If you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).
+
+The requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.
+
+Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
+
+7. Additional Terms.
+
+“Additional permissions” are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.
+
+When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.
+
+Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:
+
+  a) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or
+  b) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or
+  c) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or
+  d) Limiting the use for publicity purposes of names of licensors or authors of the material; or
+  e) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or
+  f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
+
+All other non-permissive additional terms are considered “further restrictions” within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.
+
+If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.
+
+Additional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.
+
+8. Termination.
+
+You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).
+
+However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
+
+Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
+
+Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.
+
+9. Acceptance Not Required for Having Copies.
+
+You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.
+
+10. Automatic Licensing of Downstream Recipients.
+
+Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.
+
+An “entity transaction” is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party's predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.
+
+You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.
+
+11. Patents.
+
+A “contributor” is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor's “contributor version”.
+
+A contributor's “essential patent claims” are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, “control” includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.
+
+Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.
+
+In the following three paragraphs, a “patent license” is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To “grant” such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.
+
+If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. “Knowingly relying” means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient's use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.
+
+If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.
+
+A patent license is “discriminatory” if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.
+
+Nothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.
+
+12. No Surrender of Others' Freedom.
+
+If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.
+
+13. Use with the GNU Affero General Public License.
+
+Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.
+
+14. Revised Versions of this License.
+
+The Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.
+
+Each version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License “or any later version” applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.
+
+If the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy's public statement of acceptance of a version permanently authorizes you to choose that version for the Program.
+
+Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
+
+15. Disclaimer of Warranty.
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+16. Limitation of Liability.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+17. Interpretation of Sections 15 and 16.
+
+If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
+
+END OF TERMS AND CONDITIONS
+
+How to Apply These Terms to Your New Programs
+
+If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.
+
+To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the “copyright” line and a pointer to where the full notice is found.
+
+    &lt;one line to give the program's name and a brief idea of what it does.&gt;
+    Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:
+
+    &lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate parts of the General Public License. Of course, your program's commands might be different; for a GUI interface, you would use an “about box”.
+
+You should also get your employer (if you work as a programmer) or school, if any, to sign a “copyright disclaimer” for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see &lt;https://www.gnu.org/licenses/&gt;.
+
+The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read &lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonDateToDateCopyFromClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHPSURBVDhPlZI7S2NRFIX3Af+AP2Bw0Bm1s7SytRRr
+        EabQThQdDYqJDiYxiQZN8IlJlFwwGF9F7CxnxmYeNgNGYdBKiYWgFoIQ43Lvg9kkEHxc+Fjn3rPXx72H
+        SwDo3BjaYfhqZr5Iyv3FM5X2pCPdosDL7CwS/c1ms5CU+1Iq7HlVcGrMHnw+HLW0IJPJ2MT4eBllezxr
+        O0XBkTH7heFhfG9qQqi62ma+r6+M0j2ZlY4K/hD9yPf2In98jCvHwW06jcuDA9x1dyvXnZ04b2uzKbPS
+        UcFPol/3XV04a21Frr3dIuubjo6KyKx0VNBI9PXh8RH/T06QLxQ0L3M5S+kzSZmVjgoaiFz/+IT9g4P4
+        fXio6cRiFll7eno0ZVY6KqgnGlmanEQiHEaET1wyPDoK38AAvP39luDQkGbI5YJ0SgXuTDKJ1MKCZZUF
+        c2NjiLrdFVnx+0XgVsFnom+7iQScaBSJUAhL/BaLLxBngXRU8InIm15extrUFOITE6+yxp8rHRXUEQVS
+        8/NIsjnJf9lrOCyQjgpqjZnZmJ3FeiDwJlLBIKSjghpjYruRCLb58ISt6Wls8edsFuFzEdJcLCIdFXww
+        xvOxqmqDM/UOPADoCYf0UfMk1uxDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDateToDateCopyToClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFmSURBVDhPjZA/S4JRFIfPZGtfoCkIhIYihAiitnAV
+        +wItNjlEUNDQEBQWgRSCNhQZKojfw+WA0ZT2IhFWJorlX/x7uj9TMW5cGh44nPvc5325JCIDAus0Ztdp
+        t7ndbpfCM8SF3aQzujcZCCkYHC/SfXjf+5bJWAIwYzc6h6sFLteI04EtSWw7JJl8kFTqUbLZ3ADM2OEM
+        Dlwt4F8dLCUcvhOf70yCwSuJRGISjyfk+uZW/P4LiUZjUGTo/g6crxD31dDt9+XJsv4EZ3Dgju6NA6fL
+        xB0ltLpdI3DgaoETB3Gr15N6u20EDlwtcLRE3Oh05KvZNAIHrhY4XCCuqi+UajUjcOBqgYN54s9WS/KV
+        ihE4cLXAnp24pH4xVy4bgQNXC+zMERcaDXkuFo3AgasFvLPE7/W6WIWCEThwtYBnhvhVPVI6nzcCB64W
+        2Jwm/lAP9FKtGoEDVws4pyi0YSP+D3B/7gl9AyX59rP4A1D4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonSpanOfDaysCopyFromClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHPSURBVDhPlZI7S2NRFIX3Af+AP2Bw0Bm1s7SytRRr
+        EabQThQdDYqJDiYxiQZN8IlJlFwwGF9F7CxnxmYeNgNGYdBKiYWgFoIQ43Lvg9kkEHxc+Fjn3rPXx72H
+        SwDo3BjaYfhqZr5Iyv3FM5X2pCPdosDL7CwS/c1ms5CU+1Iq7HlVcGrMHnw+HLW0IJPJ2MT4eBllezxr
+        O0XBkTH7heFhfG9qQqi62ma+r6+M0j2ZlY4K/hD9yPf2In98jCvHwW06jcuDA9x1dyvXnZ04b2uzKbPS
+        UcFPol/3XV04a21Frr3dIuubjo6KyKx0VNBI9PXh8RH/T06QLxQ0L3M5S+kzSZmVjgoaiFz/+IT9g4P4
+        fXio6cRiFll7eno0ZVY6KqgnGlmanEQiHEaET1wyPDoK38AAvP39luDQkGbI5YJ0SgXuTDKJ1MKCZZUF
+        c2NjiLrdFVnx+0XgVsFnom+7iQScaBSJUAhL/BaLLxBngXRU8InIm15extrUFOITE6+yxp8rHRXUEQVS
+        8/NIsjnJf9lrOCyQjgpqjZnZmJ3FeiDwJlLBIKSjghpjYruRCLb58ISt6Wls8edsFuFzEdJcLCIdFXww
+        xvOxqmqDM/UOPADoCYf0UfMk1uxDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDaysOfSpanCopyToClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFmSURBVDhPjZA/S4JRFIfPZGtfoCkIhIYihAiitnAV
+        +wItNjlEUNDQEBQWgRSCNhQZKojfw+WA0ZT2IhFWJorlX/x7uj9TMW5cGh44nPvc5325JCIDAus0Ztdp
+        t7ndbpfCM8SF3aQzujcZCCkYHC/SfXjf+5bJWAIwYzc6h6sFLteI04EtSWw7JJl8kFTqUbLZ3ADM2OEM
+        Dlwt4F8dLCUcvhOf70yCwSuJRGISjyfk+uZW/P4LiUZjUGTo/g6crxD31dDt9+XJsv4EZ3Dgju6NA6fL
+        xB0ltLpdI3DgaoETB3Gr15N6u20EDlwtcLRE3Oh05KvZNAIHrhY4XCCuqi+UajUjcOBqgYN54s9WS/KV
+        ihE4cLXAnp24pH4xVy4bgQNXC+zMERcaDXkuFo3AgasFvLPE7/W6WIWCEThwtYBnhvhVPVI6nzcCB64W
+        2Jwm/lAP9FKtGoEDVws4pyi0YSP+D3B/7gl9AyX59rP4A1D4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDaysOfLifeCopyFromClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHPSURBVDhPlZI7S2NRFIX3Af+AP2Bw0Bm1s7SytRRr
+        EabQThQdDYqJDiYxiQZN8IlJlFwwGF9F7CxnxmYeNgNGYdBKiYWgFoIQ43Lvg9kkEHxc+Fjn3rPXx72H
+        SwDo3BjaYfhqZr5Iyv3FM5X2pCPdosDL7CwS/c1ms5CU+1Iq7HlVcGrMHnw+HLW0IJPJ2MT4eBllezxr
+        O0XBkTH7heFhfG9qQqi62ma+r6+M0j2ZlY4K/hD9yPf2In98jCvHwW06jcuDA9x1dyvXnZ04b2uzKbPS
+        UcFPol/3XV04a21Frr3dIuubjo6KyKx0VNBI9PXh8RH/T06QLxQ0L3M5S+kzSZmVjgoaiFz/+IT9g4P4
+        fXio6cRiFll7eno0ZVY6KqgnGlmanEQiHEaET1wyPDoK38AAvP39luDQkGbI5YJ0SgXuTDKJ1MKCZZUF
+        c2NjiLrdFVnx+0XgVsFnom+7iQScaBSJUAhL/BaLLxBngXRU8InIm15extrUFOITE6+yxp8rHRXUEQVS
+        8/NIsjnJf9lrOCyQjgpqjZnZmJ3FeiDwJlLBIKSjghpjYruRCLb58ISt6Wls8edsFuFzEdJcLCIdFXww
+        xvOxqmqDM/UOPADoCYf0UfMk1uxDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDaysOfLifeClopyToClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFmSURBVDhPjZA/S4JRFIfPZGtfoCkIhIYihAiitnAV
+        +wItNjlEUNDQEBQWgRSCNhQZKojfw+WA0ZT2IhFWJorlX/x7uj9TMW5cGh44nPvc5325JCIDAus0Ztdp
+        t7ndbpfCM8SF3aQzujcZCCkYHC/SfXjf+5bJWAIwYzc6h6sFLteI04EtSWw7JJl8kFTqUbLZ3ADM2OEM
+        Dlwt4F8dLCUcvhOf70yCwSuJRGISjyfk+uZW/P4LiUZjUGTo/g6crxD31dDt9+XJsv4EZ3Dgju6NA6fL
+        xB0ltLpdI3DgaoETB3Gr15N6u20EDlwtcLRE3Oh05KvZNAIHrhY4XCCuqi+UajUjcOBqgYN54s9WS/KV
+        ihE4cLXAnp24pH4xVy4bgQNXC+zMERcaDXkuFo3AgasFvLPE7/W6WIWCEThwtYBnhvhVPVI6nzcCB64W
+        2Jwm/lAP9FKtGoEDVws4pyi0YSP+D3B/7gl9AyX59rP4A1D4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDaysOfYearCopyFromClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHPSURBVDhPlZI7S2NRFIX3Af+AP2Bw0Bm1s7SytRRr
+        EabQThQdDYqJDiYxiQZN8IlJlFwwGF9F7CxnxmYeNgNGYdBKiYWgFoIQ43Lvg9kkEHxc+Fjn3rPXx72H
+        SwDo3BjaYfhqZr5Iyv3FM5X2pCPdosDL7CwS/c1ms5CU+1Iq7HlVcGrMHnw+HLW0IJPJ2MT4eBllezxr
+        O0XBkTH7heFhfG9qQqi62ma+r6+M0j2ZlY4K/hD9yPf2In98jCvHwW06jcuDA9x1dyvXnZ04b2uzKbPS
+        UcFPol/3XV04a21Frr3dIuubjo6KyKx0VNBI9PXh8RH/T06QLxQ0L3M5S+kzSZmVjgoaiFz/+IT9g4P4
+        fXio6cRiFll7eno0ZVY6KqgnGlmanEQiHEaET1wyPDoK38AAvP39luDQkGbI5YJ0SgXuTDKJ1MKCZZUF
+        c2NjiLrdFVnx+0XgVsFnom+7iQScaBSJUAhL/BaLLxBngXRU8InIm15extrUFOITE6+yxp8rHRXUEQVS
+        8/NIsjnJf9lrOCyQjgpqjZnZmJ3FeiDwJlLBIKSjghpjYruRCLb58ISt6Wls8edsFuFzEdJcLCIdFXww
+        xvOxqmqDM/UOPADoCYf0UfMk1uxDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonDaysOfYearClopyToClipboard.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFmSURBVDhPjZA/S4JRFIfPZGtfoCkIhIYihAiitnAV
+        +wItNjlEUNDQEBQWgRSCNhQZKojfw+WA0ZT2IhFWJorlX/x7uj9TMW5cGh44nPvc5325JCIDAus0Ztdp
+        t7ndbpfCM8SF3aQzujcZCCkYHC/SfXjf+5bJWAIwYzc6h6sFLteI04EtSWw7JJl8kFTqUbLZ3ADM2OEM
+        Dlwt4F8dLCUcvhOf70yCwSuJRGISjyfk+uZW/P4LiUZjUGTo/g6crxD31dDt9+XJsv4EZ3Dgju6NA6fL
+        xB0ltLpdI3DgaoETB3Gr15N6u20EDlwtcLRE3Oh05KvZNAIHrhY4XCCuqi+UajUjcOBqgYN54s9WS/KV
+        ihE4cLXAnp24pH4xVy4bgQNXC+zMERcaDXkuFo3AgasFvLPE7/W6WIWCEThwtYBnhvhVPVI6nzcCB64W
+        2Jwm/lAP9FKtGoEDVws4pyi0YSP+D3B/7gl9AyX59rP4A1D4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        H1D+Ab8wPJd//LP9AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAoAICAQAAEABADoAgAApgAAABgYEAABAAQA6AEAAI4DAAAQEBAAAQAEACgBAAB2BQAAICAAAAEA
+        CACoCAAAngYAABgYAAABAAgAyAYAAEYPAAAQEAAAAQAIAGgFAAAOFgAAICAAAAEAIACoEAAAdhsAABgY
+        AAABACAAiAkAAB4sAAAUFAAAAQAgALgGAACmNQAAEBAAAAEAIABoBAAAXjwAACgAAAAgAAAAQAAAAAEA
+        BAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDA
+        wAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAB3F3cXdxd3F3cXdxd3
+        EAAHd3d3d3d3d3d3d3d3d3cAB3FxcXcXdxd3F3cXd3d3AAd3j4+Pj4/4+Pj4h3d3dwAHcfj4j4+Ij4+P
+        j/f3d3cAB3f4j4j4+Pj4j4iI+Hd3AAd3j/j2dnj4j4+P+Ih3dwAHd/j4+Id2j4+PiPiPh3cAB3eP+Pj/
+        h2/3Z2d/+Pd3AAd3+P+Pj4d4//d4+Pj3dwAAd/+P+P/3aPj3f/j/93AAAHf/+P+IZ4//93j/j4dwAAB3
+        +P/4h3j/j/eI///3cAAAh/////+Hj//3f/j494AAAHf4/4/493/4+H////dwAACH///4j4eP+HeI///3
+        cAAAd///+Hd4j/+I7/+P94AAAIf///////////////dwAAB3///////////////3gAAAh///////////
+        ////94AAAIl5eXl5eXl5eXl5eYmAAACJiYmJiYmHd3d3mJiXcAAAiXl5eXeYl5eYmJiYmYAAAImH+Pj4
+        +YmHmJiYeYeAAACJiYmJiYd4mHmJiYiZgAAAh3iYmJiYmJiYeYmJiIAAAImJcZF5h3eJh5GRmHmAAAAJ
+        iJh4mImHiHiYiHeJAAAACJefeHl5iZmXn3iZeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////wAAAB4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA8AAAAfAAAAHwAAAB8AA
+        AAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAH4AAAD+AA
+        AA///////////ygAAAAYAAAAMAAAAAEABAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACA
+        AAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAA
+        AAAAAAAAB3d3d3d3d3d3d3cABxcXFxcXFxcXd3cAB3j4+Pj4+Pj3d3cAB3j4+Pj4+Pj4h3cAB3j4h3iP
+        j4+IiHcAB3j/iIZ4iIiP+HcAB3+P+Ph4+GeI+HcAB3j4/4h4j4f4/3cAB3//j4eI/4f/j3cAB3+P+I6P
+        j4f//3cAB3////h//4iP/3gAB3//iIiI+Gj/j3cAB3//+Ij//4///4cAB3///////////3cAB3iPj4+I
+        +PiPj3gAB5iXl5eYl5iXl5cAB3mJeYmJiYmJiYcAB3eIiIiYmJiYmJgAB5iYmJh3d3d5h5gACHiRl5iY
+        mJmXmJgAAJiYh3d3d4eImHAAAAAIeAAAAAd3AAAAAAAAAAAAAAAAAAAA////AIAAAwCAAAMAgAADAIAA
+        AwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAA
+        AwCAAAMAwAAHAPj+PwD///8AKAAAABAAAAAgAAAAAQAEAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8AAAD/AP8A//8AAP//
+        /wAAAAAAAAAAAAd3d3d3d3dwB4+Pj4+Id3AH+IiI+PiHcAePiHiIf/dwB///h/iI+HAH+Ph/+I/4cAf/
+        /3j4j4hwB/+IiPeP+HAH///////4cAeIiIiIiIdwB5eZeXl5eYAIeIiJiYeYcAeZeYeHmYmAAIeJeZiH
+        mAAAAAAAAAAAAP//AACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIAB
+        AACAAQAAwAMAAP//AAAoAAAAIAAAAEAAAAABAAgAAAAAAAAEAAAAAAAAAAAAAAABAAAAAQAAAAAAAGBg
+        TwBiYlEAampZAGxsWwBWVmcAV1dpAFlZagBbW20AXV1uAF9fcABycmEAeXloAGFhcgBjY3QAZmZ3AGho
+        egBsbH0AgYFwAIeHdwCIiHcAiop6AI+PfgAREYgAMzOqACsrvwBvb4AAcXGCAHV1hgB2dogAeHiJAHp6
+        jAB9fY4Afn6QAFdXsgAwMMEANTXOADg40QA8PNUAW1vMAEFB2gBFRd4ASUnhAE5O5wBWVucAUVHqAFRU
+        6gBTU+0AV1fvAFtb8QBgYO8AYGD0AGVl9QBlZfgAamr5AG9v+wB+fvEAcnL7AHNz/gB4ePwAf3/+AJCQ
+        gQCUlIMAlZWEAJiYhwCXl4gAmZmKAJ2djQCBgZIAg4OUAIWFlgCHh5gAiYmaAIuLnACMjJ0AoaGSAKam
+        mACoqJkAqqqcAKysnQCPj6AAkJChAJOTpACVlaYAl5eoAJmZqgCbm6wAnZ2uAK+vogCwsKMAs7OlALa2
+        pQC2tqoAuLirALm5rQC8vK4AoaGyAKOjtAClpbYAp6e4AKmpugCxsbEAv7+0AMHBsADBwbYAxcW0AMTE
+        ugDGxrwAycm6AISE/wCIiP8AkJD/AKWl7gCrq/QAsbH5AMrKwADQ0MQA1dXFANLSyQDZ2c0A1tbWAN/f
+        2ADf398A4ODVAOfn1wDh4doA5ubaAOjo2QDp6dwA7OzeAOzs4QDv7+QA6urqAPPz4gDx8ecA9PTmAPPz
+        6gD29uoA8vLsAPX17QD5+egA+PjvAP//7wD29vAA9vb2APn58gD///AA+Pj1APz8+QD+/v4AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYA
+        AAAACB4eHiEhRUVFSEhISEhQSEhISEhISEhHRUVFSAgAAAANHg0IBQUFBQYFBQYIBQYICAgFBgYFBRoe
+        Hh5IDQAAABoeBoyFhYWFhYWFhYWFhYWBhYWFhXU/CBoeIUcaAAAAGh4IhXx8fHx8fHx8fHx8fHx8fHx8
+        fE2OCBohSBoAAAAeRQiFf39/f39/f39/f39/f39/f39/Z5KSCBpIHgAAAB4hCod/f39/EgELQ3V/f39/
+        f39/f391Z1tLCEgeAAAAHkUNh4ODf4VsWkMBAWaDf4WDg3+Fg3+Df3cNUB4AAAAeRw2Of4ODg4N/g3cE
+        BH6DTQEBAQFNg4OFjg1RHgAAAEVHD4eHg4ODg4WDg0MEdIODgz8Lg4ODg4OHD1FFAAAAAEgaj4aGhoOH
+        hoaDEgt7hYeGQxKGhYeGho8aUAAAAAAASBqHh4eHj4Z3XT8MXYeHh4ZLFYePhoeHjxpRAAAAAABIGpSP
+        j4+Pj2YVEliHj4+Pj009j4ePj4+PGlMAAAAAAFEalI+Pj4+Pj49nFWaPj4+PWD+Pj4+Pj5QaVQAAAAAA
+        UR6UkpCQj5CSkI8VTZCQkI9YS4+QkJCSlB5VAAAAAABTHpSUlJSUdmt6az9mj5RrPz9LlJSUkJCUHlUA
+        AAAAAFUelJSUlJRrSz9DXYaUlJR+WFiQlJSUlJQhVQAAAAAAVUWUlJSUlJSUlJSUlJSUlJSUlJSUlJSU
+        lCFgAAAAAABVRZSUlJSUlJSUlJSUlJSUlJSUlJSUlJSURWAAAAAAAGBFlJSUlJSUlJSUlJSUlJSUlJSU
+        lJSUlJRHYAAAAAAAYCQ1MDAwMDAwMDAwMDAwMDAwMDAwMDAwNSRgAAAAAABgJTUwMDMwMzAzMDMwMzAz
+        MDMwMzAzMDA1JWMAAAAAAGAlNzUqMCowKjAqMzUzNTM1MzUzNTM1NTclYwAAAAAAZCk5M5Ryj3GGcHoz
+        MzUzNTM1MzUzNTM1OSljAAAAAABkKTs3Nzc1NzU3Nzc3Nzc3Nzc3Nzc3NzU5KWQAAAAAAGQqOzkzMDIs
+        Mzc3Nzc3Nzc3NzMsMiwzOTwqZAAAAAAAZCs8OSMXGRcjOTk5OTc5Nzk5IxcZFyM5PDBkAAAAAAAAMG9u
+        JWUnZSVubm48bm5uPG4lZSdlJW5vMAAAAAAAAAA4MDAYdyJ4MDAwMDAwMDAwMDB3IngYMDA4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////wAAAB4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA8AAAAfAAAAHwAAAB8AA
+        AAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAH4AAAD+AA
+        AA///////////ygAAAAYAAAAMAAAAAEACAAAAAAAQAIAAAAAAAAAAAAAAAEAAAABAAAAAAAAXl5wAHZ2
+        ZgB5eWkAfX1sAGFhcgBiYnQAZGR2AGVleABpaXoAbW14AGpqfQBsbH0AhYV1AIuLewCMjHwAJyeqACkp
+        qwAuLrUAbW2BAHBwgQBycoUAdHSFAHt7hgB1dYkAeHiKAHp6jQB8fI0Afn6RAHt7pgAyMsAANjbCAFFR
+        yABVVcwARkbUAEFB2QBGRt0ASkrZAFtb0gBfX9YAcHDBAHl5ywBkZNsAdXXaAE5O4wBPT+YAVVXgAFFR
+        5wBVVeYAUlLoAFZW6wBYWO4AXl7uAFlZ8ABdXfMAYmLxAGRk8QBgYPUAZWX2AGlp9wBmZvgAamr4AGxs
+        +QBxcfgAdXX4AHFx/QB3d/wAenr9AH5+/gCBgYsAmpqLAJ2djgCAgJMAgoKVAISElwCIiJIAjIyWAIOD
+        mACGhpkAhoacAIiImwCPj5oAioqeAI2NnQCfn5EAkpKbAJKSngClpZcApqaZAKmpmQCrq54ArKyfAImJ
+        oACOjqEAjIytAJCQowCWlqEAkpKlAJmZpQCcnKkAn5+sAIyMtwCKirkAiIi/AJiYvgCysqUAtrapALm5
+        qgC5uawAoaG8AL29sQDBwbEAwcG1AMXFuwDHx7wAycm7AMjIvQDMzL8Aq6vqAKOj8ACgoPoAra36ALKy
+        8QDLy8IAz8/HANDQwADS0sQA1dXGANHRyADW1soA2trMANjY0QDc3NYA3t7YAOHh0wDm5tYA4uLZAObm
+        2ADl5d4A6OjaAOnp3wDs7N4A8PDfAMXF9gDV1fsA1tb8AOjo4QDt7eIA7u7mAO3t6QDx8eIA8PDmAPX1
+        5QDy8usA9PTpAPDw7AD19e4A9vbyAPj48gD6+vYA+/v4APz8+gD+/v4AAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAUBAQUFBQUIBQgICAgIBQgFBQUFCAAAAAUJAQEFBQUFBQUFBQUFCAUF
+        GRwZGAAAAAgFmI6OmI6YmJiOmI6YjodZFxgZGAAAAAkFmIeHh4eHh4eHh4eHh4dvjksYGAAAABMFmI6J
+        fw8Pa4eJjomOiY5/dVkKGQAAABgJmImNiXNpAw2CiX9xc3WOjolFGQAAABMJmY2NjY2NdQJuiWoNA2qJ
+        kpdLHAAAABgYmZmZmZmZgQNvmY1bRo2Xl5lMHAAAABgYnJmZmYlqD1iNmZlrWJmZmZ5MSwAAABgXnpmd
+        mZJxVGqXnZ1rW52dnZ5WSwAAABkZoZ6enp2dgVSJnZ1xaZ2dnp5gTQAAABwcoZ6hmXFxaVubm25Ua6Gh
+        nqFiTQAAABxLoaGhnYN1fJKhoZ2EhKGhoaFjTAAAABxNoaGhoaGhoaGhoaGhoaGhoaFkXAAAABwdkZGR
+        kZGRkZGRkZGRkZGRkZFnXAAAAE0gOTU1NTU1NTU1NTU1NTU1NTUkXAAAAE0gPTIyLTIyLTU5NTk1OTU5
+        NT0kYAAAAE0nPXh5j3p3dj05PTk9OT05PT0tXAAAAE0nQz05OTk9PT09PUE9Ozk5O0EwYAAAAE0nRDAR
+        HhI5QUFBQUFBHxIRJUM1YAAAAAArQy5oKCk4QEFAQUBAJ2dtIkA1AAAAAAAAAABMXF4AAAAAAAAAZUxW
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAA
+        AwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAgAADAIAAAwCAAAMAwAAHAPj+
+        PwD///8AKAAAABAAAAAgAAAAAQAIAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAEAAAAAAABmZnkAaWl6AGtr
+        fQBtbX4AcnJ7AIKCcgCOjn4Ab2+AAHBwgQBxcYUAdnaJAHl5igB5eY0AfHyNAH5+kQB+frEAeHi/ADw8
+        xwA/P8kATEzYAG5uwwB1dcoAenrPAHx80wBRUeYAUlLqAFRU6wBXV+0AXV3rAF1d8gBiYvAAZmbxAGJi
+        9ABmZvYAbm75AHFx/AB5ef0AgoKTAIGBlQCIiJAAhYWZAIeHnACIiJkAjY2eAKKilACnp5gAqKiYAKqq
+        nAClpacArq6gALOzpgC2tqkAv7+uAK+vswC+vrEAs7O4ALe3vQDAwLQAyMi9AM7OvwCLi8AAhobWALu7
+        wgC/v8cAhobxAJiY8gCdnfcAq6v3AKGh+gCtrfkAy8vAANDQwQDR0cgA1NTLANnZygDb280A3t7OAOPj
+        1gDk5NsA5OTeAOnp2gDs7NwA6OjiAO7u4ADu7ukA8fHhAPDw5ADz8+kA9PTsAPf38gD5+fQA+/v4APz8
+        +QD+/v4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAA
+        AAAAAAAAAAoCAgIKCgoKCAoCDw8BAAACVlRUVFJSUlRUNSgPAgAAAlZUOy88UlJOUktMBQoAAApWVE47
+        BjVLLy5MVDEKAAAPV1dWVjUuVzczVlY2CwAAD1lZWTQHTlk7N1lZOA8AACZbWlpaM0paSjtaWjgPAAAr
+        XV1ONDBXVTJKW10/DwAAK11dXV1dXV1dXV1dQA8AABBGRkZGRkZGRkZGRj4nAAAVIRsbGxseHh4eHh4Z
+        JwAAFiNFQ0JBISEhISEjHCcAABclExMcJSUjJRMTHCIsAAAAIhE9Gx4iHiEYPRQiAAAAAAAAAAAAAAAA
+        AAAAAAAA//8AAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIAB
+        AADAAwAA//8AACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAABARx+AQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcqAEB
+        HKgBARyoAQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcqAEBHKgBARyoAQEcfgAA
+        AAAAAAAAAAAAAAEBHaR4eIn/enqL/3x8jf99fY7/f3+Q/4KCk/+Dg5T/hYWW/4eHmP+JiZr/ioqb/4yM
+        nf+MjJ3/jY2e/42Nnv+MjJ3/jIyd/4uLnP+Kipv/ioqb/4mJmv+IiJn/h4eY/4aGl/+FhZb/hYWW/4uL
+        nP8BAR2kAAAAAAAAAAAAAAAAAQEennl5iv9fX3D/VlZn/1ZWZ/9WVmf/VlZn/1ZWZ/9WVmf/VlZn/1ZW
+        Z/9WVmf/VlZn/1ZWZ/9WVmf/VlZn/1ZWZ/9WVmf/VlZn/1ZWZ/9WVmf/VlZn/1ZWZ/9tbX7/eXmK/3l5
+        iv95eYr/hoaX/wEBHp4AAAAAAAAAAAAAAAABASCXe3uM/1hYaf/5+ej/8/Pi//Pz4v/z8+L/8/Pi//Pz
+        4v/z8+L/8/Pi//Pz4v/z8+L/8/Pi//Pz4v/z8+L/8/Pi//Pz4v/z8+L/8/Pi//Pz4v/X18b/lJSD/1hY
+        af9vb4D/e3uM/3t7jP+Hh5j/AQEglwAAAAAAAAAAAAAAAAEBIY99fY7/Wlpr//Pz4//n59f/5+fX/+fn
+        1//n59f/5+fX/+fn1//n59f/5+fX/+fn1//n59f/5+fX/+fn1//n59f/5+fX/+fn1//n59f/5+fX/+fn
+        1/+qqpn////v/1paa/9xcYL/fX2O/4mJmv8BASGPAAAAAAAAAAAAAAAAAQEjiX5+j/9cXG3/9PTl/+jo
+        2f/o6Nn/6OjZ/+jo2f/o6Nn/6OjZ/+jo2f/o6Nn/6OjZ/+jo2f/o6Nn/6OjZ/+jo2f/o6Nn/6OjZ/+jo
+        2f/o6Nn/6OjZ/8HBsP////D////w/1xcbf9ycoP/iYma/wEBI4kAAAAAAAAAAAAAAAAAACOHgICR/15e
+        b//19ef/6urc/+rq3P/q6tz/6urc/4CAcP9gYE//cnJi/52djf/V1cf/6urc/+rq3P/q6tz/6urc/+rq
+        3P/q6tz/6urc/+rq3P/q6tz/1NTE/8XFtP+2tqX/n5+O/15eb/+Li5z/AAAjhwAAAAAAAAAAAAAAAAAA
+        JIWCgpP/YWFy//b26f/s7N7/7Oze/+zs3v/s7N7/ycm6/7Ozpf+ZmYr/Y2NS/2FhUP+8vK7/7Oze/+zs
+        3v/s7N7/7Oze/+zs3v/s7N7/7Oze/+zs3v/s7N7/7Oze/+zs3v/b283/YWFy/4yMnf8AACSFAAAAAAAA
+        AAAAAAAAAAAkg4WFlv9jY3T/9vbr/+3t4f/t7eH/7e3h/+3t4f/t7eH/7e3h/+3t4f/a2s7/bGxb/2xs
+        W//m5tr/7e3h/6iomv9jY1L/Y2NS/2NjUv9jY1L/qKia/+3t4f/t7eH/7e3h//b26/9jY3T/j4+g/wAA
+        JIMAAAAAAAAAAAAAAAAAACSBh4eY/2Zmd//39+3/7+/k/+/v5P/v7+T/7+/k/+/v5P/v7+T/7+/k/+/v
+        5P+ZmYr/ampZ/9DQxP/v7+T/7+/k/+zs4f+QkIH/c3Nj/+jo3f/v7+T/7+/k/+/v5P/v7+T/9/ft/2Zm
+        d/+QkKH/AAAkgQAAAAAAAAAAAAAAAAAAJX+JiZr/aWl6//j47//x8ef/8fHn//Hx5//x8ef/8fHn//Hx
+        5//x8ef/7+/l/4eHd/9xcWD/4ODV//Hx5//x8ef/8fHn/5qai/+CgnL/8fHn//Hx5//x8ef/8fHn//Hx
+        5//4+O//aWl6/5KSo/8AACV/AAAAAAAAAAAAAAAAAAAlfYuLnP9sbH3/+fnx//Pz6v/z8+r/8/Pq//Pz
+        6v/z8+r/2NjN/7m5rP+RkYH/eXlo/7i4q//z8+r/8/Pq//Pz6v/z8+r/oKCS/4qKev/z8+r/8/Pq//Pz
+        6v/z8+r/8/Pq//n58f9sbH3/k5Ok/wAAJX0AAAAAAAAAAAAAAAAAACZ7jo6f/29vgP/6+vP/9fXu//X1
+        7v/19e7/9fXu//X17v+/v7T/iop6/4GBcP+vr6L/8/Ps//X17v/19e7/9fXu//X17v+mppj/kZGB//X1
+        7v/19e7/9fXu//X17v/19e7/+vrz/29vgP+Vlab/AAAmewAAAAAAAAAAAAAAAAAAJnqQkKH/cnKD//v7
+        9v/39/H/9/fx//f38f/39/H/9/fx//f38f/39/H/wcG2/4iId/+6uq7/9/fx//f38f/39/H/9/fx/6ys
+        nv+Xl4j/9/fx//f38f/39/H/9/fx//f38f/7+/b/cnKD/5eXqP8AACZ6AAAAAAAAAAAAAAAAAAAmeJOT
+        pP91dYb//Pz4//j49P/4+PT/+Pj0//j49P/4+PT/+Pj0//j49P/19fD/j49+/6qqnP/4+PT/+Pj0//j4
+        9P/4+PT/sLCj/52djv/4+PT/+Pj0//j49P/4+PT/+Pj0//z8+P91dYb/mZmq/wAAJngAAAAAAAAAAAAA
+        AAAAACd2lZWm/3h4if/9/fr/+vr3//r69//6+vf/+vr3/9LSyf/Gxrz/39/Y/8TEuv+UlIP/ubmu//r6
+        9//6+vf/x8e9/5SUg/+VlYT/oqKT//r69//6+vf/+vr3//r69//6+vf//f36/3h4if+bm6z/AAAndgAA
+        AAAAAAAAAAAAAAAAJ3WYmKn/e3uM//7++//8/Pn//Pz5//z8+f/8/Pn/ysrA/56ejv+YmIf/mpqK/7a2
+        qv/y8u3//Pz5//z8+f/8/Pn/4eHa/6+vov+srJ3//Pz5//z8+f/8/Pn//Pz5//z8+f/+/vv/e3uM/52d
+        rv8AACd1AAAAAAAAAAAAAAAAAAAnc5qaq/9+fo///v79//39/P/9/fz//f38//39/P/9/fz//f38//39
+        /P/9/fz//f38//39/P/9/fz//f38//39/P/9/fz//f38//39/P/9/fz//f38//39/P/9/fz//f38//7+
+        /f9+fo//np6v/wAAJ3MAAAAAAAAAAAAAAAAAAChxnJyt/4GBkv////7//v7+//7+/v/+/v7//v7+//7+
+        /v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+
+        /v/+/v7////+/4GBkv+goLH/AAAocQAAAAAAAAAAAAAAAAAAKHCenq//hISV////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////hISV/6Kis/8AAChwAAAAAAAAAAAAAAAAAAAobqGhsv81Nc7/YGD3/1dX
+        7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX
+        7/9XV+//V1fv/1dX7/9XV+//V1fv/2Bg9/81Nc7/pKS1/wAAKG4AAAAAAAAAAAAAAAAAAClto6O0/zg4
+        0f9lZfj/W1vx/1tb8f9bW/H/W1vx/1tb8f9bW/H/W1vx/1tb8f9bW/H/W1vx/1tb8f9bW/H/W1vx/1tb
+        8f9bW/H/W1vx/1tb8f9bW/H/W1vx/1tb8f9bW/H/ZWX4/zg40f+lpbb/AAApbQAAAAAAAAAAAAAAAAAA
+        KWykpLX/PDzV/2tr+v9gYPT/SUng/1RU6v9JSeD/VFTq/0lJ4P9UVOr/SUng/2Bg9P9gYPT/YGD0/2Bg
+        9P9gYPT/YGD0/2Bg9P9gYPT/YGD0/2Bg9P9gYPT/YGD0/2Bg9P9ra/r/PDzV/6amt/8AAClsAAAAAAAA
+        AAAAAAAAAAApaqamt/9BQdr/cnL7/2Vl9v//////sbH5//b29v+rq/T/6urq/6Wl7v/f39//ZWX2/2Vl
+        9v9lZfb/ZWX2/2Vl9v9lZfb/ZWX2/2Vl9v9lZfb/ZWX2/2Vl9v9lZfb/ZWX2/3Jy+/9BQdr/p6e4/wAA
+        KWoAAAAAAAAAAAAAAAAAAClpqKi5/0VF3v94ePz/amr5/2pq+f9qavn/amr5/2pq+f9qavn/amr5/2pq
+        +f9qavn/amr5/2pq+f9qavn/amr5/2pq+f9qavn/amr5/2pq+f9qavn/amr5/2pq+f9qavn/eHj8/0VF
+        3v+pqbr/AAApaQAAAAAAAAAAAAAAAAAAKmipqbr/Skrj/39//v9vb/v/Zmb0/1ZW5/9gYO//Vlbn/2Zm
+        9P9vb/v/b2/7/29v+/9vb/v/b2/7/29v+/9vb/v/b2/7/29v+/9mZvT/Vlbn/2Bg7/9WVuf/Zmb0/29v
+        +/9/f/7/Skrj/6qqu/8AACpoAAAAAAAAAAAAAAAAAAAqZ6qqu/9OTuf/hIT//3Nz/v8wMMH/ERGI/ysr
+        v/8REYj/MDDB/3Nz/v9zc/7/c3P+/3Nz/v9zc/7/c3P+/3Nz/v9zc/7/c3P+/zAwwf8REYj/Kyu//xER
+        iP8wMMH/c3P+/4SE//9OTuf/qqq7/wAAKmcAAAAAAAAAAAAAAAAAACpNAAAqZgEB4a6QkP//iIj//z09
+        1f+xsbH/W1vM/7Gxsf89PdX/iIj//4iI//+IiP//iIj//4iI//+IiP//iIj//4iI//+IiP//PT3V/7Gx
+        sf9bW8z/sbGx/z091f+IiP//kJD//wEB4a4AACpmAAAqTQAAAAAAAAAAAAAAAAAAAAAAAAAAAQHlgQEB
+        5awBAeWsAACVzNbW1v86OqXZ1tbW/wEB5awBAeWsAQHlrAEB5awBAeWsAQHlrAEB5awBAeWsAQHlrAEB
+        5awBAeWs1tbW/zo6pdnW1tb/AACVzAEB5awBAeWsAQHlgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAA3AAAAXwAAADUAAABfAAAANwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAADcAAABfAAAANQAAAF8AAAA3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AA
+        AAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AA
+        AAPgAAAP/B/wf/////8oAAAAGAAAADAAAAABACAAAAAAAGAJAAAAAAAAAAAAAAAAAAAAAAAAdHR+B2Bg
+        bSRiYm4qZGRvKmZmcCpoaHIqamp0Km5udyp1dXwqeXmAKnl5fyp5eX8qeHh+KnZ2fSp0dHwqcXF6Kmxs
+        dipnZ3IqZWVxKmJibypgYGwqW1tpJ2Vlcg8AAAAAYWFuJB4eN7I9PVPTPj5U0z8/VdNBQVfTQkJY00ND
+        WdNERFrTRUVb00ZGXNNGRlzTRkZc00ZGXNNGRlzTRUVb00VFW9NERFrTQ0NZ00NDWdNDQ1nTNDRMwz09
+        UEgAAAAAZWVyJzw8U89qanv+X19w/19fcP5gYHH+YWFy/2Fhcv5iYnP+Y2N0/2NjdP5jY3T/Y2N0/mNj
+        dP5jY3T+Y2N0/2Jic/5iYnP+dXWG/3x8jf57e4z+ZWV550FBU08AAAAAaWl2JT4+VsphYXL/9fXl//Dw
+        3//w8N//8PDf//Dw3//w8N//8PDf//Dw3//w8N//8PDf//Dw3//w8N//8PDf/+Xl1P+pqZn/e3uG/3Fx
+        gv96eov/ZWV65EVFWEoAAAAAa2t5Iz8/WMVjY3T+8PDh/+fn1/7n59f+5+fY/+fn1/7n59f+5+fY/+fn
+        1/7n59j/5+fX/ufn1/7n59f+5+fY/+fn1/7BwbH+6urf/4mJkv5zc4T+Z2d84kdHW0UAAAAAbW17IT8/
+        WcNlZXb+8vLj/+np2/7p6dv+1dXH/42Nff6MjHz+urqq/+Hh0/7p6dv/6enb/unp2/7p6dv+6enb/+np
+        2/7V1cb+0NDA/6urnv5tbXj+Z2d94UhIXkMAAAAAcHB/IUFBW8FpaXr/8/Pn/+zs3v/s7N7/5ubY/8nJ
+        vP+zs6T/eXlp/4WFdv/a2sz/6Oja/9LSxP/Jybv/ycm7/9LSxP/o6Nr/7Ozf/+fn2f+BgYv/aWl/4EpK
+        YEIAAAAAdXWEIENDXcBsbH3+9PTp/+3t4v7t7eL+7u7i/+3t4v7t7eL+zMy//3Z2Zv6/v7H/5eXZ/rm5
+        rP6FhXX+eXlp/7i4q/7l5dn+7u7i//Ly5/6IiJP+a2uB309PZEAAAAAAfX2KH0REX79wcIH+9vbs//Dw
+        5v7w8Ob+8PDm//Dw5v7w8Ob+1tbK/319bP7BwbT/8PDm/vDw5f6trZ/+mpqL/+/v5f7w8Ob+8PDm//T0
+        6v6MjJb+bW2D31NTaD8AAAAAgoKQH0VFYb10dIX/+Pjw//Pz6//z8+v/8/Pr/+Li2f+2tqn/i4t7/6am
+        mf/o6N//8/Pr//Pz6/+2tqn/paWX//Pz6//z8+v/8/Pr//b27v+Pj5r/bm6E3lhYbD4AAAAAgYGSHkdH
+        Y7x4eIn++fnz//X17/719e/+9vbv/+jo4P7Hx7z+n5+R/7i4rP7u7uf/9fXv/vX17/68vLD+rKyf//X1
+        7/719e/+9vbv//j48f6Skp7+cHCG3VhYcD0AAAAAfHyUHklJZLt7e4z/+/v2//f38//39/P/+Pjz//f3
+        8//39/P/0dHI/52djv/l5d7/9/fz//f38//Bwbb/srKm//f38//39/P/+Pjz//n59f+WlqH/cnKI3VZW
+        cTwAAAAAd3eWHUpKZrp/f5D+/Pz5//r69/76+vf+8PDr/8XFu/7IyL7+srKl/7Gxpf7t7en/8PDs/r29
+        sv6eno7+urqu//r69/76+vf++vr3//v7+P6ZmaX+dHSL3FJSdDoAAAAAdHSYHUxMaLmDg5T+/f37//z8
+        +v78/Pr+9vbz/9jY0f7Ly8L+z8/H/+jo4/77+/n//Pz6/vX18v7c3Nb+3t7Y//z8+v78/Pr+/Pz6//39
+        +/6cnKn+dnaM3FBQdjkAAAAAb2+aHE1NariHh5j+/v79//39/f79/f3+/f39//39/f79/f3+/f39//39
+        /f79/f3//f39/v39/f79/f3+/f39//39/f79/f3+/f39//7+/f6fn6z+d3eO20xMdzgAAAAAaWmbG09P
+        bLd7e6b/1tb8/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV+//V1fv/1dX7/9XV
+        +//V1fv/1dX7/9bW/P+Kirn/eXmQ20hIeDcAAAAAY2ObG1FRbbZRUcj+YGD1/1hY7/5YWO/+WVnw/1hY
+        7/5YWO/+WVnw/1hY7/5ZWfD/WFjv/lhY7/5YWO/+WVnw/1hY7/5YWO/+WVnw/11d8/5BQdn+e3uS2kND
+        eDYAAAAAXV2aG1FRbrVVVcz+Zmb4/1ZW6/5TU+n+T0/m/1FR5/5TU+n+UVHo/15e8/5eXvP/Xl7z/l5e
+        8/5eXvP+Xl7z/15e8/5eXvP+Xl7z/2Rk9v5GRt3+fHyT2j4+dzYAAAAAWFiaGlNTcLRbW9L/cHD6/6Cg
+        +v+trfr/xcX2/7Ky8f+jo/D/q6vq/2Zm9v9mZvf/Zmb2/2Zm9v9mZvb/Zmb3/2Zm9v9mZvb/Zmb3/2xs
+        +f9OTuP/fX2U2Ts7djQAAAAAU1OaGlRUcbNfX9b+d3f8/2pq+P5hYfH+Y2Pz/2Nj8/5ra/n+bGz6/2xs
+        +f5sbPr/bGz5/mxs+f5sbPn+Zmb1/2Ji8f5hYfD+aWn3/3Nz+/5UVOf+f3+W2Tc3djQAAAAATU2aGVRU
+        crNkZNv+fn7+/1dX5f4pKav+MjLA/y8vtv5kZPH+cnL9/3Fx/f5ycv3/cXH9/nFx/f5xcf3+NjbC/y0t
+        tf4nJ6r+SkrZ/3p6/f5aWuz+f3+W2TMzdjMAAAAASUmjDhUVT0MGBr2Namr46klJ3u6Xl737bGzA+HR0
+        yfRYWPDqZmb46mZm+OpmZvjqZmb46mZm+OpmZvjqUVHR74aGvvqgoLz8OzvS8Glp+OobG+e0FBRQRzY2
+        iBwAAAAAAAAAAAAAAAA2Ns0wLCzVVRYWkGtQUGKjMDBYkTU1bpAjI8dcLy/kVS8v4lUvL+FVLi7hVS0t
+        4lUuLuRVGxtwgENDXppXV2SkCgpudikp2FUpKdVFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1N
+        rgZDQ5kVQ0ObD0VFoRJXV9IDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkKoEEFBohI/P50VQ0OmCgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAA
+        AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAMAABwDwfh8AKAAAABQA
+        AAAoAAAAAQAgAAAAAACQBgAAAAAAAAAAAAAAAAAAAAAAAGtrdhFRUV87UlJhP1RUYj9WVmM/WFhlP15e
+        aj9kZG4/ZWVvP2Vlbz9kZG0/YmJtP2Bgaz9cXGg/VlZkP1RUYj9RUWA/Tk5dP1RUYyUAAAAAUlJiOUND
+        WdVYWGvpWVls6Vtbb+ldXXDpX19y6WBgdOliYnXpYmJ26WJiduliYnXpYWF16WFhdOlgYHPpYmJ26WJi
+        dullZXjpLCxDfQAAAABWVmY6V1ds5YGBiv6kpKT+pKSk/qSkpP+kpKT/pKSk/6SkpP+kpKT/pKSk/6Sk
+        pP+kpKT/oaGh/oGBgf5paXr+eHiJ/oCAkf4yMkmAAAAAAFlZaTVZWW7ip6en/urq2v7o6Nj+6OjY/+jo
+        2P/o6Nj/6OjY/+jo2P/o6Nj/6OjY/+jo2f/n59f+wsKx/sTEwP50dIP+gYGS/jQ0THgAAAAAW1tsMltb
+        cOGoqKr+6urc/ujo2v7Q0MH+mZmJ/qurm/7a2sz+6ena/unp2v7p6dr+6ena/unp2v7X18f+19fG/pSU
+        j/53d4j+NTVPdAAAAABdXXAxXl5z4Kurrv/t7eD/7Oze/uTk1v/Kyrz/pKSV/3h4aP/Nzb//4uLV/7+/
+        sP+4uKn/v7+w/+Li1f/s7N//1tbN/3d3iP83N1FyAAAAAGRkdTBgYHbfrq6x/+/v5P/u7uP+7u7j/+7u
+        4//s7OH/j49//66uof/o6Nz/xsa6/3t7a//CwrX/6Ojc/+7u4//i4tv/enqL/zo6VHAAAAAAamp7L2Nj
+        ed6xsbX/8vLp//Hx6P7y8uj/5eXb/8rKvv+NjX3/ycm9//Ly6P/n593/kZGC/+Tk2v/x8ej/8fHo/+Xl
+        3/9+fo//PT1XbgAAAABsbH8uZmZ93rS0uv/19e7/9fXu/vX17v/U1Mv/n5+Q/6ysn//s7OT/9fXu/+vr
+        4/+cnI3/6Ojg//X17v/19e7/5+fj/4KCk/8/P1psAAAAAGhogS1paX/dt7e+//j48//39/L+9/fy//f3
+        8v/s7Ob/n5+R/9zc1P/39/L/7u7o/6Sklv/s7Ob/9/fy//f38v/p6ef/hoaX/z4+XGsAAAAAY2ODLG1t
+        g9y7u8L/+/v4//r69/7q6uT/vr6z/7y8sP+urqH/6urk/+7u6v+5ua3/oqKT//Dw6//6+vf/+vr3/+zs
+        6/+Kipv/PDxeaQAAAABfX4Urb2+G3L29xf/9/fv//Pz7/vj49v/n5+P/5OTf/+7u6v/7+/r//Pz7//b2
+        8//p6eX/+vr4//z8+//8/Pv/7e3u/42Nnv87O19nAAAAAFpaiCpyconbwMDJ//7+/v/+/v7+/v7+//7+
+        /v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/v7/H/kZGi/zk5YWYAAAAAVFSIKWxs
+        ktpaWt/+bW3y/mxs8f5sbPH/bGzx/2xs8f9sbPH/bGzx/2xs8f9sbPH/bGzx/2xs8f5sbPH+bGzx/mxs
+        8P5xcb7+NjZhZAAAAABOTogobW2V2lFR5v5bW/D+VFTq/lJS6P9SUuj/U1Pp/1xc8f9eXvL/Xl7y/15e
+        8v9eXvP/Xl7y/l5e8v5eXvL+YGDy/nBwxf40NGFjAAAAAElJhydwcJjZW1vr/oCA+f6oqPr+r6/2/6qq
+        8f+goO3/cHD1/2Zm9/9mZvf/Zmb3/2Zm9/9mZvf+Zmb3/mZm9/5qavb+dXXK/jIyYWEAAAAARESHJ3Jy
+        m9ljY+/+bGz4/ldX5f5YWOb/Xl7s/25u+v9ubvr/bm76/25u+v9ubvr/Z2f1/1ZW5P5VVeT+ZWXz/nNz
+        +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
+        AAAAAQAAAAEAAAABAAAAAQAA48cAAA==
+</value>
+  </data>
+</root>
