@@ -1,4 +1,6 @@
-﻿namespace BitLogicCalculator
+﻿using Krypton.Toolkit;
+
+namespace BitLogicCalculator
 {
 	partial class MainForm
 	{
@@ -29,333 +31,332 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
-			statusStrip = new StatusStrip();
-			toolStripStatusLabel = new ToolStripStatusLabel();
+			statusStrip = new KryptonStatusStrip();
+			labelInformation = new ToolStripStatusLabel();
 			toolTip = new ToolTip(components);
 			toolStripContainer = new ToolStripContainer();
 			groupBox1 = new GroupBox();
 			comboBoxConversionOutputUnit = new ComboBox();
 			comboBoxConversionInputUnit = new ComboBox();
-			textBoxConversionOutput = new TextBox();
-			textBoxConversionInput = new TextBox();
+			textBoxConversionOutput = new KryptonTextBox();
+			textBoxConversionInput = new KryptonTextBox();
 			groupBoxApplicationSettings = new GroupBox();
-			buttonAbout = new Button();
-			checkBoxFadeInOut = new CheckBox();
-			numericUpDownTransparency = new NumericUpDown();
-			checkBoxAlwaysOnTop = new CheckBox();
-			labelTransparency = new Label();
+			buttonAbout = new KryptonButton();
+			checkBoxFadeInOut = new KryptonCheckBox();
+			numericUpDownTransparency = new KryptonNumericUpDown();
+			checkBoxAlwaysOnTop = new KryptonCheckBox();
+			labelTransparency = new KryptonLabel();
 			groupBoxDataFormat = new GroupBox();
-			buttonStatistics = new Button();
-			buttonLsbSign = new Button();
+			buttonStatistics = new KryptonButton();
+			buttonLsbSign = new KryptonButton();
 			comboBoxDataSize = new ComboBox();
-			labelMsbRepresentation = new Label();
+			labelMsbRepresentation = new KryptonLabel();
 			comboBoxMsbRepresentation = new ComboBox();
-			labelDataSize = new Label();
+			labelDataSize = new KryptonLabel();
 			groupBoxOperations = new GroupBox();
-			buttonRotateRightWithCarryA2 = new Button();
-			buttonRotateLeftWithCarryA2 = new Button();
-			buttonRotateRightWithCarryA1 = new Button();
-			buttonRotateLeftWithCarryA1 = new Button();
+			buttonRotateRightWithCarryA2 = new KryptonButton();
+			buttonRotateLeftWithCarryA2 = new KryptonButton();
+			buttonRotateRightWithCarryA1 = new KryptonButton();
+			buttonRotateLeftWithCarryA1 = new KryptonButton();
 			groupBoxShiftIndicator = new GroupBox();
-			label1 = new Label();
-			numericUpDownShiftIndicator = new NumericUpDown();
-			buttonBitSwapA2 = new Button();
-			button1 = new Button();
-			buttonBitSwapA1 = new Button();
-			buttonTwosComponentA2 = new Button();
-			buttonNibbleSwapA2 = new Button();
-			buttonTwosComponentA1 = new Button();
-			buttonHalfSwapA2 = new Button();
-			buttonSubjunktionA2A1 = new Button();
-			buttonHalfSwapA1 = new Button();
-			buttonSubjunktionA1A2 = new Button();
-			buttonNibbleSwapA1 = new Button();
-			buttonInhibitionA2A1 = new Button();
-			buttonArithmeticShiftRightWithOneA2 = new Button();
-			buttonInhibitionA1A2 = new Button();
-			buttonRandomizeA2 = new Button();
-			buttonArithmeticShiftRightWithOneA1 = new Button();
-			buttonRandomizeA1 = new Button();
-			buttonShiftRightWithOneA2 = new Button();
-			buttonArithmeticShiftLeftWithOneA2 = new Button();
-			buttonShiftRightWithOneA1 = new Button();
-			buttonShiftLeftWithOneA2 = new Button();
-			buttonArithmeticShiftLeftWithOneA1 = new Button();
-			buttonShiftLeftWithOneA1 = new Button();
-			buttonSwapA1A2 = new Button();
-			buttonArithmeticShiftLeftWithZeroA2 = new Button();
-			buttonFillA2 = new Button();
-			buttonFillA1 = new Button();
-			buttonArithmeticShiftRightWithZeroA2 = new Button();
-			buttonClearA2 = new Button();
-			buttonClearA1 = new Button();
-			buttonArithmeticShiftLeftWithZeroA1 = new Button();
-			buttonArithmeticShiftRightWithZeroA1 = new Button();
-			buttonRevertA2 = new Button();
-			buttonRevertA1 = new Button();
-			buttonShiftLeftWithZeroA2 = new Button();
-			buttonShiftRightWithZeroA2 = new Button();
-			buttonRotateLeftA2 = new Button();
-			buttonRotateRightA2 = new Button();
-			buttonShiftLeftWithZeroA1 = new Button();
-			buttonShiftRightWithZeroA1 = new Button();
-			buttonRotateLeftA1 = new Button();
-			buttonRotateRightA1 = new Button();
-			buttonAdditionA1AndA2 = new Button();
-			buttonCopyResultToA2 = new Button();
-			buttonSubtractionA1AndA2 = new Button();
-			buttonCopyResultToA1 = new Button();
-			buttonMultiplicationA1AndA2 = new Button();
-			buttonLogicalXnorA1AndA2 = new Button();
-			buttonDivisionA1AndA2 = new Button();
-			buttonLogicalNorA1AndA2 = new Button();
-			buttonLogicalAndA1AndA2 = new Button();
-			buttonLogicalOrA1AndA2 = new Button();
-			buttonInvertA2 = new Button();
-			buttonLogicalXorA1AndA2 = new Button();
-			buttonInvertA1 = new Button();
+			label1 = new KryptonLabel();
+			numericUpDownShiftIndicator = new KryptonNumericUpDown();
+			buttonBitSwapA2 = new KryptonButton();
+			button1 = new KryptonButton();
+			buttonBitSwapA1 = new KryptonButton();
+			buttonTwosComponentA2 = new KryptonButton();
+			buttonNibbleSwapA2 = new KryptonButton();
+			buttonTwosComponentA1 = new KryptonButton();
+			buttonHalfSwapA2 = new KryptonButton();
+			buttonSubjunktionA2A1 = new KryptonButton();
+			buttonHalfSwapA1 = new KryptonButton();
+			buttonSubjunktionA1A2 = new KryptonButton();
+			buttonNibbleSwapA1 = new KryptonButton();
+			buttonInhibitionA2A1 = new KryptonButton();
+			buttonArithmeticShiftRightWithOneA2 = new KryptonButton();
+			buttonInhibitionA1A2 = new KryptonButton();
+			buttonRandomizeA2 = new KryptonButton();
+			buttonArithmeticShiftRightWithOneA1 = new KryptonButton();
+			buttonRandomizeA1 = new KryptonButton();
+			buttonShiftRightWithOneA2 = new KryptonButton();
+			buttonArithmeticShiftLeftWithOneA2 = new KryptonButton();
+			buttonShiftRightWithOneA1 = new KryptonButton();
+			buttonShiftLeftWithOneA2 = new KryptonButton();
+			buttonArithmeticShiftLeftWithOneA1 = new KryptonButton();
+			buttonShiftLeftWithOneA1 = new KryptonButton();
+			buttonSwapA1A2 = new KryptonButton();
+			buttonArithmeticShiftLeftWithZeroA2 = new KryptonButton();
+			buttonFillA2 = new KryptonButton();
+			buttonFillA1 = new KryptonButton();
+			buttonArithmeticShiftRightWithZeroA2 = new KryptonButton();
+			buttonClearA2 = new KryptonButton();
+			buttonClearA1 = new KryptonButton();
+			buttonArithmeticShiftLeftWithZeroA1 = new KryptonButton();
+			buttonArithmeticShiftRightWithZeroA1 = new KryptonButton();
+			buttonRevertA2 = new KryptonButton();
+			buttonRevertA1 = new KryptonButton();
+			buttonShiftLeftWithZeroA2 = new KryptonButton();
+			buttonShiftRightWithZeroA2 = new KryptonButton();
+			buttonRotateLeftA2 = new KryptonButton();
+			buttonRotateRightA2 = new KryptonButton();
+			buttonShiftLeftWithZeroA1 = new KryptonButton();
+			buttonShiftRightWithZeroA1 = new KryptonButton();
+			buttonRotateLeftA1 = new KryptonButton();
+			buttonRotateRightA1 = new KryptonButton();
+			buttonAdditionA1AndA2 = new KryptonButton();
+			buttonCopyResultToA2 = new KryptonButton();
+			buttonSubtractionA1AndA2 = new KryptonButton();
+			buttonCopyResultToA1 = new KryptonButton();
+			buttonMultiplicationA1AndA2 = new KryptonButton();
+			buttonLogicalXnorA1AndA2 = new KryptonButton();
+			buttonDivisionA1AndA2 = new KryptonButton();
+			buttonLogicalNorA1AndA2 = new KryptonButton();
+			buttonLogicalAndA1AndA2 = new KryptonButton();
+			buttonLogicalOrA1AndA2 = new KryptonButton();
+			buttonInvertA2 = new KryptonButton();
+			buttonLogicalXorA1AndA2 = new KryptonButton();
+			buttonInvertA1 = new KryptonButton();
 			groupBoxResult = new GroupBox();
-			textBoxResultOctal = new TextBox();
-			labelResultOctal = new Label();
-			maskedTextBoxResultNetwork = new MaskedTextBox();
-			labelResultNetwork = new Label();
-			textResultDecimal = new TextBox();
-			textBoxResultHexadecimal = new TextBox();
-			labelResultDecimal = new Label();
-			labelResultHexadecimal = new Label();
+			textBoxResultOctal = new KryptonTextBox();
+			labelResultOctal = new KryptonLabel();
+			maskedTextBoxResultNetwork = new KryptonMaskedTextBox();
+			labelResultNetwork = new KryptonLabel();
+			textResultDecimal = new KryptonTextBox();
+			textBoxResultHexadecimal = new KryptonTextBox();
+			labelResultDecimal = new KryptonLabel();
+			labelResultHexadecimal = new KryptonLabel();
 			groupBoxResultByte4 = new GroupBox();
-			labelResultBit31 = new Label();
-			checkBoxResultBit31 = new CheckBox();
-			checkBoxResultBit24 = new CheckBox();
-			labelResultBit24 = new Label();
-			checkBoxResultBit25 = new CheckBox();
-			labelResultBit30 = new Label();
-			labelResultBit25 = new Label();
-			checkBoxResultBit26 = new CheckBox();
-			checkBoxResultBit30 = new CheckBox();
-			labelResultBit26 = new Label();
-			labelResultBit29 = new Label();
-			checkBoxResultBit27 = new CheckBox();
-			checkBoxResultBit29 = new CheckBox();
-			labelResultBit27 = new Label();
-			labelResultBit28 = new Label();
-			checkBoxResultBit28 = new CheckBox();
+			labelResultBit31 = new KryptonLabel();
+			checkBoxResultBit31 = new KryptonCheckBox();
+			checkBoxResultBit24 = new KryptonCheckBox();
+			labelResultBit24 = new KryptonLabel();
+			checkBoxResultBit25 = new KryptonCheckBox();
+			labelResultBit30 = new KryptonLabel();
+			labelResultBit25 = new KryptonLabel();
+			checkBoxResultBit26 = new KryptonCheckBox();
+			checkBoxResultBit30 = new KryptonCheckBox();
+			labelResultBit26 = new KryptonLabel();
+			labelResultBit29 = new KryptonLabel();
+			checkBoxResultBit27 = new KryptonCheckBox();
+			checkBoxResultBit29 = new KryptonCheckBox();
+			labelResultBit27 = new KryptonLabel();
+			labelResultBit28 = new KryptonLabel();
+			checkBoxResultBit28 = new KryptonCheckBox();
 			groupBoxResultByte3 = new GroupBox();
-			checkBoxResultBit23 = new CheckBox();
-			checkBoxResultBit21 = new CheckBox();
-			labelResultBit21 = new Label();
-			labelResultBit20 = new Label();
-			checkBoxResultBit22 = new CheckBox();
-			checkBoxResultBit20 = new CheckBox();
-			labelResultBit22 = new Label();
-			labelResultBit19 = new Label();
-			checkBoxResultBit16 = new CheckBox();
-			checkBoxResultBit19 = new CheckBox();
-			labelResultBit23 = new Label();
-			labelResultBit18 = new Label();
-			labelResultBit16 = new Label();
-			checkBoxResultBit18 = new CheckBox();
-			labelResultBit17 = new Label();
-			checkBoxResultBit17 = new CheckBox();
+			checkBoxResultBit23 = new KryptonCheckBox();
+			checkBoxResultBit21 = new KryptonCheckBox();
+			labelResultBit21 = new KryptonLabel();
+			labelResultBit20 = new KryptonLabel();
+			checkBoxResultBit22 = new KryptonCheckBox();
+			checkBoxResultBit20 = new KryptonCheckBox();
+			labelResultBit22 = new KryptonLabel();
+			labelResultBit19 = new KryptonLabel();
+			checkBoxResultBit16 = new KryptonCheckBox();
+			checkBoxResultBit19 = new KryptonCheckBox();
+			labelResultBit23 = new KryptonLabel();
+			labelResultBit18 = new KryptonLabel();
+			labelResultBit16 = new KryptonLabel();
+			checkBoxResultBit18 = new KryptonCheckBox();
+			labelResultBit17 = new KryptonLabel();
+			checkBoxResultBit17 = new KryptonCheckBox();
 			groupBoxResultByte2 = new GroupBox();
-			checkBoxResultBit15 = new CheckBox();
-			checkBoxResultBit10 = new CheckBox();
-			labelResultBit10 = new Label();
-			labelResultBit09 = new Label();
-			checkBoxResultBit11 = new CheckBox();
-			checkBoxResultBit09 = new CheckBox();
-			labelResultBit11 = new Label();
-			labelResultBit15 = new Label();
-			labelResultBit08 = new Label();
-			checkBoxResultBit12 = new CheckBox();
-			checkBoxResultBit08 = new CheckBox();
-			labelResultBit12 = new Label();
-			checkBoxResultBit13 = new CheckBox();
-			labelResultBit13 = new Label();
-			checkBoxResultBit14 = new CheckBox();
-			labelResultBit14 = new Label();
+			checkBoxResultBit15 = new KryptonCheckBox();
+			checkBoxResultBit10 = new KryptonCheckBox();
+			labelResultBit10 = new KryptonLabel();
+			labelResultBit09 = new KryptonLabel();
+			checkBoxResultBit11 = new KryptonCheckBox();
+			checkBoxResultBit09 = new KryptonCheckBox();
+			labelResultBit11 = new KryptonLabel();
+			labelResultBit15 = new KryptonLabel();
+			labelResultBit08 = new KryptonLabel();
+			checkBoxResultBit12 = new KryptonCheckBox();
+			checkBoxResultBit08 = new KryptonCheckBox();
+			labelResultBit12 = new KryptonLabel();
+			checkBoxResultBit13 = new KryptonCheckBox();
+			labelResultBit13 = new KryptonLabel();
+			checkBoxResultBit14 = new KryptonCheckBox();
+			labelResultBit14 = new KryptonLabel();
 			groupBoxResultByte1 = new GroupBox();
-			labelResultBit07 = new Label();
-			checkBoxResultBit07 = new CheckBox();
-			labelResultBit06 = new Label();
-			checkBoxResultBit00 = new CheckBox();
-			checkBoxResultBit06 = new CheckBox();
-			labelResultBit00 = new Label();
-			labelResultBit05 = new Label();
-			checkBoxResultBit05 = new CheckBox();
-			checkBoxResultBit01 = new CheckBox();
-			labelResultBit04 = new Label();
-			checkBoxResultBit04 = new CheckBox();
-			labelResultBit01 = new Label();
-			labelResultBit03 = new Label();
-			checkBoxResultBit03 = new CheckBox();
-			checkBoxResultBit02 = new CheckBox();
-			labelResultBit02 = new Label();
+			labelResultBit07 = new KryptonLabel();
+			checkBoxResultBit07 = new KryptonCheckBox();
+			labelResultBit06 = new KryptonLabel();
+			checkBoxResultBit00 = new KryptonCheckBox();
+			checkBoxResultBit06 = new KryptonCheckBox();
+			labelResultBit00 = new KryptonLabel();
+			labelResultBit05 = new KryptonLabel();
+			checkBoxResultBit05 = new KryptonCheckBox();
+			checkBoxResultBit01 = new KryptonCheckBox();
+			labelResultBit04 = new KryptonLabel();
+			checkBoxResultBit04 = new KryptonCheckBox();
+			labelResultBit01 = new KryptonLabel();
+			labelResultBit03 = new KryptonLabel();
+			checkBoxResultBit03 = new KryptonCheckBox();
+			checkBoxResultBit02 = new KryptonCheckBox();
+			labelResultBit02 = new KryptonLabel();
 			groupBoxAccumulator2 = new GroupBox();
-			textBoxA2Octal = new TextBox();
-			labelA2Octal = new Label();
-			maskedTextBoxA2Network = new MaskedTextBox();
-			labelA2Network = new Label();
-			textBoxA2Decimal = new TextBox();
-			textBoxA2Hexadecimal = new TextBox();
-			labelA2Decimal = new Label();
-			labelA2Hexadecimal = new Label();
+			textBoxA2Octal = new KryptonTextBox();
+			labelA2Octal = new KryptonLabel();
+			maskedTextBoxA2Network = new KryptonMaskedTextBox();
+			labelA2Network = new KryptonLabel();
+			textBoxA2Decimal = new KryptonTextBox();
+			textBoxA2Hexadecimal = new KryptonTextBox();
+			labelA2Decimal = new KryptonLabel();
+			labelA2Hexadecimal = new KryptonLabel();
 			groupBoxA2Byte4 = new GroupBox();
-			labelA2Bit31 = new Label();
-			checkBoxA2Bit31 = new CheckBox();
-			checkBoxA2Bit24 = new CheckBox();
-			labelA2Bit24 = new Label();
-			checkBoxA2Bit25 = new CheckBox();
-			labelA2Bit30 = new Label();
-			labelA2Bit25 = new Label();
-			checkBoxA2Bit26 = new CheckBox();
-			checkBoxA2Bit30 = new CheckBox();
-			labelA2Bit26 = new Label();
-			labelA2Bit29 = new Label();
-			checkBoxA2Bit27 = new CheckBox();
-			checkBoxA2Bit29 = new CheckBox();
-			labelA2Bit27 = new Label();
-			labelA2Bit28 = new Label();
-			checkBoxA2Bit28 = new CheckBox();
+			labelA2Bit31 = new KryptonLabel();
+			checkBoxA2Bit31 = new KryptonCheckBox();
+			checkBoxA2Bit24 = new KryptonCheckBox();
+			labelA2Bit24 = new KryptonLabel();
+			checkBoxA2Bit25 = new KryptonCheckBox();
+			labelA2Bit30 = new KryptonLabel();
+			labelA2Bit25 = new KryptonLabel();
+			checkBoxA2Bit26 = new KryptonCheckBox();
+			checkBoxA2Bit30 = new KryptonCheckBox();
+			labelA2Bit26 = new KryptonLabel();
+			labelA2Bit29 = new KryptonLabel();
+			checkBoxA2Bit27 = new KryptonCheckBox();
+			checkBoxA2Bit29 = new KryptonCheckBox();
+			labelA2Bit27 = new KryptonLabel();
+			labelA2Bit28 = new KryptonLabel();
+			checkBoxA2Bit28 = new KryptonCheckBox();
 			groupBoxA2Byte3 = new GroupBox();
-			checkBoxA2Bit23 = new CheckBox();
-			checkBoxA2Bit21 = new CheckBox();
-			labelA2Bit21 = new Label();
-			labelA2Bit20 = new Label();
-			checkBoxA2Bit22 = new CheckBox();
-			checkBoxA2Bit20 = new CheckBox();
-			labelA2Bit22 = new Label();
-			labelA2Bit19 = new Label();
-			checkBoxA2Bit16 = new CheckBox();
-			checkBoxA2Bit19 = new CheckBox();
-			labelA2Bit23 = new Label();
-			labelA2Bit18 = new Label();
-			labelA2Bit16 = new Label();
-			checkBoxA2Bit18 = new CheckBox();
-			labelA2Bit17 = new Label();
-			checkBoxA2Bit17 = new CheckBox();
+			checkBoxA2Bit23 = new KryptonCheckBox();
+			checkBoxA2Bit21 = new KryptonCheckBox();
+			labelA2Bit21 = new KryptonLabel();
+			labelA2Bit20 = new KryptonLabel();
+			checkBoxA2Bit22 = new KryptonCheckBox();
+			checkBoxA2Bit20 = new KryptonCheckBox();
+			labelA2Bit22 = new KryptonLabel();
+			labelA2Bit19 = new KryptonLabel();
+			checkBoxA2Bit16 = new KryptonCheckBox();
+			checkBoxA2Bit19 = new KryptonCheckBox();
+			labelA2Bit23 = new KryptonLabel();
+			labelA2Bit18 = new KryptonLabel();
+			labelA2Bit16 = new KryptonLabel();
+			checkBoxA2Bit18 = new KryptonCheckBox();
+			labelA2Bit17 = new KryptonLabel();
+			checkBoxA2Bit17 = new KryptonCheckBox();
 			groupBoxA2Byte2 = new GroupBox();
-			checkBoxA2Bit15 = new CheckBox();
-			checkBoxA2Bit10 = new CheckBox();
-			labelA2Bit10 = new Label();
-			labelA2Bit09 = new Label();
-			checkBoxA2Bit11 = new CheckBox();
-			checkBoxA2Bit09 = new CheckBox();
-			labelA2Bit11 = new Label();
-			labelA2Bit15 = new Label();
-			labelA2Bit08 = new Label();
-			checkBoxA2Bit12 = new CheckBox();
-			checkBoxA2Bit08 = new CheckBox();
-			labelA2Bit12 = new Label();
-			checkBoxA2Bit13 = new CheckBox();
-			labelA2Bit13 = new Label();
-			checkBoxA2Bit14 = new CheckBox();
-			labelA2Bit14 = new Label();
+			checkBoxA2Bit15 = new KryptonCheckBox();
+			checkBoxA2Bit10 = new KryptonCheckBox();
+			labelA2Bit10 = new KryptonLabel();
+			labelA2Bit09 = new KryptonLabel();
+			checkBoxA2Bit11 = new KryptonCheckBox();
+			checkBoxA2Bit09 = new KryptonCheckBox();
+			labelA2Bit11 = new KryptonLabel();
+			labelA2Bit15 = new KryptonLabel();
+			labelA2Bit08 = new KryptonLabel();
+			checkBoxA2Bit12 = new KryptonCheckBox();
+			checkBoxA2Bit08 = new KryptonCheckBox();
+			labelA2Bit12 = new KryptonLabel();
+			checkBoxA2Bit13 = new KryptonCheckBox();
+			labelA2Bit13 = new KryptonLabel();
+			checkBoxA2Bit14 = new KryptonCheckBox();
+			labelA2Bit14 = new KryptonLabel();
 			groupBoxA2Byte1 = new GroupBox();
-			labelA2Bit07 = new Label();
-			checkBoxA2Bit07 = new CheckBox();
-			labelA2Bit06 = new Label();
-			checkBoxA2Bit00 = new CheckBox();
-			checkBoxA2Bit06 = new CheckBox();
-			labelA2Bit00 = new Label();
-			labelA2Bit05 = new Label();
-			checkBoxA2Bit05 = new CheckBox();
-			checkBoxA2Bit01 = new CheckBox();
-			labelA2Bit04 = new Label();
-			checkBoxA2Bit04 = new CheckBox();
-			labelA2Bit01 = new Label();
-			labelA2Bit03 = new Label();
-			checkBoxA2Bit03 = new CheckBox();
-			checkBoxA2Bit02 = new CheckBox();
-			labelA2Bit02 = new Label();
+			labelA2Bit07 = new KryptonLabel();
+			checkBoxA2Bit07 = new KryptonCheckBox();
+			labelA2Bit06 = new KryptonLabel();
+			checkBoxA2Bit00 = new KryptonCheckBox();
+			checkBoxA2Bit06 = new KryptonCheckBox();
+			labelA2Bit00 = new KryptonLabel();
+			labelA2Bit05 = new KryptonLabel();
+			checkBoxA2Bit05 = new KryptonCheckBox();
+			checkBoxA2Bit01 = new KryptonCheckBox();
+			labelA2Bit04 = new KryptonLabel();
+			checkBoxA2Bit04 = new KryptonCheckBox();
+			labelA2Bit01 = new KryptonLabel();
+			labelA2Bit03 = new KryptonLabel();
+			checkBoxA2Bit03 = new KryptonCheckBox();
+			checkBoxA2Bit02 = new KryptonCheckBox();
+			labelA2Bit02 = new KryptonLabel();
 			groupBoxAccumulator1 = new GroupBox();
-			textBoxA1Octal = new TextBox();
-			labelA1Octal = new Label();
-			maskedTextBoxA1Network = new MaskedTextBox();
-			labelA1Network = new Label();
-			textBoxA1Decimal = new TextBox();
-			textBoxA1Hexadecimal = new TextBox();
-			labelA1Decimal = new Label();
-			labelA1Hexadecimal = new Label();
+			textBoxA1Octal = new KryptonTextBox();
+			labelA1Octal = new KryptonLabel();
+			maskedTextBoxA1Network = new KryptonMaskedTextBox();
+			labelA1Network = new KryptonLabel();
+			textBoxA1Decimal = new KryptonTextBox();
+			textBoxA1Hexadecimal = new KryptonTextBox();
+			labelA1Decimal = new KryptonLabel();
+			labelA1Hexadecimal = new KryptonLabel();
 			groupBoxA1Byte4 = new GroupBox();
-			labelA1Bit31 = new Label();
-			checkBoxA1Bit31 = new CheckBox();
-			checkBoxA1Bit24 = new CheckBox();
-			labelA1Bit24 = new Label();
-			checkBoxA1Bit25 = new CheckBox();
-			labelA1Bit30 = new Label();
-			labelA1Bit25 = new Label();
-			checkBoxA1Bit26 = new CheckBox();
-			checkBoxA1Bit30 = new CheckBox();
-			labelA1Bit26 = new Label();
-			labelA1Bit29 = new Label();
-			checkBoxA1Bit27 = new CheckBox();
-			checkBoxA1Bit29 = new CheckBox();
-			labelA1Bit27 = new Label();
-			labelA1Bit28 = new Label();
-			checkBoxA1Bit28 = new CheckBox();
+			labelA1Bit31 = new KryptonLabel();
+			checkBoxA1Bit31 = new KryptonCheckBox();
+			checkBoxA1Bit24 = new KryptonCheckBox();
+			labelA1Bit24 = new KryptonLabel();
+			checkBoxA1Bit25 = new KryptonCheckBox();
+			labelA1Bit30 = new KryptonLabel();
+			labelA1Bit25 = new KryptonLabel();
+			checkBoxA1Bit26 = new KryptonCheckBox();
+			checkBoxA1Bit30 = new KryptonCheckBox();
+			labelA1Bit26 = new KryptonLabel();
+			labelA1Bit29 = new KryptonLabel();
+			checkBoxA1Bit27 = new KryptonCheckBox();
+			checkBoxA1Bit29 = new KryptonCheckBox();
+			labelA1Bit27 = new KryptonLabel();
+			labelA1Bit28 = new KryptonLabel();
+			checkBoxA1Bit28 = new KryptonCheckBox();
 			groupBoxA1Byte3 = new GroupBox();
-			checkBoxA1Bit23 = new CheckBox();
-			checkBoxA1Bit21 = new CheckBox();
-			labelA1Bit21 = new Label();
-			labelA1Bit20 = new Label();
-			checkBoxA1Bit22 = new CheckBox();
-			checkBoxA1Bit20 = new CheckBox();
-			labelA1Bit22 = new Label();
-			labelA1Bit19 = new Label();
-			checkBoxA1Bit16 = new CheckBox();
-			checkBoxA1Bit19 = new CheckBox();
-			labelA1Bit23 = new Label();
-			labelA1Bit18 = new Label();
-			labelA1Bit16 = new Label();
-			checkBoxA1Bit18 = new CheckBox();
-			labelA1Bit17 = new Label();
-			checkBoxA1Bit17 = new CheckBox();
+			checkBoxA1Bit23 = new KryptonCheckBox();
+			checkBoxA1Bit21 = new KryptonCheckBox();
+			labelA1Bit21 = new KryptonLabel();
+			labelA1Bit20 = new KryptonLabel();
+			checkBoxA1Bit22 = new KryptonCheckBox();
+			checkBoxA1Bit20 = new KryptonCheckBox();
+			labelA1Bit22 = new KryptonLabel();
+			labelA1Bit19 = new KryptonLabel();
+			checkBoxA1Bit16 = new KryptonCheckBox();
+			checkBoxA1Bit19 = new KryptonCheckBox();
+			labelA1Bit23 = new KryptonLabel();
+			labelA1Bit18 = new KryptonLabel();
+			labelA1Bit16 = new KryptonLabel();
+			checkBoxA1Bit18 = new KryptonCheckBox();
+			labelA1Bit17 = new KryptonLabel();
+			checkBoxA1Bit17 = new KryptonCheckBox();
 			groupBoxA1Byte2 = new GroupBox();
-			checkBoxA1Bit15 = new CheckBox();
-			checkBoxA1Bit10 = new CheckBox();
-			labelA1Bit10 = new Label();
-			labelA1Bit09 = new Label();
-			checkBoxA1Bit11 = new CheckBox();
-			checkBoxA1Bit09 = new CheckBox();
-			labelA1Bit11 = new Label();
-			labelA1Bit15 = new Label();
-			labelA1Bit08 = new Label();
-			checkBoxA1Bit12 = new CheckBox();
-			checkBoxA1Bit08 = new CheckBox();
-			labelA1Bit12 = new Label();
-			checkBoxA1Bit13 = new CheckBox();
-			labelA1Bit13 = new Label();
-			checkBoxA1Bit14 = new CheckBox();
-			labelA1Bit14 = new Label();
+			checkBoxA1Bit15 = new KryptonCheckBox();
+			checkBoxA1Bit10 = new KryptonCheckBox();
+			labelA1Bit10 = new KryptonLabel();
+			labelA1Bit09 = new KryptonLabel();
+			checkBoxA1Bit11 = new KryptonCheckBox();
+			checkBoxA1Bit09 = new KryptonCheckBox();
+			labelA1Bit11 = new KryptonLabel();
+			labelA1Bit15 = new KryptonLabel();
+			labelA1Bit08 = new KryptonLabel();
+			checkBoxA1Bit12 = new KryptonCheckBox();
+			checkBoxA1Bit08 = new KryptonCheckBox();
+			labelA1Bit12 = new KryptonLabel();
+			checkBoxA1Bit13 = new KryptonCheckBox();
+			labelA1Bit13 = new KryptonLabel();
+			checkBoxA1Bit14 = new KryptonCheckBox();
+			labelA1Bit14 = new KryptonLabel();
 			groupBoxA1Byte1 = new GroupBox();
-			labelA1Bit07 = new Label();
-			checkBoxA1Bit07 = new CheckBox();
-			labelA1Bit06 = new Label();
-			checkBoxA1Bit00 = new CheckBox();
-			checkBoxA1Bit06 = new CheckBox();
-			labelA1Bit00 = new Label();
-			labelA1Bit05 = new Label();
-			checkBoxA1Bit05 = new CheckBox();
-			checkBoxA1Bit01 = new CheckBox();
-			labelA1Bit04 = new Label();
-			checkBoxA1Bit04 = new CheckBox();
-			labelA1Bit01 = new Label();
-			labelA1Bit03 = new Label();
-			checkBoxA1Bit03 = new CheckBox();
-			checkBoxA1Bit02 = new CheckBox();
-			labelA1Bit02 = new Label();
+			labelA1Bit07 = new KryptonLabel();
+			checkBoxA1Bit07 = new KryptonCheckBox();
+			labelA1Bit06 = new KryptonLabel();
+			checkBoxA1Bit00 = new KryptonCheckBox();
+			checkBoxA1Bit06 = new KryptonCheckBox();
+			labelA1Bit00 = new KryptonLabel();
+			labelA1Bit05 = new KryptonLabel();
+			checkBoxA1Bit05 = new KryptonCheckBox();
+			checkBoxA1Bit01 = new KryptonCheckBox();
+			labelA1Bit04 = new KryptonLabel();
+			checkBoxA1Bit04 = new KryptonCheckBox();
+			labelA1Bit01 = new KryptonLabel();
+			labelA1Bit03 = new KryptonLabel();
+			checkBoxA1Bit03 = new KryptonCheckBox();
+			checkBoxA1Bit02 = new KryptonCheckBox();
+			labelA1Bit02 = new KryptonLabel();
+			kryptonManager = new KryptonManager(components);
 			statusStrip.SuspendLayout();
 			toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			toolStripContainer.ContentPanel.SuspendLayout();
 			toolStripContainer.SuspendLayout();
 			groupBox1.SuspendLayout();
 			groupBoxApplicationSettings.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)numericUpDownTransparency).BeginInit();
 			groupBoxDataFormat.SuspendLayout();
 			groupBoxOperations.SuspendLayout();
 			groupBoxShiftIndicator.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)numericUpDownShiftIndicator).BeginInit();
 			groupBoxResult.SuspendLayout();
 			groupBoxResultByte4.SuspendLayout();
 			groupBoxResultByte3.SuspendLayout();
@@ -376,19 +377,22 @@
 			// statusStrip
 			// 
 			statusStrip.Dock = DockStyle.None;
-			statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel });
+			statusStrip.Font = new Font("Segoe UI", 9F);
+			statusStrip.Items.AddRange(new ToolStripItem[] { labelInformation });
 			statusStrip.Location = new Point(0, 0);
 			statusStrip.Name = "statusStrip";
+			statusStrip.ProgressBars = null;
+			statusStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
 			statusStrip.Size = new Size(1356, 22);
 			statusStrip.SizingGrip = false;
 			statusStrip.TabIndex = 0;
 			statusStrip.Text = "statusStrip";
 			// 
-			// toolStripStatusLabel
+			// labelInformation
 			// 
-			toolStripStatusLabel.Name = "toolStripStatusLabel";
-			toolStripStatusLabel.Size = new Size(93, 17);
-			toolStripStatusLabel.Text = "information text";
+			labelInformation.Name = "labelInformation";
+			labelInformation.Size = new Size(93, 17);
+			labelInformation.Text = "information text";
 			// 
 			// toolStripContainer
 			// 
@@ -443,6 +447,10 @@
 			comboBoxConversionOutputUnit.Size = new Size(80, 23);
 			comboBoxConversionOutputUnit.TabIndex = 75;
 			comboBoxConversionOutputUnit.SelectedIndexChanged += ComboBoxConversionOutputUnit_SelectedIndexChanged;
+			comboBoxConversionOutputUnit.Enter += Control_Enter;
+			comboBoxConversionOutputUnit.Leave += Control_Leave;
+			comboBoxConversionOutputUnit.MouseEnter += Control_Enter;
+			comboBoxConversionOutputUnit.MouseLeave += Control_Leave;
 			// 
 			// comboBoxConversionInputUnit
 			// 
@@ -455,16 +463,23 @@
 			comboBoxConversionInputUnit.Size = new Size(80, 23);
 			comboBoxConversionInputUnit.TabIndex = 74;
 			comboBoxConversionInputUnit.SelectedIndexChanged += ComboBoxConversionInputUnit_SelectedIndexChanged;
+			comboBoxConversionInputUnit.Enter += Control_Enter;
+			comboBoxConversionInputUnit.Leave += Control_Leave;
+			comboBoxConversionInputUnit.MouseEnter += Control_Enter;
+			comboBoxConversionInputUnit.MouseLeave += Control_Leave;
 			// 
 			// textBoxConversionOutput
 			// 
-			textBoxConversionOutput.BackColor = SystemColors.Info;
 			textBoxConversionOutput.Location = new Point(7, 47);
 			textBoxConversionOutput.Margin = new Padding(4, 3, 4, 3);
 			textBoxConversionOutput.Name = "textBoxConversionOutput";
 			textBoxConversionOutput.Size = new Size(90, 23);
 			textBoxConversionOutput.TabIndex = 73;
 			textBoxConversionOutput.TextChanged += TextBoxConversionOutput_TextChanged;
+			textBoxConversionOutput.Enter += Control_Enter;
+			textBoxConversionOutput.Leave += Control_Leave;
+			textBoxConversionOutput.MouseEnter += Control_Enter;
+			textBoxConversionOutput.MouseLeave += Control_Leave;
 			// 
 			// textBoxConversionInput
 			// 
@@ -474,6 +489,10 @@
 			textBoxConversionInput.Size = new Size(90, 23);
 			textBoxConversionInput.TabIndex = 72;
 			textBoxConversionInput.TextChanged += TextBoxConversionInput_TextChanged;
+			textBoxConversionInput.Enter += Control_Enter;
+			textBoxConversionInput.Leave += Control_Leave;
+			textBoxConversionInput.MouseEnter += Control_Enter;
+			textBoxConversionInput.MouseLeave += Control_Leave;
 			// 
 			// groupBoxApplicationSettings
 			// 
@@ -499,56 +518,71 @@
 			buttonAbout.Name = "buttonAbout";
 			buttonAbout.Size = new Size(88, 27);
 			buttonAbout.TabIndex = 92;
-			buttonAbout.Text = "About...";
-			buttonAbout.UseVisualStyleBackColor = true;
+			buttonAbout.Values.DropDownArrowColor = Color.Empty;
+			buttonAbout.Values.Text = "About...";
 			buttonAbout.Click += ButtonAbout_Click;
+			buttonAbout.Enter += Control_Enter;
+			buttonAbout.Leave += Control_Leave;
+			buttonAbout.MouseEnter += Control_Enter;
+			buttonAbout.MouseLeave += Control_Leave;
 			// 
 			// checkBoxFadeInOut
 			// 
-			checkBoxFadeInOut.AutoSize = true;
-			checkBoxFadeInOut.BackColor = Color.Transparent;
 			checkBoxFadeInOut.Location = new Point(10, 47);
 			checkBoxFadeInOut.Margin = new Padding(4, 3, 4, 3);
 			checkBoxFadeInOut.Name = "checkBoxFadeInOut";
-			checkBoxFadeInOut.Size = new Size(113, 19);
+			checkBoxFadeInOut.Size = new Size(113, 20);
 			checkBoxFadeInOut.TabIndex = 91;
-			checkBoxFadeInOut.Text = "Fade in/fade out";
-			checkBoxFadeInOut.UseVisualStyleBackColor = false;
+			checkBoxFadeInOut.Values.Text = "Fade in/fade out";
 			checkBoxFadeInOut.CheckedChanged += CheckBoxFadeInOut_CheckedChanged;
+			checkBoxFadeInOut.Enter += Control_Enter;
+			checkBoxFadeInOut.Leave += Control_Leave;
+			checkBoxFadeInOut.MouseEnter += Control_Enter;
+			checkBoxFadeInOut.MouseLeave += Control_Leave;
 			// 
 			// numericUpDownTransparency
 			// 
+			numericUpDownTransparency.Increment = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDownTransparency.Location = new Point(112, 22);
 			numericUpDownTransparency.Margin = new Padding(4, 3, 4, 3);
+			numericUpDownTransparency.Maximum = new decimal(new int[] { 100, 0, 0, 0 });
+			numericUpDownTransparency.Minimum = new decimal(new int[] { 0, 0, 0, 0 });
 			numericUpDownTransparency.Name = "numericUpDownTransparency";
-			numericUpDownTransparency.Size = new Size(48, 23);
+			numericUpDownTransparency.Size = new Size(48, 22);
+			numericUpDownTransparency.StateCommon.Content.TextH = PaletteRelativeAlign.Far;
 			numericUpDownTransparency.TabIndex = 91;
-			numericUpDownTransparency.TextAlign = HorizontalAlignment.Right;
 			numericUpDownTransparency.Value = new decimal(new int[] { 100, 0, 0, 0 });
+			numericUpDownTransparency.Enter += Control_Enter;
+			numericUpDownTransparency.Leave += Control_Leave;
+			numericUpDownTransparency.MouseEnter += Control_Enter;
+			numericUpDownTransparency.MouseLeave += Control_Leave;
 			// 
 			// checkBoxAlwaysOnTop
 			// 
-			checkBoxAlwaysOnTop.AutoSize = true;
-			checkBoxAlwaysOnTop.BackColor = Color.Transparent;
 			checkBoxAlwaysOnTop.Location = new Point(173, 23);
 			checkBoxAlwaysOnTop.Margin = new Padding(4, 3, 4, 3);
 			checkBoxAlwaysOnTop.Name = "checkBoxAlwaysOnTop";
-			checkBoxAlwaysOnTop.Size = new Size(101, 19);
+			checkBoxAlwaysOnTop.Size = new Size(101, 20);
 			checkBoxAlwaysOnTop.TabIndex = 2;
-			checkBoxAlwaysOnTop.Text = "Always on top";
-			checkBoxAlwaysOnTop.UseVisualStyleBackColor = false;
+			checkBoxAlwaysOnTop.Values.Text = "Always on top";
 			checkBoxAlwaysOnTop.CheckedChanged += CheckBoxAlwaysOnTop_CheckedChanged;
+			checkBoxAlwaysOnTop.Enter += Control_Enter;
+			checkBoxAlwaysOnTop.Leave += Control_Leave;
+			checkBoxAlwaysOnTop.MouseEnter += Control_Enter;
+			checkBoxAlwaysOnTop.MouseLeave += Control_Leave;
 			// 
 			// labelTransparency
 			// 
-			labelTransparency.AutoSize = true;
-			labelTransparency.BackColor = Color.Transparent;
 			labelTransparency.Location = new Point(7, 24);
 			labelTransparency.Margin = new Padding(4, 0, 4, 0);
 			labelTransparency.Name = "labelTransparency";
-			labelTransparency.Size = new Size(100, 15);
+			labelTransparency.Size = new Size(106, 20);
 			labelTransparency.TabIndex = 1;
-			labelTransparency.Text = "Transparency (%):";
+			labelTransparency.Values.Text = "Transparency (%):";
+			labelTransparency.Enter += Control_Enter;
+			labelTransparency.Leave += Control_Leave;
+			labelTransparency.MouseEnter += Control_Enter;
+			labelTransparency.MouseLeave += Control_Leave;
 			// 
 			// groupBoxDataFormat
 			// 
@@ -575,9 +609,13 @@
 			buttonStatistics.Name = "buttonStatistics";
 			buttonStatistics.Size = new Size(66, 27);
 			buttonStatistics.TabIndex = 10;
-			buttonStatistics.Text = "Statistics";
-			buttonStatistics.UseVisualStyleBackColor = true;
+			buttonStatistics.Values.DropDownArrowColor = Color.Empty;
+			buttonStatistics.Values.Text = "Statistics";
 			buttonStatistics.Click += ButtonStatistics_Click;
+			buttonStatistics.Enter += Control_Enter;
+			buttonStatistics.Leave += Control_Leave;
+			buttonStatistics.MouseEnter += Control_Enter;
+			buttonStatistics.MouseLeave += Control_Leave;
 			// 
 			// buttonLsbSign
 			// 
@@ -587,9 +625,13 @@
 			buttonLsbSign.Name = "buttonLsbSign";
 			buttonLsbSign.Size = new Size(66, 27);
 			buttonLsbSign.TabIndex = 8;
-			buttonLsbSign.Text = "LSB: 0";
-			buttonLsbSign.UseVisualStyleBackColor = true;
+			buttonLsbSign.Values.DropDownArrowColor = Color.Empty;
+			buttonLsbSign.Values.Text = "LSB: 0";
 			buttonLsbSign.Click += ButtonLsbSign_Click;
+			buttonLsbSign.Enter += Control_Enter;
+			buttonLsbSign.Leave += Control_Leave;
+			buttonLsbSign.MouseEnter += Control_Enter;
+			buttonLsbSign.MouseLeave += Control_Leave;
 			// 
 			// comboBoxDataSize
 			// 
@@ -602,17 +644,23 @@
 			comboBoxDataSize.Size = new Size(98, 23);
 			comboBoxDataSize.TabIndex = 9;
 			comboBoxDataSize.SelectedIndexChanged += ComboBoxDataSize_SelectedIndexChanged;
+			comboBoxDataSize.Enter += Control_Enter;
+			comboBoxDataSize.Leave += Control_Leave;
+			comboBoxDataSize.MouseEnter += Control_Enter;
+			comboBoxDataSize.MouseLeave += Control_Leave;
 			// 
 			// labelMsbRepresentation
 			// 
-			labelMsbRepresentation.AutoSize = true;
-			labelMsbRepresentation.BackColor = Color.Transparent;
 			labelMsbRepresentation.Location = new Point(7, 46);
 			labelMsbRepresentation.Margin = new Padding(4, 0, 4, 0);
 			labelMsbRepresentation.Name = "labelMsbRepresentation";
-			labelMsbRepresentation.Size = new Size(64, 15);
+			labelMsbRepresentation.Size = new Size(69, 20);
 			labelMsbRepresentation.TabIndex = 8;
-			labelMsbRepresentation.Text = "MSB Repr.:";
+			labelMsbRepresentation.Values.Text = "MSB Repr.:";
+			labelMsbRepresentation.Enter += Control_Enter;
+			labelMsbRepresentation.Leave += Control_Leave;
+			labelMsbRepresentation.MouseEnter += Control_Enter;
+			labelMsbRepresentation.MouseLeave += Control_Leave;
 			// 
 			// comboBoxMsbRepresentation
 			// 
@@ -625,17 +673,23 @@
 			comboBoxMsbRepresentation.Size = new Size(98, 23);
 			comboBoxMsbRepresentation.TabIndex = 7;
 			comboBoxMsbRepresentation.SelectedIndexChanged += ComboBoxMsbRepresentation_SelectedIndexChanged;
+			comboBoxMsbRepresentation.Enter += Control_Enter;
+			comboBoxMsbRepresentation.Leave += Control_Leave;
+			comboBoxMsbRepresentation.MouseEnter += Control_Enter;
+			comboBoxMsbRepresentation.MouseLeave += Control_Leave;
 			// 
 			// labelDataSize
 			// 
-			labelDataSize.AutoSize = true;
-			labelDataSize.BackColor = Color.Transparent;
 			labelDataSize.Location = new Point(7, 18);
 			labelDataSize.Margin = new Padding(4, 0, 4, 0);
 			labelDataSize.Name = "labelDataSize";
-			labelDataSize.Size = new Size(56, 15);
+			labelDataSize.Size = new Size(62, 20);
 			labelDataSize.TabIndex = 6;
-			labelDataSize.Text = "Data size:";
+			labelDataSize.Values.Text = "Data size:";
+			labelDataSize.Enter += Control_Enter;
+			labelDataSize.Leave += Control_Leave;
+			labelDataSize.MouseEnter += Control_Enter;
+			labelDataSize.MouseLeave += Control_Leave;
 			// 
 			// groupBoxOperations
 			// 
@@ -713,100 +767,128 @@
 			// 
 			buttonRotateRightWithCarryA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightWithCarryA2.Enabled = false;
-			buttonRotateRightWithCarryA2.Location = new Point(399, 392);
+			buttonRotateRightWithCarryA2.Location = new Point(401, 391);
 			buttonRotateRightWithCarryA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightWithCarryA2.Name = "buttonRotateRightWithCarryA2";
 			buttonRotateRightWithCarryA2.Size = new Size(91, 27);
 			buttonRotateRightWithCarryA2.TabIndex = 134;
-			buttonRotateRightWithCarryA2.Text = "RORC1 A2";
-			buttonRotateRightWithCarryA2.UseVisualStyleBackColor = true;
+			buttonRotateRightWithCarryA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateRightWithCarryA2.Values.Text = "RORC1 A2";
 			buttonRotateRightWithCarryA2.Click += ButtonRotateRightWithCarryA2_Click;
+			buttonRotateRightWithCarryA2.Enter += Control_Enter;
+			buttonRotateRightWithCarryA2.Leave += Control_Leave;
+			buttonRotateRightWithCarryA2.MouseEnter += Control_Enter;
+			buttonRotateRightWithCarryA2.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateLeftWithCarryA2
 			// 
 			buttonRotateLeftWithCarryA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftWithCarryA2.Enabled = false;
-			buttonRotateLeftWithCarryA2.Location = new Point(399, 359);
+			buttonRotateLeftWithCarryA2.Location = new Point(401, 358);
 			buttonRotateLeftWithCarryA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftWithCarryA2.Name = "buttonRotateLeftWithCarryA2";
 			buttonRotateLeftWithCarryA2.Size = new Size(91, 27);
 			buttonRotateLeftWithCarryA2.TabIndex = 132;
-			buttonRotateLeftWithCarryA2.Text = "ROLC1 A2";
-			buttonRotateLeftWithCarryA2.UseVisualStyleBackColor = true;
+			buttonRotateLeftWithCarryA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateLeftWithCarryA2.Values.Text = "ROLC1 A2";
 			buttonRotateLeftWithCarryA2.Click += ButtonRotateLeftWithCarryA2_Click;
+			buttonRotateLeftWithCarryA2.Enter += Control_Enter;
+			buttonRotateLeftWithCarryA2.Leave += Control_Leave;
+			buttonRotateLeftWithCarryA2.MouseEnter += Control_Enter;
+			buttonRotateLeftWithCarryA2.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateRightWithCarryA1
 			// 
 			buttonRotateRightWithCarryA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightWithCarryA1.Enabled = false;
-			buttonRotateRightWithCarryA1.Location = new Point(301, 392);
+			buttonRotateRightWithCarryA1.Location = new Point(303, 391);
 			buttonRotateRightWithCarryA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightWithCarryA1.Name = "buttonRotateRightWithCarryA1";
 			buttonRotateRightWithCarryA1.Size = new Size(91, 27);
 			buttonRotateRightWithCarryA1.TabIndex = 130;
-			buttonRotateRightWithCarryA1.Text = "RORC1 A1";
-			buttonRotateRightWithCarryA1.UseVisualStyleBackColor = true;
+			buttonRotateRightWithCarryA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateRightWithCarryA1.Values.Text = "RORC1 A1";
 			buttonRotateRightWithCarryA1.Click += ButtonRotateRightWithCarryA1_Click;
+			buttonRotateRightWithCarryA1.Enter += Control_Enter;
+			buttonRotateRightWithCarryA1.Leave += Control_Leave;
+			buttonRotateRightWithCarryA1.MouseEnter += Control_Enter;
+			buttonRotateRightWithCarryA1.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateLeftWithCarryA1
 			// 
 			buttonRotateLeftWithCarryA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftWithCarryA1.Enabled = false;
-			buttonRotateLeftWithCarryA1.Location = new Point(301, 359);
+			buttonRotateLeftWithCarryA1.Location = new Point(303, 358);
 			buttonRotateLeftWithCarryA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftWithCarryA1.Name = "buttonRotateLeftWithCarryA1";
 			buttonRotateLeftWithCarryA1.Size = new Size(91, 27);
 			buttonRotateLeftWithCarryA1.TabIndex = 128;
-			buttonRotateLeftWithCarryA1.Text = "ROLC1 A1";
-			buttonRotateLeftWithCarryA1.UseVisualStyleBackColor = true;
+			buttonRotateLeftWithCarryA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateLeftWithCarryA1.Values.Text = "ROLC1 A1";
 			buttonRotateLeftWithCarryA1.Click += ButtonRotateLeftWithCarryA1_Click;
+			buttonRotateLeftWithCarryA1.Enter += Control_Enter;
+			buttonRotateLeftWithCarryA1.Leave += Control_Leave;
+			buttonRotateLeftWithCarryA1.MouseEnter += Control_Enter;
+			buttonRotateLeftWithCarryA1.MouseLeave += Control_Leave;
 			// 
 			// groupBoxShiftIndicator
 			// 
 			groupBoxShiftIndicator.Controls.Add(label1);
 			groupBoxShiftIndicator.Controls.Add(numericUpDownShiftIndicator);
-			groupBoxShiftIndicator.Location = new Point(301, 426);
+			groupBoxShiftIndicator.Location = new Point(303, 426);
 			groupBoxShiftIndicator.Margin = new Padding(4, 3, 4, 3);
 			groupBoxShiftIndicator.Name = "groupBoxShiftIndicator";
 			groupBoxShiftIndicator.Padding = new Padding(4, 3, 4, 3);
-			groupBoxShiftIndicator.Size = new Size(189, 60);
+			groupBoxShiftIndicator.Size = new Size(187, 60);
 			groupBoxShiftIndicator.TabIndex = 126;
 			groupBoxShiftIndicator.TabStop = false;
 			groupBoxShiftIndicator.Text = "Shift indicator";
+			groupBoxShiftIndicator.Enter += Control_Enter;
+			groupBoxShiftIndicator.Leave += Control_Leave;
 			// 
 			// label1
 			// 
-			label1.Font = new Font("Microsoft Sans Serif", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
 			label1.Location = new Point(62, 12);
 			label1.Margin = new Padding(4, 0, 4, 0);
 			label1.Name = "label1";
-			label1.Size = new Size(120, 45);
+			label1.Size = new Size(358, 45);
 			label1.TabIndex = 93;
-			label1.Text = "Defines the number of bit positions for all shifting and rotations";
+			label1.Values.Text = "Defines the number of bit positions for all shifting and rotations";
+			label1.Enter += Control_Enter;
+			label1.Leave += Control_Leave;
+			label1.MouseEnter += Control_Enter;
+			label1.MouseLeave += Control_Leave;
 			// 
 			// numericUpDownShiftIndicator
 			// 
+			numericUpDownShiftIndicator.Increment = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDownShiftIndicator.Location = new Point(7, 22);
 			numericUpDownShiftIndicator.Margin = new Padding(4, 3, 4, 3);
 			numericUpDownShiftIndicator.Maximum = new decimal(new int[] { 31, 0, 0, 0 });
 			numericUpDownShiftIndicator.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDownShiftIndicator.Name = "numericUpDownShiftIndicator";
-			numericUpDownShiftIndicator.Size = new Size(48, 23);
+			numericUpDownShiftIndicator.Size = new Size(48, 22);
+			numericUpDownShiftIndicator.StateCommon.Content.TextH = PaletteRelativeAlign.Far;
 			numericUpDownShiftIndicator.TabIndex = 92;
-			numericUpDownShiftIndicator.TextAlign = HorizontalAlignment.Right;
 			numericUpDownShiftIndicator.Value = new decimal(new int[] { 1, 0, 0, 0 });
+			numericUpDownShiftIndicator.MouseEnter += Control_Enter;
+			numericUpDownShiftIndicator.MouseLeave += Control_Leave;
 			// 
 			// buttonBitSwapA2
 			// 
 			buttonBitSwapA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonBitSwapA2.Location = new Point(203, 91);
+			buttonBitSwapA2.Location = new Point(204, 91);
 			buttonBitSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonBitSwapA2.Name = "buttonBitSwapA2";
 			buttonBitSwapA2.Size = new Size(91, 27);
 			buttonBitSwapA2.TabIndex = 125;
-			buttonBitSwapA2.Text = "BITSWP A2";
-			buttonBitSwapA2.UseVisualStyleBackColor = true;
+			buttonBitSwapA2.Values.DropDownArrowColor = Color.Empty;
+			buttonBitSwapA2.Values.Text = "BITSWP A2";
 			buttonBitSwapA2.Click += ButtonBitSwapA2_Click;
+			buttonBitSwapA2.Enter += Control_Enter;
+			buttonBitSwapA2.Leave += Control_Leave;
+			buttonBitSwapA2.MouseEnter += Control_Enter;
+			buttonBitSwapA2.MouseLeave += Control_Leave;
 			// 
 			// button1
 			// 
@@ -816,491 +898,655 @@
 			button1.Name = "button1";
 			button1.Size = new Size(91, 27);
 			button1.TabIndex = 113;
-			button1.Text = "A1 NAND A2";
-			button1.UseVisualStyleBackColor = true;
+			button1.Values.DropDownArrowColor = Color.Empty;
+			button1.Values.Text = "A1 NAND A2";
 			button1.Click += ButtonLogicalNandA1AndA2_Click_Click;
+			button1.Enter += Control_Enter;
+			button1.Leave += Control_Leave;
+			button1.MouseEnter += Control_Enter;
+			button1.MouseLeave += Control_Leave;
 			// 
 			// buttonBitSwapA1
 			// 
 			buttonBitSwapA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonBitSwapA1.Location = new Point(105, 91);
+			buttonBitSwapA1.Location = new Point(106, 91);
 			buttonBitSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonBitSwapA1.Name = "buttonBitSwapA1";
 			buttonBitSwapA1.Size = new Size(91, 27);
 			buttonBitSwapA1.TabIndex = 124;
-			buttonBitSwapA1.Text = "BITSWP A1";
-			buttonBitSwapA1.UseVisualStyleBackColor = true;
+			buttonBitSwapA1.Values.DropDownArrowColor = Color.Empty;
+			buttonBitSwapA1.Values.Text = "BITSWP A1";
 			buttonBitSwapA1.Click += ButtonBitSwapA1_Click;
+			buttonBitSwapA1.Enter += Control_Enter;
+			buttonBitSwapA1.Leave += Control_Leave;
+			buttonBitSwapA1.MouseEnter += Control_Enter;
+			buttonBitSwapA1.MouseLeave += Control_Leave;
 			// 
 			// buttonTwosComponentA2
 			// 
 			buttonTwosComponentA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonTwosComponentA2.Enabled = false;
-			buttonTwosComponentA2.Location = new Point(203, 325);
+			buttonTwosComponentA2.Location = new Point(204, 325);
 			buttonTwosComponentA2.Margin = new Padding(4, 3, 4, 3);
 			buttonTwosComponentA2.Name = "buttonTwosComponentA2";
 			buttonTwosComponentA2.Size = new Size(91, 27);
 			buttonTwosComponentA2.TabIndex = 112;
-			buttonTwosComponentA2.Text = "TC A2";
-			buttonTwosComponentA2.UseVisualStyleBackColor = true;
+			buttonTwosComponentA2.Values.DropDownArrowColor = Color.Empty;
+			buttonTwosComponentA2.Values.Text = "TC A2";
 			buttonTwosComponentA2.Click += ButtonTwosComponentA2_Click;
+			buttonTwosComponentA2.Enter += Control_Enter;
+			buttonTwosComponentA2.Leave += Control_Leave;
+			buttonTwosComponentA2.MouseEnter += Control_Enter;
+			buttonTwosComponentA2.MouseLeave += Control_Leave;
 			// 
 			// buttonNibbleSwapA2
 			// 
 			buttonNibbleSwapA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonNibbleSwapA2.Location = new Point(203, 58);
+			buttonNibbleSwapA2.Location = new Point(204, 58);
 			buttonNibbleSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonNibbleSwapA2.Name = "buttonNibbleSwapA2";
 			buttonNibbleSwapA2.Size = new Size(91, 27);
 			buttonNibbleSwapA2.TabIndex = 123;
-			buttonNibbleSwapA2.Text = "NBLSWP A2";
-			buttonNibbleSwapA2.UseVisualStyleBackColor = true;
+			buttonNibbleSwapA2.Values.DropDownArrowColor = Color.Empty;
+			buttonNibbleSwapA2.Values.Text = "NBLSWP A2";
 			buttonNibbleSwapA2.Click += ButtonNibbleSwapA2_Click;
+			buttonNibbleSwapA2.Enter += Control_Enter;
+			buttonNibbleSwapA2.Leave += Control_Leave;
+			buttonNibbleSwapA2.MouseEnter += Control_Enter;
+			buttonNibbleSwapA2.MouseLeave += Control_Leave;
 			// 
 			// buttonTwosComponentA1
 			// 
 			buttonTwosComponentA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonTwosComponentA1.Enabled = false;
-			buttonTwosComponentA1.Location = new Point(105, 325);
+			buttonTwosComponentA1.Location = new Point(106, 325);
 			buttonTwosComponentA1.Margin = new Padding(4, 3, 4, 3);
 			buttonTwosComponentA1.Name = "buttonTwosComponentA1";
 			buttonTwosComponentA1.Size = new Size(91, 27);
 			buttonTwosComponentA1.TabIndex = 111;
-			buttonTwosComponentA1.Text = "TC A1";
-			buttonTwosComponentA1.UseVisualStyleBackColor = true;
+			buttonTwosComponentA1.Values.DropDownArrowColor = Color.Empty;
+			buttonTwosComponentA1.Values.Text = "TC A1";
 			buttonTwosComponentA1.Click += ButtonTwosComponentA1_Click;
+			buttonTwosComponentA1.Enter += Control_Enter;
+			buttonTwosComponentA1.Leave += Control_Leave;
+			buttonTwosComponentA1.MouseEnter += Control_Enter;
+			buttonTwosComponentA1.MouseLeave += Control_Leave;
 			// 
 			// buttonHalfSwapA2
 			// 
 			buttonHalfSwapA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonHalfSwapA2.Location = new Point(203, 24);
+			buttonHalfSwapA2.Location = new Point(204, 24);
 			buttonHalfSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonHalfSwapA2.Name = "buttonHalfSwapA2";
 			buttonHalfSwapA2.Size = new Size(91, 27);
 			buttonHalfSwapA2.TabIndex = 110;
-			buttonHalfSwapA2.Text = "HLFSWP A2";
-			buttonHalfSwapA2.UseVisualStyleBackColor = true;
+			buttonHalfSwapA2.Values.DropDownArrowColor = Color.Empty;
+			buttonHalfSwapA2.Values.Text = "HLFSWP A2";
 			buttonHalfSwapA2.Click += ButtonHalfSwapA2_Click;
+			buttonHalfSwapA2.Enter += Control_Enter;
+			buttonHalfSwapA2.Leave += Control_Leave;
+			buttonHalfSwapA2.MouseEnter += Control_Enter;
+			buttonHalfSwapA2.MouseLeave += Control_Leave;
 			// 
 			// buttonSubjunktionA2A1
 			// 
 			buttonSubjunktionA2A1.AccessibleRole = AccessibleRole.PushButton;
-			buttonSubjunktionA2A1.Location = new Point(7, 459);
+			buttonSubjunktionA2A1.Location = new Point(7, 458);
 			buttonSubjunktionA2A1.Margin = new Padding(4, 3, 4, 3);
 			buttonSubjunktionA2A1.Name = "buttonSubjunktionA2A1";
 			buttonSubjunktionA2A1.Size = new Size(91, 27);
 			buttonSubjunktionA2A1.TabIndex = 108;
-			buttonSubjunktionA2A1.Text = "A2 SUBJ A1";
-			buttonSubjunktionA2A1.UseVisualStyleBackColor = true;
+			buttonSubjunktionA2A1.Values.DropDownArrowColor = Color.Empty;
+			buttonSubjunktionA2A1.Values.Text = "A2 SUBJ A1";
 			buttonSubjunktionA2A1.Click += ButtonSubjunktionA2A1_Click;
+			buttonSubjunktionA2A1.Enter += Control_Enter;
+			buttonSubjunktionA2A1.Leave += Control_Leave;
+			buttonSubjunktionA2A1.MouseEnter += Control_Enter;
+			buttonSubjunktionA2A1.MouseLeave += Control_Leave;
 			// 
 			// buttonHalfSwapA1
 			// 
 			buttonHalfSwapA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonHalfSwapA1.Location = new Point(105, 24);
+			buttonHalfSwapA1.Location = new Point(106, 24);
 			buttonHalfSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonHalfSwapA1.Name = "buttonHalfSwapA1";
 			buttonHalfSwapA1.Size = new Size(91, 27);
 			buttonHalfSwapA1.TabIndex = 109;
-			buttonHalfSwapA1.Text = "HLFSWP A1";
-			buttonHalfSwapA1.UseVisualStyleBackColor = true;
+			buttonHalfSwapA1.Values.DropDownArrowColor = Color.Empty;
+			buttonHalfSwapA1.Values.Text = "HLFSWP A1";
 			buttonHalfSwapA1.Click += ButtonHalfSwapA1_Click;
+			buttonHalfSwapA1.Enter += Control_Enter;
+			buttonHalfSwapA1.Leave += Control_Leave;
+			buttonHalfSwapA1.MouseEnter += Control_Enter;
+			buttonHalfSwapA1.MouseLeave += Control_Leave;
 			// 
 			// buttonSubjunktionA1A2
 			// 
 			buttonSubjunktionA1A2.AccessibleRole = AccessibleRole.PushButton;
-			buttonSubjunktionA1A2.Location = new Point(7, 426);
+			buttonSubjunktionA1A2.Location = new Point(7, 425);
 			buttonSubjunktionA1A2.Margin = new Padding(4, 3, 4, 3);
 			buttonSubjunktionA1A2.Name = "buttonSubjunktionA1A2";
 			buttonSubjunktionA1A2.Size = new Size(91, 27);
 			buttonSubjunktionA1A2.TabIndex = 107;
-			buttonSubjunktionA1A2.Text = "A1 SUBJ A2";
-			buttonSubjunktionA1A2.UseVisualStyleBackColor = true;
+			buttonSubjunktionA1A2.Values.DropDownArrowColor = Color.Empty;
+			buttonSubjunktionA1A2.Values.Text = "A1 SUBJ A2";
 			buttonSubjunktionA1A2.Click += ButtonSubjunktionA1A2_Click;
+			buttonSubjunktionA1A2.Enter += Control_Enter;
+			buttonSubjunktionA1A2.Leave += Control_Leave;
+			buttonSubjunktionA1A2.MouseEnter += Control_Enter;
+			buttonSubjunktionA1A2.MouseLeave += Control_Leave;
 			// 
 			// buttonNibbleSwapA1
 			// 
 			buttonNibbleSwapA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonNibbleSwapA1.Location = new Point(105, 58);
+			buttonNibbleSwapA1.Location = new Point(106, 58);
 			buttonNibbleSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonNibbleSwapA1.Name = "buttonNibbleSwapA1";
 			buttonNibbleSwapA1.Size = new Size(91, 27);
 			buttonNibbleSwapA1.TabIndex = 122;
-			buttonNibbleSwapA1.Text = "NBLSWP A1";
-			buttonNibbleSwapA1.UseVisualStyleBackColor = true;
+			buttonNibbleSwapA1.Values.DropDownArrowColor = Color.Empty;
+			buttonNibbleSwapA1.Values.Text = "NBLSWP A1";
 			buttonNibbleSwapA1.Click += ButtonNibbleSwapA1_Click;
+			buttonNibbleSwapA1.Enter += Control_Enter;
+			buttonNibbleSwapA1.Leave += Control_Leave;
+			buttonNibbleSwapA1.MouseEnter += Control_Enter;
+			buttonNibbleSwapA1.MouseLeave += Control_Leave;
 			// 
 			// buttonInhibitionA2A1
 			// 
 			buttonInhibitionA2A1.AccessibleRole = AccessibleRole.PushButton;
-			buttonInhibitionA2A1.Location = new Point(7, 392);
+			buttonInhibitionA2A1.Location = new Point(7, 391);
 			buttonInhibitionA2A1.Margin = new Padding(4, 3, 4, 3);
 			buttonInhibitionA2A1.Name = "buttonInhibitionA2A1";
 			buttonInhibitionA2A1.Size = new Size(91, 27);
 			buttonInhibitionA2A1.TabIndex = 106;
-			buttonInhibitionA2A1.Text = "A2 INHB A1";
-			buttonInhibitionA2A1.UseVisualStyleBackColor = true;
+			buttonInhibitionA2A1.Values.DropDownArrowColor = Color.Empty;
+			buttonInhibitionA2A1.Values.Text = "A2 INHB A1";
 			buttonInhibitionA2A1.Click += ButtonInhibitionA2A1_Click;
+			buttonInhibitionA2A1.Enter += Control_Enter;
+			buttonInhibitionA2A1.Leave += Control_Leave;
+			buttonInhibitionA2A1.MouseEnter += Control_Enter;
+			buttonInhibitionA2A1.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftRightWithOneA2
 			// 
 			buttonArithmeticShiftRightWithOneA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftRightWithOneA2.Location = new Point(399, 327);
+			buttonArithmeticShiftRightWithOneA2.Location = new Point(401, 325);
 			buttonArithmeticShiftRightWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithOneA2.Name = "buttonArithmeticShiftRightWithOneA2";
 			buttonArithmeticShiftRightWithOneA2.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithOneA2.TabIndex = 121;
-			buttonArithmeticShiftRightWithOneA2.Text = "ASHR1 A2";
-			buttonArithmeticShiftRightWithOneA2.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftRightWithOneA2.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftRightWithOneA2.Values.Text = "ASHR1 A2";
 			buttonArithmeticShiftRightWithOneA2.Click += ButtonArithmeticShiftRightWithOneA2_Click;
+			buttonArithmeticShiftRightWithOneA2.Enter += Control_Enter;
+			buttonArithmeticShiftRightWithOneA2.Leave += Control_Leave;
+			buttonArithmeticShiftRightWithOneA2.MouseEnter += Control_Enter;
+			buttonArithmeticShiftRightWithOneA2.MouseLeave += Control_Leave;
 			// 
 			// buttonInhibitionA1A2
 			// 
 			buttonInhibitionA1A2.AccessibleRole = AccessibleRole.PushButton;
-			buttonInhibitionA1A2.Location = new Point(7, 359);
+			buttonInhibitionA1A2.Location = new Point(7, 358);
 			buttonInhibitionA1A2.Margin = new Padding(4, 3, 4, 3);
 			buttonInhibitionA1A2.Name = "buttonInhibitionA1A2";
 			buttonInhibitionA1A2.Size = new Size(91, 27);
 			buttonInhibitionA1A2.TabIndex = 105;
-			buttonInhibitionA1A2.Text = "A1 INHB A2";
-			buttonInhibitionA1A2.UseVisualStyleBackColor = true;
+			buttonInhibitionA1A2.Values.DropDownArrowColor = Color.Empty;
+			buttonInhibitionA1A2.Values.Text = "A1 INHB A2";
 			buttonInhibitionA1A2.Click += ButtonInhibitionA1A2_Click;
+			buttonInhibitionA1A2.Enter += Control_Enter;
+			buttonInhibitionA1A2.Leave += Control_Leave;
+			buttonInhibitionA1A2.MouseEnter += Control_Enter;
+			buttonInhibitionA1A2.MouseLeave += Control_Leave;
 			// 
 			// buttonRandomizeA2
 			// 
 			buttonRandomizeA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonRandomizeA2.Location = new Point(203, 292);
+			buttonRandomizeA2.Location = new Point(204, 292);
 			buttonRandomizeA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRandomizeA2.Name = "buttonRandomizeA2";
 			buttonRandomizeA2.Size = new Size(91, 27);
 			buttonRandomizeA2.TabIndex = 104;
-			buttonRandomizeA2.Text = "RND A2";
-			buttonRandomizeA2.UseVisualStyleBackColor = true;
+			buttonRandomizeA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRandomizeA2.Values.Text = "RND A2";
 			buttonRandomizeA2.Click += ButtonRandomizeA2_Click;
+			buttonRandomizeA2.Enter += Control_Enter;
+			buttonRandomizeA2.Leave += Control_Leave;
+			buttonRandomizeA2.MouseEnter += Control_Enter;
+			buttonRandomizeA2.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftRightWithOneA1
 			// 
 			buttonArithmeticShiftRightWithOneA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftRightWithOneA1.Location = new Point(301, 327);
+			buttonArithmeticShiftRightWithOneA1.Location = new Point(303, 325);
 			buttonArithmeticShiftRightWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithOneA1.Name = "buttonArithmeticShiftRightWithOneA1";
 			buttonArithmeticShiftRightWithOneA1.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithOneA1.TabIndex = 120;
-			buttonArithmeticShiftRightWithOneA1.Text = "ASHR1 A1";
-			buttonArithmeticShiftRightWithOneA1.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftRightWithOneA1.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftRightWithOneA1.Values.Text = "ASHR1 A1";
 			buttonArithmeticShiftRightWithOneA1.Click += ButtonArithmeticShiftRightWithOneA1_Click;
+			buttonArithmeticShiftRightWithOneA1.Enter += Control_Enter;
+			buttonArithmeticShiftRightWithOneA1.Leave += Control_Leave;
+			buttonArithmeticShiftRightWithOneA1.MouseEnter += Control_Enter;
+			buttonArithmeticShiftRightWithOneA1.MouseLeave += Control_Leave;
 			// 
 			// buttonRandomizeA1
 			// 
 			buttonRandomizeA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonRandomizeA1.Location = new Point(105, 292);
+			buttonRandomizeA1.Location = new Point(106, 292);
 			buttonRandomizeA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRandomizeA1.Name = "buttonRandomizeA1";
 			buttonRandomizeA1.Size = new Size(91, 27);
 			buttonRandomizeA1.TabIndex = 102;
-			buttonRandomizeA1.Text = "RND A1";
-			buttonRandomizeA1.UseVisualStyleBackColor = true;
+			buttonRandomizeA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRandomizeA1.Values.Text = "RND A1";
 			buttonRandomizeA1.Click += ButtonRandomizeA1_Click;
+			buttonRandomizeA1.Enter += Control_Enter;
+			buttonRandomizeA1.Leave += Control_Leave;
+			buttonRandomizeA1.MouseEnter += Control_Enter;
+			buttonRandomizeA1.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftRightWithOneA2
 			// 
 			buttonShiftRightWithOneA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftRightWithOneA2.Location = new Point(399, 126);
+			buttonShiftRightWithOneA2.Location = new Point(401, 125);
 			buttonShiftRightWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithOneA2.Name = "buttonShiftRightWithOneA2";
 			buttonShiftRightWithOneA2.Size = new Size(91, 27);
 			buttonShiftRightWithOneA2.TabIndex = 101;
-			buttonShiftRightWithOneA2.Text = "SHR1 A2";
-			buttonShiftRightWithOneA2.UseVisualStyleBackColor = true;
+			buttonShiftRightWithOneA2.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftRightWithOneA2.Values.Text = "SHR1 A2";
 			buttonShiftRightWithOneA2.Click += ButtonShiftRightWithOneA2_Click;
+			buttonShiftRightWithOneA2.Enter += Control_Enter;
+			buttonShiftRightWithOneA2.Leave += Control_Leave;
+			buttonShiftRightWithOneA2.MouseEnter += Control_Enter;
+			buttonShiftRightWithOneA2.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftLeftWithOneA2
 			// 
 			buttonArithmeticShiftLeftWithOneA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftLeftWithOneA2.Location = new Point(399, 260);
+			buttonArithmeticShiftLeftWithOneA2.Location = new Point(401, 259);
 			buttonArithmeticShiftLeftWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithOneA2.Name = "buttonArithmeticShiftLeftWithOneA2";
 			buttonArithmeticShiftLeftWithOneA2.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithOneA2.TabIndex = 119;
-			buttonArithmeticShiftLeftWithOneA2.Text = "ASHL1 A2";
-			buttonArithmeticShiftLeftWithOneA2.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftLeftWithOneA2.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftLeftWithOneA2.Values.Text = "ASHL1 A2";
 			buttonArithmeticShiftLeftWithOneA2.Click += ButtonArithmeticShiftLeftWithOneA2_Click;
+			buttonArithmeticShiftLeftWithOneA2.Enter += Control_Enter;
+			buttonArithmeticShiftLeftWithOneA2.Leave += Control_Leave;
+			buttonArithmeticShiftLeftWithOneA2.MouseEnter += Control_Enter;
+			buttonArithmeticShiftLeftWithOneA2.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftRightWithOneA1
 			// 
 			buttonShiftRightWithOneA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftRightWithOneA1.Location = new Point(301, 126);
+			buttonShiftRightWithOneA1.Location = new Point(303, 125);
 			buttonShiftRightWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithOneA1.Name = "buttonShiftRightWithOneA1";
 			buttonShiftRightWithOneA1.Size = new Size(91, 27);
 			buttonShiftRightWithOneA1.TabIndex = 100;
-			buttonShiftRightWithOneA1.Text = "SHR1 A1";
-			buttonShiftRightWithOneA1.UseVisualStyleBackColor = true;
+			buttonShiftRightWithOneA1.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftRightWithOneA1.Values.Text = "SHR1 A1";
 			buttonShiftRightWithOneA1.Click += ButtonShiftRightWithOneA1_Click;
+			buttonShiftRightWithOneA1.Enter += Control_Enter;
+			buttonShiftRightWithOneA1.Leave += Control_Leave;
+			buttonShiftRightWithOneA1.MouseEnter += Control_Enter;
+			buttonShiftRightWithOneA1.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftLeftWithOneA2
 			// 
 			buttonShiftLeftWithOneA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftLeftWithOneA2.Location = new Point(399, 59);
+			buttonShiftLeftWithOneA2.Location = new Point(401, 58);
 			buttonShiftLeftWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithOneA2.Name = "buttonShiftLeftWithOneA2";
 			buttonShiftLeftWithOneA2.Size = new Size(91, 27);
 			buttonShiftLeftWithOneA2.TabIndex = 99;
-			buttonShiftLeftWithOneA2.Text = "SHL1 A2";
-			buttonShiftLeftWithOneA2.UseVisualStyleBackColor = true;
+			buttonShiftLeftWithOneA2.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftLeftWithOneA2.Values.Text = "SHL1 A2";
 			buttonShiftLeftWithOneA2.Click += ButtonShiftLeftWithOneA2_Click;
+			buttonShiftLeftWithOneA2.Enter += Control_Enter;
+			buttonShiftLeftWithOneA2.Leave += Control_Leave;
+			buttonShiftLeftWithOneA2.MouseEnter += Control_Enter;
+			buttonShiftLeftWithOneA2.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftLeftWithOneA1
 			// 
 			buttonArithmeticShiftLeftWithOneA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftLeftWithOneA1.Location = new Point(301, 260);
+			buttonArithmeticShiftLeftWithOneA1.Location = new Point(303, 259);
 			buttonArithmeticShiftLeftWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithOneA1.Name = "buttonArithmeticShiftLeftWithOneA1";
 			buttonArithmeticShiftLeftWithOneA1.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithOneA1.TabIndex = 118;
-			buttonArithmeticShiftLeftWithOneA1.Text = "ASHL1 A1";
-			buttonArithmeticShiftLeftWithOneA1.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftLeftWithOneA1.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftLeftWithOneA1.Values.Text = "ASHL1 A1";
 			buttonArithmeticShiftLeftWithOneA1.Click += ButtonArithmeticShiftLeftWithOneA1_Click;
+			buttonArithmeticShiftLeftWithOneA1.Enter += Control_Enter;
+			buttonArithmeticShiftLeftWithOneA1.Leave += Control_Leave;
+			buttonArithmeticShiftLeftWithOneA1.MouseEnter += Control_Enter;
+			buttonArithmeticShiftLeftWithOneA1.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftLeftWithOneA1
 			// 
 			buttonShiftLeftWithOneA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftLeftWithOneA1.Location = new Point(301, 59);
+			buttonShiftLeftWithOneA1.Location = new Point(303, 58);
 			buttonShiftLeftWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithOneA1.Name = "buttonShiftLeftWithOneA1";
 			buttonShiftLeftWithOneA1.Size = new Size(91, 27);
 			buttonShiftLeftWithOneA1.TabIndex = 98;
-			buttonShiftLeftWithOneA1.Text = "SHL1 A1";
-			buttonShiftLeftWithOneA1.UseVisualStyleBackColor = true;
+			buttonShiftLeftWithOneA1.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftLeftWithOneA1.Values.Text = "SHL1 A1";
 			buttonShiftLeftWithOneA1.Click += ButtonShiftLeftWithOneA1_Click;
+			buttonShiftLeftWithOneA1.Enter += Control_Enter;
+			buttonShiftLeftWithOneA1.Leave += Control_Leave;
+			buttonShiftLeftWithOneA1.MouseEnter += Control_Enter;
+			buttonShiftLeftWithOneA1.MouseLeave += Control_Leave;
 			// 
 			// buttonSwapA1A2
 			// 
 			buttonSwapA1A2.AccessibleRole = AccessibleRole.PushButton;
-			buttonSwapA1A2.Location = new Point(105, 359);
+			buttonSwapA1A2.Location = new Point(106, 358);
 			buttonSwapA1A2.Margin = new Padding(4, 3, 4, 3);
 			buttonSwapA1A2.Name = "buttonSwapA1A2";
 			buttonSwapA1A2.Size = new Size(91, 27);
 			buttonSwapA1A2.TabIndex = 97;
-			buttonSwapA1A2.Text = "A1 <> A2";
-			buttonSwapA1A2.UseVisualStyleBackColor = true;
+			buttonSwapA1A2.Values.DropDownArrowColor = Color.Empty;
+			buttonSwapA1A2.Values.Text = "A1 <> A2";
 			buttonSwapA1A2.Click += ButtonSwapA1A2_Click;
+			buttonSwapA1A2.Enter += Control_Enter;
+			buttonSwapA1A2.Leave += Control_Leave;
+			buttonSwapA1A2.MouseEnter += Control_Enter;
+			buttonSwapA1A2.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftLeftWithZeroA2
 			// 
 			buttonArithmeticShiftLeftWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftLeftWithZeroA2.Location = new Point(399, 226);
+			buttonArithmeticShiftLeftWithZeroA2.Location = new Point(401, 225);
 			buttonArithmeticShiftLeftWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithZeroA2.Name = "buttonArithmeticShiftLeftWithZeroA2";
 			buttonArithmeticShiftLeftWithZeroA2.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithZeroA2.TabIndex = 116;
-			buttonArithmeticShiftLeftWithZeroA2.Text = "ASHL0 A2";
-			buttonArithmeticShiftLeftWithZeroA2.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftLeftWithZeroA2.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftLeftWithZeroA2.Values.Text = "ASHL0 A2";
 			buttonArithmeticShiftLeftWithZeroA2.Click += ButtonArithmeticShiftLeftWithZeroA2_Click;
+			buttonArithmeticShiftLeftWithZeroA2.Enter += Control_Enter;
+			buttonArithmeticShiftLeftWithZeroA2.Leave += Control_Leave;
+			buttonArithmeticShiftLeftWithZeroA2.MouseEnter += Control_Enter;
+			buttonArithmeticShiftLeftWithZeroA2.MouseLeave += Control_Leave;
 			// 
 			// buttonFillA2
 			// 
 			buttonFillA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonFillA2.Location = new Point(203, 225);
+			buttonFillA2.Location = new Point(204, 225);
 			buttonFillA2.Margin = new Padding(4, 3, 4, 3);
 			buttonFillA2.Name = "buttonFillA2";
 			buttonFillA2.Size = new Size(91, 27);
 			buttonFillA2.TabIndex = 96;
-			buttonFillA2.Text = "A2 = 1";
-			buttonFillA2.UseVisualStyleBackColor = true;
+			buttonFillA2.Values.DropDownArrowColor = Color.Empty;
+			buttonFillA2.Values.Text = "A2 = 1";
 			buttonFillA2.Click += ButtonFillA2_Click;
+			buttonFillA2.Enter += Control_Enter;
+			buttonFillA2.Leave += Control_Leave;
+			buttonFillA2.MouseEnter += Control_Enter;
+			buttonFillA2.MouseLeave += Control_Leave;
 			// 
 			// buttonFillA1
 			// 
 			buttonFillA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonFillA1.Location = new Point(105, 225);
+			buttonFillA1.Location = new Point(106, 225);
 			buttonFillA1.Margin = new Padding(4, 3, 4, 3);
 			buttonFillA1.Name = "buttonFillA1";
 			buttonFillA1.Size = new Size(91, 27);
 			buttonFillA1.TabIndex = 95;
-			buttonFillA1.Text = "A1 = 1";
-			buttonFillA1.UseVisualStyleBackColor = true;
+			buttonFillA1.Values.DropDownArrowColor = Color.Empty;
+			buttonFillA1.Values.Text = "A1 = 1";
 			buttonFillA1.Click += ButtonFillA1_Click;
+			buttonFillA1.Enter += Control_Enter;
+			buttonFillA1.Leave += Control_Leave;
+			buttonFillA1.MouseEnter += Control_Enter;
+			buttonFillA1.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftRightWithZeroA2
 			// 
 			buttonArithmeticShiftRightWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftRightWithZeroA2.Location = new Point(399, 293);
+			buttonArithmeticShiftRightWithZeroA2.Location = new Point(401, 292);
 			buttonArithmeticShiftRightWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithZeroA2.Name = "buttonArithmeticShiftRightWithZeroA2";
 			buttonArithmeticShiftRightWithZeroA2.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithZeroA2.TabIndex = 117;
-			buttonArithmeticShiftRightWithZeroA2.Text = "ASHR0 A2";
-			buttonArithmeticShiftRightWithZeroA2.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftRightWithZeroA2.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftRightWithZeroA2.Values.Text = "ASHR0 A2";
 			buttonArithmeticShiftRightWithZeroA2.Click += ButtonArithmeticShiftRightWithZeroA2_Click;
+			buttonArithmeticShiftRightWithZeroA2.Enter += Control_Enter;
+			buttonArithmeticShiftRightWithZeroA2.Leave += Control_Leave;
+			buttonArithmeticShiftRightWithZeroA2.MouseEnter += Control_Enter;
+			buttonArithmeticShiftRightWithZeroA2.MouseLeave += Control_Leave;
 			// 
 			// buttonClearA2
 			// 
 			buttonClearA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonClearA2.Location = new Point(203, 192);
+			buttonClearA2.Location = new Point(204, 192);
 			buttonClearA2.Margin = new Padding(4, 3, 4, 3);
 			buttonClearA2.Name = "buttonClearA2";
 			buttonClearA2.Size = new Size(91, 27);
 			buttonClearA2.TabIndex = 94;
-			buttonClearA2.Text = "A2 = 0";
-			buttonClearA2.UseVisualStyleBackColor = true;
+			buttonClearA2.Values.DropDownArrowColor = Color.Empty;
+			buttonClearA2.Values.Text = "A2 = 0";
 			buttonClearA2.Click += ButtonClearA2_Click;
+			buttonClearA2.Enter += Control_Enter;
+			buttonClearA2.Leave += Control_Leave;
+			buttonClearA2.MouseEnter += Control_Enter;
+			buttonClearA2.MouseLeave += Control_Leave;
 			// 
 			// buttonClearA1
 			// 
 			buttonClearA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonClearA1.Location = new Point(105, 192);
+			buttonClearA1.Location = new Point(106, 192);
 			buttonClearA1.Margin = new Padding(4, 3, 4, 3);
 			buttonClearA1.Name = "buttonClearA1";
 			buttonClearA1.Size = new Size(91, 27);
 			buttonClearA1.TabIndex = 93;
-			buttonClearA1.Text = "A1 = 0";
-			buttonClearA1.UseVisualStyleBackColor = true;
+			buttonClearA1.Values.DropDownArrowColor = Color.Empty;
+			buttonClearA1.Values.Text = "A1 = 0";
 			buttonClearA1.Click += ButtonClearA1_Click;
+			buttonClearA1.Enter += Control_Enter;
+			buttonClearA1.Leave += Control_Leave;
+			buttonClearA1.MouseEnter += Control_Enter;
+			buttonClearA1.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftLeftWithZeroA1
 			// 
 			buttonArithmeticShiftLeftWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftLeftWithZeroA1.Location = new Point(301, 226);
+			buttonArithmeticShiftLeftWithZeroA1.Location = new Point(303, 225);
 			buttonArithmeticShiftLeftWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithZeroA1.Name = "buttonArithmeticShiftLeftWithZeroA1";
 			buttonArithmeticShiftLeftWithZeroA1.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithZeroA1.TabIndex = 114;
-			buttonArithmeticShiftLeftWithZeroA1.Text = "ASHL0 A1";
-			buttonArithmeticShiftLeftWithZeroA1.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftLeftWithZeroA1.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftLeftWithZeroA1.Values.Text = "ASHL0 A1";
 			buttonArithmeticShiftLeftWithZeroA1.Click += ButtonArithmeticShiftLeftWithZeroA1_Click;
+			buttonArithmeticShiftLeftWithZeroA1.Enter += Control_Enter;
+			buttonArithmeticShiftLeftWithZeroA1.Leave += Control_Leave;
+			buttonArithmeticShiftLeftWithZeroA1.MouseEnter += Control_Enter;
+			buttonArithmeticShiftLeftWithZeroA1.MouseLeave += Control_Leave;
 			// 
 			// buttonArithmeticShiftRightWithZeroA1
 			// 
 			buttonArithmeticShiftRightWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonArithmeticShiftRightWithZeroA1.Location = new Point(301, 293);
+			buttonArithmeticShiftRightWithZeroA1.Location = new Point(303, 292);
 			buttonArithmeticShiftRightWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithZeroA1.Name = "buttonArithmeticShiftRightWithZeroA1";
 			buttonArithmeticShiftRightWithZeroA1.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithZeroA1.TabIndex = 115;
-			buttonArithmeticShiftRightWithZeroA1.Text = "ASHR0 A1";
-			buttonArithmeticShiftRightWithZeroA1.UseVisualStyleBackColor = true;
+			buttonArithmeticShiftRightWithZeroA1.Values.DropDownArrowColor = Color.Empty;
+			buttonArithmeticShiftRightWithZeroA1.Values.Text = "ASHR0 A1";
 			buttonArithmeticShiftRightWithZeroA1.Click += ButtonArithmeticShiftRightWithZeroA1_Click;
+			buttonArithmeticShiftRightWithZeroA1.Enter += Control_Enter;
+			buttonArithmeticShiftRightWithZeroA1.Leave += Control_Leave;
+			buttonArithmeticShiftRightWithZeroA1.MouseEnter += Control_Enter;
+			buttonArithmeticShiftRightWithZeroA1.MouseLeave += Control_Leave;
 			// 
 			// buttonRevertA2
 			// 
 			buttonRevertA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonRevertA2.Location = new Point(203, 158);
+			buttonRevertA2.Location = new Point(204, 158);
 			buttonRevertA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRevertA2.Name = "buttonRevertA2";
 			buttonRevertA2.Size = new Size(91, 27);
 			buttonRevertA2.TabIndex = 92;
-			buttonRevertA2.Text = "REV A2";
-			buttonRevertA2.UseVisualStyleBackColor = true;
+			buttonRevertA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRevertA2.Values.Text = "REV A2";
 			buttonRevertA2.Click += ButtonRevertA2_Click;
+			buttonRevertA2.Enter += Control_Enter;
+			buttonRevertA2.Leave += Control_Leave;
+			buttonRevertA2.MouseEnter += Control_Enter;
+			buttonRevertA2.MouseLeave += Control_Leave;
 			// 
 			// buttonRevertA1
 			// 
 			buttonRevertA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonRevertA1.Location = new Point(105, 158);
+			buttonRevertA1.Location = new Point(106, 158);
 			buttonRevertA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRevertA1.Name = "buttonRevertA1";
 			buttonRevertA1.Size = new Size(91, 27);
 			buttonRevertA1.TabIndex = 91;
-			buttonRevertA1.Text = "REV A1";
-			buttonRevertA1.UseVisualStyleBackColor = true;
+			buttonRevertA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRevertA1.Values.Text = "REV A1";
 			buttonRevertA1.Click += ButtonRevertA1_Click;
+			buttonRevertA1.Enter += Control_Enter;
+			buttonRevertA1.Leave += Control_Leave;
+			buttonRevertA1.MouseEnter += Control_Enter;
+			buttonRevertA1.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftLeftWithZeroA2
 			// 
 			buttonShiftLeftWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftLeftWithZeroA2.Location = new Point(399, 25);
+			buttonShiftLeftWithZeroA2.Location = new Point(401, 24);
 			buttonShiftLeftWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithZeroA2.Name = "buttonShiftLeftWithZeroA2";
 			buttonShiftLeftWithZeroA2.Size = new Size(91, 27);
 			buttonShiftLeftWithZeroA2.TabIndex = 87;
-			buttonShiftLeftWithZeroA2.Text = "SHL0 A2";
-			buttonShiftLeftWithZeroA2.UseVisualStyleBackColor = true;
+			buttonShiftLeftWithZeroA2.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftLeftWithZeroA2.Values.Text = "SHL0 A2";
 			buttonShiftLeftWithZeroA2.Click += ButtonShiftLeftWithZeroA2_Click;
+			buttonShiftLeftWithZeroA2.Enter += Control_Enter;
+			buttonShiftLeftWithZeroA2.Leave += Control_Leave;
+			buttonShiftLeftWithZeroA2.MouseEnter += Control_Enter;
+			buttonShiftLeftWithZeroA2.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftRightWithZeroA2
 			// 
 			buttonShiftRightWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftRightWithZeroA2.Location = new Point(399, 92);
+			buttonShiftRightWithZeroA2.Location = new Point(401, 91);
 			buttonShiftRightWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithZeroA2.Name = "buttonShiftRightWithZeroA2";
 			buttonShiftRightWithZeroA2.Size = new Size(91, 27);
 			buttonShiftRightWithZeroA2.TabIndex = 88;
-			buttonShiftRightWithZeroA2.Text = "SHR0 A2";
-			buttonShiftRightWithZeroA2.UseVisualStyleBackColor = true;
+			buttonShiftRightWithZeroA2.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftRightWithZeroA2.Values.Text = "SHR0 A2";
 			buttonShiftRightWithZeroA2.Click += ButtonShiftRightWithZeroA2_Click;
+			buttonShiftRightWithZeroA2.Enter += Control_Enter;
+			buttonShiftRightWithZeroA2.Leave += Control_Leave;
+			buttonShiftRightWithZeroA2.MouseEnter += Control_Enter;
+			buttonShiftRightWithZeroA2.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateLeftA2
 			// 
 			buttonRotateLeftA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonRotateLeftA2.Location = new Point(399, 159);
+			buttonRotateLeftA2.Location = new Point(401, 158);
 			buttonRotateLeftA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftA2.Name = "buttonRotateLeftA2";
 			buttonRotateLeftA2.Size = new Size(91, 27);
 			buttonRotateLeftA2.TabIndex = 89;
-			buttonRotateLeftA2.Text = "ROL A2";
-			buttonRotateLeftA2.UseVisualStyleBackColor = true;
+			buttonRotateLeftA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateLeftA2.Values.Text = "ROL A2";
 			buttonRotateLeftA2.Click += ButtonRotateLeftA2_Click;
+			buttonRotateLeftA2.Enter += Control_Enter;
+			buttonRotateLeftA2.Leave += Control_Leave;
+			buttonRotateLeftA2.MouseEnter += Control_Enter;
+			buttonRotateLeftA2.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateRightA2
 			// 
 			buttonRotateRightA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonRotateRightA2.Location = new Point(399, 193);
+			buttonRotateRightA2.Location = new Point(401, 192);
 			buttonRotateRightA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightA2.Name = "buttonRotateRightA2";
 			buttonRotateRightA2.Size = new Size(91, 27);
 			buttonRotateRightA2.TabIndex = 90;
-			buttonRotateRightA2.Text = "ROR A2";
-			buttonRotateRightA2.UseVisualStyleBackColor = true;
+			buttonRotateRightA2.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateRightA2.Values.Text = "ROR A2";
 			buttonRotateRightA2.Click += ButtonRotateRightA2_Click;
+			buttonRotateRightA2.Enter += Control_Enter;
+			buttonRotateRightA2.Leave += Control_Leave;
+			buttonRotateRightA2.MouseEnter += Control_Enter;
+			buttonRotateRightA2.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftLeftWithZeroA1
 			// 
 			buttonShiftLeftWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftLeftWithZeroA1.Location = new Point(301, 25);
+			buttonShiftLeftWithZeroA1.Location = new Point(303, 24);
 			buttonShiftLeftWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithZeroA1.Name = "buttonShiftLeftWithZeroA1";
 			buttonShiftLeftWithZeroA1.Size = new Size(91, 27);
 			buttonShiftLeftWithZeroA1.TabIndex = 83;
-			buttonShiftLeftWithZeroA1.Text = "SHL0 A1";
-			buttonShiftLeftWithZeroA1.UseVisualStyleBackColor = true;
+			buttonShiftLeftWithZeroA1.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftLeftWithZeroA1.Values.Text = "SHL0 A1";
 			buttonShiftLeftWithZeroA1.Click += ButtonShiftLeftWithZeroA1_Click;
+			buttonShiftLeftWithZeroA1.Enter += Control_Enter;
+			buttonShiftLeftWithZeroA1.Leave += Control_Leave;
+			buttonShiftLeftWithZeroA1.MouseEnter += Control_Enter;
+			buttonShiftLeftWithZeroA1.MouseLeave += Control_Leave;
 			// 
 			// buttonShiftRightWithZeroA1
 			// 
 			buttonShiftRightWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonShiftRightWithZeroA1.Location = new Point(301, 92);
+			buttonShiftRightWithZeroA1.Location = new Point(303, 91);
 			buttonShiftRightWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithZeroA1.Name = "buttonShiftRightWithZeroA1";
 			buttonShiftRightWithZeroA1.Size = new Size(91, 27);
 			buttonShiftRightWithZeroA1.TabIndex = 84;
-			buttonShiftRightWithZeroA1.Text = "SHR0 A1";
-			buttonShiftRightWithZeroA1.UseVisualStyleBackColor = true;
+			buttonShiftRightWithZeroA1.Values.DropDownArrowColor = Color.Empty;
+			buttonShiftRightWithZeroA1.Values.Text = "SHR0 A1";
 			buttonShiftRightWithZeroA1.Click += ButtonShiftRightWithZeroA1_Click;
+			buttonShiftRightWithZeroA1.Enter += Control_Enter;
+			buttonShiftRightWithZeroA1.Leave += Control_Leave;
+			buttonShiftRightWithZeroA1.MouseEnter += Control_Enter;
+			buttonShiftRightWithZeroA1.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateLeftA1
 			// 
 			buttonRotateLeftA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonRotateLeftA1.Location = new Point(301, 159);
+			buttonRotateLeftA1.Location = new Point(303, 158);
 			buttonRotateLeftA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftA1.Name = "buttonRotateLeftA1";
 			buttonRotateLeftA1.Size = new Size(91, 27);
 			buttonRotateLeftA1.TabIndex = 85;
-			buttonRotateLeftA1.Text = "ROL A1";
-			buttonRotateLeftA1.UseVisualStyleBackColor = true;
+			buttonRotateLeftA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateLeftA1.Values.Text = "ROL A1";
 			buttonRotateLeftA1.Click += ButtonRotateLeftA1_Click;
+			buttonRotateLeftA1.Enter += Control_Enter;
+			buttonRotateLeftA1.Leave += Control_Leave;
+			buttonRotateLeftA1.MouseEnter += Control_Enter;
+			buttonRotateLeftA1.MouseLeave += Control_Leave;
 			// 
 			// buttonRotateRightA1
 			// 
 			buttonRotateRightA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonRotateRightA1.Location = new Point(301, 193);
+			buttonRotateRightA1.Location = new Point(303, 192);
 			buttonRotateRightA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightA1.Name = "buttonRotateRightA1";
 			buttonRotateRightA1.Size = new Size(91, 27);
 			buttonRotateRightA1.TabIndex = 86;
-			buttonRotateRightA1.Text = "ROR A1";
-			buttonRotateRightA1.UseVisualStyleBackColor = true;
+			buttonRotateRightA1.Values.DropDownArrowColor = Color.Empty;
+			buttonRotateRightA1.Values.Text = "ROR A1";
 			buttonRotateRightA1.Click += ButtonRotateRightA1_Click;
+			buttonRotateRightA1.Enter += Control_Enter;
+			buttonRotateRightA1.Leave += Control_Leave;
+			buttonRotateRightA1.MouseEnter += Control_Enter;
+			buttonRotateRightA1.MouseLeave += Control_Leave;
 			// 
 			// buttonAdditionA1AndA2
 			// 
@@ -1310,21 +1556,29 @@
 			buttonAdditionA1AndA2.Name = "buttonAdditionA1AndA2";
 			buttonAdditionA1AndA2.Size = new Size(91, 27);
 			buttonAdditionA1AndA2.TabIndex = 69;
-			buttonAdditionA1AndA2.Text = "A1 + A2";
-			buttonAdditionA1AndA2.UseVisualStyleBackColor = true;
+			buttonAdditionA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonAdditionA1AndA2.Values.Text = "A1 + A2";
 			buttonAdditionA1AndA2.Click += ButtonAdditionA1AndA2_Click;
+			buttonAdditionA1AndA2.Enter += Control_Enter;
+			buttonAdditionA1AndA2.Leave += Control_Leave;
+			buttonAdditionA1AndA2.MouseEnter += Control_Enter;
+			buttonAdditionA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonCopyResultToA2
 			// 
 			buttonCopyResultToA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonCopyResultToA2.Location = new Point(203, 258);
+			buttonCopyResultToA2.Location = new Point(204, 258);
 			buttonCopyResultToA2.Margin = new Padding(4, 3, 4, 3);
 			buttonCopyResultToA2.Name = "buttonCopyResultToA2";
 			buttonCopyResultToA2.Size = new Size(91, 27);
 			buttonCopyResultToA2.TabIndex = 82;
-			buttonCopyResultToA2.Text = "R > A2";
-			buttonCopyResultToA2.UseVisualStyleBackColor = true;
+			buttonCopyResultToA2.Values.DropDownArrowColor = Color.Empty;
+			buttonCopyResultToA2.Values.Text = "R > A2";
 			buttonCopyResultToA2.Click += ButtonCopyResultToA2_Click;
+			buttonCopyResultToA2.Enter += Control_Enter;
+			buttonCopyResultToA2.Leave += Control_Leave;
+			buttonCopyResultToA2.MouseEnter += Control_Enter;
+			buttonCopyResultToA2.MouseLeave += Control_Leave;
 			// 
 			// buttonSubtractionA1AndA2
 			// 
@@ -1335,21 +1589,29 @@
 			buttonSubtractionA1AndA2.Name = "buttonSubtractionA1AndA2";
 			buttonSubtractionA1AndA2.Size = new Size(91, 27);
 			buttonSubtractionA1AndA2.TabIndex = 70;
-			buttonSubtractionA1AndA2.Text = "A1 - A2";
-			buttonSubtractionA1AndA2.UseVisualStyleBackColor = true;
+			buttonSubtractionA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonSubtractionA1AndA2.Values.Text = "A1 - A2";
 			buttonSubtractionA1AndA2.Click += ButtonSubtractionA1AndA2_Click;
+			buttonSubtractionA1AndA2.Enter += Control_Enter;
+			buttonSubtractionA1AndA2.Leave += Control_Leave;
+			buttonSubtractionA1AndA2.MouseEnter += Control_Enter;
+			buttonSubtractionA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonCopyResultToA1
 			// 
 			buttonCopyResultToA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonCopyResultToA1.Location = new Point(105, 258);
+			buttonCopyResultToA1.Location = new Point(106, 258);
 			buttonCopyResultToA1.Margin = new Padding(4, 3, 4, 3);
 			buttonCopyResultToA1.Name = "buttonCopyResultToA1";
 			buttonCopyResultToA1.Size = new Size(91, 27);
 			buttonCopyResultToA1.TabIndex = 81;
-			buttonCopyResultToA1.Text = "R > A1";
-			buttonCopyResultToA1.UseVisualStyleBackColor = true;
+			buttonCopyResultToA1.Values.DropDownArrowColor = Color.Empty;
+			buttonCopyResultToA1.Values.Text = "R > A1";
 			buttonCopyResultToA1.Click += ButtonCopyResultToA1_Click;
+			buttonCopyResultToA1.Enter += Control_Enter;
+			buttonCopyResultToA1.Leave += Control_Leave;
+			buttonCopyResultToA1.MouseEnter += Control_Enter;
+			buttonCopyResultToA1.MouseLeave += Control_Leave;
 			// 
 			// buttonMultiplicationA1AndA2
 			// 
@@ -1360,9 +1622,13 @@
 			buttonMultiplicationA1AndA2.Name = "buttonMultiplicationA1AndA2";
 			buttonMultiplicationA1AndA2.Size = new Size(91, 27);
 			buttonMultiplicationA1AndA2.TabIndex = 71;
-			buttonMultiplicationA1AndA2.Text = "A1 × A2";
-			buttonMultiplicationA1AndA2.UseVisualStyleBackColor = true;
+			buttonMultiplicationA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonMultiplicationA1AndA2.Values.Text = "A1 × A2";
 			buttonMultiplicationA1AndA2.Click += ButtonMultiplicationA1AndA2_Click;
+			buttonMultiplicationA1AndA2.Enter += Control_Enter;
+			buttonMultiplicationA1AndA2.Leave += Control_Leave;
+			buttonMultiplicationA1AndA2.MouseEnter += Control_Enter;
+			buttonMultiplicationA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonLogicalXnorA1AndA2
 			// 
@@ -1372,9 +1638,13 @@
 			buttonLogicalXnorA1AndA2.Name = "buttonLogicalXnorA1AndA2";
 			buttonLogicalXnorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalXnorA1AndA2.TabIndex = 80;
-			buttonLogicalXnorA1AndA2.Text = "A1 XNOR A2";
-			buttonLogicalXnorA1AndA2.UseVisualStyleBackColor = true;
+			buttonLogicalXnorA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalXnorA1AndA2.Values.Text = "A1 XNOR A2";
 			buttonLogicalXnorA1AndA2.Click += ButtonLogicalXnorA1AndA2_Click;
+			buttonLogicalXnorA1AndA2.Enter += Control_Enter;
+			buttonLogicalXnorA1AndA2.Leave += Control_Leave;
+			buttonLogicalXnorA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalXnorA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonDivisionA1AndA2
 			// 
@@ -1385,9 +1655,13 @@
 			buttonDivisionA1AndA2.Name = "buttonDivisionA1AndA2";
 			buttonDivisionA1AndA2.Size = new Size(91, 27);
 			buttonDivisionA1AndA2.TabIndex = 72;
-			buttonDivisionA1AndA2.Text = "A1 / A2";
-			buttonDivisionA1AndA2.UseVisualStyleBackColor = true;
+			buttonDivisionA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonDivisionA1AndA2.Values.Text = "A1 / A2";
 			buttonDivisionA1AndA2.Click += ButtonDivisionA1AndA2_Click;
+			buttonDivisionA1AndA2.Enter += Control_Enter;
+			buttonDivisionA1AndA2.Leave += Control_Leave;
+			buttonDivisionA1AndA2.MouseEnter += Control_Enter;
+			buttonDivisionA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonLogicalNorA1AndA2
 			// 
@@ -1397,9 +1671,13 @@
 			buttonLogicalNorA1AndA2.Name = "buttonLogicalNorA1AndA2";
 			buttonLogicalNorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalNorA1AndA2.TabIndex = 79;
-			buttonLogicalNorA1AndA2.Text = "A1 NOR A2";
-			buttonLogicalNorA1AndA2.UseVisualStyleBackColor = true;
+			buttonLogicalNorA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalNorA1AndA2.Values.Text = "A1 NOR A2";
 			buttonLogicalNorA1AndA2.Click += ButtonLogicalNorA1AndA2_Click;
+			buttonLogicalNorA1AndA2.Enter += Control_Enter;
+			buttonLogicalNorA1AndA2.Leave += Control_Leave;
+			buttonLogicalNorA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalNorA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonLogicalAndA1AndA2
 			// 
@@ -1409,9 +1687,13 @@
 			buttonLogicalAndA1AndA2.Name = "buttonLogicalAndA1AndA2";
 			buttonLogicalAndA1AndA2.Size = new Size(91, 27);
 			buttonLogicalAndA1AndA2.TabIndex = 73;
-			buttonLogicalAndA1AndA2.Text = "A1 AND A2";
-			buttonLogicalAndA1AndA2.UseVisualStyleBackColor = true;
+			buttonLogicalAndA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalAndA1AndA2.Values.Text = "A1 AND A2";
 			buttonLogicalAndA1AndA2.Click += ButtonLogicalAndA1AndA2_Click;
+			buttonLogicalAndA1AndA2.Enter += Control_Enter;
+			buttonLogicalAndA1AndA2.Leave += Control_Leave;
+			buttonLogicalAndA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalAndA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonLogicalOrA1AndA2
 			// 
@@ -1421,21 +1703,29 @@
 			buttonLogicalOrA1AndA2.Name = "buttonLogicalOrA1AndA2";
 			buttonLogicalOrA1AndA2.Size = new Size(91, 27);
 			buttonLogicalOrA1AndA2.TabIndex = 74;
-			buttonLogicalOrA1AndA2.Text = "A1 OR A2";
-			buttonLogicalOrA1AndA2.UseVisualStyleBackColor = true;
+			buttonLogicalOrA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalOrA1AndA2.Values.Text = "A1 OR A2";
 			buttonLogicalOrA1AndA2.Click += ButtonLogicalOrA1AndA2_Click;
+			buttonLogicalOrA1AndA2.Enter += Control_Enter;
+			buttonLogicalOrA1AndA2.Leave += Control_Leave;
+			buttonLogicalOrA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalOrA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonInvertA2
 			// 
 			buttonInvertA2.AccessibleRole = AccessibleRole.PushButton;
-			buttonInvertA2.Location = new Point(203, 125);
+			buttonInvertA2.Location = new Point(204, 125);
 			buttonInvertA2.Margin = new Padding(4, 3, 4, 3);
 			buttonInvertA2.Name = "buttonInvertA2";
 			buttonInvertA2.Size = new Size(91, 27);
 			buttonInvertA2.TabIndex = 77;
-			buttonInvertA2.Text = "NOT A2";
-			buttonInvertA2.UseVisualStyleBackColor = true;
+			buttonInvertA2.Values.DropDownArrowColor = Color.Empty;
+			buttonInvertA2.Values.Text = "NOT A2";
 			buttonInvertA2.Click += ButtonInvertA2_Click;
+			buttonInvertA2.Enter += Control_Enter;
+			buttonInvertA2.Leave += Control_Leave;
+			buttonInvertA2.MouseEnter += Control_Enter;
+			buttonInvertA2.MouseLeave += Control_Leave;
 			// 
 			// buttonLogicalXorA1AndA2
 			// 
@@ -1445,21 +1735,29 @@
 			buttonLogicalXorA1AndA2.Name = "buttonLogicalXorA1AndA2";
 			buttonLogicalXorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalXorA1AndA2.TabIndex = 75;
-			buttonLogicalXorA1AndA2.Text = "A1 XOR A2";
-			buttonLogicalXorA1AndA2.UseVisualStyleBackColor = true;
+			buttonLogicalXorA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalXorA1AndA2.Values.Text = "A1 XOR A2";
 			buttonLogicalXorA1AndA2.Click += ButtonLogicalXorA1AndA2_Click;
+			buttonLogicalXorA1AndA2.Enter += Control_Enter;
+			buttonLogicalXorA1AndA2.Leave += Control_Leave;
+			buttonLogicalXorA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalXorA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonInvertA1
 			// 
 			buttonInvertA1.AccessibleRole = AccessibleRole.PushButton;
-			buttonInvertA1.Location = new Point(105, 125);
+			buttonInvertA1.Location = new Point(106, 125);
 			buttonInvertA1.Margin = new Padding(4, 3, 4, 3);
 			buttonInvertA1.Name = "buttonInvertA1";
 			buttonInvertA1.Size = new Size(91, 27);
 			buttonInvertA1.TabIndex = 76;
-			buttonInvertA1.Text = "NOT A1";
-			buttonInvertA1.UseVisualStyleBackColor = true;
+			buttonInvertA1.Values.DropDownArrowColor = Color.Empty;
+			buttonInvertA1.Values.Text = "NOT A1";
 			buttonInvertA1.Click += ButtonInvertA1_Click;
+			buttonInvertA1.Enter += Control_Enter;
+			buttonInvertA1.Leave += Control_Leave;
+			buttonInvertA1.MouseEnter += Control_Enter;
+			buttonInvertA1.MouseLeave += Control_Leave;
 			// 
 			// groupBoxResult
 			// 
@@ -1487,83 +1785,103 @@
 			// 
 			// textBoxResultOctal
 			// 
-			textBoxResultOctal.BackColor = SystemColors.Info;
 			textBoxResultOctal.Location = new Point(457, 28);
 			textBoxResultOctal.Margin = new Padding(4, 3, 4, 3);
 			textBoxResultOctal.Name = "textBoxResultOctal";
 			textBoxResultOctal.Size = new Size(116, 23);
 			textBoxResultOctal.TabIndex = 71;
+			textBoxResultOctal.Enter += Control_Enter;
+			textBoxResultOctal.Leave += Control_Leave;
+			textBoxResultOctal.MouseEnter += Control_Enter;
+			textBoxResultOctal.MouseLeave += Control_Leave;
 			// 
 			// labelResultOctal
 			// 
-			labelResultOctal.AutoSize = true;
-			labelResultOctal.BackColor = Color.Transparent;
 			labelResultOctal.Location = new Point(412, 31);
 			labelResultOctal.Margin = new Padding(4, 0, 4, 0);
 			labelResultOctal.Name = "labelResultOctal";
-			labelResultOctal.Size = new Size(32, 15);
+			labelResultOctal.Size = new Size(35, 20);
 			labelResultOctal.TabIndex = 70;
-			labelResultOctal.Text = "Oct.:";
+			labelResultOctal.Values.Text = "Oct.:";
+			labelResultOctal.Enter += Control_Enter;
+			labelResultOctal.Leave += Control_Leave;
+			labelResultOctal.MouseEnter += Control_Enter;
+			labelResultOctal.MouseLeave += Control_Leave;
 			// 
 			// maskedTextBoxResultNetwork
 			// 
-			maskedTextBoxResultNetwork.BackColor = SystemColors.Info;
 			maskedTextBoxResultNetwork.Location = new Point(667, 28);
 			maskedTextBoxResultNetwork.Margin = new Padding(4, 3, 4, 3);
 			maskedTextBoxResultNetwork.Name = "maskedTextBoxResultNetwork";
 			maskedTextBoxResultNetwork.Size = new Size(116, 23);
 			maskedTextBoxResultNetwork.TabIndex = 67;
+			maskedTextBoxResultNetwork.Enter += Control_Enter;
+			maskedTextBoxResultNetwork.Leave += Control_Leave;
+			maskedTextBoxResultNetwork.MouseEnter += Control_Enter;
+			maskedTextBoxResultNetwork.MouseLeave += Control_Leave;
 			// 
 			// labelResultNetwork
 			// 
-			labelResultNetwork.AutoSize = true;
-			labelResultNetwork.BackColor = Color.Transparent;
 			labelResultNetwork.Location = new Point(616, 31);
 			labelResultNetwork.Margin = new Padding(4, 0, 4, 0);
 			labelResultNetwork.Name = "labelResultNetwork";
-			labelResultNetwork.Size = new Size(41, 15);
+			labelResultNetwork.Size = new Size(45, 20);
 			labelResultNetwork.TabIndex = 68;
-			labelResultNetwork.Text = "Netw.:";
+			labelResultNetwork.Values.Text = "Netw.:";
+			labelResultNetwork.Enter += Control_Enter;
+			labelResultNetwork.Leave += Control_Leave;
+			labelResultNetwork.MouseEnter += Control_Enter;
+			labelResultNetwork.MouseLeave += Control_Leave;
 			// 
 			// textResultDecimal
 			// 
-			textResultDecimal.BackColor = SystemColors.Info;
 			textResultDecimal.Location = new Point(253, 28);
 			textResultDecimal.Margin = new Padding(4, 3, 4, 3);
 			textResultDecimal.Name = "textResultDecimal";
 			textResultDecimal.Size = new Size(116, 23);
 			textResultDecimal.TabIndex = 68;
+			textResultDecimal.Enter += Control_Enter;
+			textResultDecimal.Leave += Control_Leave;
+			textResultDecimal.MouseEnter += Control_Enter;
+			textResultDecimal.MouseLeave += Control_Leave;
 			// 
 			// textBoxResultHexadecimal
 			// 
-			textBoxResultHexadecimal.BackColor = SystemColors.Info;
 			textBoxResultHexadecimal.Location = new Point(50, 28);
 			textBoxResultHexadecimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxResultHexadecimal.Name = "textBoxResultHexadecimal";
 			textBoxResultHexadecimal.Size = new Size(116, 23);
 			textBoxResultHexadecimal.TabIndex = 67;
+			textBoxResultHexadecimal.Enter += Control_Enter;
+			textBoxResultHexadecimal.Leave += Control_Leave;
+			textBoxResultHexadecimal.MouseEnter += Control_Enter;
+			textBoxResultHexadecimal.MouseLeave += Control_Leave;
 			// 
 			// labelResultDecimal
 			// 
-			labelResultDecimal.AutoSize = true;
-			labelResultDecimal.BackColor = Color.Transparent;
 			labelResultDecimal.Location = new Point(208, 31);
 			labelResultDecimal.Margin = new Padding(4, 0, 4, 0);
 			labelResultDecimal.Name = "labelResultDecimal";
-			labelResultDecimal.Size = new Size(33, 15);
+			labelResultDecimal.Size = new Size(37, 20);
 			labelResultDecimal.TabIndex = 69;
-			labelResultDecimal.Text = "Dec.:";
+			labelResultDecimal.Values.Text = "Dec.:";
+			labelResultDecimal.Enter += Control_Enter;
+			labelResultDecimal.Leave += Control_Leave;
+			labelResultDecimal.MouseEnter += Control_Enter;
+			labelResultDecimal.MouseLeave += Control_Leave;
 			// 
 			// labelResultHexadecimal
 			// 
-			labelResultHexadecimal.AutoSize = true;
-			labelResultHexadecimal.BackColor = Color.Transparent;
 			labelResultHexadecimal.Location = new Point(6, 31);
 			labelResultHexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelResultHexadecimal.Name = "labelResultHexadecimal";
-			labelResultHexadecimal.Size = new Size(34, 15);
+			labelResultHexadecimal.Size = new Size(37, 20);
 			labelResultHexadecimal.TabIndex = 67;
-			labelResultHexadecimal.Text = "Hex.:";
+			labelResultHexadecimal.Values.Text = "Hex.:";
+			labelResultHexadecimal.Enter += Control_Enter;
+			labelResultHexadecimal.Leave += Control_Leave;
+			labelResultHexadecimal.MouseEnter += Control_Enter;
+			labelResultHexadecimal.MouseLeave += Control_Leave;
 			// 
 			// groupBoxResultByte4
 			// 
@@ -1594,187 +1912,219 @@
 			// 
 			// labelResultBit31
 			// 
-			labelResultBit31.AutoSize = true;
-			labelResultBit31.BackColor = Color.Transparent;
 			labelResultBit31.Location = new Point(7, 18);
 			labelResultBit31.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit31.Name = "labelResultBit31";
-			labelResultBit31.Size = new Size(19, 15);
+			labelResultBit31.Size = new Size(24, 20);
 			labelResultBit31.TabIndex = 65;
-			labelResultBit31.Text = "31";
+			labelResultBit31.Values.Text = "31";
+			labelResultBit31.Enter += Control_Enter;
+			labelResultBit31.Leave += Control_Leave;
+			labelResultBit31.MouseEnter += Control_Enter;
+			labelResultBit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit31
 			// 
 			checkBoxResultBit31.AutoCheck = false;
-			checkBoxResultBit31.AutoSize = true;
-			checkBoxResultBit31.BackColor = Color.Transparent;
 			checkBoxResultBit31.Location = new Point(10, 37);
 			checkBoxResultBit31.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit31.Name = "checkBoxResultBit31";
-			checkBoxResultBit31.Size = new Size(15, 14);
+			checkBoxResultBit31.Size = new Size(19, 14);
 			checkBoxResultBit31.TabIndex = 64;
-			checkBoxResultBit31.UseVisualStyleBackColor = true;
+			checkBoxResultBit31.Values.Text = "";
+			checkBoxResultBit31.Enter += Control_Enter;
+			checkBoxResultBit31.Leave += Control_Leave;
+			checkBoxResultBit31.MouseEnter += Control_Enter;
+			checkBoxResultBit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit24
 			// 
 			checkBoxResultBit24.AutoCheck = false;
-			checkBoxResultBit24.AutoSize = true;
-			checkBoxResultBit24.BackColor = Color.Transparent;
 			checkBoxResultBit24.Location = new Point(172, 37);
 			checkBoxResultBit24.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit24.Name = "checkBoxResultBit24";
-			checkBoxResultBit24.Size = new Size(15, 14);
+			checkBoxResultBit24.Size = new Size(19, 14);
 			checkBoxResultBit24.TabIndex = 50;
-			checkBoxResultBit24.UseVisualStyleBackColor = true;
+			checkBoxResultBit24.Values.Text = "";
+			checkBoxResultBit24.Enter += Control_Enter;
+			checkBoxResultBit24.Leave += Control_Leave;
+			checkBoxResultBit24.MouseEnter += Control_Enter;
+			checkBoxResultBit24.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit24
 			// 
-			labelResultBit24.AutoSize = true;
-			labelResultBit24.BackColor = Color.Transparent;
 			labelResultBit24.Location = new Point(168, 18);
 			labelResultBit24.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit24.Name = "labelResultBit24";
-			labelResultBit24.Size = new Size(19, 15);
+			labelResultBit24.Size = new Size(24, 20);
 			labelResultBit24.TabIndex = 51;
-			labelResultBit24.Text = "24";
+			labelResultBit24.Values.Text = "24";
+			labelResultBit24.Enter += Control_Enter;
+			labelResultBit24.Leave += Control_Leave;
+			labelResultBit24.MouseEnter += Control_Enter;
+			labelResultBit24.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit25
 			// 
 			checkBoxResultBit25.AutoCheck = false;
-			checkBoxResultBit25.AutoSize = true;
-			checkBoxResultBit25.BackColor = Color.Transparent;
 			checkBoxResultBit25.Location = new Point(149, 37);
 			checkBoxResultBit25.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit25.Name = "checkBoxResultBit25";
-			checkBoxResultBit25.Size = new Size(15, 14);
+			checkBoxResultBit25.Size = new Size(19, 14);
 			checkBoxResultBit25.TabIndex = 52;
-			checkBoxResultBit25.UseVisualStyleBackColor = true;
+			checkBoxResultBit25.Values.Text = "";
+			checkBoxResultBit25.Enter += Control_Enter;
+			checkBoxResultBit25.Leave += Control_Leave;
+			checkBoxResultBit25.MouseEnter += Control_Enter;
+			checkBoxResultBit25.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit30
 			// 
-			labelResultBit30.AutoSize = true;
-			labelResultBit30.BackColor = Color.Transparent;
 			labelResultBit30.Location = new Point(29, 18);
 			labelResultBit30.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit30.Name = "labelResultBit30";
-			labelResultBit30.Size = new Size(19, 15);
+			labelResultBit30.Size = new Size(24, 20);
 			labelResultBit30.TabIndex = 63;
-			labelResultBit30.Text = "30";
+			labelResultBit30.Values.Text = "30";
+			labelResultBit30.Enter += Control_Enter;
+			labelResultBit30.Leave += Control_Leave;
+			labelResultBit30.MouseEnter += Control_Enter;
+			labelResultBit30.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit25
 			// 
-			labelResultBit25.AutoSize = true;
-			labelResultBit25.BackColor = Color.Transparent;
 			labelResultBit25.Location = new Point(146, 18);
 			labelResultBit25.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit25.Name = "labelResultBit25";
-			labelResultBit25.Size = new Size(19, 15);
+			labelResultBit25.Size = new Size(24, 20);
 			labelResultBit25.TabIndex = 53;
-			labelResultBit25.Text = "25";
+			labelResultBit25.Values.Text = "25";
+			labelResultBit25.Enter += Control_Enter;
+			labelResultBit25.Leave += Control_Leave;
+			labelResultBit25.MouseEnter += Control_Enter;
+			labelResultBit25.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit26
 			// 
 			checkBoxResultBit26.AutoCheck = false;
-			checkBoxResultBit26.AutoSize = true;
-			checkBoxResultBit26.BackColor = Color.Transparent;
 			checkBoxResultBit26.Location = new Point(127, 37);
 			checkBoxResultBit26.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit26.Name = "checkBoxResultBit26";
-			checkBoxResultBit26.Size = new Size(15, 14);
+			checkBoxResultBit26.Size = new Size(19, 14);
 			checkBoxResultBit26.TabIndex = 54;
-			checkBoxResultBit26.UseVisualStyleBackColor = true;
+			checkBoxResultBit26.Values.Text = "";
+			checkBoxResultBit26.Enter += Control_Enter;
+			checkBoxResultBit26.Leave += Control_Leave;
+			checkBoxResultBit26.MouseEnter += Control_Enter;
+			checkBoxResultBit26.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit30
 			// 
 			checkBoxResultBit30.AutoCheck = false;
-			checkBoxResultBit30.AutoSize = true;
-			checkBoxResultBit30.BackColor = Color.Transparent;
 			checkBoxResultBit30.Location = new Point(33, 37);
 			checkBoxResultBit30.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit30.Name = "checkBoxResultBit30";
-			checkBoxResultBit30.Size = new Size(15, 14);
+			checkBoxResultBit30.Size = new Size(19, 14);
 			checkBoxResultBit30.TabIndex = 62;
-			checkBoxResultBit30.UseVisualStyleBackColor = true;
+			checkBoxResultBit30.Values.Text = "";
+			checkBoxResultBit30.Enter += Control_Enter;
+			checkBoxResultBit30.Leave += Control_Leave;
+			checkBoxResultBit30.MouseEnter += Control_Enter;
+			checkBoxResultBit30.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit26
 			// 
-			labelResultBit26.AutoSize = true;
-			labelResultBit26.BackColor = Color.Transparent;
 			labelResultBit26.Location = new Point(124, 18);
 			labelResultBit26.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit26.Name = "labelResultBit26";
-			labelResultBit26.Size = new Size(19, 15);
+			labelResultBit26.Size = new Size(24, 20);
 			labelResultBit26.TabIndex = 55;
-			labelResultBit26.Text = "26";
+			labelResultBit26.Values.Text = "26";
+			labelResultBit26.Enter += Control_Enter;
+			labelResultBit26.Leave += Control_Leave;
+			labelResultBit26.MouseEnter += Control_Enter;
+			labelResultBit26.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit29
 			// 
-			labelResultBit29.AutoSize = true;
-			labelResultBit29.BackColor = Color.Transparent;
 			labelResultBit29.Location = new Point(51, 18);
 			labelResultBit29.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit29.Name = "labelResultBit29";
-			labelResultBit29.Size = new Size(19, 15);
+			labelResultBit29.Size = new Size(24, 20);
 			labelResultBit29.TabIndex = 61;
-			labelResultBit29.Text = "29";
+			labelResultBit29.Values.Text = "29";
+			labelResultBit29.Enter += Control_Enter;
+			labelResultBit29.Leave += Control_Leave;
+			labelResultBit29.MouseEnter += Control_Enter;
+			labelResultBit29.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit27
 			// 
 			checkBoxResultBit27.AutoCheck = false;
-			checkBoxResultBit27.AutoSize = true;
-			checkBoxResultBit27.BackColor = Color.Transparent;
 			checkBoxResultBit27.Location = new Point(105, 37);
 			checkBoxResultBit27.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit27.Name = "checkBoxResultBit27";
-			checkBoxResultBit27.Size = new Size(15, 14);
+			checkBoxResultBit27.Size = new Size(19, 14);
 			checkBoxResultBit27.TabIndex = 56;
-			checkBoxResultBit27.UseVisualStyleBackColor = true;
+			checkBoxResultBit27.Values.Text = "";
+			checkBoxResultBit27.Enter += Control_Enter;
+			checkBoxResultBit27.Leave += Control_Leave;
+			checkBoxResultBit27.MouseEnter += Control_Enter;
+			checkBoxResultBit27.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit29
 			// 
 			checkBoxResultBit29.AutoCheck = false;
-			checkBoxResultBit29.AutoSize = true;
-			checkBoxResultBit29.BackColor = Color.Transparent;
 			checkBoxResultBit29.Location = new Point(55, 37);
 			checkBoxResultBit29.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit29.Name = "checkBoxResultBit29";
-			checkBoxResultBit29.Size = new Size(15, 14);
+			checkBoxResultBit29.Size = new Size(19, 14);
 			checkBoxResultBit29.TabIndex = 60;
-			checkBoxResultBit29.UseVisualStyleBackColor = true;
+			checkBoxResultBit29.Values.Text = "";
+			checkBoxResultBit29.Enter += Control_Enter;
+			checkBoxResultBit29.Leave += Control_Leave;
+			checkBoxResultBit29.MouseEnter += Control_Enter;
+			checkBoxResultBit29.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit27
 			// 
-			labelResultBit27.AutoSize = true;
-			labelResultBit27.BackColor = Color.Transparent;
 			labelResultBit27.Location = new Point(102, 18);
 			labelResultBit27.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit27.Name = "labelResultBit27";
-			labelResultBit27.Size = new Size(19, 15);
+			labelResultBit27.Size = new Size(24, 20);
 			labelResultBit27.TabIndex = 57;
-			labelResultBit27.Text = "27";
+			labelResultBit27.Values.Text = "27";
+			labelResultBit27.Enter += Control_Enter;
+			labelResultBit27.Leave += Control_Leave;
+			labelResultBit27.MouseEnter += Control_Enter;
+			labelResultBit27.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit28
 			// 
-			labelResultBit28.AutoSize = true;
-			labelResultBit28.BackColor = Color.Transparent;
 			labelResultBit28.Location = new Point(74, 18);
 			labelResultBit28.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit28.Name = "labelResultBit28";
-			labelResultBit28.Size = new Size(19, 15);
+			labelResultBit28.Size = new Size(24, 20);
 			labelResultBit28.TabIndex = 59;
-			labelResultBit28.Text = "28";
+			labelResultBit28.Values.Text = "28";
+			labelResultBit28.Enter += Control_Enter;
+			labelResultBit28.Leave += Control_Leave;
+			labelResultBit28.MouseEnter += Control_Enter;
+			labelResultBit28.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit28
 			// 
 			checkBoxResultBit28.AutoCheck = false;
-			checkBoxResultBit28.AutoSize = true;
-			checkBoxResultBit28.BackColor = Color.Transparent;
 			checkBoxResultBit28.Location = new Point(77, 37);
 			checkBoxResultBit28.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit28.Name = "checkBoxResultBit28";
-			checkBoxResultBit28.Size = new Size(15, 14);
+			checkBoxResultBit28.Size = new Size(19, 14);
 			checkBoxResultBit28.TabIndex = 58;
-			checkBoxResultBit28.UseVisualStyleBackColor = true;
+			checkBoxResultBit28.Values.Text = "";
+			checkBoxResultBit28.Enter += Control_Enter;
+			checkBoxResultBit28.Leave += Control_Leave;
+			checkBoxResultBit28.MouseEnter += Control_Enter;
+			checkBoxResultBit28.MouseLeave += Control_Leave;
 			// 
 			// groupBoxResultByte3
 			// 
@@ -1806,186 +2156,218 @@
 			// checkBoxResultBit23
 			// 
 			checkBoxResultBit23.AutoCheck = false;
-			checkBoxResultBit23.AutoSize = true;
-			checkBoxResultBit23.BackColor = Color.Transparent;
 			checkBoxResultBit23.Location = new Point(7, 37);
 			checkBoxResultBit23.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit23.Name = "checkBoxResultBit23";
-			checkBoxResultBit23.Size = new Size(15, 14);
+			checkBoxResultBit23.Size = new Size(19, 14);
 			checkBoxResultBit23.TabIndex = 48;
-			checkBoxResultBit23.UseVisualStyleBackColor = true;
+			checkBoxResultBit23.Values.Text = "";
+			checkBoxResultBit23.Enter += Control_Enter;
+			checkBoxResultBit23.Leave += Control_Leave;
+			checkBoxResultBit23.MouseEnter += Control_Enter;
+			checkBoxResultBit23.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit21
 			// 
 			checkBoxResultBit21.AutoCheck = false;
-			checkBoxResultBit21.AutoSize = true;
-			checkBoxResultBit21.BackColor = Color.Transparent;
 			checkBoxResultBit21.Location = new Point(51, 37);
 			checkBoxResultBit21.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit21.Name = "checkBoxResultBit21";
-			checkBoxResultBit21.Size = new Size(15, 14);
+			checkBoxResultBit21.Size = new Size(19, 14);
 			checkBoxResultBit21.TabIndex = 44;
-			checkBoxResultBit21.UseVisualStyleBackColor = true;
+			checkBoxResultBit21.Values.Text = "";
+			checkBoxResultBit21.Enter += Control_Enter;
+			checkBoxResultBit21.Leave += Control_Leave;
+			checkBoxResultBit21.MouseEnter += Control_Enter;
+			checkBoxResultBit21.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit21
 			// 
-			labelResultBit21.AutoSize = true;
-			labelResultBit21.BackColor = Color.Transparent;
 			labelResultBit21.Location = new Point(48, 18);
 			labelResultBit21.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit21.Name = "labelResultBit21";
-			labelResultBit21.Size = new Size(19, 15);
+			labelResultBit21.Size = new Size(24, 20);
 			labelResultBit21.TabIndex = 45;
-			labelResultBit21.Text = "21";
+			labelResultBit21.Values.Text = "21";
+			labelResultBit21.Enter += Control_Enter;
+			labelResultBit21.Leave += Control_Leave;
+			labelResultBit21.MouseEnter += Control_Enter;
+			labelResultBit21.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit20
 			// 
-			labelResultBit20.AutoSize = true;
-			labelResultBit20.BackColor = Color.Transparent;
 			labelResultBit20.Location = new Point(70, 18);
 			labelResultBit20.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit20.Name = "labelResultBit20";
-			labelResultBit20.Size = new Size(19, 15);
+			labelResultBit20.Size = new Size(24, 20);
 			labelResultBit20.TabIndex = 43;
-			labelResultBit20.Text = "20";
+			labelResultBit20.Values.Text = "20";
+			labelResultBit20.Enter += Control_Enter;
+			labelResultBit20.Leave += Control_Leave;
+			labelResultBit20.MouseEnter += Control_Enter;
+			labelResultBit20.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit22
 			// 
 			checkBoxResultBit22.AutoCheck = false;
-			checkBoxResultBit22.AutoSize = true;
-			checkBoxResultBit22.BackColor = Color.Transparent;
 			checkBoxResultBit22.Location = new Point(29, 37);
 			checkBoxResultBit22.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit22.Name = "checkBoxResultBit22";
-			checkBoxResultBit22.Size = new Size(15, 14);
+			checkBoxResultBit22.Size = new Size(19, 14);
 			checkBoxResultBit22.TabIndex = 46;
-			checkBoxResultBit22.UseVisualStyleBackColor = true;
+			checkBoxResultBit22.Values.Text = "";
+			checkBoxResultBit22.Enter += Control_Enter;
+			checkBoxResultBit22.Leave += Control_Leave;
+			checkBoxResultBit22.MouseEnter += Control_Enter;
+			checkBoxResultBit22.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit20
 			// 
 			checkBoxResultBit20.AutoCheck = false;
-			checkBoxResultBit20.AutoSize = true;
-			checkBoxResultBit20.BackColor = Color.Transparent;
 			checkBoxResultBit20.Location = new Point(74, 37);
 			checkBoxResultBit20.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit20.Name = "checkBoxResultBit20";
-			checkBoxResultBit20.Size = new Size(15, 14);
+			checkBoxResultBit20.Size = new Size(19, 14);
 			checkBoxResultBit20.TabIndex = 42;
-			checkBoxResultBit20.UseVisualStyleBackColor = true;
+			checkBoxResultBit20.Values.Text = "";
+			checkBoxResultBit20.Enter += Control_Enter;
+			checkBoxResultBit20.Leave += Control_Leave;
+			checkBoxResultBit20.MouseEnter += Control_Enter;
+			checkBoxResultBit20.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit22
 			// 
-			labelResultBit22.AutoSize = true;
-			labelResultBit22.BackColor = Color.Transparent;
 			labelResultBit22.Location = new Point(26, 18);
 			labelResultBit22.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit22.Name = "labelResultBit22";
-			labelResultBit22.Size = new Size(19, 15);
+			labelResultBit22.Size = new Size(24, 20);
 			labelResultBit22.TabIndex = 47;
-			labelResultBit22.Text = "22";
+			labelResultBit22.Values.Text = "22";
+			labelResultBit22.Enter += Control_Enter;
+			labelResultBit22.Leave += Control_Leave;
+			labelResultBit22.MouseEnter += Control_Enter;
+			labelResultBit22.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit19
 			// 
-			labelResultBit19.AutoSize = true;
-			labelResultBit19.BackColor = Color.Transparent;
 			labelResultBit19.Location = new Point(105, 18);
 			labelResultBit19.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit19.Name = "labelResultBit19";
-			labelResultBit19.Size = new Size(19, 15);
+			labelResultBit19.Size = new Size(24, 20);
 			labelResultBit19.TabIndex = 41;
-			labelResultBit19.Text = "19";
+			labelResultBit19.Values.Text = "19";
+			labelResultBit19.Enter += Control_Enter;
+			labelResultBit19.Leave += Control_Leave;
+			labelResultBit19.MouseEnter += Control_Enter;
+			labelResultBit19.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit16
 			// 
 			checkBoxResultBit16.AutoCheck = false;
-			checkBoxResultBit16.AutoSize = true;
-			checkBoxResultBit16.BackColor = Color.Transparent;
 			checkBoxResultBit16.Location = new Point(175, 37);
 			checkBoxResultBit16.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit16.Name = "checkBoxResultBit16";
-			checkBoxResultBit16.Size = new Size(15, 14);
+			checkBoxResultBit16.Size = new Size(19, 14);
 			checkBoxResultBit16.TabIndex = 34;
-			checkBoxResultBit16.UseVisualStyleBackColor = true;
+			checkBoxResultBit16.Values.Text = "";
+			checkBoxResultBit16.Enter += Control_Enter;
+			checkBoxResultBit16.Leave += Control_Leave;
+			checkBoxResultBit16.MouseEnter += Control_Enter;
+			checkBoxResultBit16.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit19
 			// 
 			checkBoxResultBit19.AutoCheck = false;
-			checkBoxResultBit19.AutoSize = true;
-			checkBoxResultBit19.BackColor = Color.Transparent;
 			checkBoxResultBit19.Location = new Point(108, 37);
 			checkBoxResultBit19.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit19.Name = "checkBoxResultBit19";
-			checkBoxResultBit19.Size = new Size(15, 14);
+			checkBoxResultBit19.Size = new Size(19, 14);
 			checkBoxResultBit19.TabIndex = 40;
-			checkBoxResultBit19.UseVisualStyleBackColor = true;
+			checkBoxResultBit19.Values.Text = "";
+			checkBoxResultBit19.Enter += Control_Enter;
+			checkBoxResultBit19.Leave += Control_Leave;
+			checkBoxResultBit19.MouseEnter += Control_Enter;
+			checkBoxResultBit19.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit23
 			// 
-			labelResultBit23.AutoSize = true;
-			labelResultBit23.BackColor = Color.Transparent;
 			labelResultBit23.Location = new Point(4, 18);
 			labelResultBit23.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit23.Name = "labelResultBit23";
-			labelResultBit23.Size = new Size(19, 15);
+			labelResultBit23.Size = new Size(24, 20);
 			labelResultBit23.TabIndex = 49;
-			labelResultBit23.Text = "23";
+			labelResultBit23.Values.Text = "23";
+			labelResultBit23.Enter += Control_Enter;
+			labelResultBit23.Leave += Control_Leave;
+			labelResultBit23.MouseEnter += Control_Enter;
+			labelResultBit23.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit18
 			// 
-			labelResultBit18.AutoSize = true;
-			labelResultBit18.BackColor = Color.Transparent;
 			labelResultBit18.Location = new Point(127, 18);
 			labelResultBit18.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit18.Name = "labelResultBit18";
-			labelResultBit18.Size = new Size(19, 15);
+			labelResultBit18.Size = new Size(24, 20);
 			labelResultBit18.TabIndex = 39;
-			labelResultBit18.Text = "18";
+			labelResultBit18.Values.Text = "18";
+			labelResultBit18.Enter += Control_Enter;
+			labelResultBit18.Leave += Control_Leave;
+			labelResultBit18.MouseEnter += Control_Enter;
+			labelResultBit18.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit16
 			// 
-			labelResultBit16.AutoSize = true;
-			labelResultBit16.BackColor = Color.Transparent;
 			labelResultBit16.Location = new Point(172, 18);
 			labelResultBit16.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit16.Name = "labelResultBit16";
-			labelResultBit16.Size = new Size(19, 15);
+			labelResultBit16.Size = new Size(24, 20);
 			labelResultBit16.TabIndex = 35;
-			labelResultBit16.Text = "16";
+			labelResultBit16.Values.Text = "16";
+			labelResultBit16.Enter += Control_Enter;
+			labelResultBit16.Leave += Control_Leave;
+			labelResultBit16.MouseEnter += Control_Enter;
+			labelResultBit16.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit18
 			// 
 			checkBoxResultBit18.AutoCheck = false;
-			checkBoxResultBit18.AutoSize = true;
-			checkBoxResultBit18.BackColor = Color.Transparent;
 			checkBoxResultBit18.Location = new Point(131, 37);
 			checkBoxResultBit18.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit18.Name = "checkBoxResultBit18";
-			checkBoxResultBit18.Size = new Size(15, 14);
+			checkBoxResultBit18.Size = new Size(19, 14);
 			checkBoxResultBit18.TabIndex = 38;
-			checkBoxResultBit18.UseVisualStyleBackColor = true;
+			checkBoxResultBit18.Values.Text = "";
+			checkBoxResultBit18.Enter += Control_Enter;
+			checkBoxResultBit18.Leave += Control_Leave;
+			checkBoxResultBit18.MouseEnter += Control_Enter;
+			checkBoxResultBit18.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit17
 			// 
-			labelResultBit17.AutoSize = true;
-			labelResultBit17.BackColor = Color.Transparent;
 			labelResultBit17.Location = new Point(149, 18);
 			labelResultBit17.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit17.Name = "labelResultBit17";
-			labelResultBit17.Size = new Size(19, 15);
+			labelResultBit17.Size = new Size(24, 20);
 			labelResultBit17.TabIndex = 37;
-			labelResultBit17.Text = "17";
+			labelResultBit17.Values.Text = "17";
+			labelResultBit17.Enter += Control_Enter;
+			labelResultBit17.Leave += Control_Leave;
+			labelResultBit17.MouseEnter += Control_Enter;
+			labelResultBit17.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit17
 			// 
 			checkBoxResultBit17.AutoCheck = false;
-			checkBoxResultBit17.AutoSize = true;
-			checkBoxResultBit17.BackColor = Color.Transparent;
 			checkBoxResultBit17.Location = new Point(153, 37);
 			checkBoxResultBit17.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit17.Name = "checkBoxResultBit17";
-			checkBoxResultBit17.Size = new Size(15, 14);
+			checkBoxResultBit17.Size = new Size(19, 14);
 			checkBoxResultBit17.TabIndex = 36;
-			checkBoxResultBit17.UseVisualStyleBackColor = true;
+			checkBoxResultBit17.Values.Text = "";
+			checkBoxResultBit17.Enter += Control_Enter;
+			checkBoxResultBit17.Leave += Control_Leave;
+			checkBoxResultBit17.MouseEnter += Control_Enter;
+			checkBoxResultBit17.MouseLeave += Control_Leave;
 			// 
 			// groupBoxResultByte2
 			// 
@@ -2017,186 +2399,218 @@
 			// checkBoxResultBit15
 			// 
 			checkBoxResultBit15.AutoCheck = false;
-			checkBoxResultBit15.AutoSize = true;
-			checkBoxResultBit15.BackColor = Color.Transparent;
 			checkBoxResultBit15.Location = new Point(7, 37);
 			checkBoxResultBit15.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit15.Name = "checkBoxResultBit15";
-			checkBoxResultBit15.Size = new Size(15, 14);
+			checkBoxResultBit15.Size = new Size(19, 14);
 			checkBoxResultBit15.TabIndex = 32;
-			checkBoxResultBit15.UseVisualStyleBackColor = true;
+			checkBoxResultBit15.Values.Text = "";
+			checkBoxResultBit15.Enter += Control_Enter;
+			checkBoxResultBit15.Leave += Control_Leave;
+			checkBoxResultBit15.MouseEnter += Control_Enter;
+			checkBoxResultBit15.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit10
 			// 
 			checkBoxResultBit10.AutoCheck = false;
-			checkBoxResultBit10.AutoSize = true;
-			checkBoxResultBit10.BackColor = Color.Transparent;
 			checkBoxResultBit10.Location = new Point(131, 37);
 			checkBoxResultBit10.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit10.Name = "checkBoxResultBit10";
-			checkBoxResultBit10.Size = new Size(15, 14);
+			checkBoxResultBit10.Size = new Size(19, 14);
 			checkBoxResultBit10.TabIndex = 22;
-			checkBoxResultBit10.UseVisualStyleBackColor = true;
+			checkBoxResultBit10.Values.Text = "";
+			checkBoxResultBit10.Enter += Control_Enter;
+			checkBoxResultBit10.Leave += Control_Leave;
+			checkBoxResultBit10.MouseEnter += Control_Enter;
+			checkBoxResultBit10.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit10
 			// 
-			labelResultBit10.AutoSize = true;
-			labelResultBit10.BackColor = Color.Transparent;
 			labelResultBit10.Location = new Point(127, 18);
 			labelResultBit10.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit10.Name = "labelResultBit10";
-			labelResultBit10.Size = new Size(19, 15);
+			labelResultBit10.Size = new Size(24, 20);
 			labelResultBit10.TabIndex = 23;
-			labelResultBit10.Text = "10";
+			labelResultBit10.Values.Text = "10";
+			labelResultBit10.Enter += Control_Enter;
+			labelResultBit10.Leave += Control_Leave;
+			labelResultBit10.MouseEnter += Control_Enter;
+			labelResultBit10.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit09
 			// 
-			labelResultBit09.AutoSize = true;
-			labelResultBit09.BackColor = Color.Transparent;
 			labelResultBit09.Location = new Point(149, 18);
 			labelResultBit09.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit09.Name = "labelResultBit09";
-			labelResultBit09.Size = new Size(19, 15);
+			labelResultBit09.Size = new Size(24, 20);
 			labelResultBit09.TabIndex = 21;
-			labelResultBit09.Text = "09";
+			labelResultBit09.Values.Text = "09";
+			labelResultBit09.Enter += Control_Enter;
+			labelResultBit09.Leave += Control_Leave;
+			labelResultBit09.MouseEnter += Control_Enter;
+			labelResultBit09.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit11
 			// 
 			checkBoxResultBit11.AutoCheck = false;
-			checkBoxResultBit11.AutoSize = true;
-			checkBoxResultBit11.BackColor = Color.Transparent;
 			checkBoxResultBit11.Location = new Point(108, 37);
 			checkBoxResultBit11.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit11.Name = "checkBoxResultBit11";
-			checkBoxResultBit11.Size = new Size(15, 14);
+			checkBoxResultBit11.Size = new Size(19, 14);
 			checkBoxResultBit11.TabIndex = 24;
-			checkBoxResultBit11.UseVisualStyleBackColor = true;
+			checkBoxResultBit11.Values.Text = "";
+			checkBoxResultBit11.Enter += Control_Enter;
+			checkBoxResultBit11.Leave += Control_Leave;
+			checkBoxResultBit11.MouseEnter += Control_Enter;
+			checkBoxResultBit11.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit09
 			// 
 			checkBoxResultBit09.AutoCheck = false;
-			checkBoxResultBit09.AutoSize = true;
-			checkBoxResultBit09.BackColor = Color.Transparent;
 			checkBoxResultBit09.Location = new Point(153, 37);
 			checkBoxResultBit09.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit09.Name = "checkBoxResultBit09";
-			checkBoxResultBit09.Size = new Size(15, 14);
+			checkBoxResultBit09.Size = new Size(19, 14);
 			checkBoxResultBit09.TabIndex = 20;
-			checkBoxResultBit09.UseVisualStyleBackColor = true;
+			checkBoxResultBit09.Values.Text = "";
+			checkBoxResultBit09.Enter += Control_Enter;
+			checkBoxResultBit09.Leave += Control_Leave;
+			checkBoxResultBit09.MouseEnter += Control_Enter;
+			checkBoxResultBit09.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit11
 			// 
-			labelResultBit11.AutoSize = true;
-			labelResultBit11.BackColor = Color.Transparent;
 			labelResultBit11.Location = new Point(105, 18);
 			labelResultBit11.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit11.Name = "labelResultBit11";
-			labelResultBit11.Size = new Size(19, 15);
+			labelResultBit11.Size = new Size(24, 20);
 			labelResultBit11.TabIndex = 25;
-			labelResultBit11.Text = "11";
+			labelResultBit11.Values.Text = "11";
+			labelResultBit11.Enter += Control_Enter;
+			labelResultBit11.Leave += Control_Leave;
+			labelResultBit11.MouseEnter += Control_Enter;
+			labelResultBit11.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit15
 			// 
-			labelResultBit15.AutoSize = true;
-			labelResultBit15.BackColor = Color.Transparent;
 			labelResultBit15.Location = new Point(4, 18);
 			labelResultBit15.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit15.Name = "labelResultBit15";
-			labelResultBit15.Size = new Size(19, 15);
+			labelResultBit15.Size = new Size(24, 20);
 			labelResultBit15.TabIndex = 33;
-			labelResultBit15.Text = "15";
+			labelResultBit15.Values.Text = "15";
+			labelResultBit15.Enter += Control_Enter;
+			labelResultBit15.Leave += Control_Leave;
+			labelResultBit15.MouseEnter += Control_Enter;
+			labelResultBit15.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit08
 			// 
-			labelResultBit08.AutoSize = true;
-			labelResultBit08.BackColor = Color.Transparent;
 			labelResultBit08.Location = new Point(173, 18);
 			labelResultBit08.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit08.Name = "labelResultBit08";
-			labelResultBit08.Size = new Size(19, 15);
+			labelResultBit08.Size = new Size(24, 20);
 			labelResultBit08.TabIndex = 19;
-			labelResultBit08.Text = "08";
+			labelResultBit08.Values.Text = "08";
+			labelResultBit08.Enter += Control_Enter;
+			labelResultBit08.Leave += Control_Leave;
+			labelResultBit08.MouseEnter += Control_Enter;
+			labelResultBit08.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit12
 			// 
 			checkBoxResultBit12.AutoCheck = false;
-			checkBoxResultBit12.AutoSize = true;
-			checkBoxResultBit12.BackColor = Color.Transparent;
 			checkBoxResultBit12.Location = new Point(74, 37);
 			checkBoxResultBit12.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit12.Name = "checkBoxResultBit12";
-			checkBoxResultBit12.Size = new Size(15, 14);
+			checkBoxResultBit12.Size = new Size(19, 14);
 			checkBoxResultBit12.TabIndex = 26;
-			checkBoxResultBit12.UseVisualStyleBackColor = true;
+			checkBoxResultBit12.Values.Text = "";
+			checkBoxResultBit12.Enter += Control_Enter;
+			checkBoxResultBit12.Leave += Control_Leave;
+			checkBoxResultBit12.MouseEnter += Control_Enter;
+			checkBoxResultBit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit08
 			// 
 			checkBoxResultBit08.AutoCheck = false;
-			checkBoxResultBit08.AutoSize = true;
-			checkBoxResultBit08.BackColor = Color.Transparent;
 			checkBoxResultBit08.Location = new Point(175, 37);
 			checkBoxResultBit08.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit08.Name = "checkBoxResultBit08";
-			checkBoxResultBit08.Size = new Size(15, 14);
+			checkBoxResultBit08.Size = new Size(19, 14);
 			checkBoxResultBit08.TabIndex = 18;
-			checkBoxResultBit08.UseVisualStyleBackColor = true;
+			checkBoxResultBit08.Values.Text = "";
+			checkBoxResultBit08.Enter += Control_Enter;
+			checkBoxResultBit08.Leave += Control_Leave;
+			checkBoxResultBit08.MouseEnter += Control_Enter;
+			checkBoxResultBit08.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit12
 			// 
-			labelResultBit12.AutoSize = true;
-			labelResultBit12.BackColor = Color.Transparent;
 			labelResultBit12.Location = new Point(70, 18);
 			labelResultBit12.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit12.Name = "labelResultBit12";
-			labelResultBit12.Size = new Size(19, 15);
+			labelResultBit12.Size = new Size(24, 20);
 			labelResultBit12.TabIndex = 27;
-			labelResultBit12.Text = "12";
+			labelResultBit12.Values.Text = "12";
+			labelResultBit12.Enter += Control_Enter;
+			labelResultBit12.Leave += Control_Leave;
+			labelResultBit12.MouseEnter += Control_Enter;
+			labelResultBit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit13
 			// 
 			checkBoxResultBit13.AutoCheck = false;
-			checkBoxResultBit13.AutoSize = true;
-			checkBoxResultBit13.BackColor = Color.Transparent;
 			checkBoxResultBit13.Location = new Point(51, 37);
 			checkBoxResultBit13.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit13.Name = "checkBoxResultBit13";
-			checkBoxResultBit13.Size = new Size(15, 14);
+			checkBoxResultBit13.Size = new Size(19, 14);
 			checkBoxResultBit13.TabIndex = 28;
-			checkBoxResultBit13.UseVisualStyleBackColor = true;
+			checkBoxResultBit13.Values.Text = "";
+			checkBoxResultBit13.Enter += Control_Enter;
+			checkBoxResultBit13.Leave += Control_Leave;
+			checkBoxResultBit13.MouseEnter += Control_Enter;
+			checkBoxResultBit13.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit13
 			// 
-			labelResultBit13.AutoSize = true;
-			labelResultBit13.BackColor = Color.Transparent;
 			labelResultBit13.Location = new Point(48, 18);
 			labelResultBit13.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit13.Name = "labelResultBit13";
-			labelResultBit13.Size = new Size(19, 15);
+			labelResultBit13.Size = new Size(24, 20);
 			labelResultBit13.TabIndex = 29;
-			labelResultBit13.Text = "13";
+			labelResultBit13.Values.Text = "13";
+			labelResultBit13.Enter += Control_Enter;
+			labelResultBit13.Leave += Control_Leave;
+			labelResultBit13.MouseEnter += Control_Enter;
+			labelResultBit13.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit14
 			// 
 			checkBoxResultBit14.AutoCheck = false;
-			checkBoxResultBit14.AutoSize = true;
-			checkBoxResultBit14.BackColor = Color.Transparent;
 			checkBoxResultBit14.Location = new Point(29, 37);
 			checkBoxResultBit14.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit14.Name = "checkBoxResultBit14";
-			checkBoxResultBit14.Size = new Size(15, 14);
+			checkBoxResultBit14.Size = new Size(19, 14);
 			checkBoxResultBit14.TabIndex = 30;
-			checkBoxResultBit14.UseVisualStyleBackColor = true;
+			checkBoxResultBit14.Values.Text = "";
+			checkBoxResultBit14.Enter += Control_Enter;
+			checkBoxResultBit14.Leave += Control_Leave;
+			checkBoxResultBit14.MouseEnter += Control_Enter;
+			checkBoxResultBit14.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit14
 			// 
-			labelResultBit14.AutoSize = true;
-			labelResultBit14.BackColor = Color.Transparent;
 			labelResultBit14.Location = new Point(26, 18);
 			labelResultBit14.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit14.Name = "labelResultBit14";
-			labelResultBit14.Size = new Size(19, 15);
+			labelResultBit14.Size = new Size(24, 20);
 			labelResultBit14.TabIndex = 31;
-			labelResultBit14.Text = "14";
+			labelResultBit14.Values.Text = "14";
+			labelResultBit14.Enter += Control_Enter;
+			labelResultBit14.Leave += Control_Leave;
+			labelResultBit14.MouseEnter += Control_Enter;
+			labelResultBit14.MouseLeave += Control_Leave;
 			// 
 			// groupBoxResultByte1
 			// 
@@ -2227,187 +2641,219 @@
 			// 
 			// labelResultBit07
 			// 
-			labelResultBit07.AutoSize = true;
-			labelResultBit07.BackColor = Color.Transparent;
 			labelResultBit07.Location = new Point(1, 18);
 			labelResultBit07.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit07.Name = "labelResultBit07";
-			labelResultBit07.Size = new Size(19, 15);
+			labelResultBit07.Size = new Size(24, 20);
 			labelResultBit07.TabIndex = 17;
-			labelResultBit07.Text = "07";
+			labelResultBit07.Values.Text = "07";
+			labelResultBit07.Enter += Control_Enter;
+			labelResultBit07.Leave += Control_Leave;
+			labelResultBit07.MouseEnter += Control_Enter;
+			labelResultBit07.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit07
 			// 
 			checkBoxResultBit07.AutoCheck = false;
-			checkBoxResultBit07.AutoSize = true;
-			checkBoxResultBit07.BackColor = Color.Transparent;
 			checkBoxResultBit07.Location = new Point(5, 37);
 			checkBoxResultBit07.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit07.Name = "checkBoxResultBit07";
-			checkBoxResultBit07.Size = new Size(15, 14);
+			checkBoxResultBit07.Size = new Size(19, 14);
 			checkBoxResultBit07.TabIndex = 16;
-			checkBoxResultBit07.UseVisualStyleBackColor = true;
+			checkBoxResultBit07.Values.Text = "";
+			checkBoxResultBit07.Enter += Control_Enter;
+			checkBoxResultBit07.Leave += Control_Leave;
+			checkBoxResultBit07.MouseEnter += Control_Enter;
+			checkBoxResultBit07.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit06
 			// 
-			labelResultBit06.AutoSize = true;
-			labelResultBit06.BackColor = Color.Transparent;
 			labelResultBit06.Location = new Point(23, 18);
 			labelResultBit06.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit06.Name = "labelResultBit06";
-			labelResultBit06.Size = new Size(19, 15);
+			labelResultBit06.Size = new Size(24, 20);
 			labelResultBit06.TabIndex = 15;
-			labelResultBit06.Text = "06";
+			labelResultBit06.Values.Text = "06";
+			labelResultBit06.Enter += Control_Enter;
+			labelResultBit06.Leave += Control_Leave;
+			labelResultBit06.MouseEnter += Control_Enter;
+			labelResultBit06.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit00
 			// 
 			checkBoxResultBit00.AutoCheck = false;
-			checkBoxResultBit00.AutoSize = true;
-			checkBoxResultBit00.BackColor = Color.Transparent;
 			checkBoxResultBit00.Location = new Point(174, 37);
 			checkBoxResultBit00.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit00.Name = "checkBoxResultBit00";
-			checkBoxResultBit00.Size = new Size(15, 14);
+			checkBoxResultBit00.Size = new Size(19, 14);
 			checkBoxResultBit00.TabIndex = 0;
-			checkBoxResultBit00.UseVisualStyleBackColor = true;
+			checkBoxResultBit00.Values.Text = "";
+			checkBoxResultBit00.Enter += Control_Enter;
+			checkBoxResultBit00.Leave += Control_Leave;
+			checkBoxResultBit00.MouseEnter += Control_Enter;
+			checkBoxResultBit00.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit06
 			// 
 			checkBoxResultBit06.AutoCheck = false;
-			checkBoxResultBit06.AutoSize = true;
-			checkBoxResultBit06.BackColor = Color.Transparent;
 			checkBoxResultBit06.Location = new Point(27, 37);
 			checkBoxResultBit06.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit06.Name = "checkBoxResultBit06";
-			checkBoxResultBit06.Size = new Size(15, 14);
+			checkBoxResultBit06.Size = new Size(19, 14);
 			checkBoxResultBit06.TabIndex = 14;
-			checkBoxResultBit06.UseVisualStyleBackColor = true;
+			checkBoxResultBit06.Values.Text = "";
+			checkBoxResultBit06.Enter += Control_Enter;
+			checkBoxResultBit06.Leave += Control_Leave;
+			checkBoxResultBit06.MouseEnter += Control_Enter;
+			checkBoxResultBit06.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit00
 			// 
-			labelResultBit00.AutoSize = true;
-			labelResultBit00.BackColor = Color.Transparent;
 			labelResultBit00.Location = new Point(170, 18);
 			labelResultBit00.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit00.Name = "labelResultBit00";
-			labelResultBit00.Size = new Size(19, 15);
+			labelResultBit00.Size = new Size(24, 20);
 			labelResultBit00.TabIndex = 1;
-			labelResultBit00.Text = "00";
+			labelResultBit00.Values.Text = "00";
+			labelResultBit00.Enter += Control_Enter;
+			labelResultBit00.Leave += Control_Leave;
+			labelResultBit00.MouseEnter += Control_Enter;
+			labelResultBit00.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit05
 			// 
-			labelResultBit05.AutoSize = true;
-			labelResultBit05.BackColor = Color.Transparent;
 			labelResultBit05.Location = new Point(46, 18);
 			labelResultBit05.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit05.Name = "labelResultBit05";
-			labelResultBit05.Size = new Size(19, 15);
+			labelResultBit05.Size = new Size(24, 20);
 			labelResultBit05.TabIndex = 13;
-			labelResultBit05.Text = "05";
+			labelResultBit05.Values.Text = "05";
+			labelResultBit05.Enter += Control_Enter;
+			labelResultBit05.Leave += Control_Leave;
+			labelResultBit05.MouseEnter += Control_Enter;
+			labelResultBit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit05
 			// 
 			checkBoxResultBit05.AutoCheck = false;
-			checkBoxResultBit05.AutoSize = true;
-			checkBoxResultBit05.BackColor = Color.Transparent;
 			checkBoxResultBit05.Location = new Point(49, 37);
 			checkBoxResultBit05.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit05.Name = "checkBoxResultBit05";
-			checkBoxResultBit05.Size = new Size(15, 14);
+			checkBoxResultBit05.Size = new Size(19, 14);
 			checkBoxResultBit05.TabIndex = 12;
-			checkBoxResultBit05.UseVisualStyleBackColor = true;
+			checkBoxResultBit05.Values.Text = "";
+			checkBoxResultBit05.Enter += Control_Enter;
+			checkBoxResultBit05.Leave += Control_Leave;
+			checkBoxResultBit05.MouseEnter += Control_Enter;
+			checkBoxResultBit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit01
 			// 
 			checkBoxResultBit01.AutoCheck = false;
-			checkBoxResultBit01.AutoSize = true;
-			checkBoxResultBit01.BackColor = Color.Transparent;
 			checkBoxResultBit01.Location = new Point(152, 37);
 			checkBoxResultBit01.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit01.Name = "checkBoxResultBit01";
-			checkBoxResultBit01.Size = new Size(15, 14);
+			checkBoxResultBit01.Size = new Size(19, 14);
 			checkBoxResultBit01.TabIndex = 2;
-			checkBoxResultBit01.UseVisualStyleBackColor = true;
+			checkBoxResultBit01.Values.Text = "";
+			checkBoxResultBit01.Enter += Control_Enter;
+			checkBoxResultBit01.Leave += Control_Leave;
+			checkBoxResultBit01.MouseEnter += Control_Enter;
+			checkBoxResultBit01.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit04
 			// 
-			labelResultBit04.AutoSize = true;
-			labelResultBit04.BackColor = Color.Transparent;
 			labelResultBit04.Location = new Point(68, 18);
 			labelResultBit04.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit04.Name = "labelResultBit04";
-			labelResultBit04.Size = new Size(19, 15);
+			labelResultBit04.Size = new Size(24, 20);
 			labelResultBit04.TabIndex = 11;
-			labelResultBit04.Text = "04";
+			labelResultBit04.Values.Text = "04";
+			labelResultBit04.Enter += Control_Enter;
+			labelResultBit04.Leave += Control_Leave;
+			labelResultBit04.MouseEnter += Control_Enter;
+			labelResultBit04.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit04
 			// 
 			checkBoxResultBit04.AutoCheck = false;
-			checkBoxResultBit04.AutoSize = true;
-			checkBoxResultBit04.BackColor = Color.Transparent;
 			checkBoxResultBit04.Location = new Point(71, 37);
 			checkBoxResultBit04.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit04.Name = "checkBoxResultBit04";
-			checkBoxResultBit04.Size = new Size(15, 14);
+			checkBoxResultBit04.Size = new Size(19, 14);
 			checkBoxResultBit04.TabIndex = 10;
-			checkBoxResultBit04.UseVisualStyleBackColor = true;
+			checkBoxResultBit04.Values.Text = "";
+			checkBoxResultBit04.Enter += Control_Enter;
+			checkBoxResultBit04.Leave += Control_Leave;
+			checkBoxResultBit04.MouseEnter += Control_Enter;
+			checkBoxResultBit04.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit01
 			// 
-			labelResultBit01.AutoSize = true;
-			labelResultBit01.BackColor = Color.Transparent;
 			labelResultBit01.Location = new Point(148, 18);
 			labelResultBit01.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit01.Name = "labelResultBit01";
-			labelResultBit01.Size = new Size(19, 15);
+			labelResultBit01.Size = new Size(24, 20);
 			labelResultBit01.TabIndex = 3;
-			labelResultBit01.Text = "01";
+			labelResultBit01.Values.Text = "01";
+			labelResultBit01.Enter += Control_Enter;
+			labelResultBit01.Leave += Control_Leave;
+			labelResultBit01.MouseEnter += Control_Enter;
+			labelResultBit01.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit03
 			// 
-			labelResultBit03.AutoSize = true;
-			labelResultBit03.BackColor = Color.Transparent;
 			labelResultBit03.Location = new Point(104, 18);
 			labelResultBit03.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit03.Name = "labelResultBit03";
-			labelResultBit03.Size = new Size(19, 15);
+			labelResultBit03.Size = new Size(24, 20);
 			labelResultBit03.TabIndex = 7;
-			labelResultBit03.Text = "03";
+			labelResultBit03.Values.Text = "03";
+			labelResultBit03.Enter += Control_Enter;
+			labelResultBit03.Leave += Control_Leave;
+			labelResultBit03.MouseEnter += Control_Enter;
+			labelResultBit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit03
 			// 
 			checkBoxResultBit03.AutoCheck = false;
-			checkBoxResultBit03.AutoSize = true;
-			checkBoxResultBit03.BackColor = Color.Transparent;
 			checkBoxResultBit03.Location = new Point(107, 37);
 			checkBoxResultBit03.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit03.Name = "checkBoxResultBit03";
-			checkBoxResultBit03.Size = new Size(15, 14);
+			checkBoxResultBit03.Size = new Size(19, 14);
 			checkBoxResultBit03.TabIndex = 6;
-			checkBoxResultBit03.UseVisualStyleBackColor = true;
+			checkBoxResultBit03.Values.Text = "";
+			checkBoxResultBit03.Enter += Control_Enter;
+			checkBoxResultBit03.Leave += Control_Leave;
+			checkBoxResultBit03.MouseEnter += Control_Enter;
+			checkBoxResultBit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxResultBit02
 			// 
 			checkBoxResultBit02.AutoCheck = false;
-			checkBoxResultBit02.AutoSize = true;
-			checkBoxResultBit02.BackColor = Color.Transparent;
 			checkBoxResultBit02.Location = new Point(130, 37);
 			checkBoxResultBit02.Margin = new Padding(4, 3, 4, 3);
 			checkBoxResultBit02.Name = "checkBoxResultBit02";
-			checkBoxResultBit02.Size = new Size(15, 14);
+			checkBoxResultBit02.Size = new Size(19, 14);
 			checkBoxResultBit02.TabIndex = 4;
-			checkBoxResultBit02.UseVisualStyleBackColor = true;
+			checkBoxResultBit02.Values.Text = "";
+			checkBoxResultBit02.Enter += Control_Enter;
+			checkBoxResultBit02.Leave += Control_Leave;
+			checkBoxResultBit02.MouseEnter += Control_Enter;
+			checkBoxResultBit02.MouseLeave += Control_Leave;
 			// 
 			// labelResultBit02
 			// 
-			labelResultBit02.AutoSize = true;
-			labelResultBit02.BackColor = Color.Transparent;
 			labelResultBit02.Location = new Point(126, 18);
 			labelResultBit02.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit02.Name = "labelResultBit02";
-			labelResultBit02.Size = new Size(19, 15);
+			labelResultBit02.Size = new Size(24, 20);
 			labelResultBit02.TabIndex = 5;
-			labelResultBit02.Text = "02";
+			labelResultBit02.Values.Text = "02";
+			labelResultBit02.Enter += Control_Enter;
+			labelResultBit02.Leave += Control_Leave;
+			labelResultBit02.MouseEnter += Control_Enter;
+			labelResultBit02.MouseLeave += Control_Leave;
 			// 
 			// groupBoxAccumulator2
 			// 
@@ -2440,17 +2886,23 @@
 			textBoxA2Octal.Name = "textBoxA2Octal";
 			textBoxA2Octal.Size = new Size(116, 23);
 			textBoxA2Octal.TabIndex = 71;
+			textBoxA2Octal.Enter += Control_Enter;
+			textBoxA2Octal.Leave += Control_Leave;
+			textBoxA2Octal.MouseEnter += Control_Enter;
+			textBoxA2Octal.MouseLeave += Control_Leave;
 			// 
 			// labelA2Octal
 			// 
-			labelA2Octal.AutoSize = true;
-			labelA2Octal.BackColor = Color.Transparent;
 			labelA2Octal.Location = new Point(411, 31);
 			labelA2Octal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Octal.Name = "labelA2Octal";
-			labelA2Octal.Size = new Size(32, 15);
+			labelA2Octal.Size = new Size(35, 20);
 			labelA2Octal.TabIndex = 70;
-			labelA2Octal.Text = "Oct.:";
+			labelA2Octal.Values.Text = "Oct.:";
+			labelA2Octal.Enter += Control_Enter;
+			labelA2Octal.Leave += Control_Leave;
+			labelA2Octal.MouseEnter += Control_Enter;
+			labelA2Octal.MouseLeave += Control_Leave;
 			// 
 			// maskedTextBoxA2Network
 			// 
@@ -2459,17 +2911,23 @@
 			maskedTextBoxA2Network.Name = "maskedTextBoxA2Network";
 			maskedTextBoxA2Network.Size = new Size(116, 23);
 			maskedTextBoxA2Network.TabIndex = 67;
+			maskedTextBoxA2Network.Enter += Control_Enter;
+			maskedTextBoxA2Network.Leave += Control_Leave;
+			maskedTextBoxA2Network.MouseEnter += Control_Enter;
+			maskedTextBoxA2Network.MouseLeave += Control_Leave;
 			// 
 			// labelA2Network
 			// 
-			labelA2Network.AutoSize = true;
-			labelA2Network.BackColor = Color.Transparent;
 			labelA2Network.Location = new Point(614, 31);
 			labelA2Network.Margin = new Padding(4, 0, 4, 0);
 			labelA2Network.Name = "labelA2Network";
-			labelA2Network.Size = new Size(41, 15);
+			labelA2Network.Size = new Size(45, 20);
 			labelA2Network.TabIndex = 68;
-			labelA2Network.Text = "Netw.:";
+			labelA2Network.Values.Text = "Netw.:";
+			labelA2Network.Enter += Control_Enter;
+			labelA2Network.Leave += Control_Leave;
+			labelA2Network.MouseEnter += Control_Enter;
+			labelA2Network.MouseLeave += Control_Leave;
 			// 
 			// textBoxA2Decimal
 			// 
@@ -2478,6 +2936,10 @@
 			textBoxA2Decimal.Name = "textBoxA2Decimal";
 			textBoxA2Decimal.Size = new Size(116, 23);
 			textBoxA2Decimal.TabIndex = 68;
+			textBoxA2Decimal.Enter += Control_Enter;
+			textBoxA2Decimal.Leave += Control_Leave;
+			textBoxA2Decimal.MouseEnter += Control_Enter;
+			textBoxA2Decimal.MouseLeave += Control_Leave;
 			// 
 			// textBoxA2Hexadecimal
 			// 
@@ -2486,28 +2948,36 @@
 			textBoxA2Hexadecimal.Name = "textBoxA2Hexadecimal";
 			textBoxA2Hexadecimal.Size = new Size(116, 23);
 			textBoxA2Hexadecimal.TabIndex = 67;
+			textBoxA2Hexadecimal.Enter += Control_Enter;
+			textBoxA2Hexadecimal.Leave += Control_Leave;
+			textBoxA2Hexadecimal.MouseEnter += Control_Enter;
+			textBoxA2Hexadecimal.MouseLeave += Control_Leave;
 			// 
 			// labelA2Decimal
 			// 
-			labelA2Decimal.AutoSize = true;
-			labelA2Decimal.BackColor = Color.Transparent;
 			labelA2Decimal.Location = new Point(208, 31);
 			labelA2Decimal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Decimal.Name = "labelA2Decimal";
-			labelA2Decimal.Size = new Size(33, 15);
+			labelA2Decimal.Size = new Size(37, 20);
 			labelA2Decimal.TabIndex = 69;
-			labelA2Decimal.Text = "Dec.:";
+			labelA2Decimal.Values.Text = "Dec.:";
+			labelA2Decimal.Enter += Control_Enter;
+			labelA2Decimal.Leave += Control_Leave;
+			labelA2Decimal.MouseEnter += Control_Enter;
+			labelA2Decimal.MouseLeave += Control_Leave;
 			// 
 			// labelA2Hexadecimal
 			// 
-			labelA2Hexadecimal.AutoSize = true;
-			labelA2Hexadecimal.BackColor = Color.Transparent;
 			labelA2Hexadecimal.Location = new Point(6, 31);
 			labelA2Hexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Hexadecimal.Name = "labelA2Hexadecimal";
-			labelA2Hexadecimal.Size = new Size(34, 15);
+			labelA2Hexadecimal.Size = new Size(37, 20);
 			labelA2Hexadecimal.TabIndex = 67;
-			labelA2Hexadecimal.Text = "Hex.:";
+			labelA2Hexadecimal.Values.Text = "Hex.:";
+			labelA2Hexadecimal.Enter += Control_Enter;
+			labelA2Hexadecimal.Leave += Control_Leave;
+			labelA2Hexadecimal.MouseEnter += Control_Enter;
+			labelA2Hexadecimal.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA2Byte4
 			// 
@@ -2538,195 +3008,227 @@
 			// 
 			// labelA2Bit31
 			// 
-			labelA2Bit31.AutoSize = true;
-			labelA2Bit31.BackColor = Color.Transparent;
 			labelA2Bit31.Location = new Point(7, 18);
 			labelA2Bit31.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit31.Name = "labelA2Bit31";
-			labelA2Bit31.Size = new Size(19, 15);
+			labelA2Bit31.Size = new Size(24, 20);
 			labelA2Bit31.TabIndex = 65;
-			labelA2Bit31.Text = "31";
+			labelA2Bit31.Values.Text = "31";
 			labelA2Bit31.Click += LabelA2Bit31_Click;
+			labelA2Bit31.Enter += Control_Enter;
+			labelA2Bit31.Leave += Control_Leave;
+			labelA2Bit31.MouseEnter += Control_Enter;
+			labelA2Bit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit31
 			// 
-			checkBoxA2Bit31.AutoSize = true;
-			checkBoxA2Bit31.BackColor = Color.Transparent;
 			checkBoxA2Bit31.Location = new Point(10, 37);
 			checkBoxA2Bit31.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit31.Name = "checkBoxA2Bit31";
-			checkBoxA2Bit31.Size = new Size(15, 14);
+			checkBoxA2Bit31.Size = new Size(19, 14);
 			checkBoxA2Bit31.TabIndex = 64;
-			checkBoxA2Bit31.UseVisualStyleBackColor = true;
+			checkBoxA2Bit31.Values.Text = "";
 			checkBoxA2Bit31.CheckedChanged += CheckBoxA2Bit31_CheckedChanged;
+			checkBoxA2Bit31.Enter += Control_Enter;
+			checkBoxA2Bit31.Leave += Control_Leave;
+			checkBoxA2Bit31.MouseEnter += Control_Enter;
+			checkBoxA2Bit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit24
 			// 
-			checkBoxA2Bit24.AutoSize = true;
-			checkBoxA2Bit24.BackColor = Color.Transparent;
 			checkBoxA2Bit24.Location = new Point(172, 37);
 			checkBoxA2Bit24.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit24.Name = "checkBoxA2Bit24";
-			checkBoxA2Bit24.Size = new Size(15, 14);
+			checkBoxA2Bit24.Size = new Size(19, 14);
 			checkBoxA2Bit24.TabIndex = 50;
-			checkBoxA2Bit24.UseVisualStyleBackColor = true;
+			checkBoxA2Bit24.Values.Text = "";
 			checkBoxA2Bit24.CheckedChanged += CheckBoxA2Bit24_CheckedChanged;
+			checkBoxA2Bit24.Enter += Control_Enter;
+			checkBoxA2Bit24.Leave += Control_Leave;
+			checkBoxA2Bit24.MouseEnter += Control_Enter;
+			checkBoxA2Bit24.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit24
 			// 
-			labelA2Bit24.AutoSize = true;
-			labelA2Bit24.BackColor = Color.Transparent;
 			labelA2Bit24.Location = new Point(168, 18);
 			labelA2Bit24.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit24.Name = "labelA2Bit24";
-			labelA2Bit24.Size = new Size(19, 15);
+			labelA2Bit24.Size = new Size(24, 20);
 			labelA2Bit24.TabIndex = 51;
-			labelA2Bit24.Text = "24";
+			labelA2Bit24.Values.Text = "24";
 			labelA2Bit24.Click += LabelA2Bit24_Click;
+			labelA2Bit24.Enter += Control_Enter;
+			labelA2Bit24.Leave += Control_Leave;
+			labelA2Bit24.MouseEnter += Control_Enter;
+			labelA2Bit24.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit25
 			// 
-			checkBoxA2Bit25.AutoSize = true;
-			checkBoxA2Bit25.BackColor = Color.Transparent;
 			checkBoxA2Bit25.Location = new Point(149, 37);
 			checkBoxA2Bit25.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit25.Name = "checkBoxA2Bit25";
-			checkBoxA2Bit25.Size = new Size(15, 14);
+			checkBoxA2Bit25.Size = new Size(19, 14);
 			checkBoxA2Bit25.TabIndex = 52;
-			checkBoxA2Bit25.UseVisualStyleBackColor = true;
+			checkBoxA2Bit25.Values.Text = "";
 			checkBoxA2Bit25.CheckedChanged += CheckBoxA2Bit25_CheckedChanged;
+			checkBoxA2Bit25.Enter += Control_Enter;
+			checkBoxA2Bit25.Leave += Control_Leave;
+			checkBoxA2Bit25.MouseEnter += Control_Enter;
+			checkBoxA2Bit25.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit30
 			// 
-			labelA2Bit30.AutoSize = true;
-			labelA2Bit30.BackColor = Color.Transparent;
 			labelA2Bit30.Location = new Point(29, 18);
 			labelA2Bit30.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit30.Name = "labelA2Bit30";
-			labelA2Bit30.Size = new Size(19, 15);
+			labelA2Bit30.Size = new Size(24, 20);
 			labelA2Bit30.TabIndex = 63;
-			labelA2Bit30.Text = "30";
+			labelA2Bit30.Values.Text = "30";
 			labelA2Bit30.Click += LabelA2Bit30_Click;
+			labelA2Bit30.Enter += Control_Enter;
+			labelA2Bit30.Leave += Control_Leave;
+			labelA2Bit30.MouseEnter += Control_Enter;
+			labelA2Bit30.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit25
 			// 
-			labelA2Bit25.AutoSize = true;
-			labelA2Bit25.BackColor = Color.Transparent;
 			labelA2Bit25.Location = new Point(146, 18);
 			labelA2Bit25.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit25.Name = "labelA2Bit25";
-			labelA2Bit25.Size = new Size(19, 15);
+			labelA2Bit25.Size = new Size(24, 20);
 			labelA2Bit25.TabIndex = 53;
-			labelA2Bit25.Text = "25";
+			labelA2Bit25.Values.Text = "25";
 			labelA2Bit25.Click += LabelA2Bit25_Click;
+			labelA2Bit25.Enter += Control_Enter;
+			labelA2Bit25.Leave += Control_Leave;
+			labelA2Bit25.MouseEnter += Control_Enter;
+			labelA2Bit25.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit26
 			// 
-			checkBoxA2Bit26.AutoSize = true;
-			checkBoxA2Bit26.BackColor = Color.Transparent;
 			checkBoxA2Bit26.Location = new Point(127, 37);
 			checkBoxA2Bit26.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit26.Name = "checkBoxA2Bit26";
-			checkBoxA2Bit26.Size = new Size(15, 14);
+			checkBoxA2Bit26.Size = new Size(19, 14);
 			checkBoxA2Bit26.TabIndex = 54;
-			checkBoxA2Bit26.UseVisualStyleBackColor = true;
+			checkBoxA2Bit26.Values.Text = "";
 			checkBoxA2Bit26.CheckedChanged += CheckBoxA2Bit26_CheckedChanged;
+			checkBoxA2Bit26.Enter += Control_Enter;
+			checkBoxA2Bit26.Leave += Control_Leave;
+			checkBoxA2Bit26.MouseEnter += Control_Enter;
+			checkBoxA2Bit26.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit30
 			// 
-			checkBoxA2Bit30.AutoSize = true;
-			checkBoxA2Bit30.BackColor = Color.Transparent;
 			checkBoxA2Bit30.Location = new Point(33, 37);
 			checkBoxA2Bit30.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit30.Name = "checkBoxA2Bit30";
-			checkBoxA2Bit30.Size = new Size(15, 14);
+			checkBoxA2Bit30.Size = new Size(19, 14);
 			checkBoxA2Bit30.TabIndex = 62;
-			checkBoxA2Bit30.UseVisualStyleBackColor = true;
+			checkBoxA2Bit30.Values.Text = "";
 			checkBoxA2Bit30.CheckedChanged += CheckBoxA2Bit30_CheckedChanged;
+			checkBoxA2Bit30.Enter += Control_Enter;
+			checkBoxA2Bit30.Leave += Control_Leave;
+			checkBoxA2Bit30.MouseEnter += Control_Enter;
+			checkBoxA2Bit30.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit26
 			// 
-			labelA2Bit26.AutoSize = true;
-			labelA2Bit26.BackColor = Color.Transparent;
 			labelA2Bit26.Location = new Point(124, 18);
 			labelA2Bit26.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit26.Name = "labelA2Bit26";
-			labelA2Bit26.Size = new Size(19, 15);
+			labelA2Bit26.Size = new Size(24, 20);
 			labelA2Bit26.TabIndex = 55;
-			labelA2Bit26.Text = "26";
+			labelA2Bit26.Values.Text = "26";
 			labelA2Bit26.Click += LabelA2Bit26_Click;
+			labelA2Bit26.Enter += Control_Enter;
+			labelA2Bit26.Leave += Control_Leave;
+			labelA2Bit26.MouseEnter += Control_Enter;
+			labelA2Bit26.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit29
 			// 
-			labelA2Bit29.AutoSize = true;
-			labelA2Bit29.BackColor = Color.Transparent;
 			labelA2Bit29.Location = new Point(51, 18);
 			labelA2Bit29.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit29.Name = "labelA2Bit29";
-			labelA2Bit29.Size = new Size(19, 15);
+			labelA2Bit29.Size = new Size(24, 20);
 			labelA2Bit29.TabIndex = 61;
-			labelA2Bit29.Text = "29";
+			labelA2Bit29.Values.Text = "29";
 			labelA2Bit29.Click += LabelA2Bit29_Click;
+			labelA2Bit29.Enter += Control_Enter;
+			labelA2Bit29.Leave += Control_Leave;
+			labelA2Bit29.MouseEnter += Control_Enter;
+			labelA2Bit29.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit27
 			// 
-			checkBoxA2Bit27.AutoSize = true;
-			checkBoxA2Bit27.BackColor = Color.Transparent;
 			checkBoxA2Bit27.Location = new Point(105, 37);
 			checkBoxA2Bit27.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit27.Name = "checkBoxA2Bit27";
-			checkBoxA2Bit27.Size = new Size(15, 14);
+			checkBoxA2Bit27.Size = new Size(19, 14);
 			checkBoxA2Bit27.TabIndex = 56;
-			checkBoxA2Bit27.UseVisualStyleBackColor = true;
+			checkBoxA2Bit27.Values.Text = "";
 			checkBoxA2Bit27.CheckedChanged += CheckBoxA2Bit27_CheckedChanged;
+			checkBoxA2Bit27.Enter += Control_Enter;
+			checkBoxA2Bit27.Leave += Control_Leave;
+			checkBoxA2Bit27.MouseEnter += Control_Enter;
+			checkBoxA2Bit27.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit29
 			// 
-			checkBoxA2Bit29.AutoSize = true;
-			checkBoxA2Bit29.BackColor = Color.Transparent;
 			checkBoxA2Bit29.Location = new Point(55, 37);
 			checkBoxA2Bit29.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit29.Name = "checkBoxA2Bit29";
-			checkBoxA2Bit29.Size = new Size(15, 14);
+			checkBoxA2Bit29.Size = new Size(19, 14);
 			checkBoxA2Bit29.TabIndex = 60;
-			checkBoxA2Bit29.UseVisualStyleBackColor = true;
+			checkBoxA2Bit29.Values.Text = "";
 			checkBoxA2Bit29.CheckedChanged += CheckBoxA2Bit29_CheckedChanged;
+			checkBoxA2Bit29.Enter += Control_Enter;
+			checkBoxA2Bit29.Leave += Control_Leave;
+			checkBoxA2Bit29.MouseEnter += Control_Enter;
+			checkBoxA2Bit29.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit27
 			// 
-			labelA2Bit27.AutoSize = true;
-			labelA2Bit27.BackColor = Color.Transparent;
 			labelA2Bit27.Location = new Point(102, 18);
 			labelA2Bit27.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit27.Name = "labelA2Bit27";
-			labelA2Bit27.Size = new Size(19, 15);
+			labelA2Bit27.Size = new Size(24, 20);
 			labelA2Bit27.TabIndex = 57;
-			labelA2Bit27.Text = "27";
+			labelA2Bit27.Values.Text = "27";
 			labelA2Bit27.Click += LabelA2Bit27_Click;
+			labelA2Bit27.Enter += Control_Enter;
+			labelA2Bit27.Leave += Control_Leave;
+			labelA2Bit27.MouseEnter += Control_Enter;
+			labelA2Bit27.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit28
 			// 
-			labelA2Bit28.AutoSize = true;
-			labelA2Bit28.BackColor = Color.Transparent;
 			labelA2Bit28.Location = new Point(74, 18);
 			labelA2Bit28.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit28.Name = "labelA2Bit28";
-			labelA2Bit28.Size = new Size(19, 15);
+			labelA2Bit28.Size = new Size(24, 20);
 			labelA2Bit28.TabIndex = 59;
-			labelA2Bit28.Text = "28";
+			labelA2Bit28.Values.Text = "28";
 			labelA2Bit28.Click += LabelA2Bit28_Click;
+			labelA2Bit28.Enter += Control_Enter;
+			labelA2Bit28.Leave += Control_Leave;
+			labelA2Bit28.MouseEnter += Control_Enter;
+			labelA2Bit28.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit28
 			// 
-			checkBoxA2Bit28.AutoSize = true;
-			checkBoxA2Bit28.BackColor = Color.Transparent;
 			checkBoxA2Bit28.Location = new Point(77, 37);
 			checkBoxA2Bit28.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit28.Name = "checkBoxA2Bit28";
-			checkBoxA2Bit28.Size = new Size(15, 14);
+			checkBoxA2Bit28.Size = new Size(19, 14);
 			checkBoxA2Bit28.TabIndex = 58;
-			checkBoxA2Bit28.UseVisualStyleBackColor = true;
+			checkBoxA2Bit28.Values.Text = "";
 			checkBoxA2Bit28.CheckedChanged += CheckBoxA2Bit28_CheckedChanged;
+			checkBoxA2Bit28.Enter += Control_Enter;
+			checkBoxA2Bit28.Leave += Control_Leave;
+			checkBoxA2Bit28.MouseEnter += Control_Enter;
+			checkBoxA2Bit28.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA2Byte3
 			// 
@@ -2757,195 +3259,227 @@
 			// 
 			// checkBoxA2Bit23
 			// 
-			checkBoxA2Bit23.AutoSize = true;
-			checkBoxA2Bit23.BackColor = Color.Transparent;
 			checkBoxA2Bit23.Location = new Point(7, 37);
 			checkBoxA2Bit23.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit23.Name = "checkBoxA2Bit23";
-			checkBoxA2Bit23.Size = new Size(15, 14);
+			checkBoxA2Bit23.Size = new Size(19, 14);
 			checkBoxA2Bit23.TabIndex = 48;
-			checkBoxA2Bit23.UseVisualStyleBackColor = true;
+			checkBoxA2Bit23.Values.Text = "";
 			checkBoxA2Bit23.CheckedChanged += CheckBoxA2Bit23_CheckedChanged;
+			checkBoxA2Bit23.Enter += Control_Enter;
+			checkBoxA2Bit23.MouseEnter += Control_Enter;
+			checkBoxA2Bit23.MouseLeave += Control_Leave;
+			checkBoxA2Bit23.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit21
 			// 
-			checkBoxA2Bit21.AutoSize = true;
-			checkBoxA2Bit21.BackColor = Color.Transparent;
 			checkBoxA2Bit21.Location = new Point(51, 37);
 			checkBoxA2Bit21.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit21.Name = "checkBoxA2Bit21";
-			checkBoxA2Bit21.Size = new Size(15, 14);
+			checkBoxA2Bit21.Size = new Size(19, 14);
 			checkBoxA2Bit21.TabIndex = 44;
-			checkBoxA2Bit21.UseVisualStyleBackColor = true;
+			checkBoxA2Bit21.Values.Text = "";
 			checkBoxA2Bit21.CheckedChanged += CheckBoxA2Bit21_CheckedChanged;
+			checkBoxA2Bit21.Enter += Control_Enter;
+			checkBoxA2Bit21.MouseEnter += Control_Enter;
+			checkBoxA2Bit21.MouseLeave += Control_Leave;
+			checkBoxA2Bit21.Validated += Control_Leave;
 			// 
 			// labelA2Bit21
 			// 
-			labelA2Bit21.AutoSize = true;
-			labelA2Bit21.BackColor = Color.Transparent;
 			labelA2Bit21.Location = new Point(48, 18);
 			labelA2Bit21.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit21.Name = "labelA2Bit21";
-			labelA2Bit21.Size = new Size(19, 15);
+			labelA2Bit21.Size = new Size(24, 20);
 			labelA2Bit21.TabIndex = 45;
-			labelA2Bit21.Text = "21";
+			labelA2Bit21.Values.Text = "21";
 			labelA2Bit21.Click += LabelA2Bit21_Click;
+			labelA2Bit21.Enter += Control_Enter;
+			labelA2Bit21.MouseEnter += Control_Enter;
+			labelA2Bit21.MouseLeave += Control_Leave;
+			labelA2Bit21.Validated += Control_Leave;
 			// 
 			// labelA2Bit20
 			// 
-			labelA2Bit20.AutoSize = true;
-			labelA2Bit20.BackColor = Color.Transparent;
 			labelA2Bit20.Location = new Point(70, 18);
 			labelA2Bit20.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit20.Name = "labelA2Bit20";
-			labelA2Bit20.Size = new Size(19, 15);
+			labelA2Bit20.Size = new Size(24, 20);
 			labelA2Bit20.TabIndex = 43;
-			labelA2Bit20.Text = "20";
+			labelA2Bit20.Values.Text = "20";
 			labelA2Bit20.Click += LabelA2Bit20_Click;
+			labelA2Bit20.Enter += Control_Enter;
+			labelA2Bit20.MouseEnter += Control_Enter;
+			labelA2Bit20.MouseLeave += Control_Leave;
+			labelA2Bit20.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit22
 			// 
-			checkBoxA2Bit22.AutoSize = true;
-			checkBoxA2Bit22.BackColor = Color.Transparent;
 			checkBoxA2Bit22.Location = new Point(29, 37);
 			checkBoxA2Bit22.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit22.Name = "checkBoxA2Bit22";
-			checkBoxA2Bit22.Size = new Size(15, 14);
+			checkBoxA2Bit22.Size = new Size(19, 14);
 			checkBoxA2Bit22.TabIndex = 46;
-			checkBoxA2Bit22.UseVisualStyleBackColor = true;
+			checkBoxA2Bit22.Values.Text = "";
 			checkBoxA2Bit22.CheckedChanged += CheckBoxA2Bit22_CheckedChanged;
+			checkBoxA2Bit22.Enter += Control_Enter;
+			checkBoxA2Bit22.MouseEnter += Control_Enter;
+			checkBoxA2Bit22.MouseLeave += Control_Leave;
+			checkBoxA2Bit22.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit20
 			// 
-			checkBoxA2Bit20.AutoSize = true;
-			checkBoxA2Bit20.BackColor = Color.Transparent;
 			checkBoxA2Bit20.Location = new Point(74, 37);
 			checkBoxA2Bit20.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit20.Name = "checkBoxA2Bit20";
-			checkBoxA2Bit20.Size = new Size(15, 14);
+			checkBoxA2Bit20.Size = new Size(19, 14);
 			checkBoxA2Bit20.TabIndex = 42;
-			checkBoxA2Bit20.UseVisualStyleBackColor = true;
+			checkBoxA2Bit20.Values.Text = "";
 			checkBoxA2Bit20.CheckedChanged += CheckBoxA2Bit20_CheckedChanged;
+			checkBoxA2Bit20.Enter += Control_Enter;
+			checkBoxA2Bit20.MouseEnter += Control_Enter;
+			checkBoxA2Bit20.MouseLeave += Control_Leave;
+			checkBoxA2Bit20.Validated += Control_Leave;
 			// 
 			// labelA2Bit22
 			// 
-			labelA2Bit22.AutoSize = true;
-			labelA2Bit22.BackColor = Color.Transparent;
 			labelA2Bit22.Location = new Point(26, 18);
 			labelA2Bit22.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit22.Name = "labelA2Bit22";
-			labelA2Bit22.Size = new Size(19, 15);
+			labelA2Bit22.Size = new Size(24, 20);
 			labelA2Bit22.TabIndex = 47;
-			labelA2Bit22.Text = "22";
+			labelA2Bit22.Values.Text = "22";
 			labelA2Bit22.Click += LabelA2Bit22_Click;
+			labelA2Bit22.Enter += Control_Enter;
+			labelA2Bit22.MouseEnter += Control_Enter;
+			labelA2Bit22.MouseLeave += Control_Leave;
+			labelA2Bit22.Validated += Control_Leave;
 			// 
 			// labelA2Bit19
 			// 
-			labelA2Bit19.AutoSize = true;
-			labelA2Bit19.BackColor = Color.Transparent;
 			labelA2Bit19.Location = new Point(104, 18);
 			labelA2Bit19.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit19.Name = "labelA2Bit19";
-			labelA2Bit19.Size = new Size(19, 15);
+			labelA2Bit19.Size = new Size(24, 20);
 			labelA2Bit19.TabIndex = 41;
-			labelA2Bit19.Text = "19";
+			labelA2Bit19.Values.Text = "19";
 			labelA2Bit19.Click += LabelA2Bit19_Click;
+			labelA2Bit19.Enter += Control_Enter;
+			labelA2Bit19.MouseEnter += Control_Enter;
+			labelA2Bit19.MouseLeave += Control_Leave;
+			labelA2Bit19.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit16
 			// 
-			checkBoxA2Bit16.AutoSize = true;
-			checkBoxA2Bit16.BackColor = Color.Transparent;
 			checkBoxA2Bit16.Location = new Point(174, 37);
 			checkBoxA2Bit16.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit16.Name = "checkBoxA2Bit16";
-			checkBoxA2Bit16.Size = new Size(15, 14);
+			checkBoxA2Bit16.Size = new Size(19, 14);
 			checkBoxA2Bit16.TabIndex = 34;
-			checkBoxA2Bit16.UseVisualStyleBackColor = true;
+			checkBoxA2Bit16.Values.Text = "";
 			checkBoxA2Bit16.CheckedChanged += CheckBoxA2Bit16_CheckedChanged;
+			checkBoxA2Bit16.Enter += Control_Enter;
+			checkBoxA2Bit16.MouseEnter += Control_Enter;
+			checkBoxA2Bit16.MouseLeave += Control_Leave;
+			checkBoxA2Bit16.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit19
 			// 
-			checkBoxA2Bit19.AutoSize = true;
-			checkBoxA2Bit19.BackColor = Color.Transparent;
 			checkBoxA2Bit19.Location = new Point(107, 37);
 			checkBoxA2Bit19.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit19.Name = "checkBoxA2Bit19";
-			checkBoxA2Bit19.Size = new Size(15, 14);
+			checkBoxA2Bit19.Size = new Size(19, 14);
 			checkBoxA2Bit19.TabIndex = 40;
-			checkBoxA2Bit19.UseVisualStyleBackColor = true;
+			checkBoxA2Bit19.Values.Text = "";
 			checkBoxA2Bit19.CheckedChanged += CheckBoxA2Bit19_CheckedChanged;
+			checkBoxA2Bit19.Enter += Control_Enter;
+			checkBoxA2Bit19.MouseEnter += Control_Enter;
+			checkBoxA2Bit19.MouseLeave += Control_Leave;
+			checkBoxA2Bit19.Validated += Control_Leave;
 			// 
 			// labelA2Bit23
 			// 
-			labelA2Bit23.AutoSize = true;
-			labelA2Bit23.BackColor = Color.Transparent;
 			labelA2Bit23.Location = new Point(4, 18);
 			labelA2Bit23.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit23.Name = "labelA2Bit23";
-			labelA2Bit23.Size = new Size(19, 15);
+			labelA2Bit23.Size = new Size(24, 20);
 			labelA2Bit23.TabIndex = 49;
-			labelA2Bit23.Text = "23";
+			labelA2Bit23.Values.Text = "23";
 			labelA2Bit23.Click += LabelA2Bit23_Click;
+			labelA2Bit23.Enter += Control_Enter;
+			labelA2Bit23.MouseEnter += Control_Enter;
+			labelA2Bit23.MouseLeave += Control_Leave;
+			labelA2Bit23.Validated += Control_Leave;
 			// 
 			// labelA2Bit18
 			// 
-			labelA2Bit18.AutoSize = true;
-			labelA2Bit18.BackColor = Color.Transparent;
 			labelA2Bit18.Location = new Point(126, 18);
 			labelA2Bit18.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit18.Name = "labelA2Bit18";
-			labelA2Bit18.Size = new Size(19, 15);
+			labelA2Bit18.Size = new Size(24, 20);
 			labelA2Bit18.TabIndex = 39;
-			labelA2Bit18.Text = "18";
+			labelA2Bit18.Values.Text = "18";
 			labelA2Bit18.Click += LabelA2Bit18_Click;
+			labelA2Bit18.Enter += Control_Enter;
+			labelA2Bit18.MouseEnter += Control_Enter;
+			labelA2Bit18.MouseLeave += Control_Leave;
+			labelA2Bit18.Validated += Control_Leave;
 			// 
 			// labelA2Bit16
 			// 
-			labelA2Bit16.AutoSize = true;
-			labelA2Bit16.BackColor = Color.Transparent;
 			labelA2Bit16.Location = new Point(170, 18);
 			labelA2Bit16.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit16.Name = "labelA2Bit16";
-			labelA2Bit16.Size = new Size(19, 15);
+			labelA2Bit16.Size = new Size(24, 20);
 			labelA2Bit16.TabIndex = 35;
-			labelA2Bit16.Text = "16";
+			labelA2Bit16.Values.Text = "16";
 			labelA2Bit16.Click += LabelA2Bit16_Click;
+			labelA2Bit16.Enter += Control_Enter;
+			labelA2Bit16.MouseEnter += Control_Enter;
+			labelA2Bit16.MouseLeave += Control_Leave;
+			labelA2Bit16.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit18
 			// 
-			checkBoxA2Bit18.AutoSize = true;
-			checkBoxA2Bit18.BackColor = Color.Transparent;
 			checkBoxA2Bit18.Location = new Point(130, 37);
 			checkBoxA2Bit18.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit18.Name = "checkBoxA2Bit18";
-			checkBoxA2Bit18.Size = new Size(15, 14);
+			checkBoxA2Bit18.Size = new Size(19, 14);
 			checkBoxA2Bit18.TabIndex = 38;
-			checkBoxA2Bit18.UseVisualStyleBackColor = true;
+			checkBoxA2Bit18.Values.Text = "";
 			checkBoxA2Bit18.CheckedChanged += CheckBoxA2Bit18_CheckedChanged;
+			checkBoxA2Bit18.Enter += Control_Enter;
+			checkBoxA2Bit18.MouseEnter += Control_Enter;
+			checkBoxA2Bit18.MouseLeave += Control_Leave;
+			checkBoxA2Bit18.Validated += Control_Leave;
 			// 
 			// labelA2Bit17
 			// 
-			labelA2Bit17.AutoSize = true;
-			labelA2Bit17.BackColor = Color.Transparent;
 			labelA2Bit17.Location = new Point(148, 18);
 			labelA2Bit17.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit17.Name = "labelA2Bit17";
-			labelA2Bit17.Size = new Size(19, 15);
+			labelA2Bit17.Size = new Size(24, 20);
 			labelA2Bit17.TabIndex = 37;
-			labelA2Bit17.Text = "17";
+			labelA2Bit17.Values.Text = "17";
 			labelA2Bit17.Click += LabelA2Bit17_Click;
+			labelA2Bit17.Enter += Control_Enter;
+			labelA2Bit17.MouseEnter += Control_Enter;
+			labelA2Bit17.MouseLeave += Control_Leave;
+			labelA2Bit17.Validated += Control_Leave;
 			// 
 			// checkBoxA2Bit17
 			// 
-			checkBoxA2Bit17.AutoSize = true;
-			checkBoxA2Bit17.BackColor = Color.Transparent;
 			checkBoxA2Bit17.Location = new Point(152, 37);
 			checkBoxA2Bit17.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit17.Name = "checkBoxA2Bit17";
-			checkBoxA2Bit17.Size = new Size(15, 14);
+			checkBoxA2Bit17.Size = new Size(19, 14);
 			checkBoxA2Bit17.TabIndex = 36;
-			checkBoxA2Bit17.UseVisualStyleBackColor = true;
+			checkBoxA2Bit17.Values.Text = "";
 			checkBoxA2Bit17.CheckedChanged += CheckBoxA2Bit17_CheckedChanged;
+			checkBoxA2Bit17.Enter += Control_Enter;
+			checkBoxA2Bit17.MouseEnter += Control_Enter;
+			checkBoxA2Bit17.MouseLeave += Control_Leave;
+			checkBoxA2Bit17.Validated += Control_Leave;
 			// 
 			// groupBoxA2Byte2
 			// 
@@ -2976,195 +3510,227 @@
 			// 
 			// checkBoxA2Bit15
 			// 
-			checkBoxA2Bit15.AutoSize = true;
-			checkBoxA2Bit15.BackColor = Color.Transparent;
 			checkBoxA2Bit15.Location = new Point(7, 37);
 			checkBoxA2Bit15.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit15.Name = "checkBoxA2Bit15";
-			checkBoxA2Bit15.Size = new Size(15, 14);
+			checkBoxA2Bit15.Size = new Size(19, 14);
 			checkBoxA2Bit15.TabIndex = 32;
-			checkBoxA2Bit15.UseVisualStyleBackColor = true;
+			checkBoxA2Bit15.Values.Text = "";
 			checkBoxA2Bit15.CheckedChanged += CheckBoxA2Bit15_CheckedChanged;
+			checkBoxA2Bit15.Enter += Control_Enter;
+			checkBoxA2Bit15.Leave += Control_Leave;
+			checkBoxA2Bit15.MouseEnter += Control_Enter;
+			checkBoxA2Bit15.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit10
 			// 
-			checkBoxA2Bit10.AutoSize = true;
-			checkBoxA2Bit10.BackColor = Color.Transparent;
 			checkBoxA2Bit10.Location = new Point(130, 37);
 			checkBoxA2Bit10.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit10.Name = "checkBoxA2Bit10";
-			checkBoxA2Bit10.Size = new Size(15, 14);
+			checkBoxA2Bit10.Size = new Size(19, 14);
 			checkBoxA2Bit10.TabIndex = 22;
-			checkBoxA2Bit10.UseVisualStyleBackColor = true;
+			checkBoxA2Bit10.Values.Text = "";
 			checkBoxA2Bit10.CheckedChanged += CheckBoxA2Bit10_CheckedChanged;
+			checkBoxA2Bit10.Enter += Control_Enter;
+			checkBoxA2Bit10.Leave += Control_Leave;
+			checkBoxA2Bit10.MouseEnter += Control_Enter;
+			checkBoxA2Bit10.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit10
 			// 
-			labelA2Bit10.AutoSize = true;
-			labelA2Bit10.BackColor = Color.Transparent;
 			labelA2Bit10.Location = new Point(126, 18);
 			labelA2Bit10.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit10.Name = "labelA2Bit10";
-			labelA2Bit10.Size = new Size(19, 15);
+			labelA2Bit10.Size = new Size(24, 20);
 			labelA2Bit10.TabIndex = 23;
-			labelA2Bit10.Text = "10";
+			labelA2Bit10.Values.Text = "10";
 			labelA2Bit10.Click += LabelA2Bit10_Click;
+			labelA2Bit10.Enter += Control_Enter;
+			labelA2Bit10.Leave += Control_Leave;
+			labelA2Bit10.MouseEnter += Control_Enter;
+			labelA2Bit10.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit09
 			// 
-			labelA2Bit09.AutoSize = true;
-			labelA2Bit09.BackColor = Color.Transparent;
 			labelA2Bit09.Location = new Point(148, 18);
 			labelA2Bit09.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit09.Name = "labelA2Bit09";
-			labelA2Bit09.Size = new Size(19, 15);
+			labelA2Bit09.Size = new Size(24, 20);
 			labelA2Bit09.TabIndex = 21;
-			labelA2Bit09.Text = "09";
+			labelA2Bit09.Values.Text = "09";
 			labelA2Bit09.Click += LabelA2Bit09_Click;
+			labelA2Bit09.Enter += Control_Enter;
+			labelA2Bit09.Leave += Control_Leave;
+			labelA2Bit09.MouseEnter += Control_Enter;
+			labelA2Bit09.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit11
 			// 
-			checkBoxA2Bit11.AutoSize = true;
-			checkBoxA2Bit11.BackColor = Color.Transparent;
 			checkBoxA2Bit11.Location = new Point(107, 37);
 			checkBoxA2Bit11.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit11.Name = "checkBoxA2Bit11";
-			checkBoxA2Bit11.Size = new Size(15, 14);
+			checkBoxA2Bit11.Size = new Size(19, 14);
 			checkBoxA2Bit11.TabIndex = 24;
-			checkBoxA2Bit11.UseVisualStyleBackColor = true;
+			checkBoxA2Bit11.Values.Text = "";
 			checkBoxA2Bit11.CheckedChanged += CheckBoxA2Bit11_CheckedChanged;
+			checkBoxA2Bit11.Enter += Control_Enter;
+			checkBoxA2Bit11.Leave += Control_Leave;
+			checkBoxA2Bit11.MouseEnter += Control_Enter;
+			checkBoxA2Bit11.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit09
 			// 
-			checkBoxA2Bit09.AutoSize = true;
-			checkBoxA2Bit09.BackColor = Color.Transparent;
 			checkBoxA2Bit09.Location = new Point(152, 37);
 			checkBoxA2Bit09.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit09.Name = "checkBoxA2Bit09";
-			checkBoxA2Bit09.Size = new Size(15, 14);
+			checkBoxA2Bit09.Size = new Size(19, 14);
 			checkBoxA2Bit09.TabIndex = 20;
-			checkBoxA2Bit09.UseVisualStyleBackColor = true;
+			checkBoxA2Bit09.Values.Text = "";
 			checkBoxA2Bit09.CheckedChanged += CheckBoxA2Bit09_CheckedChanged;
+			checkBoxA2Bit09.Enter += Control_Enter;
+			checkBoxA2Bit09.Leave += Control_Leave;
+			checkBoxA2Bit09.MouseEnter += Control_Enter;
+			checkBoxA2Bit09.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit11
 			// 
-			labelA2Bit11.AutoSize = true;
-			labelA2Bit11.BackColor = Color.Transparent;
 			labelA2Bit11.Location = new Point(104, 18);
 			labelA2Bit11.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit11.Name = "labelA2Bit11";
-			labelA2Bit11.Size = new Size(19, 15);
+			labelA2Bit11.Size = new Size(24, 20);
 			labelA2Bit11.TabIndex = 25;
-			labelA2Bit11.Text = "11";
+			labelA2Bit11.Values.Text = "11";
 			labelA2Bit11.Click += LabelA2Bit11_Click;
+			labelA2Bit11.Enter += Control_Enter;
+			labelA2Bit11.Leave += Control_Leave;
+			labelA2Bit11.MouseEnter += Control_Enter;
+			labelA2Bit11.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit15
 			// 
-			labelA2Bit15.AutoSize = true;
-			labelA2Bit15.BackColor = Color.Transparent;
 			labelA2Bit15.Location = new Point(4, 18);
 			labelA2Bit15.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit15.Name = "labelA2Bit15";
-			labelA2Bit15.Size = new Size(19, 15);
+			labelA2Bit15.Size = new Size(24, 20);
 			labelA2Bit15.TabIndex = 33;
-			labelA2Bit15.Text = "15";
+			labelA2Bit15.Values.Text = "15";
 			labelA2Bit15.Click += LabelA2Bit15_Click;
+			labelA2Bit15.Enter += Control_Enter;
+			labelA2Bit15.Leave += Control_Leave;
+			labelA2Bit15.MouseEnter += Control_Enter;
+			labelA2Bit15.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit08
 			// 
-			labelA2Bit08.AutoSize = true;
-			labelA2Bit08.BackColor = Color.Transparent;
 			labelA2Bit08.Location = new Point(170, 18);
 			labelA2Bit08.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit08.Name = "labelA2Bit08";
-			labelA2Bit08.Size = new Size(19, 15);
+			labelA2Bit08.Size = new Size(24, 20);
 			labelA2Bit08.TabIndex = 19;
-			labelA2Bit08.Text = "08";
+			labelA2Bit08.Values.Text = "08";
 			labelA2Bit08.Click += LabelA2Bit08_Click;
+			labelA2Bit08.Enter += Control_Enter;
+			labelA2Bit08.Leave += Control_Leave;
+			labelA2Bit08.MouseEnter += Control_Enter;
+			labelA2Bit08.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit12
 			// 
-			checkBoxA2Bit12.AutoSize = true;
-			checkBoxA2Bit12.BackColor = Color.Transparent;
 			checkBoxA2Bit12.Location = new Point(74, 37);
 			checkBoxA2Bit12.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit12.Name = "checkBoxA2Bit12";
-			checkBoxA2Bit12.Size = new Size(15, 14);
+			checkBoxA2Bit12.Size = new Size(19, 14);
 			checkBoxA2Bit12.TabIndex = 26;
-			checkBoxA2Bit12.UseVisualStyleBackColor = true;
+			checkBoxA2Bit12.Values.Text = "";
 			checkBoxA2Bit12.CheckedChanged += CheckBoxA2Bit12_CheckedChanged;
+			checkBoxA2Bit12.Enter += Control_Enter;
+			checkBoxA2Bit12.Leave += Control_Leave;
+			checkBoxA2Bit12.MouseEnter += Control_Enter;
+			checkBoxA2Bit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit08
 			// 
-			checkBoxA2Bit08.AutoSize = true;
-			checkBoxA2Bit08.BackColor = Color.Transparent;
 			checkBoxA2Bit08.Location = new Point(174, 37);
 			checkBoxA2Bit08.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit08.Name = "checkBoxA2Bit08";
-			checkBoxA2Bit08.Size = new Size(15, 14);
+			checkBoxA2Bit08.Size = new Size(19, 14);
 			checkBoxA2Bit08.TabIndex = 18;
-			checkBoxA2Bit08.UseVisualStyleBackColor = true;
+			checkBoxA2Bit08.Values.Text = "";
 			checkBoxA2Bit08.CheckedChanged += CheckBoxA2Bit08_CheckedChanged;
+			checkBoxA2Bit08.Enter += Control_Enter;
+			checkBoxA2Bit08.Leave += Control_Leave;
+			checkBoxA2Bit08.MouseEnter += Control_Enter;
+			checkBoxA2Bit08.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit12
 			// 
-			labelA2Bit12.AutoSize = true;
-			labelA2Bit12.BackColor = Color.Transparent;
 			labelA2Bit12.Location = new Point(70, 18);
 			labelA2Bit12.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit12.Name = "labelA2Bit12";
-			labelA2Bit12.Size = new Size(19, 15);
+			labelA2Bit12.Size = new Size(24, 20);
 			labelA2Bit12.TabIndex = 27;
-			labelA2Bit12.Text = "12";
+			labelA2Bit12.Values.Text = "12";
 			labelA2Bit12.Click += LabelA2Bit12_Click;
+			labelA2Bit12.Enter += Control_Enter;
+			labelA2Bit12.Leave += Control_Leave;
+			labelA2Bit12.MouseEnter += Control_Enter;
+			labelA2Bit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit13
 			// 
-			checkBoxA2Bit13.AutoSize = true;
-			checkBoxA2Bit13.BackColor = Color.Transparent;
 			checkBoxA2Bit13.Location = new Point(51, 37);
 			checkBoxA2Bit13.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit13.Name = "checkBoxA2Bit13";
-			checkBoxA2Bit13.Size = new Size(15, 14);
+			checkBoxA2Bit13.Size = new Size(19, 14);
 			checkBoxA2Bit13.TabIndex = 28;
-			checkBoxA2Bit13.UseVisualStyleBackColor = true;
+			checkBoxA2Bit13.Values.Text = "";
 			checkBoxA2Bit13.CheckedChanged += CheckBoxA2Bit13_CheckedChanged;
+			checkBoxA2Bit13.Enter += Control_Enter;
+			checkBoxA2Bit13.Leave += Control_Leave;
+			checkBoxA2Bit13.MouseEnter += Control_Enter;
+			checkBoxA2Bit13.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit13
 			// 
-			labelA2Bit13.AutoSize = true;
-			labelA2Bit13.BackColor = Color.Transparent;
 			labelA2Bit13.Location = new Point(48, 18);
 			labelA2Bit13.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit13.Name = "labelA2Bit13";
-			labelA2Bit13.Size = new Size(19, 15);
+			labelA2Bit13.Size = new Size(24, 20);
 			labelA2Bit13.TabIndex = 29;
-			labelA2Bit13.Text = "13";
+			labelA2Bit13.Values.Text = "13";
 			labelA2Bit13.Click += LabelA2Bit13_Click;
+			labelA2Bit13.Enter += Control_Enter;
+			labelA2Bit13.Leave += Control_Leave;
+			labelA2Bit13.MouseEnter += Control_Enter;
+			labelA2Bit13.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit14
 			// 
-			checkBoxA2Bit14.AutoSize = true;
-			checkBoxA2Bit14.BackColor = Color.Transparent;
 			checkBoxA2Bit14.Location = new Point(29, 37);
 			checkBoxA2Bit14.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit14.Name = "checkBoxA2Bit14";
-			checkBoxA2Bit14.Size = new Size(15, 14);
+			checkBoxA2Bit14.Size = new Size(19, 14);
 			checkBoxA2Bit14.TabIndex = 30;
-			checkBoxA2Bit14.UseVisualStyleBackColor = true;
+			checkBoxA2Bit14.Values.Text = "";
 			checkBoxA2Bit14.CheckedChanged += CheckBoxA2Bit14_CheckedChanged;
+			checkBoxA2Bit14.Enter += Control_Enter;
+			checkBoxA2Bit14.Leave += Control_Leave;
+			checkBoxA2Bit14.MouseEnter += Control_Enter;
+			checkBoxA2Bit14.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit14
 			// 
-			labelA2Bit14.AutoSize = true;
-			labelA2Bit14.BackColor = Color.Transparent;
 			labelA2Bit14.Location = new Point(26, 18);
 			labelA2Bit14.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit14.Name = "labelA2Bit14";
-			labelA2Bit14.Size = new Size(19, 15);
+			labelA2Bit14.Size = new Size(24, 20);
 			labelA2Bit14.TabIndex = 31;
-			labelA2Bit14.Text = "14";
+			labelA2Bit14.Values.Text = "14";
 			labelA2Bit14.Click += LabelA2Bit14_Click;
+			labelA2Bit14.Enter += Control_Enter;
+			labelA2Bit14.Leave += Control_Leave;
+			labelA2Bit14.MouseEnter += Control_Enter;
+			labelA2Bit14.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA2Byte1
 			// 
@@ -3195,194 +3761,227 @@
 			// 
 			// labelA2Bit07
 			// 
-			labelA2Bit07.AutoSize = true;
-			labelA2Bit07.BackColor = Color.Transparent;
 			labelA2Bit07.Location = new Point(1, 18);
 			labelA2Bit07.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit07.Name = "labelA2Bit07";
-			labelA2Bit07.Size = new Size(19, 15);
+			labelA2Bit07.Size = new Size(24, 20);
 			labelA2Bit07.TabIndex = 17;
-			labelA2Bit07.Text = "07";
+			labelA2Bit07.Values.Text = "07";
+			labelA2Bit07.Click += LabelA2Bit07_Click;
+			labelA2Bit07.Enter += Control_Enter;
+			labelA2Bit07.Leave += Control_Leave;
+			labelA2Bit07.MouseEnter += Control_Enter;
+			labelA2Bit07.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit07
 			// 
-			checkBoxA2Bit07.AutoSize = true;
-			checkBoxA2Bit07.BackColor = Color.Transparent;
 			checkBoxA2Bit07.Location = new Point(5, 37);
 			checkBoxA2Bit07.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit07.Name = "checkBoxA2Bit07";
-			checkBoxA2Bit07.Size = new Size(15, 14);
+			checkBoxA2Bit07.Size = new Size(19, 14);
 			checkBoxA2Bit07.TabIndex = 16;
-			checkBoxA2Bit07.UseVisualStyleBackColor = true;
+			checkBoxA2Bit07.Values.Text = "";
 			checkBoxA2Bit07.CheckedChanged += CheckBoxA2Bit07_CheckedChanged;
+			checkBoxA2Bit07.Enter += Control_Enter;
+			checkBoxA2Bit07.Leave += Control_Leave;
+			checkBoxA2Bit07.MouseEnter += Control_Enter;
+			checkBoxA2Bit07.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit06
 			// 
-			labelA2Bit06.AutoSize = true;
-			labelA2Bit06.BackColor = Color.Transparent;
 			labelA2Bit06.Location = new Point(23, 18);
 			labelA2Bit06.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit06.Name = "labelA2Bit06";
-			labelA2Bit06.Size = new Size(19, 15);
+			labelA2Bit06.Size = new Size(24, 20);
 			labelA2Bit06.TabIndex = 15;
-			labelA2Bit06.Text = "06";
+			labelA2Bit06.Values.Text = "06";
 			labelA2Bit06.Click += LabelA2Bit06_Click;
+			labelA2Bit06.Enter += Control_Enter;
+			labelA2Bit06.Leave += Control_Leave;
+			labelA2Bit06.MouseEnter += Control_Enter;
+			labelA2Bit06.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit00
 			// 
-			checkBoxA2Bit00.AutoSize = true;
-			checkBoxA2Bit00.BackColor = Color.Transparent;
 			checkBoxA2Bit00.Location = new Point(174, 37);
 			checkBoxA2Bit00.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit00.Name = "checkBoxA2Bit00";
-			checkBoxA2Bit00.Size = new Size(15, 14);
+			checkBoxA2Bit00.Size = new Size(19, 14);
 			checkBoxA2Bit00.TabIndex = 0;
-			checkBoxA2Bit00.UseVisualStyleBackColor = true;
+			checkBoxA2Bit00.Values.Text = "";
 			checkBoxA2Bit00.CheckedChanged += CheckBoxA2Bit00_CheckedChanged;
+			checkBoxA2Bit00.Enter += Control_Enter;
+			checkBoxA2Bit00.Leave += Control_Leave;
+			checkBoxA2Bit00.MouseEnter += Control_Enter;
+			checkBoxA2Bit00.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit06
 			// 
-			checkBoxA2Bit06.AutoSize = true;
-			checkBoxA2Bit06.BackColor = Color.Transparent;
 			checkBoxA2Bit06.Location = new Point(27, 37);
 			checkBoxA2Bit06.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit06.Name = "checkBoxA2Bit06";
-			checkBoxA2Bit06.Size = new Size(15, 14);
+			checkBoxA2Bit06.Size = new Size(19, 14);
 			checkBoxA2Bit06.TabIndex = 14;
-			checkBoxA2Bit06.UseVisualStyleBackColor = true;
+			checkBoxA2Bit06.Values.Text = "";
 			checkBoxA2Bit06.CheckedChanged += CheckBoxA2Bit06_CheckedChanged;
+			checkBoxA2Bit06.Enter += Control_Enter;
+			checkBoxA2Bit06.Leave += Control_Leave;
+			checkBoxA2Bit06.MouseEnter += Control_Enter;
+			checkBoxA2Bit06.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit00
 			// 
-			labelA2Bit00.AutoSize = true;
-			labelA2Bit00.BackColor = Color.Transparent;
 			labelA2Bit00.Location = new Point(170, 18);
 			labelA2Bit00.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit00.Name = "labelA2Bit00";
-			labelA2Bit00.Size = new Size(19, 15);
+			labelA2Bit00.Size = new Size(24, 20);
 			labelA2Bit00.TabIndex = 1;
-			labelA2Bit00.Text = "00";
+			labelA2Bit00.Values.Text = "00";
 			labelA2Bit00.Click += LabelA2Bit00_Click;
+			labelA2Bit00.Enter += Control_Enter;
+			labelA2Bit00.Leave += Control_Leave;
+			labelA2Bit00.MouseEnter += Control_Enter;
+			labelA2Bit00.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit05
 			// 
-			labelA2Bit05.AutoSize = true;
-			labelA2Bit05.BackColor = Color.Transparent;
 			labelA2Bit05.Location = new Point(46, 18);
 			labelA2Bit05.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit05.Name = "labelA2Bit05";
-			labelA2Bit05.Size = new Size(19, 15);
+			labelA2Bit05.Size = new Size(24, 20);
 			labelA2Bit05.TabIndex = 13;
-			labelA2Bit05.Text = "05";
+			labelA2Bit05.Values.Text = "05";
 			labelA2Bit05.Click += LabelA2Bit05_Click;
+			labelA2Bit05.Enter += Control_Enter;
+			labelA2Bit05.Leave += Control_Leave;
+			labelA2Bit05.MouseEnter += Control_Enter;
+			labelA2Bit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit05
 			// 
-			checkBoxA2Bit05.AutoSize = true;
-			checkBoxA2Bit05.BackColor = Color.Transparent;
 			checkBoxA2Bit05.Location = new Point(49, 37);
 			checkBoxA2Bit05.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit05.Name = "checkBoxA2Bit05";
-			checkBoxA2Bit05.Size = new Size(15, 14);
+			checkBoxA2Bit05.Size = new Size(19, 14);
 			checkBoxA2Bit05.TabIndex = 12;
-			checkBoxA2Bit05.UseVisualStyleBackColor = true;
+			checkBoxA2Bit05.Values.Text = "";
 			checkBoxA2Bit05.CheckedChanged += CheckBoxA2Bit05_CheckedChanged;
+			checkBoxA2Bit05.Enter += Control_Enter;
+			checkBoxA2Bit05.Leave += Control_Leave;
+			checkBoxA2Bit05.MouseEnter += Control_Enter;
+			checkBoxA2Bit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit01
 			// 
-			checkBoxA2Bit01.AutoSize = true;
-			checkBoxA2Bit01.BackColor = Color.Transparent;
 			checkBoxA2Bit01.Location = new Point(152, 37);
 			checkBoxA2Bit01.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit01.Name = "checkBoxA2Bit01";
-			checkBoxA2Bit01.Size = new Size(15, 14);
+			checkBoxA2Bit01.Size = new Size(19, 14);
 			checkBoxA2Bit01.TabIndex = 2;
-			checkBoxA2Bit01.UseVisualStyleBackColor = true;
+			checkBoxA2Bit01.Values.Text = "";
 			checkBoxA2Bit01.CheckedChanged += CheckBoxA2Bit01_CheckedChanged;
+			checkBoxA2Bit01.Enter += Control_Enter;
+			checkBoxA2Bit01.Leave += Control_Leave;
+			checkBoxA2Bit01.MouseEnter += Control_Enter;
+			checkBoxA2Bit01.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit04
 			// 
-			labelA2Bit04.AutoSize = true;
-			labelA2Bit04.BackColor = Color.Transparent;
 			labelA2Bit04.Location = new Point(68, 18);
 			labelA2Bit04.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit04.Name = "labelA2Bit04";
-			labelA2Bit04.Size = new Size(19, 15);
+			labelA2Bit04.Size = new Size(24, 20);
 			labelA2Bit04.TabIndex = 11;
-			labelA2Bit04.Text = "04";
+			labelA2Bit04.Values.Text = "04";
 			labelA2Bit04.Click += LabelA2Bit04_Click;
+			labelA2Bit04.Enter += Control_Enter;
+			labelA2Bit04.Leave += Control_Leave;
+			labelA2Bit04.MouseEnter += Control_Enter;
+			labelA2Bit04.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit04
 			// 
-			checkBoxA2Bit04.AutoSize = true;
-			checkBoxA2Bit04.BackColor = Color.Transparent;
 			checkBoxA2Bit04.Location = new Point(71, 37);
 			checkBoxA2Bit04.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit04.Name = "checkBoxA2Bit04";
-			checkBoxA2Bit04.Size = new Size(15, 14);
+			checkBoxA2Bit04.Size = new Size(19, 14);
 			checkBoxA2Bit04.TabIndex = 10;
-			checkBoxA2Bit04.UseVisualStyleBackColor = true;
+			checkBoxA2Bit04.Values.Text = "";
 			checkBoxA2Bit04.CheckedChanged += CheckBoxA2Bit04_CheckedChanged;
+			checkBoxA2Bit04.Enter += Control_Enter;
+			checkBoxA2Bit04.Leave += Control_Leave;
+			checkBoxA2Bit04.MouseEnter += Control_Enter;
+			checkBoxA2Bit04.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit01
 			// 
-			labelA2Bit01.AutoSize = true;
-			labelA2Bit01.BackColor = Color.Transparent;
 			labelA2Bit01.Location = new Point(148, 18);
 			labelA2Bit01.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit01.Name = "labelA2Bit01";
-			labelA2Bit01.Size = new Size(19, 15);
+			labelA2Bit01.Size = new Size(24, 20);
 			labelA2Bit01.TabIndex = 3;
-			labelA2Bit01.Text = "01";
+			labelA2Bit01.Values.Text = "01";
 			labelA2Bit01.Click += LabelA2Bit01_Click;
+			labelA2Bit01.Enter += Control_Enter;
+			labelA2Bit01.Leave += Control_Leave;
+			labelA2Bit01.MouseEnter += Control_Enter;
+			labelA2Bit01.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit03
 			// 
-			labelA2Bit03.AutoSize = true;
-			labelA2Bit03.BackColor = Color.Transparent;
 			labelA2Bit03.Location = new Point(104, 18);
 			labelA2Bit03.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit03.Name = "labelA2Bit03";
-			labelA2Bit03.Size = new Size(19, 15);
+			labelA2Bit03.Size = new Size(24, 20);
 			labelA2Bit03.TabIndex = 7;
-			labelA2Bit03.Text = "03";
+			labelA2Bit03.Values.Text = "03";
 			labelA2Bit03.Click += LabelA2Bit03_Click;
+			labelA2Bit03.Enter += Control_Enter;
+			labelA2Bit03.Leave += Control_Leave;
+			labelA2Bit03.MouseEnter += Control_Enter;
+			labelA2Bit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit03
 			// 
-			checkBoxA2Bit03.AutoSize = true;
-			checkBoxA2Bit03.BackColor = Color.Transparent;
 			checkBoxA2Bit03.Location = new Point(107, 37);
 			checkBoxA2Bit03.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit03.Name = "checkBoxA2Bit03";
-			checkBoxA2Bit03.Size = new Size(15, 14);
+			checkBoxA2Bit03.Size = new Size(19, 14);
 			checkBoxA2Bit03.TabIndex = 6;
-			checkBoxA2Bit03.UseVisualStyleBackColor = true;
+			checkBoxA2Bit03.Values.Text = "";
 			checkBoxA2Bit03.CheckedChanged += CheckBoxA2Bit03_CheckedChanged;
+			checkBoxA2Bit03.Enter += Control_Enter;
+			checkBoxA2Bit03.Leave += Control_Leave;
+			checkBoxA2Bit03.MouseEnter += Control_Enter;
+			checkBoxA2Bit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA2Bit02
 			// 
-			checkBoxA2Bit02.AutoSize = true;
-			checkBoxA2Bit02.BackColor = Color.Transparent;
 			checkBoxA2Bit02.Location = new Point(130, 37);
 			checkBoxA2Bit02.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA2Bit02.Name = "checkBoxA2Bit02";
-			checkBoxA2Bit02.Size = new Size(15, 14);
+			checkBoxA2Bit02.Size = new Size(19, 14);
 			checkBoxA2Bit02.TabIndex = 4;
-			checkBoxA2Bit02.UseVisualStyleBackColor = true;
+			checkBoxA2Bit02.Values.Text = "";
 			checkBoxA2Bit02.CheckedChanged += CheckBoxA2Bit02_CheckedChanged;
+			checkBoxA2Bit02.Enter += Control_Enter;
+			checkBoxA2Bit02.Leave += Control_Leave;
+			checkBoxA2Bit02.MouseEnter += Control_Enter;
+			checkBoxA2Bit02.MouseLeave += Control_Leave;
 			// 
 			// labelA2Bit02
 			// 
-			labelA2Bit02.AutoSize = true;
-			labelA2Bit02.BackColor = Color.Transparent;
 			labelA2Bit02.Location = new Point(126, 18);
 			labelA2Bit02.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit02.Name = "labelA2Bit02";
-			labelA2Bit02.Size = new Size(19, 15);
+			labelA2Bit02.Size = new Size(24, 20);
 			labelA2Bit02.TabIndex = 5;
-			labelA2Bit02.Text = "02";
+			labelA2Bit02.Values.Text = "02";
 			labelA2Bit02.Click += LabelA2Bit02_Click;
+			labelA2Bit02.Enter += Control_Enter;
+			labelA2Bit02.Leave += Control_Leave;
+			labelA2Bit02.MouseEnter += Control_Enter;
+			labelA2Bit02.MouseLeave += Control_Leave;
 			// 
 			// groupBoxAccumulator1
 			// 
@@ -3415,17 +4014,23 @@
 			textBoxA1Octal.Name = "textBoxA1Octal";
 			textBoxA1Octal.Size = new Size(116, 23);
 			textBoxA1Octal.TabIndex = 14;
+			textBoxA1Octal.Enter += Control_Enter;
+			textBoxA1Octal.Leave += Control_Leave;
+			textBoxA1Octal.MouseEnter += Control_Enter;
+			textBoxA1Octal.MouseLeave += Control_Leave;
 			// 
 			// labelA1Octal
 			// 
-			labelA1Octal.AutoSize = true;
-			labelA1Octal.BackColor = Color.Transparent;
 			labelA1Octal.Location = new Point(412, 31);
 			labelA1Octal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Octal.Name = "labelA1Octal";
-			labelA1Octal.Size = new Size(32, 15);
+			labelA1Octal.Size = new Size(35, 20);
 			labelA1Octal.TabIndex = 13;
-			labelA1Octal.Text = "Oct.:";
+			labelA1Octal.Values.Text = "Oct.:";
+			labelA1Octal.Enter += Control_Enter;
+			labelA1Octal.Leave += Control_Leave;
+			labelA1Octal.MouseEnter += Control_Enter;
+			labelA1Octal.MouseLeave += Control_Leave;
 			// 
 			// maskedTextBoxA1Network
 			// 
@@ -3434,17 +4039,23 @@
 			maskedTextBoxA1Network.Name = "maskedTextBoxA1Network";
 			maskedTextBoxA1Network.Size = new Size(116, 23);
 			maskedTextBoxA1Network.TabIndex = 5;
+			maskedTextBoxA1Network.Enter += Control_Enter;
+			maskedTextBoxA1Network.Leave += Control_Leave;
+			maskedTextBoxA1Network.MouseEnter += Control_Enter;
+			maskedTextBoxA1Network.MouseLeave += Control_Leave;
 			// 
 			// labelA1Network
 			// 
-			labelA1Network.AutoSize = true;
-			labelA1Network.BackColor = Color.Transparent;
 			labelA1Network.Location = new Point(614, 31);
 			labelA1Network.Margin = new Padding(4, 0, 4, 0);
 			labelA1Network.Name = "labelA1Network";
-			labelA1Network.Size = new Size(41, 15);
+			labelA1Network.Size = new Size(45, 20);
 			labelA1Network.TabIndex = 4;
-			labelA1Network.Text = "Netw.:";
+			labelA1Network.Values.Text = "Netw.:";
+			labelA1Network.Enter += Control_Enter;
+			labelA1Network.Leave += Control_Leave;
+			labelA1Network.MouseEnter += Control_Enter;
+			labelA1Network.MouseLeave += Control_Leave;
 			// 
 			// textBoxA1Decimal
 			// 
@@ -3453,6 +4064,10 @@
 			textBoxA1Decimal.Name = "textBoxA1Decimal";
 			textBoxA1Decimal.Size = new Size(116, 23);
 			textBoxA1Decimal.TabIndex = 3;
+			textBoxA1Decimal.Enter += Control_Enter;
+			textBoxA1Decimal.Leave += Control_Leave;
+			textBoxA1Decimal.MouseEnter += Control_Enter;
+			textBoxA1Decimal.MouseLeave += Control_Leave;
 			// 
 			// textBoxA1Hexadecimal
 			// 
@@ -3461,28 +4076,36 @@
 			textBoxA1Hexadecimal.Name = "textBoxA1Hexadecimal";
 			textBoxA1Hexadecimal.Size = new Size(116, 23);
 			textBoxA1Hexadecimal.TabIndex = 1;
+			textBoxA1Hexadecimal.Enter += Control_Enter;
+			textBoxA1Hexadecimal.Leave += Control_Leave;
+			textBoxA1Hexadecimal.MouseEnter += Control_Enter;
+			textBoxA1Hexadecimal.MouseLeave += Control_Leave;
 			// 
 			// labelA1Decimal
 			// 
-			labelA1Decimal.AutoSize = true;
-			labelA1Decimal.BackColor = Color.Transparent;
 			labelA1Decimal.Location = new Point(208, 31);
 			labelA1Decimal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Decimal.Name = "labelA1Decimal";
-			labelA1Decimal.Size = new Size(33, 15);
+			labelA1Decimal.Size = new Size(37, 20);
 			labelA1Decimal.TabIndex = 2;
-			labelA1Decimal.Text = "Dec.:";
+			labelA1Decimal.Values.Text = "Dec.:";
+			labelA1Decimal.Enter += Control_Enter;
+			labelA1Decimal.Leave += Control_Leave;
+			labelA1Decimal.MouseEnter += Control_Enter;
+			labelA1Decimal.MouseLeave += Control_Leave;
 			// 
 			// labelA1Hexadecimal
 			// 
-			labelA1Hexadecimal.AutoSize = true;
-			labelA1Hexadecimal.BackColor = Color.Transparent;
 			labelA1Hexadecimal.Location = new Point(6, 31);
 			labelA1Hexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Hexadecimal.Name = "labelA1Hexadecimal";
-			labelA1Hexadecimal.Size = new Size(34, 15);
+			labelA1Hexadecimal.Size = new Size(37, 20);
 			labelA1Hexadecimal.TabIndex = 0;
-			labelA1Hexadecimal.Text = "Hex.:";
+			labelA1Hexadecimal.Values.Text = "Hex.:";
+			labelA1Hexadecimal.Enter += Control_Enter;
+			labelA1Hexadecimal.Leave += Control_Leave;
+			labelA1Hexadecimal.MouseEnter += Control_Enter;
+			labelA1Hexadecimal.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA1Byte4
 			// 
@@ -3513,195 +4136,227 @@
 			// 
 			// labelA1Bit31
 			// 
-			labelA1Bit31.AutoSize = true;
-			labelA1Bit31.BackColor = Color.Transparent;
 			labelA1Bit31.Location = new Point(7, 18);
 			labelA1Bit31.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit31.Name = "labelA1Bit31";
-			labelA1Bit31.Size = new Size(19, 15);
+			labelA1Bit31.Size = new Size(24, 20);
 			labelA1Bit31.TabIndex = 0;
-			labelA1Bit31.Text = "31";
+			labelA1Bit31.Values.Text = "31";
 			labelA1Bit31.Click += LabelA1Bit31_Click;
+			labelA1Bit31.Enter += Control_Enter;
+			labelA1Bit31.Leave += Control_Leave;
+			labelA1Bit31.MouseEnter += Control_Enter;
+			labelA1Bit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit31
 			// 
-			checkBoxA1Bit31.AutoSize = true;
-			checkBoxA1Bit31.BackColor = Color.Transparent;
 			checkBoxA1Bit31.Location = new Point(10, 37);
 			checkBoxA1Bit31.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit31.Name = "checkBoxA1Bit31";
-			checkBoxA1Bit31.Size = new Size(15, 14);
+			checkBoxA1Bit31.Size = new Size(19, 14);
 			checkBoxA1Bit31.TabIndex = 7;
-			checkBoxA1Bit31.UseVisualStyleBackColor = true;
+			checkBoxA1Bit31.Values.Text = "";
 			checkBoxA1Bit31.CheckedChanged += CheckBoxA1Bit31_CheckedChanged;
+			checkBoxA1Bit31.Enter += Control_Enter;
+			checkBoxA1Bit31.Leave += Control_Leave;
+			checkBoxA1Bit31.MouseEnter += Control_Enter;
+			checkBoxA1Bit31.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit24
 			// 
-			checkBoxA1Bit24.AutoSize = true;
-			checkBoxA1Bit24.BackColor = Color.Transparent;
 			checkBoxA1Bit24.Location = new Point(172, 37);
 			checkBoxA1Bit24.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit24.Name = "checkBoxA1Bit24";
-			checkBoxA1Bit24.Size = new Size(15, 14);
+			checkBoxA1Bit24.Size = new Size(19, 14);
 			checkBoxA1Bit24.TabIndex = 13;
-			checkBoxA1Bit24.UseVisualStyleBackColor = true;
+			checkBoxA1Bit24.Values.Text = "";
 			checkBoxA1Bit24.CheckedChanged += CheckBoxA1Bit24_CheckedChanged;
+			checkBoxA1Bit24.Enter += Control_Enter;
+			checkBoxA1Bit24.Leave += Control_Leave;
+			checkBoxA1Bit24.MouseEnter += Control_Enter;
+			checkBoxA1Bit24.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit24
 			// 
-			labelA1Bit24.AutoSize = true;
-			labelA1Bit24.BackColor = Color.Transparent;
 			labelA1Bit24.Location = new Point(168, 18);
 			labelA1Bit24.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit24.Name = "labelA1Bit24";
-			labelA1Bit24.Size = new Size(19, 15);
+			labelA1Bit24.Size = new Size(24, 20);
 			labelA1Bit24.TabIndex = 6;
-			labelA1Bit24.Text = "24";
+			labelA1Bit24.Values.Text = "24";
 			labelA1Bit24.Click += LabelA1Bit24_Click;
+			labelA1Bit24.Enter += Control_Enter;
+			labelA1Bit24.Leave += Control_Leave;
+			labelA1Bit24.MouseEnter += Control_Enter;
+			labelA1Bit24.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit25
 			// 
-			checkBoxA1Bit25.AutoSize = true;
-			checkBoxA1Bit25.BackColor = Color.Transparent;
 			checkBoxA1Bit25.Location = new Point(149, 37);
 			checkBoxA1Bit25.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit25.Name = "checkBoxA1Bit25";
-			checkBoxA1Bit25.Size = new Size(15, 14);
+			checkBoxA1Bit25.Size = new Size(19, 14);
 			checkBoxA1Bit25.TabIndex = 12;
-			checkBoxA1Bit25.UseVisualStyleBackColor = true;
+			checkBoxA1Bit25.Values.Text = "";
 			checkBoxA1Bit25.CheckedChanged += CheckBoxA1Bit25_CheckedChanged;
+			checkBoxA1Bit25.Enter += Control_Enter;
+			checkBoxA1Bit25.Leave += Control_Leave;
+			checkBoxA1Bit25.MouseEnter += Control_Enter;
+			checkBoxA1Bit25.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit30
 			// 
-			labelA1Bit30.AutoSize = true;
-			labelA1Bit30.BackColor = Color.Transparent;
 			labelA1Bit30.Location = new Point(29, 18);
 			labelA1Bit30.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit30.Name = "labelA1Bit30";
-			labelA1Bit30.Size = new Size(19, 15);
+			labelA1Bit30.Size = new Size(24, 20);
 			labelA1Bit30.TabIndex = 1;
-			labelA1Bit30.Text = "30";
+			labelA1Bit30.Values.Text = "30";
 			labelA1Bit30.Click += LabelA1Bit30_Click;
+			labelA1Bit30.Enter += Control_Enter;
+			labelA1Bit30.Leave += Control_Leave;
+			labelA1Bit30.MouseEnter += Control_Enter;
+			labelA1Bit30.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit25
 			// 
-			labelA1Bit25.AutoSize = true;
-			labelA1Bit25.BackColor = Color.Transparent;
 			labelA1Bit25.Location = new Point(146, 18);
 			labelA1Bit25.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit25.Name = "labelA1Bit25";
-			labelA1Bit25.Size = new Size(19, 15);
+			labelA1Bit25.Size = new Size(24, 20);
 			labelA1Bit25.TabIndex = 5;
-			labelA1Bit25.Text = "25";
+			labelA1Bit25.Values.Text = "25";
 			labelA1Bit25.Click += LabelA1Bit25_Click;
+			labelA1Bit25.Enter += Control_Enter;
+			labelA1Bit25.Leave += Control_Leave;
+			labelA1Bit25.MouseEnter += Control_Enter;
+			labelA1Bit25.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit26
 			// 
-			checkBoxA1Bit26.AutoSize = true;
-			checkBoxA1Bit26.BackColor = Color.Transparent;
 			checkBoxA1Bit26.Location = new Point(127, 37);
 			checkBoxA1Bit26.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit26.Name = "checkBoxA1Bit26";
-			checkBoxA1Bit26.Size = new Size(15, 14);
+			checkBoxA1Bit26.Size = new Size(19, 14);
 			checkBoxA1Bit26.TabIndex = 11;
-			checkBoxA1Bit26.UseVisualStyleBackColor = true;
+			checkBoxA1Bit26.Values.Text = "";
 			checkBoxA1Bit26.CheckedChanged += CheckBoxA1Bit26_CheckedChanged;
+			checkBoxA1Bit26.Enter += Control_Enter;
+			checkBoxA1Bit26.Leave += Control_Leave;
+			checkBoxA1Bit26.MouseEnter += Control_Enter;
+			checkBoxA1Bit26.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit30
 			// 
-			checkBoxA1Bit30.AutoSize = true;
-			checkBoxA1Bit30.BackColor = Color.Transparent;
 			checkBoxA1Bit30.Location = new Point(33, 37);
 			checkBoxA1Bit30.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit30.Name = "checkBoxA1Bit30";
-			checkBoxA1Bit30.Size = new Size(15, 14);
+			checkBoxA1Bit30.Size = new Size(19, 14);
 			checkBoxA1Bit30.TabIndex = 8;
-			checkBoxA1Bit30.UseVisualStyleBackColor = true;
+			checkBoxA1Bit30.Values.Text = "";
 			checkBoxA1Bit30.CheckedChanged += CheckBoxA1Bit30_CheckedChanged;
+			checkBoxA1Bit30.Enter += Control_Enter;
+			checkBoxA1Bit30.Leave += Control_Leave;
+			checkBoxA1Bit30.MouseEnter += Control_Enter;
+			checkBoxA1Bit30.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit26
 			// 
-			labelA1Bit26.AutoSize = true;
-			labelA1Bit26.BackColor = Color.Transparent;
 			labelA1Bit26.Location = new Point(124, 18);
 			labelA1Bit26.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit26.Name = "labelA1Bit26";
-			labelA1Bit26.Size = new Size(19, 15);
+			labelA1Bit26.Size = new Size(24, 20);
 			labelA1Bit26.TabIndex = 4;
-			labelA1Bit26.Text = "26";
+			labelA1Bit26.Values.Text = "26";
 			labelA1Bit26.Click += LabelA1Bit26_Click;
+			labelA1Bit26.Enter += Control_Enter;
+			labelA1Bit26.Leave += Control_Leave;
+			labelA1Bit26.MouseEnter += Control_Enter;
+			labelA1Bit26.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit29
 			// 
-			labelA1Bit29.AutoSize = true;
-			labelA1Bit29.BackColor = Color.Transparent;
 			labelA1Bit29.Location = new Point(51, 18);
 			labelA1Bit29.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit29.Name = "labelA1Bit29";
-			labelA1Bit29.Size = new Size(19, 15);
+			labelA1Bit29.Size = new Size(24, 20);
 			labelA1Bit29.TabIndex = 2;
-			labelA1Bit29.Text = "29";
+			labelA1Bit29.Values.Text = "29";
 			labelA1Bit29.Click += LabelA1Bit29_Click;
+			labelA1Bit29.Enter += Control_Enter;
+			labelA1Bit29.Leave += Control_Leave;
+			labelA1Bit29.MouseEnter += Control_Enter;
+			labelA1Bit29.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit27
 			// 
-			checkBoxA1Bit27.AutoSize = true;
-			checkBoxA1Bit27.BackColor = Color.Transparent;
 			checkBoxA1Bit27.Location = new Point(105, 37);
 			checkBoxA1Bit27.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit27.Name = "checkBoxA1Bit27";
-			checkBoxA1Bit27.Size = new Size(15, 14);
+			checkBoxA1Bit27.Size = new Size(19, 14);
 			checkBoxA1Bit27.TabIndex = 10;
-			checkBoxA1Bit27.UseVisualStyleBackColor = true;
+			checkBoxA1Bit27.Values.Text = "";
 			checkBoxA1Bit27.CheckedChanged += CheckBoxA1Bit27_CheckedChanged;
+			checkBoxA1Bit27.Enter += Control_Enter;
+			checkBoxA1Bit27.Leave += Control_Leave;
+			checkBoxA1Bit27.MouseEnter += Control_Enter;
+			checkBoxA1Bit27.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit29
 			// 
-			checkBoxA1Bit29.AutoSize = true;
-			checkBoxA1Bit29.BackColor = Color.Transparent;
 			checkBoxA1Bit29.Location = new Point(55, 37);
 			checkBoxA1Bit29.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit29.Name = "checkBoxA1Bit29";
-			checkBoxA1Bit29.Size = new Size(15, 14);
+			checkBoxA1Bit29.Size = new Size(19, 14);
 			checkBoxA1Bit29.TabIndex = 9;
-			checkBoxA1Bit29.UseVisualStyleBackColor = true;
+			checkBoxA1Bit29.Values.Text = "";
 			checkBoxA1Bit29.CheckedChanged += CheckBoxA1Bit29_CheckedChanged;
+			checkBoxA1Bit29.Enter += Control_Enter;
+			checkBoxA1Bit29.Leave += Control_Leave;
+			checkBoxA1Bit29.MouseEnter += Control_Enter;
+			checkBoxA1Bit29.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit27
 			// 
-			labelA1Bit27.AutoSize = true;
-			labelA1Bit27.BackColor = Color.Transparent;
 			labelA1Bit27.Location = new Point(102, 18);
 			labelA1Bit27.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit27.Name = "labelA1Bit27";
-			labelA1Bit27.Size = new Size(19, 15);
+			labelA1Bit27.Size = new Size(24, 20);
 			labelA1Bit27.TabIndex = 3;
-			labelA1Bit27.Text = "27";
+			labelA1Bit27.Values.Text = "27";
 			labelA1Bit27.Click += LabelA1Bit27_Click;
+			labelA1Bit27.Enter += Control_Enter;
+			labelA1Bit27.Leave += Control_Leave;
+			labelA1Bit27.MouseEnter += Control_Enter;
+			labelA1Bit27.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit28
 			// 
-			labelA1Bit28.AutoSize = true;
-			labelA1Bit28.BackColor = Color.Transparent;
 			labelA1Bit28.Location = new Point(74, 18);
 			labelA1Bit28.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit28.Name = "labelA1Bit28";
-			labelA1Bit28.Size = new Size(19, 15);
+			labelA1Bit28.Size = new Size(24, 20);
 			labelA1Bit28.TabIndex = 59;
-			labelA1Bit28.Text = "28";
+			labelA1Bit28.Values.Text = "28";
 			labelA1Bit28.Click += LabelA1Bit28_Click;
+			labelA1Bit28.Enter += Control_Enter;
+			labelA1Bit28.Leave += Control_Leave;
+			labelA1Bit28.MouseEnter += Control_Enter;
+			labelA1Bit28.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit28
 			// 
-			checkBoxA1Bit28.AutoSize = true;
-			checkBoxA1Bit28.BackColor = Color.Transparent;
 			checkBoxA1Bit28.Location = new Point(77, 37);
 			checkBoxA1Bit28.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit28.Name = "checkBoxA1Bit28";
-			checkBoxA1Bit28.Size = new Size(15, 14);
+			checkBoxA1Bit28.Size = new Size(19, 14);
 			checkBoxA1Bit28.TabIndex = 58;
-			checkBoxA1Bit28.UseVisualStyleBackColor = true;
+			checkBoxA1Bit28.Values.Text = "";
 			checkBoxA1Bit28.CheckedChanged += CheckBoxA1Bit28_CheckedChanged;
+			checkBoxA1Bit28.Enter += Control_Enter;
+			checkBoxA1Bit28.Leave += Control_Leave;
+			checkBoxA1Bit28.MouseEnter += Control_Enter;
+			checkBoxA1Bit28.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA1Byte3
 			// 
@@ -3732,195 +4387,227 @@
 			// 
 			// checkBoxA1Bit23
 			// 
-			checkBoxA1Bit23.AutoSize = true;
-			checkBoxA1Bit23.BackColor = Color.Transparent;
 			checkBoxA1Bit23.Location = new Point(7, 37);
 			checkBoxA1Bit23.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit23.Name = "checkBoxA1Bit23";
-			checkBoxA1Bit23.Size = new Size(15, 14);
+			checkBoxA1Bit23.Size = new Size(19, 14);
 			checkBoxA1Bit23.TabIndex = 6;
-			checkBoxA1Bit23.UseVisualStyleBackColor = true;
+			checkBoxA1Bit23.Values.Text = "";
 			checkBoxA1Bit23.CheckedChanged += CheckBoxA1Bit23_CheckedChanged;
+			checkBoxA1Bit23.Enter += Control_Enter;
+			checkBoxA1Bit23.Leave += Control_Leave;
+			checkBoxA1Bit23.MouseEnter += Control_Enter;
+			checkBoxA1Bit23.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit21
 			// 
-			checkBoxA1Bit21.AutoSize = true;
-			checkBoxA1Bit21.BackColor = Color.Transparent;
 			checkBoxA1Bit21.Location = new Point(51, 37);
 			checkBoxA1Bit21.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit21.Name = "checkBoxA1Bit21";
-			checkBoxA1Bit21.Size = new Size(15, 14);
+			checkBoxA1Bit21.Size = new Size(19, 14);
 			checkBoxA1Bit21.TabIndex = 7;
-			checkBoxA1Bit21.UseVisualStyleBackColor = true;
+			checkBoxA1Bit21.Values.Text = "";
 			checkBoxA1Bit21.CheckedChanged += CheckBoxA1Bit21_CheckedChanged;
+			checkBoxA1Bit21.Enter += Control_Enter;
+			checkBoxA1Bit21.Leave += Control_Leave;
+			checkBoxA1Bit21.MouseEnter += Control_Enter;
+			checkBoxA1Bit21.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit21
 			// 
-			labelA1Bit21.AutoSize = true;
-			labelA1Bit21.BackColor = Color.Transparent;
 			labelA1Bit21.Location = new Point(48, 18);
 			labelA1Bit21.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit21.Name = "labelA1Bit21";
-			labelA1Bit21.Size = new Size(19, 15);
+			labelA1Bit21.Size = new Size(24, 20);
 			labelA1Bit21.TabIndex = 1;
-			labelA1Bit21.Text = "21";
+			labelA1Bit21.Values.Text = "21";
 			labelA1Bit21.Click += LabelA1Bit21_Click;
+			labelA1Bit21.Enter += Control_Enter;
+			labelA1Bit21.Leave += Control_Leave;
+			labelA1Bit21.MouseEnter += Control_Enter;
+			labelA1Bit21.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit20
 			// 
-			labelA1Bit20.AutoSize = true;
-			labelA1Bit20.BackColor = Color.Transparent;
 			labelA1Bit20.Location = new Point(70, 18);
 			labelA1Bit20.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit20.Name = "labelA1Bit20";
-			labelA1Bit20.Size = new Size(19, 15);
+			labelA1Bit20.Size = new Size(24, 20);
 			labelA1Bit20.TabIndex = 2;
-			labelA1Bit20.Text = "20";
+			labelA1Bit20.Values.Text = "20";
 			labelA1Bit20.Click += LabelA1Bit20_Click;
+			labelA1Bit20.Enter += Control_Enter;
+			labelA1Bit20.Leave += Control_Leave;
+			labelA1Bit20.MouseEnter += Control_Enter;
+			labelA1Bit20.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit22
 			// 
-			checkBoxA1Bit22.AutoSize = true;
-			checkBoxA1Bit22.BackColor = Color.Transparent;
 			checkBoxA1Bit22.Location = new Point(29, 37);
 			checkBoxA1Bit22.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit22.Name = "checkBoxA1Bit22";
-			checkBoxA1Bit22.Size = new Size(15, 14);
+			checkBoxA1Bit22.Size = new Size(19, 14);
 			checkBoxA1Bit22.TabIndex = 46;
-			checkBoxA1Bit22.UseVisualStyleBackColor = true;
+			checkBoxA1Bit22.Values.Text = "";
 			checkBoxA1Bit22.CheckedChanged += CheckBoxA1Bit22_CheckedChanged;
+			checkBoxA1Bit22.Enter += Control_Enter;
+			checkBoxA1Bit22.Leave += Control_Leave;
+			checkBoxA1Bit22.MouseEnter += Control_Enter;
+			checkBoxA1Bit22.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit20
 			// 
-			checkBoxA1Bit20.AutoSize = true;
-			checkBoxA1Bit20.BackColor = Color.Transparent;
 			checkBoxA1Bit20.Location = new Point(74, 37);
 			checkBoxA1Bit20.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit20.Name = "checkBoxA1Bit20";
-			checkBoxA1Bit20.Size = new Size(15, 14);
+			checkBoxA1Bit20.Size = new Size(19, 14);
 			checkBoxA1Bit20.TabIndex = 8;
-			checkBoxA1Bit20.UseVisualStyleBackColor = true;
+			checkBoxA1Bit20.Values.Text = "";
 			checkBoxA1Bit20.CheckedChanged += CheckBoxA1Bit20_CheckedChanged;
+			checkBoxA1Bit20.Enter += Control_Enter;
+			checkBoxA1Bit20.Leave += Control_Leave;
+			checkBoxA1Bit20.MouseEnter += Control_Enter;
+			checkBoxA1Bit20.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit22
 			// 
-			labelA1Bit22.AutoSize = true;
-			labelA1Bit22.BackColor = Color.Transparent;
 			labelA1Bit22.Location = new Point(26, 18);
 			labelA1Bit22.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit22.Name = "labelA1Bit22";
-			labelA1Bit22.Size = new Size(19, 15);
+			labelA1Bit22.Size = new Size(24, 20);
 			labelA1Bit22.TabIndex = 0;
-			labelA1Bit22.Text = "22";
+			labelA1Bit22.Values.Text = "22";
 			labelA1Bit22.Click += LabelA1Bit22_Click;
+			labelA1Bit22.Enter += Control_Enter;
+			labelA1Bit22.Leave += Control_Leave;
+			labelA1Bit22.MouseEnter += Control_Enter;
+			labelA1Bit22.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit19
 			// 
-			labelA1Bit19.AutoSize = true;
-			labelA1Bit19.BackColor = Color.Transparent;
 			labelA1Bit19.Location = new Point(104, 18);
 			labelA1Bit19.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit19.Name = "labelA1Bit19";
-			labelA1Bit19.Size = new Size(19, 15);
+			labelA1Bit19.Size = new Size(24, 20);
 			labelA1Bit19.TabIndex = 3;
-			labelA1Bit19.Text = "19";
+			labelA1Bit19.Values.Text = "19";
 			labelA1Bit19.Click += LabelA1Bit19_Click;
+			labelA1Bit19.Enter += Control_Enter;
+			labelA1Bit19.Leave += Control_Leave;
+			labelA1Bit19.MouseEnter += Control_Enter;
+			labelA1Bit19.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit16
 			// 
-			checkBoxA1Bit16.AutoSize = true;
-			checkBoxA1Bit16.BackColor = Color.Transparent;
 			checkBoxA1Bit16.Location = new Point(174, 37);
 			checkBoxA1Bit16.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit16.Name = "checkBoxA1Bit16";
-			checkBoxA1Bit16.Size = new Size(15, 14);
+			checkBoxA1Bit16.Size = new Size(19, 14);
 			checkBoxA1Bit16.TabIndex = 10;
-			checkBoxA1Bit16.UseVisualStyleBackColor = true;
+			checkBoxA1Bit16.Values.Text = "";
 			checkBoxA1Bit16.CheckedChanged += CheckBoxA1Bit16_CheckedChanged;
+			checkBoxA1Bit16.Enter += Control_Enter;
+			checkBoxA1Bit16.Leave += Control_Leave;
+			checkBoxA1Bit16.MouseEnter += Control_Enter;
+			checkBoxA1Bit16.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit19
 			// 
-			checkBoxA1Bit19.AutoSize = true;
-			checkBoxA1Bit19.BackColor = Color.Transparent;
 			checkBoxA1Bit19.Location = new Point(107, 37);
 			checkBoxA1Bit19.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit19.Name = "checkBoxA1Bit19";
-			checkBoxA1Bit19.Size = new Size(15, 14);
+			checkBoxA1Bit19.Size = new Size(19, 14);
 			checkBoxA1Bit19.TabIndex = 9;
-			checkBoxA1Bit19.UseVisualStyleBackColor = true;
+			checkBoxA1Bit19.Values.Text = "";
 			checkBoxA1Bit19.CheckedChanged += CheckBoxA1Bit19_CheckedChanged;
+			checkBoxA1Bit19.Enter += Control_Enter;
+			checkBoxA1Bit19.Leave += Control_Leave;
+			checkBoxA1Bit19.MouseEnter += Control_Enter;
+			checkBoxA1Bit19.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit23
 			// 
-			labelA1Bit23.AutoSize = true;
-			labelA1Bit23.BackColor = Color.Transparent;
 			labelA1Bit23.Location = new Point(4, 18);
 			labelA1Bit23.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit23.Name = "labelA1Bit23";
-			labelA1Bit23.Size = new Size(19, 15);
+			labelA1Bit23.Size = new Size(24, 20);
 			labelA1Bit23.TabIndex = 49;
-			labelA1Bit23.Text = "23";
+			labelA1Bit23.Values.Text = "23";
 			labelA1Bit23.Click += LabelA1Bit23_Click;
+			labelA1Bit23.Enter += Control_Enter;
+			labelA1Bit23.Leave += Control_Leave;
+			labelA1Bit23.MouseEnter += Control_Enter;
+			labelA1Bit23.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit18
 			// 
-			labelA1Bit18.AutoSize = true;
-			labelA1Bit18.BackColor = Color.Transparent;
 			labelA1Bit18.Location = new Point(126, 18);
 			labelA1Bit18.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit18.Name = "labelA1Bit18";
-			labelA1Bit18.Size = new Size(19, 15);
+			labelA1Bit18.Size = new Size(24, 20);
 			labelA1Bit18.TabIndex = 4;
-			labelA1Bit18.Text = "18";
+			labelA1Bit18.Values.Text = "18";
 			labelA1Bit18.Click += LabelA1Bit18_Click;
+			labelA1Bit18.Enter += Control_Enter;
+			labelA1Bit18.Leave += Control_Leave;
+			labelA1Bit18.MouseEnter += Control_Enter;
+			labelA1Bit18.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit16
 			// 
-			labelA1Bit16.AutoSize = true;
-			labelA1Bit16.BackColor = Color.Transparent;
 			labelA1Bit16.Location = new Point(170, 18);
 			labelA1Bit16.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit16.Name = "labelA1Bit16";
-			labelA1Bit16.Size = new Size(19, 15);
+			labelA1Bit16.Size = new Size(24, 20);
 			labelA1Bit16.TabIndex = 5;
-			labelA1Bit16.Text = "16";
+			labelA1Bit16.Values.Text = "16";
 			labelA1Bit16.Click += LabelA1Bit16_Click;
+			labelA1Bit16.Enter += Control_Enter;
+			labelA1Bit16.Leave += Control_Leave;
+			labelA1Bit16.MouseEnter += Control_Enter;
+			labelA1Bit16.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit18
 			// 
-			checkBoxA1Bit18.AutoSize = true;
-			checkBoxA1Bit18.BackColor = Color.Transparent;
 			checkBoxA1Bit18.Location = new Point(130, 37);
 			checkBoxA1Bit18.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit18.Name = "checkBoxA1Bit18";
-			checkBoxA1Bit18.Size = new Size(15, 14);
+			checkBoxA1Bit18.Size = new Size(19, 14);
 			checkBoxA1Bit18.TabIndex = 38;
-			checkBoxA1Bit18.UseVisualStyleBackColor = true;
+			checkBoxA1Bit18.Values.Text = "";
 			checkBoxA1Bit18.CheckedChanged += CheckBoxA1Bit18_CheckedChanged;
+			checkBoxA1Bit18.Enter += Control_Enter;
+			checkBoxA1Bit18.Leave += Control_Leave;
+			checkBoxA1Bit18.MouseEnter += Control_Enter;
+			checkBoxA1Bit18.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit17
 			// 
-			labelA1Bit17.AutoSize = true;
-			labelA1Bit17.BackColor = Color.Transparent;
 			labelA1Bit17.Location = new Point(148, 18);
 			labelA1Bit17.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit17.Name = "labelA1Bit17";
-			labelA1Bit17.Size = new Size(19, 15);
+			labelA1Bit17.Size = new Size(24, 20);
 			labelA1Bit17.TabIndex = 37;
-			labelA1Bit17.Text = "17";
+			labelA1Bit17.Values.Text = "17";
 			labelA1Bit17.Click += LabelA1Bit17_Click;
+			labelA1Bit17.Enter += Control_Enter;
+			labelA1Bit17.Leave += Control_Leave;
+			labelA1Bit17.MouseEnter += Control_Enter;
+			labelA1Bit17.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit17
 			// 
-			checkBoxA1Bit17.AutoSize = true;
-			checkBoxA1Bit17.BackColor = Color.Transparent;
 			checkBoxA1Bit17.Location = new Point(152, 37);
 			checkBoxA1Bit17.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit17.Name = "checkBoxA1Bit17";
-			checkBoxA1Bit17.Size = new Size(15, 14);
+			checkBoxA1Bit17.Size = new Size(19, 14);
 			checkBoxA1Bit17.TabIndex = 36;
-			checkBoxA1Bit17.UseVisualStyleBackColor = true;
+			checkBoxA1Bit17.Values.Text = "";
 			checkBoxA1Bit17.CheckedChanged += CheckBoxA1Bit17_CheckedChanged;
+			checkBoxA1Bit17.Enter += Control_Enter;
+			checkBoxA1Bit17.Leave += Control_Leave;
+			checkBoxA1Bit17.MouseEnter += Control_Enter;
+			checkBoxA1Bit17.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA1Byte2
 			// 
@@ -3951,195 +4638,227 @@
 			// 
 			// checkBoxA1Bit15
 			// 
-			checkBoxA1Bit15.AutoSize = true;
-			checkBoxA1Bit15.BackColor = Color.Transparent;
 			checkBoxA1Bit15.Location = new Point(7, 37);
 			checkBoxA1Bit15.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit15.Name = "checkBoxA1Bit15";
-			checkBoxA1Bit15.Size = new Size(15, 14);
+			checkBoxA1Bit15.Size = new Size(19, 14);
 			checkBoxA1Bit15.TabIndex = 6;
-			checkBoxA1Bit15.UseVisualStyleBackColor = true;
+			checkBoxA1Bit15.Values.Text = "";
 			checkBoxA1Bit15.CheckedChanged += CheckBoxA1Bit15_CheckedChanged;
+			checkBoxA1Bit15.Enter += Control_Enter;
+			checkBoxA1Bit15.Leave += Control_Leave;
+			checkBoxA1Bit15.MouseEnter += Control_Enter;
+			checkBoxA1Bit15.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit10
 			// 
-			checkBoxA1Bit10.AutoSize = true;
-			checkBoxA1Bit10.BackColor = Color.Transparent;
 			checkBoxA1Bit10.Location = new Point(130, 37);
 			checkBoxA1Bit10.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit10.Name = "checkBoxA1Bit10";
-			checkBoxA1Bit10.Size = new Size(15, 14);
+			checkBoxA1Bit10.Size = new Size(19, 14);
 			checkBoxA1Bit10.TabIndex = 9;
-			checkBoxA1Bit10.UseVisualStyleBackColor = true;
+			checkBoxA1Bit10.Values.Text = "";
 			checkBoxA1Bit10.CheckedChanged += CheckBoxA1Bit10_CheckedChanged;
+			checkBoxA1Bit10.Enter += Control_Enter;
+			checkBoxA1Bit10.Leave += Control_Leave;
+			checkBoxA1Bit10.MouseEnter += Control_Enter;
+			checkBoxA1Bit10.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit10
 			// 
-			labelA1Bit10.AutoSize = true;
-			labelA1Bit10.BackColor = Color.Transparent;
 			labelA1Bit10.Location = new Point(126, 18);
 			labelA1Bit10.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit10.Name = "labelA1Bit10";
-			labelA1Bit10.Size = new Size(19, 15);
+			labelA1Bit10.Size = new Size(24, 20);
 			labelA1Bit10.TabIndex = 3;
-			labelA1Bit10.Text = "10";
+			labelA1Bit10.Values.Text = "10";
 			labelA1Bit10.Click += LabelA1Bit10_Click;
+			labelA1Bit10.Enter += Control_Enter;
+			labelA1Bit10.Leave += Control_Leave;
+			labelA1Bit10.MouseEnter += Control_Enter;
+			labelA1Bit10.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit09
 			// 
-			labelA1Bit09.AutoSize = true;
-			labelA1Bit09.BackColor = Color.Transparent;
 			labelA1Bit09.Location = new Point(148, 18);
 			labelA1Bit09.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit09.Name = "labelA1Bit09";
-			labelA1Bit09.Size = new Size(19, 15);
+			labelA1Bit09.Size = new Size(24, 20);
 			labelA1Bit09.TabIndex = 4;
-			labelA1Bit09.Text = "09";
+			labelA1Bit09.Values.Text = "09";
 			labelA1Bit09.Click += LabelA1Bit09_Click;
+			labelA1Bit09.Enter += Control_Enter;
+			labelA1Bit09.Leave += Control_Leave;
+			labelA1Bit09.MouseEnter += Control_Enter;
+			labelA1Bit09.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit11
 			// 
-			checkBoxA1Bit11.AutoSize = true;
-			checkBoxA1Bit11.BackColor = Color.Transparent;
 			checkBoxA1Bit11.Location = new Point(107, 37);
 			checkBoxA1Bit11.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit11.Name = "checkBoxA1Bit11";
-			checkBoxA1Bit11.Size = new Size(15, 14);
+			checkBoxA1Bit11.Size = new Size(19, 14);
 			checkBoxA1Bit11.TabIndex = 8;
-			checkBoxA1Bit11.UseVisualStyleBackColor = true;
+			checkBoxA1Bit11.Values.Text = "";
 			checkBoxA1Bit11.CheckedChanged += CheckBoxA1Bit11_CheckedChanged;
+			checkBoxA1Bit11.Enter += Control_Enter;
+			checkBoxA1Bit11.Leave += Control_Leave;
+			checkBoxA1Bit11.MouseEnter += Control_Enter;
+			checkBoxA1Bit11.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit09
 			// 
-			checkBoxA1Bit09.AutoSize = true;
-			checkBoxA1Bit09.BackColor = Color.Transparent;
 			checkBoxA1Bit09.Location = new Point(152, 37);
 			checkBoxA1Bit09.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit09.Name = "checkBoxA1Bit09";
-			checkBoxA1Bit09.Size = new Size(15, 14);
+			checkBoxA1Bit09.Size = new Size(19, 14);
 			checkBoxA1Bit09.TabIndex = 10;
-			checkBoxA1Bit09.UseVisualStyleBackColor = true;
+			checkBoxA1Bit09.Values.Text = "";
 			checkBoxA1Bit09.CheckedChanged += CheckBoxA1Bit09_CheckedChanged;
+			checkBoxA1Bit09.Enter += Control_Enter;
+			checkBoxA1Bit09.Leave += Control_Leave;
+			checkBoxA1Bit09.MouseEnter += Control_Enter;
+			checkBoxA1Bit09.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit11
 			// 
-			labelA1Bit11.AutoSize = true;
-			labelA1Bit11.BackColor = Color.Transparent;
 			labelA1Bit11.Location = new Point(104, 18);
 			labelA1Bit11.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit11.Name = "labelA1Bit11";
-			labelA1Bit11.Size = new Size(19, 15);
+			labelA1Bit11.Size = new Size(24, 20);
 			labelA1Bit11.TabIndex = 2;
-			labelA1Bit11.Text = "11";
+			labelA1Bit11.Values.Text = "11";
 			labelA1Bit11.Click += LabelA1Bit11_Click;
+			labelA1Bit11.Enter += Control_Enter;
+			labelA1Bit11.Leave += Control_Leave;
+			labelA1Bit11.MouseEnter += Control_Enter;
+			labelA1Bit11.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit15
 			// 
-			labelA1Bit15.AutoSize = true;
-			labelA1Bit15.BackColor = Color.Transparent;
 			labelA1Bit15.Location = new Point(4, 18);
 			labelA1Bit15.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit15.Name = "labelA1Bit15";
-			labelA1Bit15.Size = new Size(19, 15);
+			labelA1Bit15.Size = new Size(24, 20);
 			labelA1Bit15.TabIndex = 0;
-			labelA1Bit15.Text = "15";
+			labelA1Bit15.Values.Text = "15";
 			labelA1Bit15.Click += LabelA1Bit15_Click;
+			labelA1Bit15.Enter += Control_Enter;
+			labelA1Bit15.Leave += Control_Leave;
+			labelA1Bit15.MouseEnter += Control_Enter;
+			labelA1Bit15.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit08
 			// 
-			labelA1Bit08.AutoSize = true;
-			labelA1Bit08.BackColor = Color.Transparent;
 			labelA1Bit08.Location = new Point(170, 18);
 			labelA1Bit08.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit08.Name = "labelA1Bit08";
-			labelA1Bit08.Size = new Size(19, 15);
+			labelA1Bit08.Size = new Size(24, 20);
 			labelA1Bit08.TabIndex = 5;
-			labelA1Bit08.Text = "08";
+			labelA1Bit08.Values.Text = "08";
 			labelA1Bit08.Click += LabelA1Bit08_Click;
+			labelA1Bit08.Enter += Control_Enter;
+			labelA1Bit08.Leave += Control_Leave;
+			labelA1Bit08.MouseEnter += Control_Enter;
+			labelA1Bit08.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit12
 			// 
-			checkBoxA1Bit12.AutoSize = true;
-			checkBoxA1Bit12.BackColor = Color.Transparent;
 			checkBoxA1Bit12.Location = new Point(74, 37);
 			checkBoxA1Bit12.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit12.Name = "checkBoxA1Bit12";
-			checkBoxA1Bit12.Size = new Size(15, 14);
+			checkBoxA1Bit12.Size = new Size(19, 14);
 			checkBoxA1Bit12.TabIndex = 7;
-			checkBoxA1Bit12.UseVisualStyleBackColor = true;
+			checkBoxA1Bit12.Values.Text = "";
 			checkBoxA1Bit12.CheckedChanged += CheckBoxA1Bit12_CheckedChanged;
+			checkBoxA1Bit12.Enter += Control_Enter;
+			checkBoxA1Bit12.Leave += Control_Leave;
+			checkBoxA1Bit12.MouseEnter += Control_Enter;
+			checkBoxA1Bit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit08
 			// 
-			checkBoxA1Bit08.AutoSize = true;
-			checkBoxA1Bit08.BackColor = Color.Transparent;
 			checkBoxA1Bit08.Location = new Point(174, 37);
 			checkBoxA1Bit08.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit08.Name = "checkBoxA1Bit08";
-			checkBoxA1Bit08.Size = new Size(15, 14);
+			checkBoxA1Bit08.Size = new Size(19, 14);
 			checkBoxA1Bit08.TabIndex = 11;
-			checkBoxA1Bit08.UseVisualStyleBackColor = true;
+			checkBoxA1Bit08.Values.Text = "";
 			checkBoxA1Bit08.CheckedChanged += CheckBoxA1Bit08_CheckedChanged;
+			checkBoxA1Bit08.Enter += Control_Enter;
+			checkBoxA1Bit08.Leave += Control_Leave;
+			checkBoxA1Bit08.MouseEnter += Control_Enter;
+			checkBoxA1Bit08.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit12
 			// 
-			labelA1Bit12.AutoSize = true;
-			labelA1Bit12.BackColor = Color.Transparent;
 			labelA1Bit12.Location = new Point(70, 18);
 			labelA1Bit12.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit12.Name = "labelA1Bit12";
-			labelA1Bit12.Size = new Size(19, 15);
+			labelA1Bit12.Size = new Size(24, 20);
 			labelA1Bit12.TabIndex = 1;
-			labelA1Bit12.Text = "12";
+			labelA1Bit12.Values.Text = "12";
 			labelA1Bit12.Click += LabelA1Bit12_Click;
+			labelA1Bit12.Enter += Control_Enter;
+			labelA1Bit12.Leave += Control_Leave;
+			labelA1Bit12.MouseEnter += Control_Enter;
+			labelA1Bit12.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit13
 			// 
-			checkBoxA1Bit13.AutoSize = true;
-			checkBoxA1Bit13.BackColor = Color.Transparent;
 			checkBoxA1Bit13.Location = new Point(51, 37);
 			checkBoxA1Bit13.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit13.Name = "checkBoxA1Bit13";
-			checkBoxA1Bit13.Size = new Size(15, 14);
+			checkBoxA1Bit13.Size = new Size(19, 14);
 			checkBoxA1Bit13.TabIndex = 28;
-			checkBoxA1Bit13.UseVisualStyleBackColor = true;
+			checkBoxA1Bit13.Values.Text = "";
 			checkBoxA1Bit13.CheckedChanged += CheckBoxA1Bit13_CheckedChanged;
+			checkBoxA1Bit13.Enter += Control_Enter;
+			checkBoxA1Bit13.Leave += Control_Leave;
+			checkBoxA1Bit13.MouseEnter += Control_Enter;
+			checkBoxA1Bit13.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit13
 			// 
-			labelA1Bit13.AutoSize = true;
-			labelA1Bit13.BackColor = Color.Transparent;
 			labelA1Bit13.Location = new Point(48, 18);
 			labelA1Bit13.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit13.Name = "labelA1Bit13";
-			labelA1Bit13.Size = new Size(19, 15);
+			labelA1Bit13.Size = new Size(24, 20);
 			labelA1Bit13.TabIndex = 29;
-			labelA1Bit13.Text = "13";
+			labelA1Bit13.Values.Text = "13";
 			labelA1Bit13.Click += LabelA1Bit13_Click;
+			labelA1Bit13.Enter += Control_Enter;
+			labelA1Bit13.Leave += Control_Leave;
+			labelA1Bit13.MouseEnter += Control_Enter;
+			labelA1Bit13.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit14
 			// 
-			checkBoxA1Bit14.AutoSize = true;
-			checkBoxA1Bit14.BackColor = Color.Transparent;
 			checkBoxA1Bit14.Location = new Point(29, 37);
 			checkBoxA1Bit14.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit14.Name = "checkBoxA1Bit14";
-			checkBoxA1Bit14.Size = new Size(15, 14);
+			checkBoxA1Bit14.Size = new Size(19, 14);
 			checkBoxA1Bit14.TabIndex = 30;
-			checkBoxA1Bit14.UseVisualStyleBackColor = true;
+			checkBoxA1Bit14.Values.Text = "";
 			checkBoxA1Bit14.CheckedChanged += CheckBoxA1Bit14_CheckedChanged;
+			checkBoxA1Bit14.Enter += Control_Enter;
+			checkBoxA1Bit14.Leave += Control_Leave;
+			checkBoxA1Bit14.MouseEnter += Control_Enter;
+			checkBoxA1Bit14.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit14
 			// 
-			labelA1Bit14.AutoSize = true;
-			labelA1Bit14.BackColor = Color.Transparent;
 			labelA1Bit14.Location = new Point(26, 18);
 			labelA1Bit14.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit14.Name = "labelA1Bit14";
-			labelA1Bit14.Size = new Size(19, 15);
+			labelA1Bit14.Size = new Size(24, 20);
 			labelA1Bit14.TabIndex = 31;
-			labelA1Bit14.Text = "14";
+			labelA1Bit14.Values.Text = "14";
 			labelA1Bit14.Click += LabelA1Bit14_Click;
+			labelA1Bit14.Enter += Control_Enter;
+			labelA1Bit14.Leave += Control_Leave;
+			labelA1Bit14.MouseEnter += Control_Enter;
+			labelA1Bit14.MouseLeave += Control_Leave;
 			// 
 			// groupBoxA1Byte1
 			// 
@@ -4170,198 +4889,236 @@
 			// 
 			// labelA1Bit07
 			// 
-			labelA1Bit07.AutoSize = true;
-			labelA1Bit07.BackColor = Color.Transparent;
 			labelA1Bit07.Location = new Point(1, 18);
 			labelA1Bit07.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit07.Name = "labelA1Bit07";
-			labelA1Bit07.Size = new Size(19, 15);
+			labelA1Bit07.Size = new Size(24, 20);
 			labelA1Bit07.TabIndex = 0;
-			labelA1Bit07.Text = "07";
+			labelA1Bit07.Values.Text = "07";
 			labelA1Bit07.Click += LabelA1Bit07_Click;
+			labelA1Bit07.Enter += Control_Enter;
+			labelA1Bit07.Leave += Control_Leave;
+			labelA1Bit07.MouseEnter += Control_Enter;
+			labelA1Bit07.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit07
 			// 
-			checkBoxA1Bit07.AutoSize = true;
-			checkBoxA1Bit07.BackColor = Color.Transparent;
 			checkBoxA1Bit07.Location = new Point(5, 37);
 			checkBoxA1Bit07.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit07.Name = "checkBoxA1Bit07";
-			checkBoxA1Bit07.Size = new Size(15, 14);
+			checkBoxA1Bit07.Size = new Size(19, 14);
 			checkBoxA1Bit07.TabIndex = 7;
-			checkBoxA1Bit07.UseVisualStyleBackColor = true;
+			checkBoxA1Bit07.Values.Text = "";
 			checkBoxA1Bit07.CheckedChanged += CheckBoxA1Bit07_CheckedChanged;
+			checkBoxA1Bit07.Enter += Control_Enter;
+			checkBoxA1Bit07.Leave += Control_Leave;
+			checkBoxA1Bit07.MouseEnter += Control_Enter;
+			checkBoxA1Bit07.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit06
 			// 
-			labelA1Bit06.AutoSize = true;
-			labelA1Bit06.BackColor = Color.Transparent;
 			labelA1Bit06.Location = new Point(23, 18);
 			labelA1Bit06.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit06.Name = "labelA1Bit06";
-			labelA1Bit06.Size = new Size(19, 15);
+			labelA1Bit06.Size = new Size(24, 20);
 			labelA1Bit06.TabIndex = 1;
-			labelA1Bit06.Text = "06";
+			labelA1Bit06.Values.Text = "06";
 			labelA1Bit06.Click += LabelA1Bit06_Click;
+			labelA1Bit06.Enter += Control_Enter;
+			labelA1Bit06.Leave += Control_Leave;
+			labelA1Bit06.MouseEnter += Control_Enter;
+			labelA1Bit06.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit00
 			// 
-			checkBoxA1Bit00.AutoSize = true;
-			checkBoxA1Bit00.BackColor = Color.Transparent;
 			checkBoxA1Bit00.Location = new Point(174, 37);
 			checkBoxA1Bit00.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit00.Name = "checkBoxA1Bit00";
-			checkBoxA1Bit00.Size = new Size(15, 14);
+			checkBoxA1Bit00.Size = new Size(19, 14);
 			checkBoxA1Bit00.TabIndex = 12;
-			checkBoxA1Bit00.UseVisualStyleBackColor = true;
+			checkBoxA1Bit00.Values.Text = "";
 			checkBoxA1Bit00.CheckedChanged += CheckBoxA1Bit00_CheckedChanged;
+			checkBoxA1Bit00.Enter += Control_Enter;
+			checkBoxA1Bit00.Leave += Control_Leave;
+			checkBoxA1Bit00.MouseEnter += Control_Enter;
+			checkBoxA1Bit00.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit06
 			// 
-			checkBoxA1Bit06.AutoSize = true;
-			checkBoxA1Bit06.BackColor = Color.Transparent;
 			checkBoxA1Bit06.Location = new Point(27, 37);
 			checkBoxA1Bit06.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit06.Name = "checkBoxA1Bit06";
-			checkBoxA1Bit06.Size = new Size(15, 14);
+			checkBoxA1Bit06.Size = new Size(19, 14);
 			checkBoxA1Bit06.TabIndex = 8;
-			checkBoxA1Bit06.UseVisualStyleBackColor = true;
+			checkBoxA1Bit06.Values.Text = "";
 			checkBoxA1Bit06.CheckedChanged += CheckBoxA1Bit06_CheckedChanged;
+			checkBoxA1Bit06.Enter += Control_Enter;
+			checkBoxA1Bit06.Leave += Control_Leave;
+			checkBoxA1Bit06.MouseEnter += Control_Enter;
+			checkBoxA1Bit06.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit00
 			// 
-			labelA1Bit00.AutoSize = true;
-			labelA1Bit00.BackColor = Color.Transparent;
 			labelA1Bit00.Location = new Point(170, 18);
 			labelA1Bit00.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit00.Name = "labelA1Bit00";
-			labelA1Bit00.Size = new Size(19, 15);
+			labelA1Bit00.Size = new Size(24, 20);
 			labelA1Bit00.TabIndex = 6;
-			labelA1Bit00.Text = "00";
+			labelA1Bit00.Values.Text = "00";
 			labelA1Bit00.Click += LabelA1Bit00_Click;
+			labelA1Bit00.Enter += Control_Enter;
+			labelA1Bit00.Leave += Control_Leave;
+			labelA1Bit00.MouseEnter += Control_Enter;
+			labelA1Bit00.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit05
 			// 
-			labelA1Bit05.AutoSize = true;
-			labelA1Bit05.BackColor = Color.Transparent;
 			labelA1Bit05.Location = new Point(46, 18);
 			labelA1Bit05.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit05.Name = "labelA1Bit05";
-			labelA1Bit05.Size = new Size(19, 15);
+			labelA1Bit05.Size = new Size(24, 20);
 			labelA1Bit05.TabIndex = 2;
-			labelA1Bit05.Text = "05";
+			labelA1Bit05.Values.Text = "05";
 			labelA1Bit05.Click += LabelA1Bit05_Click;
+			labelA1Bit05.Enter += Control_Enter;
+			labelA1Bit05.Leave += Control_Leave;
+			labelA1Bit05.MouseEnter += Control_Enter;
+			labelA1Bit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit05
 			// 
-			checkBoxA1Bit05.AutoSize = true;
-			checkBoxA1Bit05.BackColor = Color.Transparent;
 			checkBoxA1Bit05.Location = new Point(49, 37);
 			checkBoxA1Bit05.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit05.Name = "checkBoxA1Bit05";
-			checkBoxA1Bit05.Size = new Size(15, 14);
+			checkBoxA1Bit05.Size = new Size(19, 14);
 			checkBoxA1Bit05.TabIndex = 9;
-			checkBoxA1Bit05.UseVisualStyleBackColor = true;
+			checkBoxA1Bit05.Values.Text = "";
 			checkBoxA1Bit05.CheckedChanged += CheckBoxA1Bit05_CheckedChanged;
+			checkBoxA1Bit05.Enter += Control_Enter;
+			checkBoxA1Bit05.Leave += Control_Leave;
+			checkBoxA1Bit05.MouseEnter += Control_Enter;
+			checkBoxA1Bit05.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit01
 			// 
-			checkBoxA1Bit01.AutoSize = true;
-			checkBoxA1Bit01.BackColor = Color.Transparent;
 			checkBoxA1Bit01.Location = new Point(152, 37);
 			checkBoxA1Bit01.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit01.Name = "checkBoxA1Bit01";
-			checkBoxA1Bit01.Size = new Size(15, 14);
+			checkBoxA1Bit01.Size = new Size(19, 14);
 			checkBoxA1Bit01.TabIndex = 11;
-			checkBoxA1Bit01.UseVisualStyleBackColor = true;
+			checkBoxA1Bit01.Values.Text = "";
 			checkBoxA1Bit01.CheckedChanged += CheckBoxA1Bit01_CheckedChanged;
+			checkBoxA1Bit01.Enter += Control_Enter;
+			checkBoxA1Bit01.Leave += Control_Leave;
+			checkBoxA1Bit01.MouseEnter += Control_Enter;
+			checkBoxA1Bit01.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit04
 			// 
-			labelA1Bit04.AutoSize = true;
-			labelA1Bit04.BackColor = Color.Transparent;
 			labelA1Bit04.Location = new Point(68, 18);
 			labelA1Bit04.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit04.Name = "labelA1Bit04";
-			labelA1Bit04.Size = new Size(19, 15);
+			labelA1Bit04.Size = new Size(24, 20);
 			labelA1Bit04.TabIndex = 3;
-			labelA1Bit04.Text = "04";
+			labelA1Bit04.Values.Text = "04";
 			labelA1Bit04.Click += LabelA1Bit04_Click;
+			labelA1Bit04.Enter += Control_Enter;
+			labelA1Bit04.Leave += Control_Leave;
+			labelA1Bit04.MouseEnter += Control_Enter;
+			labelA1Bit04.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit04
 			// 
-			checkBoxA1Bit04.AutoSize = true;
-			checkBoxA1Bit04.BackColor = Color.Transparent;
 			checkBoxA1Bit04.Location = new Point(71, 37);
 			checkBoxA1Bit04.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit04.Name = "checkBoxA1Bit04";
-			checkBoxA1Bit04.Size = new Size(15, 14);
+			checkBoxA1Bit04.Size = new Size(19, 14);
 			checkBoxA1Bit04.TabIndex = 10;
-			checkBoxA1Bit04.UseVisualStyleBackColor = true;
+			checkBoxA1Bit04.Values.Text = "";
 			checkBoxA1Bit04.CheckedChanged += CheckBoxA1Bit04_CheckedChanged;
+			checkBoxA1Bit04.Enter += Control_Enter;
+			checkBoxA1Bit04.Leave += Control_Leave;
+			checkBoxA1Bit04.MouseEnter += Control_Enter;
+			checkBoxA1Bit04.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit01
 			// 
-			labelA1Bit01.AutoSize = true;
-			labelA1Bit01.BackColor = Color.Transparent;
 			labelA1Bit01.Location = new Point(148, 18);
 			labelA1Bit01.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit01.Name = "labelA1Bit01";
-			labelA1Bit01.Size = new Size(19, 15);
+			labelA1Bit01.Size = new Size(24, 20);
 			labelA1Bit01.TabIndex = 5;
-			labelA1Bit01.Text = "01";
+			labelA1Bit01.Values.Text = "01";
 			labelA1Bit01.Click += LabelA1Bit01_Click;
+			labelA1Bit01.Enter += Control_Enter;
+			labelA1Bit01.Leave += Control_Leave;
+			labelA1Bit01.MouseEnter += Control_Enter;
+			labelA1Bit01.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit03
 			// 
-			labelA1Bit03.AutoSize = true;
-			labelA1Bit03.BackColor = Color.Transparent;
 			labelA1Bit03.Location = new Point(104, 18);
 			labelA1Bit03.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit03.Name = "labelA1Bit03";
-			labelA1Bit03.Size = new Size(19, 15);
+			labelA1Bit03.Size = new Size(24, 20);
 			labelA1Bit03.TabIndex = 4;
-			labelA1Bit03.Text = "03";
+			labelA1Bit03.Values.Text = "03";
 			labelA1Bit03.Click += LabelA1Bit03_Click;
+			labelA1Bit03.Enter += Control_Enter;
+			labelA1Bit03.Leave += Control_Leave;
+			labelA1Bit03.MouseEnter += Control_Enter;
+			labelA1Bit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit03
 			// 
-			checkBoxA1Bit03.AutoSize = true;
-			checkBoxA1Bit03.BackColor = Color.Transparent;
 			checkBoxA1Bit03.Location = new Point(107, 37);
 			checkBoxA1Bit03.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit03.Name = "checkBoxA1Bit03";
-			checkBoxA1Bit03.Size = new Size(15, 14);
+			checkBoxA1Bit03.Size = new Size(19, 14);
 			checkBoxA1Bit03.TabIndex = 6;
-			checkBoxA1Bit03.UseVisualStyleBackColor = true;
+			checkBoxA1Bit03.Values.Text = "";
 			checkBoxA1Bit03.CheckedChanged += CheckBoxA1Bit03_CheckedChanged;
+			checkBoxA1Bit03.Enter += Control_Enter;
+			checkBoxA1Bit03.Leave += Control_Leave;
+			checkBoxA1Bit03.MouseEnter += Control_Enter;
+			checkBoxA1Bit03.MouseLeave += Control_Leave;
 			// 
 			// checkBoxA1Bit02
 			// 
-			checkBoxA1Bit02.AutoSize = true;
-			checkBoxA1Bit02.BackColor = Color.Transparent;
 			checkBoxA1Bit02.Location = new Point(130, 37);
 			checkBoxA1Bit02.Margin = new Padding(4, 3, 4, 3);
 			checkBoxA1Bit02.Name = "checkBoxA1Bit02";
-			checkBoxA1Bit02.Size = new Size(15, 14);
+			checkBoxA1Bit02.Size = new Size(19, 14);
 			checkBoxA1Bit02.TabIndex = 4;
-			checkBoxA1Bit02.UseVisualStyleBackColor = true;
+			checkBoxA1Bit02.Values.Text = "";
 			checkBoxA1Bit02.CheckedChanged += CheckBoxA1Bit02_CheckedChanged;
+			checkBoxA1Bit02.Enter += Control_Enter;
+			checkBoxA1Bit02.Leave += Control_Leave;
+			checkBoxA1Bit02.MouseEnter += Control_Enter;
+			checkBoxA1Bit02.MouseLeave += Control_Leave;
 			// 
 			// labelA1Bit02
 			// 
-			labelA1Bit02.AutoSize = true;
-			labelA1Bit02.BackColor = Color.Transparent;
 			labelA1Bit02.Location = new Point(126, 18);
 			labelA1Bit02.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit02.Name = "labelA1Bit02";
-			labelA1Bit02.Size = new Size(19, 15);
+			labelA1Bit02.Size = new Size(24, 20);
 			labelA1Bit02.TabIndex = 5;
-			labelA1Bit02.Text = "02";
+			labelA1Bit02.Values.Text = "02";
 			labelA1Bit02.Click += LabelA1Bit02_Click;
+			labelA1Bit02.Enter += Control_Enter;
+			labelA1Bit02.Leave += Control_Leave;
+			labelA1Bit02.MouseEnter += Control_Enter;
+			labelA1Bit02.MouseLeave += Control_Leave;
+			// 
+			// kryptonManager
+			// 
+			kryptonManager.ToolkitStrings.MessageBoxStrings.LessDetails = "L&ess Details...";
+			kryptonManager.ToolkitStrings.MessageBoxStrings.MoreDetails = "&More Details...";
 			// 
 			// MainForm
 			// 
+			AllowButtonSpecToolTips = true;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1356, 557);
@@ -4384,12 +5141,11 @@
 			groupBox1.PerformLayout();
 			groupBoxApplicationSettings.ResumeLayout(false);
 			groupBoxApplicationSettings.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)numericUpDownTransparency).EndInit();
 			groupBoxDataFormat.ResumeLayout(false);
 			groupBoxDataFormat.PerformLayout();
 			groupBoxOperations.ResumeLayout(false);
 			groupBoxShiftIndicator.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)numericUpDownShiftIndicator).EndInit();
+			groupBoxShiftIndicator.PerformLayout();
 			groupBoxResult.ResumeLayout(false);
 			groupBoxResult.PerformLayout();
 			groupBoxResultByte4.ResumeLayout(false);
@@ -4426,322 +5182,323 @@
 
 		#endregion
 
-		private System.Windows.Forms.StatusStrip statusStrip;
-		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+		private Krypton.Toolkit.KryptonStatusStrip statusStrip;
+		private System.Windows.Forms.ToolStripStatusLabel labelInformation;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.ToolStripContainer toolStripContainer;
-		private System.Windows.Forms.MaskedTextBox maskedTextBoxA1Network;
+		private Krypton.Toolkit.KryptonMaskedTextBox maskedTextBoxA1Network;
 		private System.Windows.Forms.GroupBox groupBoxAccumulator1;
-		private System.Windows.Forms.TextBox textBoxA1Decimal;
-		private System.Windows.Forms.TextBox textBoxA1Hexadecimal;
-		private System.Windows.Forms.Label labelA1Decimal;
-		private System.Windows.Forms.Label labelA1Hexadecimal;
+		private Krypton.Toolkit.KryptonTextBox textBoxA1Decimal;
+		private Krypton.Toolkit.KryptonTextBox textBoxA1Hexadecimal;
+		private Krypton.Toolkit.KryptonLabel labelA1Decimal;
+		private Krypton.Toolkit.KryptonLabel labelA1Hexadecimal;
 		private System.Windows.Forms.GroupBox groupBoxA1Byte4;
-		private System.Windows.Forms.Label labelA1Bit31;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit31;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit24;
-		private System.Windows.Forms.Label labelA1Bit24;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit25;
-		private System.Windows.Forms.Label labelA1Bit30;
-		private System.Windows.Forms.Label labelA1Bit25;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit26;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit30;
-		private System.Windows.Forms.Label labelA1Bit26;
-		private System.Windows.Forms.Label labelA1Bit29;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit27;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit29;
-		private System.Windows.Forms.Label labelA1Bit27;
-		private System.Windows.Forms.Label labelA1Bit28;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit28;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit24;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit24;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit25;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit30;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit25;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit26;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit30;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit26;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit29;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit27;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit29;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit27;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit28;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit28;
 		private System.Windows.Forms.GroupBox groupBoxA1Byte3;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit23;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit21;
-		private System.Windows.Forms.Label labelA1Bit21;
-		private System.Windows.Forms.Label labelA1Bit20;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit22;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit20;
-		private System.Windows.Forms.Label labelA1Bit22;
-		private System.Windows.Forms.Label labelA1Bit19;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit16;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit19;
-		private System.Windows.Forms.Label labelA1Bit23;
-		private System.Windows.Forms.Label labelA1Bit18;
-		private System.Windows.Forms.Label labelA1Bit16;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit18;
-		private System.Windows.Forms.Label labelA1Bit17;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit23;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit21;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit21;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit20;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit22;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit20;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit22;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit19;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit19;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit23;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit18;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit18;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit17;
 		private System.Windows.Forms.GroupBox groupBoxA1Byte2;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit15;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit10;
-		private System.Windows.Forms.Label labelA1Bit10;
-		private System.Windows.Forms.Label labelA1Bit09;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit11;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit09;
-		private System.Windows.Forms.Label labelA1Bit11;
-		private System.Windows.Forms.Label labelA1Bit15;
-		private System.Windows.Forms.Label labelA1Bit08;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit12;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit08;
-		private System.Windows.Forms.Label labelA1Bit12;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit13;
-		private System.Windows.Forms.Label labelA1Bit13;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit14;
-		private System.Windows.Forms.Label labelA1Bit14;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit15;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit10;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit10;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit09;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit11;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit09;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit11;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit15;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit08;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit08;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit13;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit13;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit14;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit14;
 		private System.Windows.Forms.GroupBox groupBoxA1Byte1;
-		private System.Windows.Forms.Label labelA1Bit07;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit07;
-		private System.Windows.Forms.Label labelA1Bit06;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit00;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit06;
-		private System.Windows.Forms.Label labelA1Bit00;
-		private System.Windows.Forms.Label labelA1Bit05;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit05;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit01;
-		private System.Windows.Forms.Label labelA1Bit04;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit04;
-		private System.Windows.Forms.Label labelA1Bit01;
-		private System.Windows.Forms.Label labelA1Bit03;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit03;
-		private System.Windows.Forms.CheckBox checkBoxA1Bit02;
-		private System.Windows.Forms.Label labelA1Bit02;
-		private System.Windows.Forms.Button buttonLogicalXnorA1AndA2;
-		private System.Windows.Forms.Button buttonLogicalNorA1AndA2;
-		private System.Windows.Forms.Button buttonInvertA2;
-		private System.Windows.Forms.Button buttonInvertA1;
-		private System.Windows.Forms.Button buttonLogicalXorA1AndA2;
-		private System.Windows.Forms.Button buttonLogicalOrA1AndA2;
-		private System.Windows.Forms.Button buttonLogicalAndA1AndA2;
-		private System.Windows.Forms.Button buttonDivisionA1AndA2;
-		private System.Windows.Forms.Button buttonMultiplicationA1AndA2;
-		private System.Windows.Forms.Button buttonSubtractionA1AndA2;
-		private System.Windows.Forms.Button buttonAdditionA1AndA2;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit07;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit07;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit06;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit00;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit06;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit00;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit01;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit04;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit04;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit01;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA1Bit02;
+		private Krypton.Toolkit.KryptonLabel labelA1Bit02;
+		private Krypton.Toolkit.KryptonButton buttonLogicalXnorA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonLogicalNorA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonInvertA2;
+		private Krypton.Toolkit.KryptonButton buttonInvertA1;
+		private Krypton.Toolkit.KryptonButton buttonLogicalXorA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonLogicalOrA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonLogicalAndA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonDivisionA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonMultiplicationA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonSubtractionA1AndA2;
+		private Krypton.Toolkit.KryptonButton buttonAdditionA1AndA2;
 		private System.Windows.Forms.GroupBox groupBoxResult;
-		private System.Windows.Forms.MaskedTextBox maskedTextBoxResultNetwork;
-		private System.Windows.Forms.Label labelResultNetwork;
-		private System.Windows.Forms.TextBox textResultDecimal;
-		private System.Windows.Forms.TextBox textBoxResultHexadecimal;
-		private System.Windows.Forms.Label labelResultDecimal;
-		private System.Windows.Forms.Label labelResultHexadecimal;
+		private Krypton.Toolkit.KryptonMaskedTextBox maskedTextBoxResultNetwork;
+		private Krypton.Toolkit.KryptonLabel labelResultNetwork;
+		private Krypton.Toolkit.KryptonTextBox textResultDecimal;
+		private Krypton.Toolkit.KryptonTextBox textBoxResultHexadecimal;
+		private Krypton.Toolkit.KryptonLabel labelResultDecimal;
+		private Krypton.Toolkit.KryptonLabel labelResultHexadecimal;
 		private System.Windows.Forms.GroupBox groupBoxResultByte4;
-		private System.Windows.Forms.Label labelResultBit31;
-		private System.Windows.Forms.CheckBox checkBoxResultBit31;
-		private System.Windows.Forms.CheckBox checkBoxResultBit24;
-		private System.Windows.Forms.Label labelResultBit24;
-		private System.Windows.Forms.CheckBox checkBoxResultBit25;
-		private System.Windows.Forms.Label labelResultBit30;
-		private System.Windows.Forms.Label labelResultBit25;
-		private System.Windows.Forms.CheckBox checkBoxResultBit26;
-		private System.Windows.Forms.CheckBox checkBoxResultBit30;
-		private System.Windows.Forms.Label labelResultBit26;
-		private System.Windows.Forms.Label labelResultBit29;
-		private System.Windows.Forms.CheckBox checkBoxResultBit27;
-		private System.Windows.Forms.CheckBox checkBoxResultBit29;
-		private System.Windows.Forms.Label labelResultBit27;
-		private System.Windows.Forms.Label labelResultBit28;
-		private System.Windows.Forms.CheckBox checkBoxResultBit28;
+		private Krypton.Toolkit.KryptonLabel labelResultBit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit24;
+		private Krypton.Toolkit.KryptonLabel labelResultBit24;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit25;
+		private Krypton.Toolkit.KryptonLabel labelResultBit30;
+		private Krypton.Toolkit.KryptonLabel labelResultBit25;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit26;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit30;
+		private Krypton.Toolkit.KryptonLabel labelResultBit26;
+		private Krypton.Toolkit.KryptonLabel labelResultBit29;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit27;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit29;
+		private Krypton.Toolkit.KryptonLabel labelResultBit27;
+		private Krypton.Toolkit.KryptonLabel labelResultBit28;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit28;
 		private System.Windows.Forms.GroupBox groupBoxResultByte3;
-		private System.Windows.Forms.CheckBox checkBoxResultBit23;
-		private System.Windows.Forms.CheckBox checkBoxResultBit21;
-		private System.Windows.Forms.Label labelResultBit21;
-		private System.Windows.Forms.Label labelResultBit20;
-		private System.Windows.Forms.CheckBox checkBoxResultBit22;
-		private System.Windows.Forms.CheckBox checkBoxResultBit20;
-		private System.Windows.Forms.Label labelResultBit22;
-		private System.Windows.Forms.Label labelResultBit19;
-		private System.Windows.Forms.CheckBox checkBoxResultBit16;
-		private System.Windows.Forms.CheckBox checkBoxResultBit19;
-		private System.Windows.Forms.Label labelResultBit23;
-		private System.Windows.Forms.Label labelResultBit18;
-		private System.Windows.Forms.Label labelResultBit16;
-		private System.Windows.Forms.CheckBox checkBoxResultBit18;
-		private System.Windows.Forms.Label labelResultBit17;
-		private System.Windows.Forms.CheckBox checkBoxResultBit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit23;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit21;
+		private Krypton.Toolkit.KryptonLabel labelResultBit21;
+		private Krypton.Toolkit.KryptonLabel labelResultBit20;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit22;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit20;
+		private Krypton.Toolkit.KryptonLabel labelResultBit22;
+		private Krypton.Toolkit.KryptonLabel labelResultBit19;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit19;
+		private Krypton.Toolkit.KryptonLabel labelResultBit23;
+		private Krypton.Toolkit.KryptonLabel labelResultBit18;
+		private Krypton.Toolkit.KryptonLabel labelResultBit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit18;
+		private Krypton.Toolkit.KryptonLabel labelResultBit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit17;
 		private System.Windows.Forms.GroupBox groupBoxResultByte2;
-		private System.Windows.Forms.CheckBox checkBoxResultBit15;
-		private System.Windows.Forms.CheckBox checkBoxResultBit10;
-		private System.Windows.Forms.Label labelResultBit10;
-		private System.Windows.Forms.Label labelResultBit09;
-		private System.Windows.Forms.CheckBox checkBoxResultBit11;
-		private System.Windows.Forms.CheckBox checkBoxResultBit09;
-		private System.Windows.Forms.Label labelResultBit11;
-		private System.Windows.Forms.Label labelResultBit15;
-		private System.Windows.Forms.Label labelResultBit08;
-		private System.Windows.Forms.CheckBox checkBoxResultBit12;
-		private System.Windows.Forms.CheckBox checkBoxResultBit08;
-		private System.Windows.Forms.Label labelResultBit12;
-		private System.Windows.Forms.CheckBox checkBoxResultBit13;
-		private System.Windows.Forms.Label labelResultBit13;
-		private System.Windows.Forms.CheckBox checkBoxResultBit14;
-		private System.Windows.Forms.Label labelResultBit14;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit15;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit10;
+		private Krypton.Toolkit.KryptonLabel labelResultBit10;
+		private Krypton.Toolkit.KryptonLabel labelResultBit09;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit11;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit09;
+		private Krypton.Toolkit.KryptonLabel labelResultBit11;
+		private Krypton.Toolkit.KryptonLabel labelResultBit15;
+		private Krypton.Toolkit.KryptonLabel labelResultBit08;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit08;
+		private Krypton.Toolkit.KryptonLabel labelResultBit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit13;
+		private Krypton.Toolkit.KryptonLabel labelResultBit13;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit14;
+		private Krypton.Toolkit.KryptonLabel labelResultBit14;
 		private System.Windows.Forms.GroupBox groupBoxResultByte1;
-		private System.Windows.Forms.Label labelResultBit07;
-		private System.Windows.Forms.CheckBox checkBoxResultBit07;
-		private System.Windows.Forms.Label labelResultBit06;
-		private System.Windows.Forms.CheckBox checkBoxResultBit00;
-		private System.Windows.Forms.CheckBox checkBoxResultBit06;
-		private System.Windows.Forms.Label labelResultBit00;
-		private System.Windows.Forms.Label labelResultBit05;
-		private System.Windows.Forms.CheckBox checkBoxResultBit05;
-		private System.Windows.Forms.CheckBox checkBoxResultBit01;
-		private System.Windows.Forms.Label labelResultBit04;
-		private System.Windows.Forms.CheckBox checkBoxResultBit04;
-		private System.Windows.Forms.Label labelResultBit01;
-		private System.Windows.Forms.Label labelResultBit03;
-		private System.Windows.Forms.CheckBox checkBoxResultBit03;
-		private System.Windows.Forms.CheckBox checkBoxResultBit02;
-		private System.Windows.Forms.Label labelResultBit02;
+		private Krypton.Toolkit.KryptonLabel labelResultBit07;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit07;
+		private Krypton.Toolkit.KryptonLabel labelResultBit06;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit00;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit06;
+		private Krypton.Toolkit.KryptonLabel labelResultBit00;
+		private Krypton.Toolkit.KryptonLabel labelResultBit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit01;
+		private Krypton.Toolkit.KryptonLabel labelResultBit04;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit04;
+		private Krypton.Toolkit.KryptonLabel labelResultBit01;
+		private Krypton.Toolkit.KryptonLabel labelResultBit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxResultBit02;
+		private Krypton.Toolkit.KryptonLabel labelResultBit02;
 		private System.Windows.Forms.GroupBox groupBoxAccumulator2;
-		private System.Windows.Forms.MaskedTextBox maskedTextBoxA2Network;
-		private System.Windows.Forms.Label labelA2Network;
-		private System.Windows.Forms.TextBox textBoxA2Decimal;
-		private System.Windows.Forms.TextBox textBoxA2Hexadecimal;
-		private System.Windows.Forms.Label labelA2Decimal;
-		private System.Windows.Forms.Label labelA2Hexadecimal;
+		private Krypton.Toolkit.KryptonMaskedTextBox maskedTextBoxA2Network;
+		private Krypton.Toolkit.KryptonLabel labelA2Network;
+		private Krypton.Toolkit.KryptonTextBox textBoxA2Decimal;
+		private Krypton.Toolkit.KryptonTextBox textBoxA2Hexadecimal;
+		private Krypton.Toolkit.KryptonLabel labelA2Decimal;
+		private Krypton.Toolkit.KryptonLabel labelA2Hexadecimal;
 		private System.Windows.Forms.GroupBox groupBoxA2Byte4;
-		private System.Windows.Forms.Label labelA2Bit31;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit31;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit24;
-		private System.Windows.Forms.Label labelA2Bit24;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit25;
-		private System.Windows.Forms.Label labelA2Bit30;
-		private System.Windows.Forms.Label labelA2Bit25;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit26;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit30;
-		private System.Windows.Forms.Label labelA2Bit26;
-		private System.Windows.Forms.Label labelA2Bit29;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit27;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit29;
-		private System.Windows.Forms.Label labelA2Bit27;
-		private System.Windows.Forms.Label labelA2Bit28;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit28;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit31;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit24;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit24;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit25;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit30;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit25;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit26;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit30;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit26;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit29;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit27;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit29;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit27;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit28;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit28;
 		private System.Windows.Forms.GroupBox groupBoxA2Byte3;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit23;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit21;
-		private System.Windows.Forms.Label labelA2Bit21;
-		private System.Windows.Forms.Label labelA2Bit20;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit22;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit20;
-		private System.Windows.Forms.Label labelA2Bit22;
-		private System.Windows.Forms.Label labelA2Bit19;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit16;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit19;
-		private System.Windows.Forms.Label labelA2Bit23;
-		private System.Windows.Forms.Label labelA2Bit18;
-		private System.Windows.Forms.Label labelA2Bit16;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit18;
-		private System.Windows.Forms.Label labelA2Bit17;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit23;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit21;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit21;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit20;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit22;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit20;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit22;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit19;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit19;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit23;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit18;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit16;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit18;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit17;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit17;
 		private System.Windows.Forms.GroupBox groupBoxA2Byte2;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit15;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit10;
-		private System.Windows.Forms.Label labelA2Bit10;
-		private System.Windows.Forms.Label labelA2Bit09;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit11;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit09;
-		private System.Windows.Forms.Label labelA2Bit11;
-		private System.Windows.Forms.Label labelA2Bit15;
-		private System.Windows.Forms.Label labelA2Bit08;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit12;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit08;
-		private System.Windows.Forms.Label labelA2Bit12;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit13;
-		private System.Windows.Forms.Label labelA2Bit13;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit14;
-		private System.Windows.Forms.Label labelA2Bit14;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit15;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit10;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit10;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit09;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit11;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit09;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit11;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit15;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit08;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit08;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit12;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit13;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit13;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit14;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit14;
 		private System.Windows.Forms.GroupBox groupBoxA2Byte1;
-		private System.Windows.Forms.Label labelA2Bit07;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit07;
-		private System.Windows.Forms.Label labelA2Bit06;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit00;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit06;
-		private System.Windows.Forms.Label labelA2Bit00;
-		private System.Windows.Forms.Label labelA2Bit05;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit05;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit01;
-		private System.Windows.Forms.Label labelA2Bit04;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit04;
-		private System.Windows.Forms.Label labelA2Bit01;
-		private System.Windows.Forms.Label labelA2Bit03;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit03;
-		private System.Windows.Forms.CheckBox checkBoxA2Bit02;
-		private System.Windows.Forms.Label labelA2Bit02;
-		private System.Windows.Forms.Button buttonLsbSign;
-		private System.Windows.Forms.Label labelA1Network;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit07;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit07;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit06;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit00;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit06;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit00;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit05;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit01;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit04;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit04;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit01;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit03;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxA2Bit02;
+		private Krypton.Toolkit.KryptonLabel labelA2Bit02;
+		private Krypton.Toolkit.KryptonButton buttonLsbSign;
+		private Krypton.Toolkit.KryptonLabel labelA1Network;
 		private System.Windows.Forms.GroupBox groupBoxOperations;
-		private System.Windows.Forms.Button buttonShiftLeftWithZeroA2;
-		private System.Windows.Forms.Button buttonShiftRightWithZeroA2;
-		private System.Windows.Forms.Button buttonRotateLeftA2;
-		private System.Windows.Forms.Button buttonRotateRightA2;
-		private System.Windows.Forms.Button buttonShiftLeftWithZeroA1;
-		private System.Windows.Forms.Button buttonShiftRightWithZeroA1;
-		private System.Windows.Forms.Button buttonRotateLeftA1;
-		private System.Windows.Forms.Button buttonRotateRightA1;
-		private System.Windows.Forms.Button buttonCopyResultToA2;
-		private System.Windows.Forms.Button buttonCopyResultToA1;
+		private Krypton.Toolkit.KryptonButton buttonShiftLeftWithZeroA2;
+		private Krypton.Toolkit.KryptonButton buttonShiftRightWithZeroA2;
+		private Krypton.Toolkit.KryptonButton buttonRotateLeftA2;
+		private Krypton.Toolkit.KryptonButton buttonRotateRightA2;
+		private Krypton.Toolkit.KryptonButton buttonShiftLeftWithZeroA1;
+		private Krypton.Toolkit.KryptonButton buttonShiftRightWithZeroA1;
+		private Krypton.Toolkit.KryptonButton buttonRotateLeftA1;
+		private Krypton.Toolkit.KryptonButton buttonRotateRightA1;
+		private Krypton.Toolkit.KryptonButton buttonCopyResultToA2;
+		private Krypton.Toolkit.KryptonButton buttonCopyResultToA1;
 		private System.Windows.Forms.ComboBox comboBoxMsbRepresentation;
-		private System.Windows.Forms.Label labelDataSize;
+		private Krypton.Toolkit.KryptonLabel labelDataSize;
 		private System.Windows.Forms.GroupBox groupBoxDataFormat;
 		private System.Windows.Forms.ComboBox comboBoxDataSize;
-		private System.Windows.Forms.Label labelMsbRepresentation;
-		private System.Windows.Forms.Button buttonSwapA1A2;
-		private System.Windows.Forms.Button buttonFillA2;
-		private System.Windows.Forms.Button buttonFillA1;
-		private System.Windows.Forms.Button buttonClearA2;
-		private System.Windows.Forms.Button buttonClearA1;
-		private System.Windows.Forms.Button buttonRevertA2;
-		private System.Windows.Forms.Button buttonRevertA1;
-		private System.Windows.Forms.Button buttonShiftLeftWithOneA1;
-		private System.Windows.Forms.Button buttonShiftLeftWithOneA2;
+		private Krypton.Toolkit.KryptonLabel labelMsbRepresentation;
+		private Krypton.Toolkit.KryptonButton buttonSwapA1A2;
+		private Krypton.Toolkit.KryptonButton buttonFillA2;
+		private Krypton.Toolkit.KryptonButton buttonFillA1;
+		private Krypton.Toolkit.KryptonButton buttonClearA2;
+		private Krypton.Toolkit.KryptonButton buttonClearA1;
+		private Krypton.Toolkit.KryptonButton buttonRevertA2;
+		private Krypton.Toolkit.KryptonButton buttonRevertA1;
+		private Krypton.Toolkit.KryptonButton buttonShiftLeftWithOneA1;
+		private Krypton.Toolkit.KryptonButton buttonShiftLeftWithOneA2;
 		private System.Windows.Forms.GroupBox groupBoxApplicationSettings;
-		private System.Windows.Forms.Label labelTransparency;
-		private System.Windows.Forms.Button buttonShiftRightWithOneA2;
-		private System.Windows.Forms.Button buttonShiftRightWithOneA1;
-		private System.Windows.Forms.CheckBox checkBoxAlwaysOnTop;
-		private System.Windows.Forms.Button buttonRandomizeA1;
-		private System.Windows.Forms.Button buttonRandomizeA2;
-		private System.Windows.Forms.Button buttonSubjunktionA2A1;
-		private System.Windows.Forms.Button buttonSubjunktionA1A2;
-		private System.Windows.Forms.Button buttonInhibitionA2A1;
-		private System.Windows.Forms.Button buttonInhibitionA1A2;
-		private System.Windows.Forms.TextBox textBoxResultOctal;
-		private System.Windows.Forms.Label labelResultOctal;
-		private System.Windows.Forms.TextBox textBoxA2Octal;
-		private System.Windows.Forms.Label labelA2Octal;
-		private System.Windows.Forms.TextBox textBoxA1Octal;
-		private System.Windows.Forms.Label labelA1Octal;
-		private System.Windows.Forms.Button buttonHalfSwapA1;
-		private System.Windows.Forms.Button buttonHalfSwapA2;
-		private System.Windows.Forms.CheckBox checkBoxFadeInOut;
-		private System.Windows.Forms.NumericUpDown numericUpDownTransparency;
+		private Krypton.Toolkit.KryptonLabel labelTransparency;
+		private Krypton.Toolkit.KryptonButton buttonShiftRightWithOneA2;
+		private Krypton.Toolkit.KryptonButton buttonShiftRightWithOneA1;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxAlwaysOnTop;
+		private Krypton.Toolkit.KryptonButton buttonRandomizeA1;
+		private Krypton.Toolkit.KryptonButton buttonRandomizeA2;
+		private Krypton.Toolkit.KryptonButton buttonSubjunktionA2A1;
+		private Krypton.Toolkit.KryptonButton buttonSubjunktionA1A2;
+		private Krypton.Toolkit.KryptonButton buttonInhibitionA2A1;
+		private Krypton.Toolkit.KryptonButton buttonInhibitionA1A2;
+		private Krypton.Toolkit.KryptonTextBox textBoxResultOctal;
+		private Krypton.Toolkit.KryptonLabel labelResultOctal;
+		private Krypton.Toolkit.KryptonTextBox textBoxA2Octal;
+		private Krypton.Toolkit.KryptonLabel labelA2Octal;
+		private Krypton.Toolkit.KryptonTextBox textBoxA1Octal;
+		private Krypton.Toolkit.KryptonLabel labelA1Octal;
+		private Krypton.Toolkit.KryptonButton buttonHalfSwapA1;
+		private Krypton.Toolkit.KryptonButton buttonHalfSwapA2;
+		private Krypton.Toolkit.KryptonCheckBox checkBoxFadeInOut;
+		private Krypton.Toolkit.KryptonNumericUpDown numericUpDownTransparency;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.ComboBox comboBoxConversionOutputUnit;
 		private System.Windows.Forms.ComboBox comboBoxConversionInputUnit;
-		private System.Windows.Forms.TextBox textBoxConversionOutput;
-		private System.Windows.Forms.TextBox textBoxConversionInput;
-		private System.Windows.Forms.Button buttonAbout;
-		private System.Windows.Forms.Button buttonTwosComponentA2;
-		private System.Windows.Forms.Button buttonTwosComponentA1;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button buttonStatistics;
+		private Krypton.Toolkit.KryptonTextBox textBoxConversionOutput;
+		private Krypton.Toolkit.KryptonTextBox textBoxConversionInput;
+		private Krypton.Toolkit.KryptonButton buttonAbout;
+		private Krypton.Toolkit.KryptonButton buttonTwosComponentA2;
+		private Krypton.Toolkit.KryptonButton buttonTwosComponentA1;
+		private Krypton.Toolkit.KryptonButton button1;
+		private Krypton.Toolkit.KryptonButton buttonStatistics;
 		private System.Windows.Forms.GroupBox groupBoxShiftIndicator;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.NumericUpDown numericUpDownShiftIndicator;
-		private System.Windows.Forms.Button buttonBitSwapA2;
-		private System.Windows.Forms.Button buttonBitSwapA1;
-		private System.Windows.Forms.Button buttonNibbleSwapA2;
-		private System.Windows.Forms.Button buttonNibbleSwapA1;
-		private System.Windows.Forms.Button buttonArithmeticShiftRightWithOneA2;
-		private System.Windows.Forms.Button buttonArithmeticShiftRightWithOneA1;
-		private System.Windows.Forms.Button buttonArithmeticShiftLeftWithOneA2;
-		private System.Windows.Forms.Button buttonArithmeticShiftLeftWithOneA1;
-		private System.Windows.Forms.Button buttonArithmeticShiftLeftWithZeroA2;
-		private System.Windows.Forms.Button buttonArithmeticShiftRightWithZeroA2;
-		private System.Windows.Forms.Button buttonArithmeticShiftLeftWithZeroA1;
-		private System.Windows.Forms.Button buttonArithmeticShiftRightWithZeroA1;
-		private System.Windows.Forms.Button buttonRotateRightWithCarryA2;
-		private System.Windows.Forms.Button buttonRotateLeftWithCarryA2;
-		private System.Windows.Forms.Button buttonRotateRightWithCarryA1;
-		private System.Windows.Forms.Button buttonRotateLeftWithCarryA1;
+		private Krypton.Toolkit.KryptonLabel label1;
+		private Krypton.Toolkit.KryptonNumericUpDown numericUpDownShiftIndicator;
+		private Krypton.Toolkit.KryptonButton buttonBitSwapA2;
+		private Krypton.Toolkit.KryptonButton buttonBitSwapA1;
+		private Krypton.Toolkit.KryptonButton buttonNibbleSwapA2;
+		private Krypton.Toolkit.KryptonButton buttonNibbleSwapA1;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftRightWithOneA2;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftRightWithOneA1;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftLeftWithOneA2;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftLeftWithOneA1;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftLeftWithZeroA2;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftRightWithZeroA2;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftLeftWithZeroA1;
+		private Krypton.Toolkit.KryptonButton buttonArithmeticShiftRightWithZeroA1;
+		private Krypton.Toolkit.KryptonButton buttonRotateRightWithCarryA2;
+		private Krypton.Toolkit.KryptonButton buttonRotateLeftWithCarryA2;
+		private Krypton.Toolkit.KryptonButton buttonRotateRightWithCarryA1;
+		private Krypton.Toolkit.KryptonButton buttonRotateLeftWithCarryA1;
+		private Krypton.Toolkit.KryptonManager kryptonManager;
 	}
 }
 

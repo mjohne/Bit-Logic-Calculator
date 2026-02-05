@@ -271,7 +271,7 @@ public static class ByteUnits
 	/// Convert byte to megabyte
 	/// </summary>
 	/// <param name="value">value in bytes</param>
-	/// <returns>value in emgabytes</returns>
+	/// <returns>value in megabytes</returns>
 	public static double ByteToMegabyte(double value) => value * byteToMegabyteFactor;
 
 	/// <summary>

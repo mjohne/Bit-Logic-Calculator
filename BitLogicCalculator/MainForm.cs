@@ -1,10 +1,12 @@
 ﻿using BitLogicCalculator.Properties;
 
+using Krypton.Toolkit;
+
 using System.Collections;
 
 namespace BitLogicCalculator;
 
-public partial class MainForm : Form
+public partial class MainForm : KryptonForm
 {
 	#region Constants and variables
 
@@ -20,11 +22,45 @@ public partial class MainForm : Form
 
 	private readonly Random random = new();
 
-	private readonly long[] squaredByteNumbers = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648 };
+	private readonly long[] squaredByteNumbers = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648];
 
 	#endregion
 
-	#region Local methods
+	#region Helpers
+
+	/// <summary>
+	/// Sets the status bar text and enables the information label when text is provided.
+	/// </summary>
+	/// <param name="text">Main status text to display. If null or whitespace the method returns without changing the UI.</param>
+	/// <param name="additionalInfo">Optional additional information appended to the main text, separated by " - ".</param>
+	/// <remarks>
+	/// This method is used to update the status bar with the specified text and additional information.
+	/// </remarks>
+	private void SetStatusBar(string text, string additionalInfo = "")
+	{
+		// Check if the text is not null or whitespace
+		if (string.IsNullOrWhiteSpace(value: text))
+		{
+			return;
+		}
+		// Set the status bar text and enable it
+		labelInformation.Enabled = true;
+		labelInformation.Text = string.IsNullOrWhiteSpace(value: additionalInfo) ? text : $"{text} - {additionalInfo}";
+	}
+
+	/// <summary>
+	/// Clears the status bar text and disables the information label.
+	/// </summary>
+	/// <remarks>
+	/// Resets the UI state of the status area so that no message is shown.
+	/// Use when there is no status to display or when leaving a control.
+	/// </remarks>
+	private void ClearStatusBar()
+	{
+		// Clear the status bar text and disable it
+		labelInformation.Enabled = false;
+		labelInformation.Text = string.Empty;
+	}
 
 	private void ShowAccumulator1States()
 	{
@@ -363,7 +399,7 @@ public partial class MainForm : Form
 		}
 	}
 
-	private bool Add(bool value1, bool value2, ref bool carry)
+	private static bool Add(bool value1, bool value2, ref bool carry)
 	{
 		carry = false;
 		if (value1 == value2)
@@ -1581,7 +1617,7 @@ public partial class MainForm : Form
 		if (groupBoxA1Byte2.Enabled)
 		{
 			bitArray.Set(index: 8, value: accumulator1.Get(index: 9));
-			bitArray.Set(index: 9, value: accumulator1.Get(index: 7));
+			bitArray.Set(index: 9, value: accumulator1.Get(index: 8));
 			bitArray.Set(index: 10, value: accumulator1.Get(index: 11));
 			bitArray.Set(index: 11, value: accumulator1.Get(index: 10));
 			bitArray.Set(index: 12, value: accumulator1.Get(index: 13));
@@ -1626,7 +1662,7 @@ public partial class MainForm : Form
 		if (groupBoxA2Byte2.Enabled)
 		{
 			bitArray.Set(index: 8, value: accumulator2.Get(index: 9));
-			bitArray.Set(index: 9, value: accumulator2.Get(index: 7));
+			bitArray.Set(index: 9, value: accumulator2.Get(index: 8));
 			bitArray.Set(index: 10, value: accumulator2.Get(index: 11));
 			bitArray.Set(index: 11, value: accumulator2.Get(index: 10));
 			bitArray.Set(index: 12, value: accumulator2.Get(index: 13));
@@ -1789,6 +1825,8 @@ public partial class MainForm : Form
 	private void LabelA2Bit05_Click(object sender, EventArgs e) => checkBoxA2Bit05.Checked = !checkBoxA2Bit05.Checked;
 
 	private void LabelA2Bit06_Click(object sender, EventArgs e) => checkBoxA2Bit06.Checked = !checkBoxA2Bit06.Checked;
+
+	private void LabelA2Bit07_Click(object sender, EventArgs e) => checkBoxA2Bit07.Checked = !checkBoxA2Bit07.Checked;
 
 	private void LabelA2Bit08_Click(object sender, EventArgs e) => checkBoxA2Bit08.Checked = !checkBoxA2Bit08.Checked;
 
@@ -1981,4 +2019,42 @@ public partial class MainForm : Form
 	}
 
 	#endregion
+
+	/// <summary>
+	/// Handles Enter (mouse over / focus) events for controls and ToolStrip items.
+	/// If the sender provides a non-null <c>AccessibleDescription</c>, that text is shown in the status bar.
+	/// </summary>
+	/// <param name="sender">Event source — expected to be a <see cref="Control"/> or <see cref="ToolStripItem"/>.</param>
+	/// <param name="e">Event arguments.</param>
+	/// <remarks>
+	/// This method is called when the mouse pointer enters a control or the control receives focus.
+	/// </remarks>
+	private void Control_Enter(object sender, EventArgs e)
+	{
+		// Check if the sender is null
+		ArgumentNullException.ThrowIfNull(argument: sender);
+		// Get the accessible description based on the sender type
+		string? description = sender switch
+		{
+			Control c => c.AccessibleDescription,
+			ToolStripItem t => t.AccessibleDescription,
+			_ => null
+		};
+		// If a description is available, set it in the status bar
+		if (description != null)
+		{
+			SetStatusBar(text: description);
+		}
+	}
+
+	/// <summary>
+	/// Called when the mouse pointer leaves a control or the control loses focus.
+	/// Clears the status bar text (delegates to <see cref="ClearStatusBar"/>).
+	/// </summary>
+	/// <param name="sender">Event source.</param>
+	/// <param name="e">Event arguments.</param>
+	/// <remarks>
+	/// This method is called when the mouse pointer leaves a control or the control loses focus.
+	/// </remarks>
+	private void Control_Leave(object? sender, EventArgs? e) => ClearStatusBar();
 }
