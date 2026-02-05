@@ -1,6 +1,6 @@
 # Bit Logic Calculator
 
-Bit Logic Calculator is a program for analyzing, displaying and manipulating numbers at the bit level, providing bitwise logic operations, shifts and number system conversions, and is therefore indispensable, especially for hardware-related and system-oriented programming.
+Bit Logic Calculator is a program for analyzing, displaying and manipulating numbers at the bit level. It provides bitwise logic operations, shifts and number system conversions. This makes it indispensable, especially for hardware-related and system-oriented programming.
 
 **Key Functions of a Bit Logic Calculator:**
 - Representation of numbers in different number systems
