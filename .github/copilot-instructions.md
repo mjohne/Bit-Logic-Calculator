@@ -1,73 +1,158 @@
-Your task is to "onboard" this repository to Copilot coding agent by adding a .github/copilot-instructions.md file in the repository that contains information describing how a coding agent seeing it for the first time can work most efficiently.
+# Bit Logic Calculator - Copilot Onboarding Instructions
 
-You will do this task only one time per repository and doing a good job can SIGNIFICANTLY improve the quality of the agent's work, so take your time, think carefully, and search thoroughly before writing the instructions.
+## Project Overview
 
-<Goals>
-- Reduce the likelihood of a coding agent pull request getting rejected by the user due to
-generating code that fails the continuous integration build, fails a validation pipeline, or
-having misbehavior.
-- Minimize bash command and build failures.
-- Allow the agent to complete its task more quickly by minimizing the need for exploration using grep, find, str_replace_editor, and code search tools.
-</Goals>
+**Bit Logic Calculator** is a Windows Forms desktop application written in C# that provides a graphical calculator for performing bitwise logical operations and bit manipulations. The application was last actively developed in 2019 and is currently being reinitialized for maintenance and updates.
 
-<Limitations>
-- Instructions must be no longer than 2 pages.
-- Instructions must not be task specific.
-</Limitations>
+### Technology Stack
+- **Language**: C# (version 7.3)
+- **Framework**: .NET Framework 4.0
+- **Project Type**: Windows Forms Application (WinExe)
+- **IDE**: Visual Studio 2019 (VisualStudioVersion 16.0.29519.181)
+- **Build System**: MSBuild (via .csproj files)
+- **License**: GNU General Public License v3.0
 
-<WhatToAdd>
+### Repository State
+The repository has been recently cleaned up. The current master branch contains only metadata files (.gitignore, LICENSE, README.md, .gitattributes). The actual source code was removed during a cleanup process but is accessible in the git history (commit `67608ea00d3b41a1f935691add3748dfcbee01de` from December 2019).
 
-Add the following high level details about the codebase to reduce the amount of searching the agent has to do to understand the codebase each time:
-<HighLevelDetails>
+## Project Structure
 
-- A summary of what the repository does.
-- High level repository information, such as the size of the repo, the type of the project, the languages, frameworks, or target runtimes in use.
-</HighLevelDetails>
+### Historical Project Layout (from 2019)
+```
+BitLogicCalculator/
+├── BitLogicCalculator.sln          # Visual Studio solution file
+├── BitLogicCalculator/             # Main project directory
+│   ├── BitLogicCalculator.csproj   # C# project file
+│   ├── Program.cs                  # Application entry point
+│   ├── MainForm.cs                 # Main application form
+│   ├── MainForm.Designer.cs        # Designer-generated UI code
+│   ├── MainForm.resx               # Form resources
+│   ├── ByteUnits.cs                # Byte/bit conversion utilities
+│   ├── AboutBox.cs                 # About dialog
+│   ├── StatisticsForm.cs           # Statistics dialog
+│   ├── Properties/                 # Assembly metadata
+│   └── packages.config             # NuGet package references
+└── packages/                       # NuGet packages (not in source control)
+```
 
-Add information about how to build and validate changes so the agent does not need to search and find it each time.
-<BuildInstructions>
+### Current Repository Structure
+```
+.
+├── .github/
+│   └── copilot-instructions.md     # This file
+├── .gitattributes                  # Git line ending configuration
+├── .gitignore                      # Visual Studio .gitignore
+├── LICENSE                         # GPL-3.0 license
+└── README.md                       # Minimal readme
+```
 
-- For each of bootstrap, build, test, run, lint, and any other scripted step, document the sequence of steps to take to run it successfully as well as the versions of any runtime or build tools used.
-- Each command should be validated by running it to ensure that it works correctly as well as any preconditions and postconditions.
-- Try cleaning the repo and environment and running commands in different orders and document errors and misbehavior observed as well as any steps used to mitigate the problem.
-- Run the tests and document the order of steps required to run the tests.
-- Make a change to the codebase. Document any unexpected build issues as well as the workarounds.
-- Document environment setup steps that seem optional but that you have validated are actually required.
-- Document the time required for commands that failed due to timing out.
-- When you find a sequence of commands that work for a particular purpose, document them in detail.
-- Use language to indicate when something should always be done. For example: "always run npm install before building".
-- Record any validation steps from documentation.
-</BuildInstructions>
+## Build & Development
 
-List key facts about the layout and architecture of the codebase to help the agent find where to make changes with minimal searching.
-<ProjectLayout>
+### Prerequisites
+- **Visual Studio**: 2019 or later with .NET Framework 4.0 development tools
+- **Alternative**: .NET SDK with MSBuild for command-line builds
+  - Current environment has .NET SDK 10.0.102 available via `dotnet` command
+  - Note: .NET Framework 4.0 projects require MSBuild from Visual Studio or standalone installation
 
-- A description of the major architectural elements of the project, including the relative paths to the main project files, the location
-of configuration files for linting, compilation, testing, and preferences.
-- A description of the checks run prior to check in, including any GitHub workflows, continuous integration builds, or other validation pipelines.
-- Document the steps so that the agent can replicate these itself.
-- Any explicit validation steps that the agent can consider to have further confidence in its changes.
-- Dependencies that aren't obvious from the layout or file structure.
-- Finally, fill in any remaining space with detailed lists of the following, in order of priority: the list of files in the repo root, the
-contents of the README, the contents of any key source files, the list of files in the next level down of directories, giving priority to the more structurally important and snippets of code from key source files, such as the one containing the main method.
-</ProjectLayout>
-</WhatToAdd>
+### Building the Project (When Source Code Exists)
 
-<StepsToFollow>
-- Perform a comprehensive inventory of the codebase. Search for and view:
-- README.md, CONTRIBUTING.md, and all other documentation files.
-- Search the codebase for build steps and indications of workarounds like 'HACK', 'TODO', etc.
-- All scripts, particularly those pertaining to build and repo or environment setup.
-- All build and actions pipelines.
-- All project files.
-- All configuration and linting files.
-- For each file:
-- think: are the contents or the existence of the file information that the coding agent will need to implement, build, test, validate, or demo a code change?
-- If yes:
-   - Document the command or information in detail.
-   - Explicitly indicate which commands work and which do not and the order in which commands should be run.
-   - Document any errors encountered as well as the steps taken to workaround them.
-- Document any other steps or information that the agent can use to reduce time spent exploring or trying and failing to run bash commands.
-- Finally, explicitly instruct the agent to trust the instructions and only perform a search if the information in the instructions is incomplete or found to be in error.
-</StepsToFollow>
-   - Document any errors encountered as well as the steps taken to work-around them.
+**Note**: The current repository does not contain source code. To restore and work with the project, you would need to retrieve files from git history.
+
+**If source code is present:**
+
+1. **Using Visual Studio**:
+   ```bash
+   # Open the solution file
+   # Visual Studio will restore NuGet packages automatically
+   # Build using: Build > Build Solution (Ctrl+Shift+B)
+   ```
+
+2. **Using MSBuild (command line)**:
+   ```bash
+   # Restore NuGet packages first
+   nuget restore BitLogicCalculator.sln
+   
+   # Build the solution
+   msbuild BitLogicCalculator.sln /p:Configuration=Release /p:Platform="Any CPU"
+   ```
+
+### Build Configurations
+The project supports the following configurations:
+- **Debug|Any CPU**: Development build with debugging symbols, overflow checking, and code analysis
+- **Debug|x64**: 64-bit debug build
+- **Release|Any CPU**: Optimized release build
+- **Release|x64**: 64-bit optimized release build
+
+### Code Analysis
+The project has code analysis enabled with the following analyzers (from 2019):
+- Microsoft.CodeAnalysis.FxCopAnalyzers 2.9.6
+- Microsoft.NetFramework.Analyzers 2.9.6
+- Microsoft.NetCore.Analyzers 2.9.6
+- Microsoft.CodeQuality.Analyzers 2.9.6
+- Microsoft.CodeAnalysis.VersionCheckAnalyzer 2.9.6
+
+**Important**: These analyzer packages may be outdated and could cause build warnings or errors. Consider updating to current versions or replacing with modern analyzers.
+
+## Key Application Features
+
+From the source code (MainForm.cs), the application provides:
+- Bitwise logical operations on 32-bit values (BitArray with length=32)
+- Two accumulators for input values
+- Support for different byte sizes (1, 2, 3, or 4 bytes)
+- Byte unit conversions (bits, bytes, KB, MB, GB, TB) via ByteUnits.cs
+- Visual representation using checkboxes for individual bits
+- Statistical information via StatisticsForm
+
+## Git Workflows
+
+### Active Workflows
+The repository has two GitHub Actions workflows:
+1. **Copilot code review** - Automated code review workflow
+2. **Copilot coding agent** - Automated coding assistance workflow
+
+### Branch Protection
+The `master` branch is protected.
+
+## Development Guidelines
+
+### Important Considerations
+1. **No Active Test Suite**: No unit tests or test infrastructure was found in the 2019 codebase
+2. **Windows-Specific**: This is a Windows Forms application that requires Windows to run
+3. **Legacy Framework**: .NET Framework 4.0 is quite old (released 2010), consider modernization
+4. **Package Dependencies**: The packages/ directory should be in .gitignore (it is) and restored via NuGet
+
+### .gitignore Coverage
+The repository includes a comprehensive Visual Studio .gitignore that properly excludes:
+- Build artifacts (bin/, obj/, Debug/, Release/)
+- Visual Studio user files (*.user, *.suo, .vs/)
+- NuGet packages (packages/ directory)
+- Documentation files (*.xml from builds)
+
+### Making Changes
+1. If restoring source code from history:
+   ```bash
+   # Check out files from the last good commit
+   git checkout 67608ea00d3b41a1f935691add3748dfcbee01de -- BitLogicCalculator/
+   git checkout 67608ea00d3b41a1f935691add3748dfcbee01de -- BitLogicCalculator.sln
+   ```
+
+2. Before committing, ensure:
+   - No build artifacts are committed (check .gitignore)
+   - No packages/ directory is committed
+   - Code follows existing style conventions
+   - XML documentation is present for public APIs
+
+## Common Issues & Workarounds
+
+### Issue: Missing .NET Framework 4.0
+**Solution**: Install .NET Framework 4.0 SDK or use a newer framework by updating TargetFrameworkVersion in the .csproj file.
+
+### Issue: NuGet Package Restore Failures
+**Solution**: Update package references to current versions or remove outdated analyzers.
+
+### Issue: Code Analysis Warnings
+**Solution**: The project has RunCodeAnalysis=true and uses AllRules.ruleset which may generate many warnings. Consider using a more moderate ruleset or updating to modern analyzers.
+
+## Trust These Instructions
+
+Trust the information in this document as authoritative for this repository. Only perform additional exploration if information is missing or found to be incorrect. The repository was thoroughly analyzed including git history back to 2019 when it was last active.
