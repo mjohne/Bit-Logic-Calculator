@@ -100,7 +100,7 @@
 			// 
 			labelA2Bit0Number.AccessibleDescription = "Shows the number of bit 0 in accumulator 2";
 			labelA2Bit0Number.AccessibleName = "number of bit 0 in accumulator 2";
-			labelA2Bit0Number.AccessibleRole = AccessibleRole.StatusBar;
+			labelA2Bit0Number.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Bit0Number.Dock = DockStyle.Fill;
 			labelA2Bit0Number.Location = new Point(156, 24);
 			labelA2Bit0Number.Margin = new Padding(4, 0, 4, 0);
@@ -136,7 +136,7 @@
 			// 
 			labelTotal.AccessibleDescription = "Shows the total";
 			labelTotal.AccessibleName = "total";
-			labelTotal.AccessibleRole = AccessibleRole.StatusBar;
+			labelTotal.AccessibleRole = AccessibleRole.StaticText;
 			labelTotal.Dock = DockStyle.Fill;
 			labelTotal.Location = new Point(6, 68);
 			labelTotal.Margin = new Padding(4, 0, 4, 0);
@@ -153,7 +153,7 @@
 			// 
 			labelBit0.AccessibleDescription = "Shows the bit 0";
 			labelBit0.AccessibleName = "bit 0";
-			labelBit0.AccessibleRole = AccessibleRole.StatusBar;
+			labelBit0.AccessibleRole = AccessibleRole.StaticText;
 			labelBit0.Dock = DockStyle.Fill;
 			labelBit0.Location = new Point(6, 24);
 			labelBit0.Margin = new Padding(4, 0, 4, 0);
@@ -170,7 +170,7 @@
 			// 
 			labelResult.AccessibleDescription = "Shows the result";
 			labelResult.AccessibleName = "result";
-			labelResult.AccessibleRole = AccessibleRole.StatusBar;
+			labelResult.AccessibleRole = AccessibleRole.StaticText;
 			labelResult.Dock = DockStyle.Fill;
 			labelResult.Location = new Point(256, 2);
 			labelResult.Margin = new Padding(4, 0, 4, 0);
@@ -187,7 +187,7 @@
 			// 
 			labelAccumulator2.AccessibleDescription = "Shows the accumulator 2";
 			labelAccumulator2.AccessibleName = "accumulator 2";
-			labelAccumulator2.AccessibleRole = AccessibleRole.StatusBar;
+			labelAccumulator2.AccessibleRole = AccessibleRole.StaticText;
 			labelAccumulator2.Dock = DockStyle.Fill;
 			labelAccumulator2.Location = new Point(156, 2);
 			labelAccumulator2.Margin = new Padding(4, 0, 4, 0);
@@ -204,7 +204,7 @@
 			// 
 			labelAccumulator1.AccessibleDescription = "Shows the accumulator 1";
 			labelAccumulator1.AccessibleName = "accumulator 1";
-			labelAccumulator1.AccessibleRole = AccessibleRole.StatusBar;
+			labelAccumulator1.AccessibleRole = AccessibleRole.StaticText;
 			labelAccumulator1.Dock = DockStyle.Fill;
 			labelAccumulator1.Location = new Point(56, 2);
 			labelAccumulator1.Margin = new Padding(4, 0, 4, 0);
@@ -221,7 +221,7 @@
 			// 
 			labelBit1.AccessibleDescription = "Shows the bit 1";
 			labelBit1.AccessibleName = "bit 1";
-			labelBit1.AccessibleRole = AccessibleRole.StatusBar;
+			labelBit1.AccessibleRole = AccessibleRole.StaticText;
 			labelBit1.Dock = DockStyle.Fill;
 			labelBit1.Location = new Point(6, 46);
 			labelBit1.Margin = new Padding(4, 0, 4, 0);
@@ -238,7 +238,7 @@
 			// 
 			labelResultBit0Number.AccessibleDescription = "Shows the number of bit 0 in result";
 			labelResultBit0Number.AccessibleName = "number of bit 0 in result";
-			labelResultBit0Number.AccessibleRole = AccessibleRole.StatusBar;
+			labelResultBit0Number.AccessibleRole = AccessibleRole.StaticText;
 			labelResultBit0Number.Dock = DockStyle.Fill;
 			labelResultBit0Number.Location = new Point(256, 24);
 			labelResultBit0Number.Margin = new Padding(4, 0, 4, 0);
@@ -256,7 +256,7 @@
 			// 
 			labelA1Bit1Number.AccessibleDescription = "Shows the number of bit 1 in accumulator 1";
 			labelA1Bit1Number.AccessibleName = "number of bit 1 in accumulator 1";
-			labelA1Bit1Number.AccessibleRole = AccessibleRole.StatusBar;
+			labelA1Bit1Number.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Bit1Number.Dock = DockStyle.Fill;
 			labelA1Bit1Number.Location = new Point(56, 46);
 			labelA1Bit1Number.Margin = new Padding(4, 0, 4, 0);
@@ -274,7 +274,7 @@
 			// 
 			labelA2Bit1Number.AccessibleDescription = "Shows the number of bit 1 in accumulator 2";
 			labelA2Bit1Number.AccessibleName = "number of bit 1 in accumulator 2";
-			labelA2Bit1Number.AccessibleRole = AccessibleRole.StatusBar;
+			labelA2Bit1Number.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Bit1Number.Dock = DockStyle.Fill;
 			labelA2Bit1Number.Location = new Point(156, 46);
 			labelA2Bit1Number.Margin = new Padding(4, 0, 4, 0);
@@ -292,7 +292,7 @@
 			// 
 			labelResultBit1Number.AccessibleDescription = "Shows the number of bit 1 in result";
 			labelResultBit1Number.AccessibleName = "number of bit 1 in result";
-			labelResultBit1Number.AccessibleRole = AccessibleRole.StatusBar;
+			labelResultBit1Number.AccessibleRole = AccessibleRole.StaticText;
 			labelResultBit1Number.Dock = DockStyle.Fill;
 			labelResultBit1Number.Location = new Point(256, 46);
 			labelResultBit1Number.Margin = new Padding(4, 0, 4, 0);
@@ -310,7 +310,7 @@
 			// 
 			labelA1TotalNumber.AccessibleDescription = "Shows the total number of bits in accumulator 1";
 			labelA1TotalNumber.AccessibleName = "total number of bits in accumulator 1";
-			labelA1TotalNumber.AccessibleRole = AccessibleRole.StatusBar;
+			labelA1TotalNumber.AccessibleRole = AccessibleRole.StaticText;
 			labelA1TotalNumber.Dock = DockStyle.Fill;
 			labelA1TotalNumber.Location = new Point(56, 68);
 			labelA1TotalNumber.Margin = new Padding(4, 0, 4, 0);
@@ -328,7 +328,7 @@
 			// 
 			labelA2TotalNumber.AccessibleDescription = "Shows the total number of bits in accumulator 2";
 			labelA2TotalNumber.AccessibleName = "total number of bits in accumulator 2";
-			labelA2TotalNumber.AccessibleRole = AccessibleRole.StatusBar;
+			labelA2TotalNumber.AccessibleRole = AccessibleRole.StaticText;
 			labelA2TotalNumber.Dock = DockStyle.Fill;
 			labelA2TotalNumber.Location = new Point(156, 68);
 			labelA2TotalNumber.Margin = new Padding(4, 0, 4, 0);
@@ -346,7 +346,7 @@
 			// 
 			labelResultTotalNumber.AccessibleDescription = "Shows the total number of bits in result";
 			labelResultTotalNumber.AccessibleName = "total number of bits in result";
-			labelResultTotalNumber.AccessibleRole = AccessibleRole.StatusBar;
+			labelResultTotalNumber.AccessibleRole = AccessibleRole.StaticText;
 			labelResultTotalNumber.Dock = DockStyle.Fill;
 			labelResultTotalNumber.Location = new Point(256, 68);
 			labelResultTotalNumber.Margin = new Padding(4, 0, 4, 0);

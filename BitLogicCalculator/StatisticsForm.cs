@@ -74,7 +74,7 @@ public partial class StatisticsForm : KryptonForm
 	private static void HandleException(Exception ex, string message, object? sender = null, EventArgs? e = null)
 	{
 		// Structured logging; detailed information is in the log
-		logger.Error(exception: ex, message: "Exception occurred. Message: {Message} | Sender: {Sender}", args: (message, sender));
+		logger.Error(exception: ex, message: "Exception occurred. Message: {Message} | Sender: {Sender}", args: [message, sender]);
 		// Show only a generic message to the user (details are in the log)
 		_ = MessageBox.Show(text: message, caption: "Error", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
 	}
