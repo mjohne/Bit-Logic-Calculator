@@ -303,7 +303,6 @@
 			Text = "About";
 			Load += AboutBox_Load;
 			Enter += Control_Enter;
-			KeyDown += BaseKryptonForm_KeyDown;
 			Leave += Control_Leave;
 			MouseEnter += Control_Enter;
 			MouseLeave += Control_Leave;
