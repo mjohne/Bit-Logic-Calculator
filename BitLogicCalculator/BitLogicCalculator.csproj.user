@@ -4,6 +4,9 @@
     <Compile Update="AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BaseKryptonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

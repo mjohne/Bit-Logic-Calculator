@@ -28,6 +28,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
 			tableLayoutPanel = new Krypton.Toolkit.KryptonTableLayoutPanel();
 			labelProductName = new Krypton.Toolkit.KryptonLabel();
 			labelVersion = new Krypton.Toolkit.KryptonLabel();
@@ -39,6 +40,7 @@
 			labelInformation = new ToolStripStatusLabel();
 			toolStripContainer = new ToolStripContainer();
 			toolTip = new ToolTip(components);
+			kryptonManager = new Krypton.Toolkit.KryptonManager(components);
 			tableLayoutPanel.SuspendLayout();
 			kryptonStatusStrip.SuspendLayout();
 			toolStripContainer.BottomToolStripPanel.SuspendLayout();
@@ -87,6 +89,9 @@
 			labelProductName.Name = "labelProductName";
 			labelProductName.Size = new Size(388, 20);
 			labelProductName.TabIndex = 0;
+			labelProductName.ToolTipValues.Description = "Shows the product name";
+			labelProductName.ToolTipValues.EnableToolTips = true;
+			labelProductName.ToolTipValues.Heading = "Product name";
 			labelProductName.Values.Text = "product name";
 			labelProductName.DoubleClick += LabelProductName_DoubleClick;
 			labelProductName.Enter += Control_Enter;
@@ -106,6 +111,9 @@
 			labelVersion.Name = "labelVersion";
 			labelVersion.Size = new Size(388, 20);
 			labelVersion.TabIndex = 1;
+			labelVersion.ToolTipValues.Description = "Shows the version";
+			labelVersion.ToolTipValues.EnableToolTips = true;
+			labelVersion.ToolTipValues.Heading = "Version";
 			labelVersion.Values.Text = "version";
 			labelVersion.Click += LabelVersion_Click;
 			labelVersion.Enter += Control_Enter;
@@ -125,6 +133,9 @@
 			labelCopyright.Name = "labelCopyright";
 			labelCopyright.Size = new Size(388, 20);
 			labelCopyright.TabIndex = 2;
+			labelCopyright.ToolTipValues.Description = "Shows the copyright";
+			labelCopyright.ToolTipValues.EnableToolTips = true;
+			labelCopyright.ToolTipValues.Heading = "Copyright";
 			labelCopyright.Values.Text = "copyright";
 			labelCopyright.Click += LabelCopyright_Click;
 			labelCopyright.Enter += Control_Enter;
@@ -144,6 +155,9 @@
 			labelCompanyName.Name = "labelCompanyName";
 			labelCompanyName.Size = new Size(388, 20);
 			labelCompanyName.TabIndex = 3;
+			labelCompanyName.ToolTipValues.Description = "Shows the company name";
+			labelCompanyName.ToolTipValues.EnableToolTips = true;
+			labelCompanyName.ToolTipValues.Heading = "Company name";
 			labelCompanyName.Values.Text = "company name";
 			labelCompanyName.Click += LabelCompanyName_Click;
 			labelCompanyName.Enter += Control_Enter;
@@ -167,6 +181,9 @@
 			textBoxDescription.TabIndex = 4;
 			textBoxDescription.TabStop = false;
 			textBoxDescription.Text = "description";
+			textBoxDescription.ToolTipValues.Description = "Shows the description";
+			textBoxDescription.ToolTipValues.EnableToolTips = true;
+			textBoxDescription.ToolTipValues.Heading = "Description";
 			textBoxDescription.Enter += Control_Enter;
 			textBoxDescription.Leave += Control_Leave;
 			textBoxDescription.MouseEnter += Control_Enter;
@@ -184,6 +201,9 @@
 			okButton.Name = "okButton";
 			okButton.Size = new Size(88, 29);
 			okButton.TabIndex = 5;
+			okButton.ToolTipValues.Description = "Closes the window";
+			okButton.ToolTipValues.EnableToolTips = true;
+			okButton.ToolTipValues.Heading = "OK";
 			okButton.Values.DropDownArrowColor = Color.Empty;
 			okButton.Values.Text = "&OK";
 			okButton.Enter += Control_Enter;
@@ -204,12 +224,14 @@
 			kryptonStatusStrip.Items.AddRange(new ToolStripItem[] { labelInformation });
 			kryptonStatusStrip.Location = new Point(0, 0);
 			kryptonStatusStrip.Name = "kryptonStatusStrip";
+			kryptonStatusStrip.ProgressBars = null;
 			kryptonStatusStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
 			kryptonStatusStrip.Size = new Size(396, 22);
 			kryptonStatusStrip.SizingGrip = false;
 			kryptonStatusStrip.TabIndex = 0;
 			kryptonStatusStrip.TabStop = true;
 			kryptonStatusStrip.Text = "kryptonStatusStrip";
+			toolTip.SetToolTip(kryptonStatusStrip, "Status bar");
 			kryptonStatusStrip.Enter += Control_Enter;
 			kryptonStatusStrip.Leave += Control_Leave;
 			kryptonStatusStrip.MouseEnter += Control_Enter;
@@ -220,6 +242,7 @@
 			labelInformation.AccessibleDescription = "Shows some information";
 			labelInformation.AccessibleName = "information label";
 			labelInformation.AccessibleRole = AccessibleRole.StaticText;
+			labelInformation.AutoToolTip = true;
 			labelInformation.Name = "labelInformation";
 			labelInformation.Size = new Size(93, 17);
 			labelInformation.Text = "information text";
@@ -252,6 +275,11 @@
 			toolStripContainer.MouseEnter += Control_Enter;
 			toolStripContainer.MouseLeave += Control_Leave;
 			// 
+			// kryptonManager
+			// 
+			kryptonManager.ToolkitStrings.MessageBoxStrings.LessDetails = "L&ess Details...";
+			kryptonManager.ToolkitStrings.MessageBoxStrings.MoreDetails = "&More Details...";
+			// 
 			// AboutBox
 			// 
 			AcceptButton = okButton;
@@ -263,6 +291,8 @@
 			ClientSize = new Size(396, 231);
 			Controls.Add(toolStripContainer);
 			FormBorderStyle = FormBorderStyle.FixedDialog;
+			FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Center;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(4, 3, 4, 3);
 			MaximizeBox = false;
 			MinimizeBox = false;
@@ -273,6 +303,7 @@
 			Text = "About";
 			Load += AboutBox_Load;
 			Enter += Control_Enter;
+			KeyDown += BaseKryptonForm_KeyDown;
 			Leave += Control_Leave;
 			MouseEnter += Control_Enter;
 			MouseLeave += Control_Leave;
@@ -302,5 +333,6 @@
 		private ToolStripContainer toolStripContainer;
 		private ToolStripStatusLabel labelInformation;
 		private ToolTip toolTip;
+		private Krypton.Toolkit.KryptonManager kryptonManager;
 	}
 }

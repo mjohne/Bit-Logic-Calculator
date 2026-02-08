@@ -6425,6 +6425,7 @@ namespace BitLogicCalculator
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Bit Logic Calculator (BLC)";
 			Load += MainForm_Load;
+			KeyDown += BaseKryptonForm_KeyDown;
 			statusStrip.ResumeLayout(false);
 			statusStrip.PerformLayout();
 			toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
@@ -6796,4 +6797,3 @@ namespace BitLogicCalculator
 		private KryptonPictureBox kryptonPictureBoxAppBanner;
 	}
 }
-
