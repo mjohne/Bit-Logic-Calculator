@@ -18,6 +18,13 @@
     <Description>Bit Logic Calculator is a program for analyzing, displaying and manipulating numbers at the bit level. It provides bitwise logic operations, shifts and number system conversions. This makes it indispensable, especially for hardware-related and system-oriented programming.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>(C) 2019-2026 Mijo Software by Michael Johne</Copyright>
+    <ApplicationIcon>Resources\bit-logic-calculator.ico</ApplicationIcon>
+    <PackageProjectUrl>https://github.com/mjohne/Bit-Logic-Calculator</PackageProjectUrl>
+    <PackageIcon>bit-logic-calculator_128px.png</PackageIcon>
+    <RepositoryUrl>https://github.com/mjohne/Bit-Logic-Calculator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>bitwise;bitshift;calculator</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -61,6 +68,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Resources\bit-logic-calculator.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -84,6 +99,10 @@
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\bit-logic-calculator_128px.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 

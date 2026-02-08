@@ -506,10 +506,8 @@ public partial class MainForm : KryptonForm
 	{
 		comboBoxMsbRepresentation.SelectedIndex = 0;
 		comboBoxDataSize.SelectedIndex = comboBoxDataSize.Items.Count - 1;
-		textBoxConversionInput.Text = Resources.number00;
-		textBoxConversionOutput.Text = Resources.number00;
-		comboBoxConversionInputUnit.SelectedIndex = 0;
-		comboBoxConversionOutputUnit.SelectedIndex = 1;
+		textBoxDataConversion.Text = Resources.number00;
+		comboBoxDataConversionUnit.SelectedIndex = 0;
 		SetAccumulator1RandomBits();
 		SetAccumulator2RandomBits();
 		ShowAccumulator1States();
@@ -684,11 +682,7 @@ public partial class MainForm : KryptonForm
 		}
 	}
 
-	private void ComboBoxConversionInputUnit_SelectedIndexChanged(object sender, EventArgs e)
-	{
-	}
-
-	private void ComboBoxConversionOutputUnit_SelectedIndexChanged(object sender, EventArgs e)
+	private void ComboBoxDataConversionUnit_SelectedIndexChanged(object sender, EventArgs e)
 	{
 	}
 
@@ -696,11 +690,7 @@ public partial class MainForm : KryptonForm
 
 	#region TextChanged event handlers
 
-	private void TextBoxConversionInput_TextChanged(object sender, EventArgs e)
-	{
-	}
-
-	private void TextBoxConversionOutput_TextChanged(object sender, EventArgs e)
+	private void TextBoxDataConversion_TextChanged(object sender, EventArgs e)
 	{
 	}
 
@@ -1772,12 +1762,12 @@ public partial class MainForm : KryptonForm
 		ShowAccumulator2States();
 	}
 
-	private void ButtonTwosComponentA1_Click(object sender, EventArgs e)
+	private void ButtonFormingTwosComponentA1_Click(object sender, EventArgs e)
 	{
 		ShowAccumulator1States();
 	}
 
-	private void ButtonTwosComponentA2_Click(object sender, EventArgs e)
+	private void ButtonFormingTwosComponentA2_Click(object sender, EventArgs e)
 	{
 		ShowAccumulator2States();
 	}
@@ -2090,10 +2080,6 @@ public partial class MainForm : KryptonForm
 	private void CheckBoxA2Bit31_CheckedChanged(object sender, EventArgs e) => accumulator2.Set(index: 31, value: checkBoxA2Bit31.Checked);
 
 	private void CheckBoxAlwaysOnTop_CheckedChanged(object sender, EventArgs e)
-	{
-	}
-
-	private void CheckBoxFadeInOut_CheckedChanged(object sender, EventArgs e)
 	{
 	}
 
