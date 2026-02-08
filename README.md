@@ -33,4 +33,5 @@ Bit Logic Calculator is a program for analyzing, displaying and manipulating num
 - Data analysis in networks and file formats
 
 ## Screenshot
-<img width="1372" height="596" src="https://github.com/user-attachments/assets/46f591f2-7ad0-4187-87a5-35efddababe4" />
+<img width="1372" height="596" alt="bit-logic-calculator" src="https://github.com/user-attachments/assets/13f7ab89-25b9-403a-9055-9c48b47cc3c4" />
+
