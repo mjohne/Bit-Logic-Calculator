@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatisticsForm));
 			tableLayoutPanel = new Krypton.Toolkit.KryptonTableLayoutPanel();
 			labelA2Bit0Number = new Krypton.Toolkit.KryptonLabel();
 			labelA1Bit0Number = new Krypton.Toolkit.KryptonLabel();
@@ -49,6 +50,7 @@
 			kryptonStatusStrip = new Krypton.Toolkit.KryptonStatusStrip();
 			labelInformation = new ToolStripStatusLabel();
 			toolStripContainer = new ToolStripContainer();
+			kryptonManager = new Krypton.Toolkit.KryptonManager(components);
 			tableLayoutPanel.SuspendLayout();
 			kryptonStatusStrip.SuspendLayout();
 			toolStripContainer.BottomToolStripPanel.SuspendLayout();
@@ -107,6 +109,9 @@
 			labelA2Bit0Number.Name = "labelA2Bit0Number";
 			labelA2Bit0Number.Size = new Size(90, 20);
 			labelA2Bit0Number.TabIndex = 5;
+			labelA2Bit0Number.ToolTipValues.Description = "Shows the number of bit 0 in accumulator 2";
+			labelA2Bit0Number.ToolTipValues.EnableToolTips = true;
+			labelA2Bit0Number.ToolTipValues.Heading = "Number of bit 0 in accumulator 2";
 			labelA2Bit0Number.Values.Text = "---";
 			labelA2Bit0Number.DoubleClick += LabelA2Bit0Number_DoubleClick;
 			labelA2Bit0Number.Enter += Control_Enter;
@@ -125,6 +130,9 @@
 			labelA1Bit0Number.Name = "labelA1Bit0Number";
 			labelA1Bit0Number.Size = new Size(90, 20);
 			labelA1Bit0Number.TabIndex = 4;
+			labelA1Bit0Number.ToolTipValues.Description = "Shows the number of bit 0 in accumulator 1";
+			labelA1Bit0Number.ToolTipValues.EnableToolTips = true;
+			labelA1Bit0Number.ToolTipValues.Heading = "Number of bit 0 in accumulator 1";
 			labelA1Bit0Number.Values.Text = "---";
 			labelA1Bit0Number.DoubleClick += LabelA1Bit0Number_DoubleClick;
 			labelA1Bit0Number.Enter += Control_Enter;
@@ -143,6 +151,9 @@
 			labelTotal.Name = "labelTotal";
 			labelTotal.Size = new Size(40, 20);
 			labelTotal.TabIndex = 11;
+			labelTotal.ToolTipValues.Description = "Shows the total";
+			labelTotal.ToolTipValues.EnableToolTips = true;
+			labelTotal.ToolTipValues.Heading = "Total";
 			labelTotal.Values.Text = "Total:";
 			labelTotal.Enter += Control_Enter;
 			labelTotal.Leave += Control_Leave;
@@ -160,6 +171,9 @@
 			labelBit0.Name = "labelBit0";
 			labelBit0.Size = new Size(40, 20);
 			labelBit0.TabIndex = 3;
+			labelBit0.ToolTipValues.Description = "Shows the bit 0";
+			labelBit0.ToolTipValues.EnableToolTips = true;
+			labelBit0.ToolTipValues.Heading = "Bit 0";
 			labelBit0.Values.Text = "Bit 0:";
 			labelBit0.Enter += Control_Enter;
 			labelBit0.Leave += Control_Leave;
@@ -177,6 +191,9 @@
 			labelResult.Name = "labelResult";
 			labelResult.Size = new Size(107, 20);
 			labelResult.TabIndex = 2;
+			labelResult.ToolTipValues.Description = "Shows the result";
+			labelResult.ToolTipValues.EnableToolTips = true;
+			labelResult.ToolTipValues.Heading = "Result";
 			labelResult.Values.Text = "Result";
 			labelResult.Enter += Control_Enter;
 			labelResult.Leave += Control_Leave;
@@ -194,6 +211,9 @@
 			labelAccumulator2.Name = "labelAccumulator2";
 			labelAccumulator2.Size = new Size(90, 20);
 			labelAccumulator2.TabIndex = 1;
+			labelAccumulator2.ToolTipValues.Description = "Shows the accumulator 2";
+			labelAccumulator2.ToolTipValues.EnableToolTips = true;
+			labelAccumulator2.ToolTipValues.Heading = "Accumulator 2";
 			labelAccumulator2.Values.Text = "Accumulator 2";
 			labelAccumulator2.Enter += Control_Enter;
 			labelAccumulator2.Leave += Control_Leave;
@@ -211,6 +231,9 @@
 			labelAccumulator1.Name = "labelAccumulator1";
 			labelAccumulator1.Size = new Size(90, 20);
 			labelAccumulator1.TabIndex = 0;
+			labelAccumulator1.ToolTipValues.Description = "Shows the accumulator 1";
+			labelAccumulator1.ToolTipValues.EnableToolTips = true;
+			labelAccumulator1.ToolTipValues.Heading = "Accumulator 1";
 			labelAccumulator1.Values.Text = "Accumulator 1";
 			labelAccumulator1.Enter += Control_Enter;
 			labelAccumulator1.Leave += Control_Leave;
@@ -228,6 +251,9 @@
 			labelBit1.Name = "labelBit1";
 			labelBit1.Size = new Size(40, 20);
 			labelBit1.TabIndex = 7;
+			labelBit1.ToolTipValues.Description = "Shows the bit 1";
+			labelBit1.ToolTipValues.EnableToolTips = true;
+			labelBit1.ToolTipValues.Heading = "Bit 1";
 			labelBit1.Values.Text = "Bit 1:";
 			labelBit1.Enter += Control_Enter;
 			labelBit1.Leave += Control_Leave;
@@ -245,6 +271,9 @@
 			labelResultBit0Number.Name = "labelResultBit0Number";
 			labelResultBit0Number.Size = new Size(107, 20);
 			labelResultBit0Number.TabIndex = 6;
+			labelResultBit0Number.ToolTipValues.Description = "Shows the number of bit 0 in result";
+			labelResultBit0Number.ToolTipValues.EnableToolTips = true;
+			labelResultBit0Number.ToolTipValues.Heading = "Number of bit 0 in result";
 			labelResultBit0Number.Values.Text = "---";
 			labelResultBit0Number.DoubleClick += LabelResultBit0Number_DoubleClick;
 			labelResultBit0Number.Enter += Control_Enter;
@@ -263,6 +292,9 @@
 			labelA1Bit1Number.Name = "labelA1Bit1Number";
 			labelA1Bit1Number.Size = new Size(90, 20);
 			labelA1Bit1Number.TabIndex = 8;
+			labelA1Bit1Number.ToolTipValues.Description = "Shows the number of bit 1 in accumulator 1";
+			labelA1Bit1Number.ToolTipValues.EnableToolTips = true;
+			labelA1Bit1Number.ToolTipValues.Heading = "Number of bit 1 in accumulator 1";
 			labelA1Bit1Number.Values.Text = "---";
 			labelA1Bit1Number.DoubleClick += LabelA1Bit1Number_DoubleClick;
 			labelA1Bit1Number.Enter += Control_Enter;
@@ -281,6 +313,9 @@
 			labelA2Bit1Number.Name = "labelA2Bit1Number";
 			labelA2Bit1Number.Size = new Size(90, 20);
 			labelA2Bit1Number.TabIndex = 9;
+			labelA2Bit1Number.ToolTipValues.Description = "Shows the number of bit 1 in accumulator 2";
+			labelA2Bit1Number.ToolTipValues.EnableToolTips = true;
+			labelA2Bit1Number.ToolTipValues.Heading = "Number of bit 1 in accumulator 2";
 			labelA2Bit1Number.Values.Text = "---";
 			labelA2Bit1Number.DoubleClick += LabelA2Bit1Number_DoubleClick;
 			labelA2Bit1Number.Enter += Control_Enter;
@@ -299,6 +334,9 @@
 			labelResultBit1Number.Name = "labelResultBit1Number";
 			labelResultBit1Number.Size = new Size(107, 20);
 			labelResultBit1Number.TabIndex = 10;
+			labelResultBit1Number.ToolTipValues.Description = "Shows the number of bit 1 in result";
+			labelResultBit1Number.ToolTipValues.EnableToolTips = true;
+			labelResultBit1Number.ToolTipValues.Heading = "Number of bit 0 in result";
 			labelResultBit1Number.Values.Text = "---";
 			labelResultBit1Number.DoubleClick += LabelResultBit1Number_DoubleClick;
 			labelResultBit1Number.Enter += Control_Enter;
@@ -317,6 +355,9 @@
 			labelA1TotalNumber.Name = "labelA1TotalNumber";
 			labelA1TotalNumber.Size = new Size(90, 20);
 			labelA1TotalNumber.TabIndex = 12;
+			labelA1TotalNumber.ToolTipValues.Description = "Shows the total number of bits in accumulator 1";
+			labelA1TotalNumber.ToolTipValues.EnableToolTips = true;
+			labelA1TotalNumber.ToolTipValues.Heading = "Total number of bits in accumulator 1";
 			labelA1TotalNumber.Values.Text = "---";
 			labelA1TotalNumber.DoubleClick += LabelA1TotalNumber_DoubleClick;
 			labelA1TotalNumber.Enter += Control_Enter;
@@ -335,6 +376,9 @@
 			labelA2TotalNumber.Name = "labelA2TotalNumber";
 			labelA2TotalNumber.Size = new Size(90, 20);
 			labelA2TotalNumber.TabIndex = 13;
+			labelA2TotalNumber.ToolTipValues.Description = "Shows the total number of bits in accumulator 2";
+			labelA2TotalNumber.ToolTipValues.EnableToolTips = true;
+			labelA2TotalNumber.ToolTipValues.Heading = "Total number of bits in accumulator 2";
 			labelA2TotalNumber.Values.Text = "---";
 			labelA2TotalNumber.DoubleClick += LabelA2TotalNumber_DoubleClick;
 			labelA2TotalNumber.Enter += Control_Enter;
@@ -353,6 +397,9 @@
 			labelResultTotalNumber.Name = "labelResultTotalNumber";
 			labelResultTotalNumber.Size = new Size(107, 20);
 			labelResultTotalNumber.TabIndex = 14;
+			labelResultTotalNumber.ToolTipValues.Description = "Shows the total number of bits in result";
+			labelResultTotalNumber.ToolTipValues.EnableToolTips = true;
+			labelResultTotalNumber.ToolTipValues.Heading = "Total number of bits in result";
 			labelResultTotalNumber.Values.Text = "---";
 			labelResultTotalNumber.DoubleClick += LabelResultTotalNumber_DoubleClick;
 			labelResultTotalNumber.Enter += Control_Enter;
@@ -396,8 +443,8 @@
 			// 
 			// toolStripContainer
 			// 
-			toolStripContainer.AccessibleDescription = "";
-			toolStripContainer.AccessibleName = "";
+			toolStripContainer.AccessibleDescription = "Groups all inner elements";
+			toolStripContainer.AccessibleName = "Grouping";
 			toolStripContainer.AccessibleRole = AccessibleRole.Grouping;
 			// 
 			// toolStripContainer.BottomToolStripPanel
@@ -423,6 +470,11 @@
 			toolStripContainer.MouseEnter += Control_Enter;
 			toolStripContainer.MouseLeave += Control_Leave;
 			// 
+			// kryptonManager
+			// 
+			kryptonManager.ToolkitStrings.MessageBoxStrings.LessDetails = "L&ess Details...";
+			kryptonManager.ToolkitStrings.MessageBoxStrings.MoreDetails = "&More Details...";
+			// 
 			// StatisticsForm
 			// 
 			AccessibleDescription = "Shows the statistic window";
@@ -434,6 +486,8 @@
 			ControlBox = false;
 			Controls.Add(toolStripContainer);
 			FormBorderStyle = FormBorderStyle.FixedToolWindow;
+			FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Center;
+			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(4, 3, 4, 3);
 			MaximizeBox = false;
 			MinimizeBox = false;
@@ -443,6 +497,7 @@
 			Text = "Statistics";
 			Load += StatisticsForm_Load;
 			Enter += Control_Enter;
+			KeyDown += BaseKryptonForm_KeyDown;
 			Leave += Control_Leave;
 			MouseEnter += Control_Enter;
 			MouseLeave += Control_Leave;
@@ -481,5 +536,6 @@
 		private Krypton.Toolkit.KryptonLabel labelResultTotalNumber;
 		private System.Windows.Forms.ToolStripStatusLabel labelInformation;
 		private System.Windows.Forms.ToolStripContainer toolStripContainer;
+		private Krypton.Toolkit.KryptonManager kryptonManager;
 	}
 }
