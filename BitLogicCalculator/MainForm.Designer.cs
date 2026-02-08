@@ -36,8 +36,8 @@ namespace BitLogicCalculator
 			toolTip = new ToolTip(components);
 			toolStripContainer = new ToolStripContainer();
 			groupBox1 = new GroupBox();
-			comboBoxConversionOutputUnit = new ComboBox();
-			comboBoxConversionInputUnit = new ComboBox();
+			comboBoxConversionOutputUnit = new KryptonComboBox();
+			comboBoxConversionInputUnit = new KryptonComboBox();
 			textBoxConversionOutput = new KryptonTextBox();
 			textBoxConversionInput = new KryptonTextBox();
 			groupBoxApplicationSettings = new GroupBox();
@@ -49,9 +49,9 @@ namespace BitLogicCalculator
 			groupBoxDataFormat = new GroupBox();
 			buttonStatistics = new KryptonButton();
 			buttonLsbSign = new KryptonButton();
-			comboBoxDataSize = new ComboBox();
+			comboBoxDataSize = new KryptonComboBox();
 			labelMsbRepresentation = new KryptonLabel();
-			comboBoxMsbRepresentation = new ComboBox();
+			comboBoxMsbRepresentation = new KryptonComboBox();
 			labelDataSize = new KryptonLabel();
 			groupBoxOperations = new GroupBox();
 			buttonRotateRightWithCarryA2 = new KryptonButton();
@@ -59,18 +59,18 @@ namespace BitLogicCalculator
 			buttonRotateRightWithCarryA1 = new KryptonButton();
 			buttonRotateLeftWithCarryA1 = new KryptonButton();
 			groupBoxShiftIndicator = new GroupBox();
-			label1 = new KryptonLabel();
+			labelShiftIndicator = new KryptonLabel();
 			numericUpDownShiftIndicator = new KryptonNumericUpDown();
 			buttonBitSwapA2 = new KryptonButton();
-			button1 = new KryptonButton();
+			buttonLogicalNandA1AndA2 = new KryptonButton();
 			buttonBitSwapA1 = new KryptonButton();
 			buttonTwosComponentA2 = new KryptonButton();
 			buttonNibbleSwapA2 = new KryptonButton();
 			buttonTwosComponentA1 = new KryptonButton();
 			buttonHalfSwapA2 = new KryptonButton();
-			buttonSubjunktionA2A1 = new KryptonButton();
+			buttonSubjunctionA2A1 = new KryptonButton();
 			buttonHalfSwapA1 = new KryptonButton();
-			buttonSubjunktionA1A2 = new KryptonButton();
+			buttonSubjunctionA1A2 = new KryptonButton();
 			buttonNibbleSwapA1 = new KryptonButton();
 			buttonInhibitionA2A1 = new KryptonButton();
 			buttonArithmeticShiftRightWithOneA2 = new KryptonButton();
@@ -353,8 +353,12 @@ namespace BitLogicCalculator
 			toolStripContainer.ContentPanel.SuspendLayout();
 			toolStripContainer.SuspendLayout();
 			groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)comboBoxConversionOutputUnit).BeginInit();
+			((System.ComponentModel.ISupportInitialize)comboBoxConversionInputUnit).BeginInit();
 			groupBoxApplicationSettings.SuspendLayout();
 			groupBoxDataFormat.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)comboBoxDataSize).BeginInit();
+			((System.ComponentModel.ISupportInitialize)comboBoxMsbRepresentation).BeginInit();
 			groupBoxOperations.SuspendLayout();
 			groupBoxShiftIndicator.SuspendLayout();
 			groupBoxResult.SuspendLayout();
@@ -403,6 +407,7 @@ namespace BitLogicCalculator
 			// 
 			// toolStripContainer.ContentPanel
 			// 
+			toolStripContainer.ContentPanel.BackColor = SystemColors.Control;
 			toolStripContainer.ContentPanel.Controls.Add(groupBox1);
 			toolStripContainer.ContentPanel.Controls.Add(groupBoxApplicationSettings);
 			toolStripContainer.ContentPanel.Controls.Add(groupBoxDataFormat);
@@ -423,6 +428,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBox1
 			// 
+			groupBox1.AccessibleRole = AccessibleRole.Grouping;
 			groupBox1.Controls.Add(comboBoxConversionOutputUnit);
 			groupBox1.Controls.Add(comboBoxConversionInputUnit);
 			groupBox1.Controls.Add(textBoxConversionOutput);
@@ -438,13 +444,15 @@ namespace BitLogicCalculator
 			// 
 			// comboBoxConversionOutputUnit
 			// 
+			comboBoxConversionOutputUnit.AccessibleRole = AccessibleRole.DropList;
 			comboBoxConversionOutputUnit.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxConversionOutputUnit.DropDownWidth = 80;
 			comboBoxConversionOutputUnit.FormattingEnabled = true;
 			comboBoxConversionOutputUnit.Items.AddRange(new object[] { "byte", "kilobyte", "megabyte", "gigabyte", "terabyte" });
-			comboBoxConversionOutputUnit.Location = new Point(105, 47);
+			comboBoxConversionOutputUnit.Location = new Point(101, 48);
 			comboBoxConversionOutputUnit.Margin = new Padding(4, 3, 4, 3);
 			comboBoxConversionOutputUnit.Name = "comboBoxConversionOutputUnit";
-			comboBoxConversionOutputUnit.Size = new Size(80, 23);
+			comboBoxConversionOutputUnit.Size = new Size(80, 22);
 			comboBoxConversionOutputUnit.TabIndex = 75;
 			comboBoxConversionOutputUnit.SelectedIndexChanged += ComboBoxConversionOutputUnit_SelectedIndexChanged;
 			comboBoxConversionOutputUnit.Enter += Control_Enter;
@@ -454,13 +462,15 @@ namespace BitLogicCalculator
 			// 
 			// comboBoxConversionInputUnit
 			// 
+			comboBoxConversionInputUnit.AccessibleRole = AccessibleRole.DropList;
 			comboBoxConversionInputUnit.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxConversionInputUnit.DropDownWidth = 80;
 			comboBoxConversionInputUnit.FormattingEnabled = true;
 			comboBoxConversionInputUnit.Items.AddRange(new object[] { "byte", "kilobyte", "megabyte", "gigabyte", "terabyte" });
-			comboBoxConversionInputUnit.Location = new Point(105, 20);
+			comboBoxConversionInputUnit.Location = new Point(101, 22);
 			comboBoxConversionInputUnit.Margin = new Padding(4, 3, 4, 3);
 			comboBoxConversionInputUnit.Name = "comboBoxConversionInputUnit";
-			comboBoxConversionInputUnit.Size = new Size(80, 23);
+			comboBoxConversionInputUnit.Size = new Size(80, 22);
 			comboBoxConversionInputUnit.TabIndex = 74;
 			comboBoxConversionInputUnit.SelectedIndexChanged += ComboBoxConversionInputUnit_SelectedIndexChanged;
 			comboBoxConversionInputUnit.Enter += Control_Enter;
@@ -470,6 +480,7 @@ namespace BitLogicCalculator
 			// 
 			// textBoxConversionOutput
 			// 
+			textBoxConversionOutput.AccessibleRole = AccessibleRole.Text;
 			textBoxConversionOutput.Location = new Point(7, 47);
 			textBoxConversionOutput.Margin = new Padding(4, 3, 4, 3);
 			textBoxConversionOutput.Name = "textBoxConversionOutput";
@@ -483,6 +494,7 @@ namespace BitLogicCalculator
 			// 
 			// textBoxConversionInput
 			// 
+			textBoxConversionInput.AccessibleRole = AccessibleRole.Text;
 			textBoxConversionInput.Location = new Point(7, 21);
 			textBoxConversionInput.Margin = new Padding(4, 3, 4, 3);
 			textBoxConversionInput.Name = "textBoxConversionInput";
@@ -496,6 +508,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxApplicationSettings
 			// 
+			groupBoxApplicationSettings.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxApplicationSettings.Controls.Add(buttonAbout);
 			groupBoxApplicationSettings.Controls.Add(checkBoxFadeInOut);
 			groupBoxApplicationSettings.Controls.Add(numericUpDownTransparency);
@@ -513,10 +526,10 @@ namespace BitLogicCalculator
 			// buttonAbout
 			// 
 			buttonAbout.AccessibleRole = AccessibleRole.PushButton;
-			buttonAbout.Location = new Point(172, 46);
+			buttonAbout.Location = new Point(186, 48);
 			buttonAbout.Margin = new Padding(4, 3, 4, 3);
 			buttonAbout.Name = "buttonAbout";
-			buttonAbout.Size = new Size(88, 27);
+			buttonAbout.Size = new Size(88, 24);
 			buttonAbout.TabIndex = 92;
 			buttonAbout.Values.DropDownArrowColor = Color.Empty;
 			buttonAbout.Values.Text = "About...";
@@ -528,6 +541,7 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxFadeInOut
 			// 
+			checkBoxFadeInOut.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxFadeInOut.Location = new Point(10, 47);
 			checkBoxFadeInOut.Margin = new Padding(4, 3, 4, 3);
 			checkBoxFadeInOut.Name = "checkBoxFadeInOut";
@@ -542,6 +556,7 @@ namespace BitLogicCalculator
 			// 
 			// numericUpDownTransparency
 			// 
+			numericUpDownTransparency.AccessibleRole = AccessibleRole.SpinButton;
 			numericUpDownTransparency.Increment = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDownTransparency.Location = new Point(112, 22);
 			numericUpDownTransparency.Margin = new Padding(4, 3, 4, 3);
@@ -559,6 +574,7 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxAlwaysOnTop
 			// 
+			checkBoxAlwaysOnTop.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxAlwaysOnTop.Location = new Point(173, 23);
 			checkBoxAlwaysOnTop.Margin = new Padding(4, 3, 4, 3);
 			checkBoxAlwaysOnTop.Name = "checkBoxAlwaysOnTop";
@@ -573,6 +589,7 @@ namespace BitLogicCalculator
 			// 
 			// labelTransparency
 			// 
+			labelTransparency.AccessibleRole = AccessibleRole.StaticText;
 			labelTransparency.Location = new Point(7, 24);
 			labelTransparency.Margin = new Padding(4, 0, 4, 0);
 			labelTransparency.Name = "labelTransparency";
@@ -586,6 +603,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxDataFormat
 			// 
+			groupBoxDataFormat.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxDataFormat.BackColor = Color.Transparent;
 			groupBoxDataFormat.Controls.Add(buttonStatistics);
 			groupBoxDataFormat.Controls.Add(buttonLsbSign);
@@ -604,10 +622,10 @@ namespace BitLogicCalculator
 			// 
 			// buttonStatistics
 			// 
-			buttonStatistics.Location = new Point(192, 42);
+			buttonStatistics.Location = new Point(192, 43);
 			buttonStatistics.Margin = new Padding(4, 3, 4, 3);
 			buttonStatistics.Name = "buttonStatistics";
-			buttonStatistics.Size = new Size(66, 27);
+			buttonStatistics.Size = new Size(66, 22);
 			buttonStatistics.TabIndex = 10;
 			buttonStatistics.Values.DropDownArrowColor = Color.Empty;
 			buttonStatistics.Values.Text = "Statistics";
@@ -620,10 +638,10 @@ namespace BitLogicCalculator
 			// buttonLsbSign
 			// 
 			buttonLsbSign.AccessibleRole = AccessibleRole.PushButton;
-			buttonLsbSign.Location = new Point(192, 14);
+			buttonLsbSign.Location = new Point(192, 15);
 			buttonLsbSign.Margin = new Padding(4, 3, 4, 3);
 			buttonLsbSign.Name = "buttonLsbSign";
-			buttonLsbSign.Size = new Size(66, 27);
+			buttonLsbSign.Size = new Size(66, 22);
 			buttonLsbSign.TabIndex = 8;
 			buttonLsbSign.Values.DropDownArrowColor = Color.Empty;
 			buttonLsbSign.Values.Text = "LSB: 0";
@@ -635,13 +653,15 @@ namespace BitLogicCalculator
 			// 
 			// comboBoxDataSize
 			// 
+			comboBoxDataSize.AccessibleRole = AccessibleRole.DropList;
 			comboBoxDataSize.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxDataSize.DropDownWidth = 98;
 			comboBoxDataSize.FormattingEnabled = true;
 			comboBoxDataSize.Items.AddRange(new object[] { "8 bit", "16 bit", "32 bit" });
 			comboBoxDataSize.Location = new Point(86, 15);
 			comboBoxDataSize.Margin = new Padding(4, 3, 4, 3);
 			comboBoxDataSize.Name = "comboBoxDataSize";
-			comboBoxDataSize.Size = new Size(98, 23);
+			comboBoxDataSize.Size = new Size(98, 22);
 			comboBoxDataSize.TabIndex = 9;
 			comboBoxDataSize.SelectedIndexChanged += ComboBoxDataSize_SelectedIndexChanged;
 			comboBoxDataSize.Enter += Control_Enter;
@@ -651,6 +671,7 @@ namespace BitLogicCalculator
 			// 
 			// labelMsbRepresentation
 			// 
+			labelMsbRepresentation.AccessibleRole = AccessibleRole.StaticText;
 			labelMsbRepresentation.Location = new Point(7, 46);
 			labelMsbRepresentation.Margin = new Padding(4, 0, 4, 0);
 			labelMsbRepresentation.Name = "labelMsbRepresentation";
@@ -664,13 +685,15 @@ namespace BitLogicCalculator
 			// 
 			// comboBoxMsbRepresentation
 			// 
+			comboBoxMsbRepresentation.AccessibleRole = AccessibleRole.DropList;
 			comboBoxMsbRepresentation.DropDownStyle = ComboBoxStyle.DropDownList;
+			comboBoxMsbRepresentation.DropDownWidth = 98;
 			comboBoxMsbRepresentation.FormattingEnabled = true;
 			comboBoxMsbRepresentation.Items.AddRange(new object[] { "unsigned", "signed" });
 			comboBoxMsbRepresentation.Location = new Point(86, 43);
 			comboBoxMsbRepresentation.Margin = new Padding(4, 3, 4, 3);
 			comboBoxMsbRepresentation.Name = "comboBoxMsbRepresentation";
-			comboBoxMsbRepresentation.Size = new Size(98, 23);
+			comboBoxMsbRepresentation.Size = new Size(98, 22);
 			comboBoxMsbRepresentation.TabIndex = 7;
 			comboBoxMsbRepresentation.SelectedIndexChanged += ComboBoxMsbRepresentation_SelectedIndexChanged;
 			comboBoxMsbRepresentation.Enter += Control_Enter;
@@ -680,6 +703,7 @@ namespace BitLogicCalculator
 			// 
 			// labelDataSize
 			// 
+			labelDataSize.AccessibleRole = AccessibleRole.StaticText;
 			labelDataSize.Location = new Point(7, 18);
 			labelDataSize.Margin = new Padding(4, 0, 4, 0);
 			labelDataSize.Name = "labelDataSize";
@@ -693,6 +717,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxOperations
 			// 
+			groupBoxOperations.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxOperations.BackColor = Color.Transparent;
 			groupBoxOperations.Controls.Add(buttonRotateRightWithCarryA2);
 			groupBoxOperations.Controls.Add(buttonRotateLeftWithCarryA2);
@@ -700,15 +725,15 @@ namespace BitLogicCalculator
 			groupBoxOperations.Controls.Add(buttonRotateLeftWithCarryA1);
 			groupBoxOperations.Controls.Add(groupBoxShiftIndicator);
 			groupBoxOperations.Controls.Add(buttonBitSwapA2);
-			groupBoxOperations.Controls.Add(button1);
+			groupBoxOperations.Controls.Add(buttonLogicalNandA1AndA2);
 			groupBoxOperations.Controls.Add(buttonBitSwapA1);
 			groupBoxOperations.Controls.Add(buttonTwosComponentA2);
 			groupBoxOperations.Controls.Add(buttonNibbleSwapA2);
 			groupBoxOperations.Controls.Add(buttonTwosComponentA1);
 			groupBoxOperations.Controls.Add(buttonHalfSwapA2);
-			groupBoxOperations.Controls.Add(buttonSubjunktionA2A1);
+			groupBoxOperations.Controls.Add(buttonSubjunctionA2A1);
 			groupBoxOperations.Controls.Add(buttonHalfSwapA1);
-			groupBoxOperations.Controls.Add(buttonSubjunktionA1A2);
+			groupBoxOperations.Controls.Add(buttonSubjunctionA1A2);
 			groupBoxOperations.Controls.Add(buttonNibbleSwapA1);
 			groupBoxOperations.Controls.Add(buttonInhibitionA2A1);
 			groupBoxOperations.Controls.Add(buttonArithmeticShiftRightWithOneA2);
@@ -768,7 +793,6 @@ namespace BitLogicCalculator
 			buttonRotateRightWithCarryA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightWithCarryA2.Enabled = false;
 			buttonRotateRightWithCarryA2.Location = new Point(401, 391);
-			buttonRotateRightWithCarryA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightWithCarryA2.Name = "buttonRotateRightWithCarryA2";
 			buttonRotateRightWithCarryA2.Size = new Size(91, 27);
 			buttonRotateRightWithCarryA2.TabIndex = 134;
@@ -785,7 +809,6 @@ namespace BitLogicCalculator
 			buttonRotateLeftWithCarryA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftWithCarryA2.Enabled = false;
 			buttonRotateLeftWithCarryA2.Location = new Point(401, 358);
-			buttonRotateLeftWithCarryA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftWithCarryA2.Name = "buttonRotateLeftWithCarryA2";
 			buttonRotateLeftWithCarryA2.Size = new Size(91, 27);
 			buttonRotateLeftWithCarryA2.TabIndex = 132;
@@ -802,7 +825,6 @@ namespace BitLogicCalculator
 			buttonRotateRightWithCarryA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightWithCarryA1.Enabled = false;
 			buttonRotateRightWithCarryA1.Location = new Point(303, 391);
-			buttonRotateRightWithCarryA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightWithCarryA1.Name = "buttonRotateRightWithCarryA1";
 			buttonRotateRightWithCarryA1.Size = new Size(91, 27);
 			buttonRotateRightWithCarryA1.TabIndex = 130;
@@ -819,7 +841,6 @@ namespace BitLogicCalculator
 			buttonRotateLeftWithCarryA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftWithCarryA1.Enabled = false;
 			buttonRotateLeftWithCarryA1.Location = new Point(303, 358);
-			buttonRotateLeftWithCarryA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftWithCarryA1.Name = "buttonRotateLeftWithCarryA1";
 			buttonRotateLeftWithCarryA1.Size = new Size(91, 27);
 			buttonRotateLeftWithCarryA1.TabIndex = 128;
@@ -833,10 +854,10 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxShiftIndicator
 			// 
-			groupBoxShiftIndicator.Controls.Add(label1);
+			groupBoxShiftIndicator.AccessibleRole = AccessibleRole.Grouping;
+			groupBoxShiftIndicator.Controls.Add(labelShiftIndicator);
 			groupBoxShiftIndicator.Controls.Add(numericUpDownShiftIndicator);
 			groupBoxShiftIndicator.Location = new Point(303, 426);
-			groupBoxShiftIndicator.Margin = new Padding(4, 3, 4, 3);
 			groupBoxShiftIndicator.Name = "groupBoxShiftIndicator";
 			groupBoxShiftIndicator.Padding = new Padding(4, 3, 4, 3);
 			groupBoxShiftIndicator.Size = new Size(187, 60);
@@ -846,21 +867,23 @@ namespace BitLogicCalculator
 			groupBoxShiftIndicator.Enter += Control_Enter;
 			groupBoxShiftIndicator.Leave += Control_Leave;
 			// 
-			// label1
+			// labelShiftIndicator
 			// 
-			label1.Location = new Point(62, 12);
-			label1.Margin = new Padding(4, 0, 4, 0);
-			label1.Name = "label1";
-			label1.Size = new Size(358, 45);
-			label1.TabIndex = 93;
-			label1.Values.Text = "Defines the number of bit positions for all shifting and rotations";
-			label1.Enter += Control_Enter;
-			label1.Leave += Control_Leave;
-			label1.MouseEnter += Control_Enter;
-			label1.MouseLeave += Control_Leave;
+			labelShiftIndicator.AccessibleRole = AccessibleRole.StaticText;
+			labelShiftIndicator.Location = new Point(62, 12);
+			labelShiftIndicator.Margin = new Padding(4, 0, 4, 0);
+			labelShiftIndicator.Name = "labelShiftIndicator";
+			labelShiftIndicator.Size = new Size(358, 45);
+			labelShiftIndicator.TabIndex = 93;
+			labelShiftIndicator.Values.Text = "Defines the number of bit positions for all shifting and rotations";
+			labelShiftIndicator.Enter += Control_Enter;
+			labelShiftIndicator.Leave += Control_Leave;
+			labelShiftIndicator.MouseEnter += Control_Enter;
+			labelShiftIndicator.MouseLeave += Control_Leave;
 			// 
 			// numericUpDownShiftIndicator
 			// 
+			numericUpDownShiftIndicator.AccessibleRole = AccessibleRole.SpinButton;
 			numericUpDownShiftIndicator.Increment = new decimal(new int[] { 1, 0, 0, 0 });
 			numericUpDownShiftIndicator.Location = new Point(7, 22);
 			numericUpDownShiftIndicator.Margin = new Padding(4, 3, 4, 3);
@@ -878,7 +901,6 @@ namespace BitLogicCalculator
 			// 
 			buttonBitSwapA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonBitSwapA2.Location = new Point(204, 91);
-			buttonBitSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonBitSwapA2.Name = "buttonBitSwapA2";
 			buttonBitSwapA2.Size = new Size(91, 27);
 			buttonBitSwapA2.TabIndex = 125;
@@ -890,27 +912,30 @@ namespace BitLogicCalculator
 			buttonBitSwapA2.MouseEnter += Control_Enter;
 			buttonBitSwapA2.MouseLeave += Control_Leave;
 			// 
-			// button1
+			// buttonLogicalNandA1AndA2
 			// 
-			button1.AccessibleRole = AccessibleRole.PushButton;
-			button1.Location = new Point(7, 258);
-			button1.Margin = new Padding(4, 3, 4, 3);
-			button1.Name = "button1";
-			button1.Size = new Size(91, 27);
-			button1.TabIndex = 113;
-			button1.Values.DropDownArrowColor = Color.Empty;
-			button1.Values.Text = "A1 NAND A2";
-			button1.Click += ButtonLogicalNandA1AndA2_Click_Click;
-			button1.Enter += Control_Enter;
-			button1.Leave += Control_Leave;
-			button1.MouseEnter += Control_Enter;
-			button1.MouseLeave += Control_Leave;
+			buttonLogicalNandA1AndA2.AccessibleDescription = "Calculates the logical NAND of A1 and A2";
+			buttonLogicalNandA1AndA2.AccessibleName = "Logical NAND of A1 and A2";
+			buttonLogicalNandA1AndA2.AccessibleRole = AccessibleRole.PushButton;
+			buttonLogicalNandA1AndA2.Location = new Point(7, 258);
+			buttonLogicalNandA1AndA2.Name = "buttonLogicalNandA1AndA2";
+			buttonLogicalNandA1AndA2.Size = new Size(91, 27);
+			buttonLogicalNandA1AndA2.TabIndex = 113;
+			buttonLogicalNandA1AndA2.ToolTipValues.Description = "Calculates the logical NAND of A1 and A2";
+			buttonLogicalNandA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalNandA1AndA2.ToolTipValues.Heading = "Logical NAND of A1 and A2";
+			buttonLogicalNandA1AndA2.Values.DropDownArrowColor = Color.Empty;
+			buttonLogicalNandA1AndA2.Values.Text = "A1 NAND A2";
+			buttonLogicalNandA1AndA2.Click += ButtonLogicalNandA1AndA2_Click_Click;
+			buttonLogicalNandA1AndA2.Enter += Control_Enter;
+			buttonLogicalNandA1AndA2.Leave += Control_Leave;
+			buttonLogicalNandA1AndA2.MouseEnter += Control_Enter;
+			buttonLogicalNandA1AndA2.MouseLeave += Control_Leave;
 			// 
 			// buttonBitSwapA1
 			// 
 			buttonBitSwapA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonBitSwapA1.Location = new Point(106, 91);
-			buttonBitSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonBitSwapA1.Name = "buttonBitSwapA1";
 			buttonBitSwapA1.Size = new Size(91, 27);
 			buttonBitSwapA1.TabIndex = 124;
@@ -927,7 +952,6 @@ namespace BitLogicCalculator
 			buttonTwosComponentA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonTwosComponentA2.Enabled = false;
 			buttonTwosComponentA2.Location = new Point(204, 325);
-			buttonTwosComponentA2.Margin = new Padding(4, 3, 4, 3);
 			buttonTwosComponentA2.Name = "buttonTwosComponentA2";
 			buttonTwosComponentA2.Size = new Size(91, 27);
 			buttonTwosComponentA2.TabIndex = 112;
@@ -943,7 +967,6 @@ namespace BitLogicCalculator
 			// 
 			buttonNibbleSwapA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonNibbleSwapA2.Location = new Point(204, 58);
-			buttonNibbleSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonNibbleSwapA2.Name = "buttonNibbleSwapA2";
 			buttonNibbleSwapA2.Size = new Size(91, 27);
 			buttonNibbleSwapA2.TabIndex = 123;
@@ -960,7 +983,6 @@ namespace BitLogicCalculator
 			buttonTwosComponentA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonTwosComponentA1.Enabled = false;
 			buttonTwosComponentA1.Location = new Point(106, 325);
-			buttonTwosComponentA1.Margin = new Padding(4, 3, 4, 3);
 			buttonTwosComponentA1.Name = "buttonTwosComponentA1";
 			buttonTwosComponentA1.Size = new Size(91, 27);
 			buttonTwosComponentA1.TabIndex = 111;
@@ -976,7 +998,6 @@ namespace BitLogicCalculator
 			// 
 			buttonHalfSwapA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonHalfSwapA2.Location = new Point(204, 24);
-			buttonHalfSwapA2.Margin = new Padding(4, 3, 4, 3);
 			buttonHalfSwapA2.Name = "buttonHalfSwapA2";
 			buttonHalfSwapA2.Size = new Size(91, 27);
 			buttonHalfSwapA2.TabIndex = 110;
@@ -988,27 +1009,30 @@ namespace BitLogicCalculator
 			buttonHalfSwapA2.MouseEnter += Control_Enter;
 			buttonHalfSwapA2.MouseLeave += Control_Leave;
 			// 
-			// buttonSubjunktionA2A1
+			// buttonSubjunctionA2A1
 			// 
-			buttonSubjunktionA2A1.AccessibleRole = AccessibleRole.PushButton;
-			buttonSubjunktionA2A1.Location = new Point(7, 458);
-			buttonSubjunktionA2A1.Margin = new Padding(4, 3, 4, 3);
-			buttonSubjunktionA2A1.Name = "buttonSubjunktionA2A1";
-			buttonSubjunktionA2A1.Size = new Size(91, 27);
-			buttonSubjunktionA2A1.TabIndex = 108;
-			buttonSubjunktionA2A1.Values.DropDownArrowColor = Color.Empty;
-			buttonSubjunktionA2A1.Values.Text = "A2 SUBJ A1";
-			buttonSubjunktionA2A1.Click += ButtonSubjunktionA2A1_Click;
-			buttonSubjunktionA2A1.Enter += Control_Enter;
-			buttonSubjunktionA2A1.Leave += Control_Leave;
-			buttonSubjunktionA2A1.MouseEnter += Control_Enter;
-			buttonSubjunktionA2A1.MouseLeave += Control_Leave;
+			buttonSubjunctionA2A1.AccessibleDescription = "Calculates the subjunction of A2 and A1";
+			buttonSubjunctionA2A1.AccessibleName = "Subjunction of A2 and A1";
+			buttonSubjunctionA2A1.AccessibleRole = AccessibleRole.PushButton;
+			buttonSubjunctionA2A1.Location = new Point(7, 458);
+			buttonSubjunctionA2A1.Name = "buttonSubjunctionA2A1";
+			buttonSubjunctionA2A1.Size = new Size(91, 27);
+			buttonSubjunctionA2A1.TabIndex = 108;
+			buttonSubjunctionA2A1.ToolTipValues.Description = "Calculates the subjunction of A2 and A1";
+			buttonSubjunctionA2A1.ToolTipValues.EnableToolTips = true;
+			buttonSubjunctionA2A1.ToolTipValues.Heading = "Subjunction of A2 and A1";
+			buttonSubjunctionA2A1.Values.DropDownArrowColor = Color.Empty;
+			buttonSubjunctionA2A1.Values.Text = "A2 SUBJ A1";
+			buttonSubjunctionA2A1.Click += ButtonSubjunctionA2A1_Click;
+			buttonSubjunctionA2A1.Enter += Control_Enter;
+			buttonSubjunctionA2A1.Leave += Control_Leave;
+			buttonSubjunctionA2A1.MouseEnter += Control_Enter;
+			buttonSubjunctionA2A1.MouseLeave += Control_Leave;
 			// 
 			// buttonHalfSwapA1
 			// 
 			buttonHalfSwapA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonHalfSwapA1.Location = new Point(106, 24);
-			buttonHalfSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonHalfSwapA1.Name = "buttonHalfSwapA1";
 			buttonHalfSwapA1.Size = new Size(91, 27);
 			buttonHalfSwapA1.TabIndex = 109;
@@ -1020,27 +1044,30 @@ namespace BitLogicCalculator
 			buttonHalfSwapA1.MouseEnter += Control_Enter;
 			buttonHalfSwapA1.MouseLeave += Control_Leave;
 			// 
-			// buttonSubjunktionA1A2
+			// buttonSubjunctionA1A2
 			// 
-			buttonSubjunktionA1A2.AccessibleRole = AccessibleRole.PushButton;
-			buttonSubjunktionA1A2.Location = new Point(7, 425);
-			buttonSubjunktionA1A2.Margin = new Padding(4, 3, 4, 3);
-			buttonSubjunktionA1A2.Name = "buttonSubjunktionA1A2";
-			buttonSubjunktionA1A2.Size = new Size(91, 27);
-			buttonSubjunktionA1A2.TabIndex = 107;
-			buttonSubjunktionA1A2.Values.DropDownArrowColor = Color.Empty;
-			buttonSubjunktionA1A2.Values.Text = "A1 SUBJ A2";
-			buttonSubjunktionA1A2.Click += ButtonSubjunktionA1A2_Click;
-			buttonSubjunktionA1A2.Enter += Control_Enter;
-			buttonSubjunktionA1A2.Leave += Control_Leave;
-			buttonSubjunktionA1A2.MouseEnter += Control_Enter;
-			buttonSubjunktionA1A2.MouseLeave += Control_Leave;
+			buttonSubjunctionA1A2.AccessibleDescription = "Calculates the subjunction of A1 and A2";
+			buttonSubjunctionA1A2.AccessibleName = "Subjunction of A1 and A2";
+			buttonSubjunctionA1A2.AccessibleRole = AccessibleRole.PushButton;
+			buttonSubjunctionA1A2.Location = new Point(7, 425);
+			buttonSubjunctionA1A2.Name = "buttonSubjunctionA1A2";
+			buttonSubjunctionA1A2.Size = new Size(91, 27);
+			buttonSubjunctionA1A2.TabIndex = 107;
+			buttonSubjunctionA1A2.ToolTipValues.Description = "Calculates the subjunction of A1 and A2";
+			buttonSubjunctionA1A2.ToolTipValues.EnableToolTips = true;
+			buttonSubjunctionA1A2.ToolTipValues.Heading = "Subjunction of A1 and A2";
+			buttonSubjunctionA1A2.Values.DropDownArrowColor = Color.Empty;
+			buttonSubjunctionA1A2.Values.Text = "A1 SUBJ A2";
+			buttonSubjunctionA1A2.Click += ButtonSubjunctionA1A2_Click;
+			buttonSubjunctionA1A2.Enter += Control_Enter;
+			buttonSubjunctionA1A2.Leave += Control_Leave;
+			buttonSubjunctionA1A2.MouseEnter += Control_Enter;
+			buttonSubjunctionA1A2.MouseLeave += Control_Leave;
 			// 
 			// buttonNibbleSwapA1
 			// 
 			buttonNibbleSwapA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonNibbleSwapA1.Location = new Point(106, 58);
-			buttonNibbleSwapA1.Margin = new Padding(4, 3, 4, 3);
 			buttonNibbleSwapA1.Name = "buttonNibbleSwapA1";
 			buttonNibbleSwapA1.Size = new Size(91, 27);
 			buttonNibbleSwapA1.TabIndex = 122;
@@ -1054,12 +1081,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonInhibitionA2A1
 			// 
+			buttonInhibitionA2A1.AccessibleDescription = "Calculates the inhibition of A2 and A1";
+			buttonInhibitionA2A1.AccessibleName = "Inhibition of A2 and A1";
 			buttonInhibitionA2A1.AccessibleRole = AccessibleRole.PushButton;
 			buttonInhibitionA2A1.Location = new Point(7, 391);
-			buttonInhibitionA2A1.Margin = new Padding(4, 3, 4, 3);
 			buttonInhibitionA2A1.Name = "buttonInhibitionA2A1";
 			buttonInhibitionA2A1.Size = new Size(91, 27);
 			buttonInhibitionA2A1.TabIndex = 106;
+			buttonInhibitionA2A1.ToolTipValues.Description = "Calculates the inhibition of A2 and A1";
+			buttonInhibitionA2A1.ToolTipValues.EnableToolTips = true;
+			buttonInhibitionA2A1.ToolTipValues.Heading = "Inhibition of A2 and A1";
 			buttonInhibitionA2A1.Values.DropDownArrowColor = Color.Empty;
 			buttonInhibitionA2A1.Values.Text = "A2 INHB A1";
 			buttonInhibitionA2A1.Click += ButtonInhibitionA2A1_Click;
@@ -1072,7 +1103,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftRightWithOneA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftRightWithOneA2.Location = new Point(401, 325);
-			buttonArithmeticShiftRightWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithOneA2.Name = "buttonArithmeticShiftRightWithOneA2";
 			buttonArithmeticShiftRightWithOneA2.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithOneA2.TabIndex = 121;
@@ -1086,12 +1116,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonInhibitionA1A2
 			// 
+			buttonInhibitionA1A2.AccessibleDescription = "Calculates the inhibition of A1 and A2";
+			buttonInhibitionA1A2.AccessibleName = "Inhibition of A1 and A2";
 			buttonInhibitionA1A2.AccessibleRole = AccessibleRole.PushButton;
 			buttonInhibitionA1A2.Location = new Point(7, 358);
-			buttonInhibitionA1A2.Margin = new Padding(4, 3, 4, 3);
 			buttonInhibitionA1A2.Name = "buttonInhibitionA1A2";
 			buttonInhibitionA1A2.Size = new Size(91, 27);
 			buttonInhibitionA1A2.TabIndex = 105;
+			buttonInhibitionA1A2.ToolTipValues.Description = "Calculates the inhibition of A1 and A2";
+			buttonInhibitionA1A2.ToolTipValues.EnableToolTips = true;
+			buttonInhibitionA1A2.ToolTipValues.Heading = "Inhibition of A1 and A2";
 			buttonInhibitionA1A2.Values.DropDownArrowColor = Color.Empty;
 			buttonInhibitionA1A2.Values.Text = "A1 INHB A2";
 			buttonInhibitionA1A2.Click += ButtonInhibitionA1A2_Click;
@@ -1104,7 +1138,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRandomizeA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRandomizeA2.Location = new Point(204, 292);
-			buttonRandomizeA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRandomizeA2.Name = "buttonRandomizeA2";
 			buttonRandomizeA2.Size = new Size(91, 27);
 			buttonRandomizeA2.TabIndex = 104;
@@ -1120,7 +1153,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftRightWithOneA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftRightWithOneA1.Location = new Point(303, 325);
-			buttonArithmeticShiftRightWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithOneA1.Name = "buttonArithmeticShiftRightWithOneA1";
 			buttonArithmeticShiftRightWithOneA1.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithOneA1.TabIndex = 120;
@@ -1136,7 +1168,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRandomizeA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRandomizeA1.Location = new Point(106, 292);
-			buttonRandomizeA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRandomizeA1.Name = "buttonRandomizeA1";
 			buttonRandomizeA1.Size = new Size(91, 27);
 			buttonRandomizeA1.TabIndex = 102;
@@ -1152,7 +1183,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftRightWithOneA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftRightWithOneA2.Location = new Point(401, 125);
-			buttonShiftRightWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithOneA2.Name = "buttonShiftRightWithOneA2";
 			buttonShiftRightWithOneA2.Size = new Size(91, 27);
 			buttonShiftRightWithOneA2.TabIndex = 101;
@@ -1168,7 +1198,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftLeftWithOneA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftLeftWithOneA2.Location = new Point(401, 259);
-			buttonArithmeticShiftLeftWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithOneA2.Name = "buttonArithmeticShiftLeftWithOneA2";
 			buttonArithmeticShiftLeftWithOneA2.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithOneA2.TabIndex = 119;
@@ -1184,7 +1213,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftRightWithOneA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftRightWithOneA1.Location = new Point(303, 125);
-			buttonShiftRightWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithOneA1.Name = "buttonShiftRightWithOneA1";
 			buttonShiftRightWithOneA1.Size = new Size(91, 27);
 			buttonShiftRightWithOneA1.TabIndex = 100;
@@ -1200,7 +1228,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftLeftWithOneA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftLeftWithOneA2.Location = new Point(401, 58);
-			buttonShiftLeftWithOneA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithOneA2.Name = "buttonShiftLeftWithOneA2";
 			buttonShiftLeftWithOneA2.Size = new Size(91, 27);
 			buttonShiftLeftWithOneA2.TabIndex = 99;
@@ -1216,7 +1243,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftLeftWithOneA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftLeftWithOneA1.Location = new Point(303, 259);
-			buttonArithmeticShiftLeftWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithOneA1.Name = "buttonArithmeticShiftLeftWithOneA1";
 			buttonArithmeticShiftLeftWithOneA1.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithOneA1.TabIndex = 118;
@@ -1232,7 +1258,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftLeftWithOneA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftLeftWithOneA1.Location = new Point(303, 58);
-			buttonShiftLeftWithOneA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithOneA1.Name = "buttonShiftLeftWithOneA1";
 			buttonShiftLeftWithOneA1.Size = new Size(91, 27);
 			buttonShiftLeftWithOneA1.TabIndex = 98;
@@ -1248,7 +1273,6 @@ namespace BitLogicCalculator
 			// 
 			buttonSwapA1A2.AccessibleRole = AccessibleRole.PushButton;
 			buttonSwapA1A2.Location = new Point(106, 358);
-			buttonSwapA1A2.Margin = new Padding(4, 3, 4, 3);
 			buttonSwapA1A2.Name = "buttonSwapA1A2";
 			buttonSwapA1A2.Size = new Size(91, 27);
 			buttonSwapA1A2.TabIndex = 97;
@@ -1264,7 +1288,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftLeftWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftLeftWithZeroA2.Location = new Point(401, 225);
-			buttonArithmeticShiftLeftWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithZeroA2.Name = "buttonArithmeticShiftLeftWithZeroA2";
 			buttonArithmeticShiftLeftWithZeroA2.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithZeroA2.TabIndex = 116;
@@ -1280,7 +1303,6 @@ namespace BitLogicCalculator
 			// 
 			buttonFillA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonFillA2.Location = new Point(204, 225);
-			buttonFillA2.Margin = new Padding(4, 3, 4, 3);
 			buttonFillA2.Name = "buttonFillA2";
 			buttonFillA2.Size = new Size(91, 27);
 			buttonFillA2.TabIndex = 96;
@@ -1296,7 +1318,6 @@ namespace BitLogicCalculator
 			// 
 			buttonFillA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonFillA1.Location = new Point(106, 225);
-			buttonFillA1.Margin = new Padding(4, 3, 4, 3);
 			buttonFillA1.Name = "buttonFillA1";
 			buttonFillA1.Size = new Size(91, 27);
 			buttonFillA1.TabIndex = 95;
@@ -1312,7 +1333,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftRightWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftRightWithZeroA2.Location = new Point(401, 292);
-			buttonArithmeticShiftRightWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithZeroA2.Name = "buttonArithmeticShiftRightWithZeroA2";
 			buttonArithmeticShiftRightWithZeroA2.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithZeroA2.TabIndex = 117;
@@ -1328,7 +1348,6 @@ namespace BitLogicCalculator
 			// 
 			buttonClearA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonClearA2.Location = new Point(204, 192);
-			buttonClearA2.Margin = new Padding(4, 3, 4, 3);
 			buttonClearA2.Name = "buttonClearA2";
 			buttonClearA2.Size = new Size(91, 27);
 			buttonClearA2.TabIndex = 94;
@@ -1344,7 +1363,6 @@ namespace BitLogicCalculator
 			// 
 			buttonClearA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonClearA1.Location = new Point(106, 192);
-			buttonClearA1.Margin = new Padding(4, 3, 4, 3);
 			buttonClearA1.Name = "buttonClearA1";
 			buttonClearA1.Size = new Size(91, 27);
 			buttonClearA1.TabIndex = 93;
@@ -1360,7 +1378,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftLeftWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftLeftWithZeroA1.Location = new Point(303, 225);
-			buttonArithmeticShiftLeftWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftLeftWithZeroA1.Name = "buttonArithmeticShiftLeftWithZeroA1";
 			buttonArithmeticShiftLeftWithZeroA1.Size = new Size(91, 27);
 			buttonArithmeticShiftLeftWithZeroA1.TabIndex = 114;
@@ -1376,7 +1393,6 @@ namespace BitLogicCalculator
 			// 
 			buttonArithmeticShiftRightWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonArithmeticShiftRightWithZeroA1.Location = new Point(303, 292);
-			buttonArithmeticShiftRightWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonArithmeticShiftRightWithZeroA1.Name = "buttonArithmeticShiftRightWithZeroA1";
 			buttonArithmeticShiftRightWithZeroA1.Size = new Size(91, 27);
 			buttonArithmeticShiftRightWithZeroA1.TabIndex = 115;
@@ -1392,7 +1408,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRevertA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRevertA2.Location = new Point(204, 158);
-			buttonRevertA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRevertA2.Name = "buttonRevertA2";
 			buttonRevertA2.Size = new Size(91, 27);
 			buttonRevertA2.TabIndex = 92;
@@ -1408,7 +1423,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRevertA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRevertA1.Location = new Point(106, 158);
-			buttonRevertA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRevertA1.Name = "buttonRevertA1";
 			buttonRevertA1.Size = new Size(91, 27);
 			buttonRevertA1.TabIndex = 91;
@@ -1424,7 +1438,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftLeftWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftLeftWithZeroA2.Location = new Point(401, 24);
-			buttonShiftLeftWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithZeroA2.Name = "buttonShiftLeftWithZeroA2";
 			buttonShiftLeftWithZeroA2.Size = new Size(91, 27);
 			buttonShiftLeftWithZeroA2.TabIndex = 87;
@@ -1440,7 +1453,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftRightWithZeroA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftRightWithZeroA2.Location = new Point(401, 91);
-			buttonShiftRightWithZeroA2.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithZeroA2.Name = "buttonShiftRightWithZeroA2";
 			buttonShiftRightWithZeroA2.Size = new Size(91, 27);
 			buttonShiftRightWithZeroA2.TabIndex = 88;
@@ -1456,7 +1468,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRotateLeftA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftA2.Location = new Point(401, 158);
-			buttonRotateLeftA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftA2.Name = "buttonRotateLeftA2";
 			buttonRotateLeftA2.Size = new Size(91, 27);
 			buttonRotateLeftA2.TabIndex = 89;
@@ -1472,7 +1483,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRotateRightA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightA2.Location = new Point(401, 192);
-			buttonRotateRightA2.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightA2.Name = "buttonRotateRightA2";
 			buttonRotateRightA2.Size = new Size(91, 27);
 			buttonRotateRightA2.TabIndex = 90;
@@ -1488,7 +1498,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftLeftWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftLeftWithZeroA1.Location = new Point(303, 24);
-			buttonShiftLeftWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftLeftWithZeroA1.Name = "buttonShiftLeftWithZeroA1";
 			buttonShiftLeftWithZeroA1.Size = new Size(91, 27);
 			buttonShiftLeftWithZeroA1.TabIndex = 83;
@@ -1504,7 +1513,6 @@ namespace BitLogicCalculator
 			// 
 			buttonShiftRightWithZeroA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonShiftRightWithZeroA1.Location = new Point(303, 91);
-			buttonShiftRightWithZeroA1.Margin = new Padding(4, 3, 4, 3);
 			buttonShiftRightWithZeroA1.Name = "buttonShiftRightWithZeroA1";
 			buttonShiftRightWithZeroA1.Size = new Size(91, 27);
 			buttonShiftRightWithZeroA1.TabIndex = 84;
@@ -1520,7 +1528,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRotateLeftA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateLeftA1.Location = new Point(303, 158);
-			buttonRotateLeftA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateLeftA1.Name = "buttonRotateLeftA1";
 			buttonRotateLeftA1.Size = new Size(91, 27);
 			buttonRotateLeftA1.TabIndex = 85;
@@ -1536,7 +1543,6 @@ namespace BitLogicCalculator
 			// 
 			buttonRotateRightA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonRotateRightA1.Location = new Point(303, 192);
-			buttonRotateRightA1.Margin = new Padding(4, 3, 4, 3);
 			buttonRotateRightA1.Name = "buttonRotateRightA1";
 			buttonRotateRightA1.Size = new Size(91, 27);
 			buttonRotateRightA1.TabIndex = 86;
@@ -1550,12 +1556,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonAdditionA1AndA2
 			// 
+			buttonAdditionA1AndA2.AccessibleDescription = "Calculates the addition of A1 and A2";
+			buttonAdditionA1AndA2.AccessibleName = "Addition of A1 and A2";
 			buttonAdditionA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonAdditionA1AndA2.Location = new Point(7, 24);
-			buttonAdditionA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonAdditionA1AndA2.Name = "buttonAdditionA1AndA2";
 			buttonAdditionA1AndA2.Size = new Size(91, 27);
 			buttonAdditionA1AndA2.TabIndex = 69;
+			buttonAdditionA1AndA2.ToolTipValues.Description = "Calculates the addition of A1 and A2";
+			buttonAdditionA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonAdditionA1AndA2.ToolTipValues.Heading = "Addition of A1 and A2";
 			buttonAdditionA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonAdditionA1AndA2.Values.Text = "A1 + A2";
 			buttonAdditionA1AndA2.Click += ButtonAdditionA1AndA2_Click;
@@ -1568,7 +1578,6 @@ namespace BitLogicCalculator
 			// 
 			buttonCopyResultToA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonCopyResultToA2.Location = new Point(204, 258);
-			buttonCopyResultToA2.Margin = new Padding(4, 3, 4, 3);
 			buttonCopyResultToA2.Name = "buttonCopyResultToA2";
 			buttonCopyResultToA2.Size = new Size(91, 27);
 			buttonCopyResultToA2.TabIndex = 82;
@@ -1582,13 +1591,17 @@ namespace BitLogicCalculator
 			// 
 			// buttonSubtractionA1AndA2
 			// 
+			buttonSubtractionA1AndA2.AccessibleDescription = "Calculates the subtraction of A1 and A2";
+			buttonSubtractionA1AndA2.AccessibleName = "Subtraction of A1 and A2";
 			buttonSubtractionA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonSubtractionA1AndA2.Enabled = false;
 			buttonSubtractionA1AndA2.Location = new Point(7, 58);
-			buttonSubtractionA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonSubtractionA1AndA2.Name = "buttonSubtractionA1AndA2";
 			buttonSubtractionA1AndA2.Size = new Size(91, 27);
 			buttonSubtractionA1AndA2.TabIndex = 70;
+			buttonSubtractionA1AndA2.ToolTipValues.Description = "Calculates the subtraction of A1 and A2";
+			buttonSubtractionA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonSubtractionA1AndA2.ToolTipValues.Heading = "Subtraction of A1 and A2";
 			buttonSubtractionA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonSubtractionA1AndA2.Values.Text = "A1 - A2";
 			buttonSubtractionA1AndA2.Click += ButtonSubtractionA1AndA2_Click;
@@ -1601,7 +1614,6 @@ namespace BitLogicCalculator
 			// 
 			buttonCopyResultToA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonCopyResultToA1.Location = new Point(106, 258);
-			buttonCopyResultToA1.Margin = new Padding(4, 3, 4, 3);
 			buttonCopyResultToA1.Name = "buttonCopyResultToA1";
 			buttonCopyResultToA1.Size = new Size(91, 27);
 			buttonCopyResultToA1.TabIndex = 81;
@@ -1615,13 +1627,17 @@ namespace BitLogicCalculator
 			// 
 			// buttonMultiplicationA1AndA2
 			// 
+			buttonMultiplicationA1AndA2.AccessibleDescription = "Calculates the multiplication of A1 and A2";
+			buttonMultiplicationA1AndA2.AccessibleName = "Multiplication of A1 and A2";
 			buttonMultiplicationA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonMultiplicationA1AndA2.Enabled = false;
 			buttonMultiplicationA1AndA2.Location = new Point(7, 91);
-			buttonMultiplicationA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonMultiplicationA1AndA2.Name = "buttonMultiplicationA1AndA2";
 			buttonMultiplicationA1AndA2.Size = new Size(91, 27);
 			buttonMultiplicationA1AndA2.TabIndex = 71;
+			buttonMultiplicationA1AndA2.ToolTipValues.Description = "Calculates the multiplication of A1 and A2";
+			buttonMultiplicationA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonMultiplicationA1AndA2.ToolTipValues.Heading = "Multiplication of A1 and A2";
 			buttonMultiplicationA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonMultiplicationA1AndA2.Values.Text = "A1 × A2";
 			buttonMultiplicationA1AndA2.Click += ButtonMultiplicationA1AndA2_Click;
@@ -1632,12 +1648,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonLogicalXnorA1AndA2
 			// 
+			buttonLogicalXnorA1AndA2.AccessibleDescription = "Calculates the logical XNOR of A1 and A2";
+			buttonLogicalXnorA1AndA2.AccessibleName = "Logical XNOR of A1 and A2";
 			buttonLogicalXnorA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonLogicalXnorA1AndA2.Location = new Point(7, 325);
-			buttonLogicalXnorA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonLogicalXnorA1AndA2.Name = "buttonLogicalXnorA1AndA2";
 			buttonLogicalXnorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalXnorA1AndA2.TabIndex = 80;
+			buttonLogicalXnorA1AndA2.ToolTipValues.Description = "Calculates the logical XNOR of A1 and A2";
+			buttonLogicalXnorA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalXnorA1AndA2.ToolTipValues.Heading = "Logical XNOR of A1 and A2";
 			buttonLogicalXnorA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonLogicalXnorA1AndA2.Values.Text = "A1 XNOR A2";
 			buttonLogicalXnorA1AndA2.Click += ButtonLogicalXnorA1AndA2_Click;
@@ -1648,13 +1668,17 @@ namespace BitLogicCalculator
 			// 
 			// buttonDivisionA1AndA2
 			// 
+			buttonDivisionA1AndA2.AccessibleDescription = "Calculates the division of A1 and A2";
+			buttonDivisionA1AndA2.AccessibleName = "Division of A1 and A2";
 			buttonDivisionA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonDivisionA1AndA2.Enabled = false;
 			buttonDivisionA1AndA2.Location = new Point(7, 125);
-			buttonDivisionA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonDivisionA1AndA2.Name = "buttonDivisionA1AndA2";
 			buttonDivisionA1AndA2.Size = new Size(91, 27);
 			buttonDivisionA1AndA2.TabIndex = 72;
+			buttonDivisionA1AndA2.ToolTipValues.Description = "Calculates the division of A1 and A2";
+			buttonDivisionA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonDivisionA1AndA2.ToolTipValues.Heading = "Division of A1 and A2";
 			buttonDivisionA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonDivisionA1AndA2.Values.Text = "A1 / A2";
 			buttonDivisionA1AndA2.Click += ButtonDivisionA1AndA2_Click;
@@ -1665,12 +1689,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonLogicalNorA1AndA2
 			// 
+			buttonLogicalNorA1AndA2.AccessibleDescription = "Calculates the logical NOR of A1 and A2";
+			buttonLogicalNorA1AndA2.AccessibleName = "Logical NOR of A1 and A2";
 			buttonLogicalNorA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonLogicalNorA1AndA2.Location = new Point(7, 292);
-			buttonLogicalNorA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonLogicalNorA1AndA2.Name = "buttonLogicalNorA1AndA2";
 			buttonLogicalNorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalNorA1AndA2.TabIndex = 79;
+			buttonLogicalNorA1AndA2.ToolTipValues.Description = "Calculates the logical NOR of A1 and A2";
+			buttonLogicalNorA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalNorA1AndA2.ToolTipValues.Heading = "Logical NOR of A1 and A2";
 			buttonLogicalNorA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonLogicalNorA1AndA2.Values.Text = "A1 NOR A2";
 			buttonLogicalNorA1AndA2.Click += ButtonLogicalNorA1AndA2_Click;
@@ -1681,12 +1709,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonLogicalAndA1AndA2
 			// 
+			buttonLogicalAndA1AndA2.AccessibleDescription = "Calculates the logical AND of A1 and A2";
+			buttonLogicalAndA1AndA2.AccessibleName = "Logical AND of A1 and A2";
 			buttonLogicalAndA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonLogicalAndA1AndA2.Location = new Point(7, 158);
-			buttonLogicalAndA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonLogicalAndA1AndA2.Name = "buttonLogicalAndA1AndA2";
 			buttonLogicalAndA1AndA2.Size = new Size(91, 27);
 			buttonLogicalAndA1AndA2.TabIndex = 73;
+			buttonLogicalAndA1AndA2.ToolTipValues.Description = "Calculates the logical AND of A1 and A2";
+			buttonLogicalAndA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalAndA1AndA2.ToolTipValues.Heading = "Logical AND of A1 and A2";
 			buttonLogicalAndA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonLogicalAndA1AndA2.Values.Text = "A1 AND A2";
 			buttonLogicalAndA1AndA2.Click += ButtonLogicalAndA1AndA2_Click;
@@ -1697,12 +1729,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonLogicalOrA1AndA2
 			// 
+			buttonLogicalOrA1AndA2.AccessibleDescription = "Calculates the logical OR of A1 and A2";
+			buttonLogicalOrA1AndA2.AccessibleName = "Logical OR of A1 and A2";
 			buttonLogicalOrA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonLogicalOrA1AndA2.Location = new Point(7, 192);
-			buttonLogicalOrA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonLogicalOrA1AndA2.Name = "buttonLogicalOrA1AndA2";
 			buttonLogicalOrA1AndA2.Size = new Size(91, 27);
 			buttonLogicalOrA1AndA2.TabIndex = 74;
+			buttonLogicalOrA1AndA2.ToolTipValues.Description = "Calculates the Logiocal OR of A1 and A2";
+			buttonLogicalOrA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalOrA1AndA2.ToolTipValues.Heading = "Logiocal OR of A1 and A2";
 			buttonLogicalOrA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonLogicalOrA1AndA2.Values.Text = "A1 OR A2";
 			buttonLogicalOrA1AndA2.Click += ButtonLogicalOrA1AndA2_Click;
@@ -1715,7 +1751,6 @@ namespace BitLogicCalculator
 			// 
 			buttonInvertA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonInvertA2.Location = new Point(204, 125);
-			buttonInvertA2.Margin = new Padding(4, 3, 4, 3);
 			buttonInvertA2.Name = "buttonInvertA2";
 			buttonInvertA2.Size = new Size(91, 27);
 			buttonInvertA2.TabIndex = 77;
@@ -1729,12 +1764,16 @@ namespace BitLogicCalculator
 			// 
 			// buttonLogicalXorA1AndA2
 			// 
+			buttonLogicalXorA1AndA2.AccessibleDescription = "Calculates the logical XOR of A1 and A2";
+			buttonLogicalXorA1AndA2.AccessibleName = "Logical XOR of A1 and A2";
 			buttonLogicalXorA1AndA2.AccessibleRole = AccessibleRole.PushButton;
 			buttonLogicalXorA1AndA2.Location = new Point(7, 225);
-			buttonLogicalXorA1AndA2.Margin = new Padding(4, 3, 4, 3);
 			buttonLogicalXorA1AndA2.Name = "buttonLogicalXorA1AndA2";
 			buttonLogicalXorA1AndA2.Size = new Size(91, 27);
 			buttonLogicalXorA1AndA2.TabIndex = 75;
+			buttonLogicalXorA1AndA2.ToolTipValues.Description = "Calculates the Logical XOR of A1 and A2";
+			buttonLogicalXorA1AndA2.ToolTipValues.EnableToolTips = true;
+			buttonLogicalXorA1AndA2.ToolTipValues.Heading = "Logical XOR of A1 and A2";
 			buttonLogicalXorA1AndA2.Values.DropDownArrowColor = Color.Empty;
 			buttonLogicalXorA1AndA2.Values.Text = "A1 XOR A2";
 			buttonLogicalXorA1AndA2.Click += ButtonLogicalXorA1AndA2_Click;
@@ -1747,7 +1786,6 @@ namespace BitLogicCalculator
 			// 
 			buttonInvertA1.AccessibleRole = AccessibleRole.PushButton;
 			buttonInvertA1.Location = new Point(106, 125);
-			buttonInvertA1.Margin = new Padding(4, 3, 4, 3);
 			buttonInvertA1.Name = "buttonInvertA1";
 			buttonInvertA1.Size = new Size(91, 27);
 			buttonInvertA1.TabIndex = 76;
@@ -1761,6 +1799,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxResult
 			// 
+			groupBoxResult.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxResult.BackColor = Color.Transparent;
 			groupBoxResult.Controls.Add(textBoxResultOctal);
 			groupBoxResult.Controls.Add(labelResultOctal);
@@ -1785,6 +1824,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxResultOctal
 			// 
+			textBoxResultOctal.AccessibleDescription = "Shows the octal value of R";
+			textBoxResultOctal.AccessibleName = "Octal value of R";
+			textBoxResultOctal.AccessibleRole = AccessibleRole.Text;
 			textBoxResultOctal.Location = new Point(457, 28);
 			textBoxResultOctal.Margin = new Padding(4, 3, 4, 3);
 			textBoxResultOctal.Name = "textBoxResultOctal";
@@ -1797,6 +1839,7 @@ namespace BitLogicCalculator
 			// 
 			// labelResultOctal
 			// 
+			labelResultOctal.AccessibleRole = AccessibleRole.StaticText;
 			labelResultOctal.Location = new Point(412, 31);
 			labelResultOctal.Margin = new Padding(4, 0, 4, 0);
 			labelResultOctal.Name = "labelResultOctal";
@@ -1810,6 +1853,9 @@ namespace BitLogicCalculator
 			// 
 			// maskedTextBoxResultNetwork
 			// 
+			maskedTextBoxResultNetwork.AccessibleDescription = "Shows the network value of R";
+			maskedTextBoxResultNetwork.AccessibleName = "Network value of R";
+			maskedTextBoxResultNetwork.AccessibleRole = AccessibleRole.Text;
 			maskedTextBoxResultNetwork.Location = new Point(667, 28);
 			maskedTextBoxResultNetwork.Margin = new Padding(4, 3, 4, 3);
 			maskedTextBoxResultNetwork.Name = "maskedTextBoxResultNetwork";
@@ -1822,6 +1868,7 @@ namespace BitLogicCalculator
 			// 
 			// labelResultNetwork
 			// 
+			labelResultNetwork.AccessibleRole = AccessibleRole.StaticText;
 			labelResultNetwork.Location = new Point(616, 31);
 			labelResultNetwork.Margin = new Padding(4, 0, 4, 0);
 			labelResultNetwork.Name = "labelResultNetwork";
@@ -1835,6 +1882,9 @@ namespace BitLogicCalculator
 			// 
 			// textResultDecimal
 			// 
+			textResultDecimal.AccessibleDescription = "Shows the decimal value of R";
+			textResultDecimal.AccessibleName = "Decimal value of R";
+			textResultDecimal.AccessibleRole = AccessibleRole.Text;
 			textResultDecimal.Location = new Point(253, 28);
 			textResultDecimal.Margin = new Padding(4, 3, 4, 3);
 			textResultDecimal.Name = "textResultDecimal";
@@ -1847,6 +1897,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxResultHexadecimal
 			// 
+			textBoxResultHexadecimal.AccessibleDescription = "Shows the hexadecimal value of A2";
+			textBoxResultHexadecimal.AccessibleName = "Hexadecimal value of R";
+			textBoxResultHexadecimal.AccessibleRole = AccessibleRole.Text;
 			textBoxResultHexadecimal.Location = new Point(50, 28);
 			textBoxResultHexadecimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxResultHexadecimal.Name = "textBoxResultHexadecimal";
@@ -1859,6 +1912,7 @@ namespace BitLogicCalculator
 			// 
 			// labelResultDecimal
 			// 
+			labelResultDecimal.AccessibleRole = AccessibleRole.StaticText;
 			labelResultDecimal.Location = new Point(208, 31);
 			labelResultDecimal.Margin = new Padding(4, 0, 4, 0);
 			labelResultDecimal.Name = "labelResultDecimal";
@@ -1872,6 +1926,7 @@ namespace BitLogicCalculator
 			// 
 			// labelResultHexadecimal
 			// 
+			labelResultHexadecimal.AccessibleRole = AccessibleRole.StaticText;
 			labelResultHexadecimal.Location = new Point(6, 31);
 			labelResultHexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelResultHexadecimal.Name = "labelResultHexadecimal";
@@ -1885,6 +1940,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxResultByte4
 			// 
+			groupBoxResultByte4.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxResultByte4.Controls.Add(labelResultBit31);
 			groupBoxResultByte4.Controls.Add(checkBoxResultBit31);
 			groupBoxResultByte4.Controls.Add(checkBoxResultBit24);
@@ -1912,11 +1968,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit31
 			// 
-			labelResultBit31.Location = new Point(7, 18);
-			labelResultBit31.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit31.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit31.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit31.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit31.Location = new Point(0, 18);
 			labelResultBit31.Name = "labelResultBit31";
 			labelResultBit31.Size = new Size(24, 20);
 			labelResultBit31.TabIndex = 65;
+			labelResultBit31.ToolTipValues.EnableToolTips = true;
 			labelResultBit31.Values.Text = "31";
 			labelResultBit31.Enter += Control_Enter;
 			labelResultBit31.Leave += Control_Leave;
@@ -1925,12 +1984,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit31
 			// 
+			checkBoxResultBit31.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit31.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit31.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit31.AutoCheck = false;
-			checkBoxResultBit31.Location = new Point(10, 37);
-			checkBoxResultBit31.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit31.Location = new Point(5, 38);
 			checkBoxResultBit31.Name = "checkBoxResultBit31";
 			checkBoxResultBit31.Size = new Size(19, 14);
 			checkBoxResultBit31.TabIndex = 64;
+			checkBoxResultBit31.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit31.Values.Text = "";
 			checkBoxResultBit31.Enter += Control_Enter;
 			checkBoxResultBit31.Leave += Control_Leave;
@@ -1939,12 +2001,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit24
 			// 
+			checkBoxResultBit24.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit24.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit24.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit24.AutoCheck = false;
-			checkBoxResultBit24.Location = new Point(172, 37);
-			checkBoxResultBit24.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit24.Location = new Point(174, 38);
 			checkBoxResultBit24.Name = "checkBoxResultBit24";
 			checkBoxResultBit24.Size = new Size(19, 14);
 			checkBoxResultBit24.TabIndex = 50;
+			checkBoxResultBit24.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit24.Values.Text = "";
 			checkBoxResultBit24.Enter += Control_Enter;
 			checkBoxResultBit24.Leave += Control_Leave;
@@ -1953,11 +2018,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit24
 			// 
+			labelResultBit24.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit24.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit24.AccessibleRole = AccessibleRole.StaticText;
 			labelResultBit24.Location = new Point(168, 18);
-			labelResultBit24.Margin = new Padding(4, 0, 4, 0);
 			labelResultBit24.Name = "labelResultBit24";
 			labelResultBit24.Size = new Size(24, 20);
 			labelResultBit24.TabIndex = 51;
+			labelResultBit24.ToolTipValues.EnableToolTips = true;
 			labelResultBit24.Values.Text = "24";
 			labelResultBit24.Enter += Control_Enter;
 			labelResultBit24.Leave += Control_Leave;
@@ -1966,12 +2034,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit25
 			// 
+			checkBoxResultBit25.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit25.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit25.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit25.AutoCheck = false;
-			checkBoxResultBit25.Location = new Point(149, 37);
-			checkBoxResultBit25.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit25.Location = new Point(152, 38);
 			checkBoxResultBit25.Name = "checkBoxResultBit25";
 			checkBoxResultBit25.Size = new Size(19, 14);
 			checkBoxResultBit25.TabIndex = 52;
+			checkBoxResultBit25.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit25.Values.Text = "";
 			checkBoxResultBit25.Enter += Control_Enter;
 			checkBoxResultBit25.Leave += Control_Leave;
@@ -1980,11 +2051,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit30
 			// 
-			labelResultBit30.Location = new Point(29, 18);
-			labelResultBit30.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit30.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit30.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit30.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit30.Location = new Point(22, 18);
 			labelResultBit30.Name = "labelResultBit30";
 			labelResultBit30.Size = new Size(24, 20);
 			labelResultBit30.TabIndex = 63;
+			labelResultBit30.ToolTipValues.EnableToolTips = true;
 			labelResultBit30.Values.Text = "30";
 			labelResultBit30.Enter += Control_Enter;
 			labelResultBit30.Leave += Control_Leave;
@@ -1993,11 +2067,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit25
 			// 
-			labelResultBit25.Location = new Point(146, 18);
-			labelResultBit25.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit25.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit25.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit25.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit25.Location = new Point(147, 18);
 			labelResultBit25.Name = "labelResultBit25";
 			labelResultBit25.Size = new Size(24, 20);
 			labelResultBit25.TabIndex = 53;
+			labelResultBit25.ToolTipValues.EnableToolTips = true;
 			labelResultBit25.Values.Text = "25";
 			labelResultBit25.Enter += Control_Enter;
 			labelResultBit25.Leave += Control_Leave;
@@ -2006,12 +2083,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit26
 			// 
+			checkBoxResultBit26.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit26.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit26.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit26.AutoCheck = false;
-			checkBoxResultBit26.Location = new Point(127, 37);
-			checkBoxResultBit26.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit26.Location = new Point(130, 38);
 			checkBoxResultBit26.Name = "checkBoxResultBit26";
 			checkBoxResultBit26.Size = new Size(19, 14);
 			checkBoxResultBit26.TabIndex = 54;
+			checkBoxResultBit26.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit26.Values.Text = "";
 			checkBoxResultBit26.Enter += Control_Enter;
 			checkBoxResultBit26.Leave += Control_Leave;
@@ -2020,12 +2100,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit30
 			// 
+			checkBoxResultBit30.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit30.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit30.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit30.AutoCheck = false;
-			checkBoxResultBit30.Location = new Point(33, 37);
-			checkBoxResultBit30.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit30.Location = new Point(27, 38);
 			checkBoxResultBit30.Name = "checkBoxResultBit30";
 			checkBoxResultBit30.Size = new Size(19, 14);
 			checkBoxResultBit30.TabIndex = 62;
+			checkBoxResultBit30.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit30.Values.Text = "";
 			checkBoxResultBit30.Enter += Control_Enter;
 			checkBoxResultBit30.Leave += Control_Leave;
@@ -2034,11 +2117,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit26
 			// 
-			labelResultBit26.Location = new Point(124, 18);
-			labelResultBit26.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit26.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit26.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit26.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit26.Location = new Point(125, 18);
 			labelResultBit26.Name = "labelResultBit26";
 			labelResultBit26.Size = new Size(24, 20);
 			labelResultBit26.TabIndex = 55;
+			labelResultBit26.ToolTipValues.EnableToolTips = true;
 			labelResultBit26.Values.Text = "26";
 			labelResultBit26.Enter += Control_Enter;
 			labelResultBit26.Leave += Control_Leave;
@@ -2047,11 +2133,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit29
 			// 
-			labelResultBit29.Location = new Point(51, 18);
-			labelResultBit29.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit29.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit29.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit29.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit29.Location = new Point(44, 18);
 			labelResultBit29.Name = "labelResultBit29";
 			labelResultBit29.Size = new Size(24, 20);
 			labelResultBit29.TabIndex = 61;
+			labelResultBit29.ToolTipValues.EnableToolTips = true;
 			labelResultBit29.Values.Text = "29";
 			labelResultBit29.Enter += Control_Enter;
 			labelResultBit29.Leave += Control_Leave;
@@ -2060,12 +2149,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit27
 			// 
+			checkBoxResultBit27.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit27.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit27.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit27.AutoCheck = false;
-			checkBoxResultBit27.Location = new Point(105, 37);
-			checkBoxResultBit27.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit27.Location = new Point(107, 38);
 			checkBoxResultBit27.Name = "checkBoxResultBit27";
 			checkBoxResultBit27.Size = new Size(19, 14);
 			checkBoxResultBit27.TabIndex = 56;
+			checkBoxResultBit27.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit27.Values.Text = "";
 			checkBoxResultBit27.Enter += Control_Enter;
 			checkBoxResultBit27.Leave += Control_Leave;
@@ -2074,12 +2166,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit29
 			// 
+			checkBoxResultBit29.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit29.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit29.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit29.AutoCheck = false;
-			checkBoxResultBit29.Location = new Point(55, 37);
-			checkBoxResultBit29.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit29.Location = new Point(49, 38);
 			checkBoxResultBit29.Name = "checkBoxResultBit29";
 			checkBoxResultBit29.Size = new Size(19, 14);
 			checkBoxResultBit29.TabIndex = 60;
+			checkBoxResultBit29.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit29.Values.Text = "";
 			checkBoxResultBit29.Enter += Control_Enter;
 			checkBoxResultBit29.Leave += Control_Leave;
@@ -2088,11 +2183,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit27
 			// 
-			labelResultBit27.Location = new Point(102, 18);
-			labelResultBit27.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit27.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit27.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit27.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit27.Location = new Point(101, 18);
 			labelResultBit27.Name = "labelResultBit27";
 			labelResultBit27.Size = new Size(24, 20);
 			labelResultBit27.TabIndex = 57;
+			labelResultBit27.ToolTipValues.EnableToolTips = true;
 			labelResultBit27.Values.Text = "27";
 			labelResultBit27.Enter += Control_Enter;
 			labelResultBit27.Leave += Control_Leave;
@@ -2101,11 +2199,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit28
 			// 
-			labelResultBit28.Location = new Point(74, 18);
-			labelResultBit28.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit28.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			labelResultBit28.AccessibleName = "Bit XX of byte 4 in R";
+			labelResultBit28.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit28.Location = new Point(66, 18);
 			labelResultBit28.Name = "labelResultBit28";
 			labelResultBit28.Size = new Size(24, 20);
 			labelResultBit28.TabIndex = 59;
+			labelResultBit28.ToolTipValues.EnableToolTips = true;
 			labelResultBit28.Values.Text = "28";
 			labelResultBit28.Enter += Control_Enter;
 			labelResultBit28.Leave += Control_Leave;
@@ -2114,12 +2215,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit28
 			// 
+			checkBoxResultBit28.AccessibleDescription = "Shows bit XX of byte 4 in R";
+			checkBoxResultBit28.AccessibleName = "Bit XX of byte 4 in R";
+			checkBoxResultBit28.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit28.AutoCheck = false;
-			checkBoxResultBit28.Location = new Point(77, 37);
-			checkBoxResultBit28.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit28.Location = new Point(71, 38);
 			checkBoxResultBit28.Name = "checkBoxResultBit28";
 			checkBoxResultBit28.Size = new Size(19, 14);
 			checkBoxResultBit28.TabIndex = 58;
+			checkBoxResultBit28.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit28.Values.Text = "";
 			checkBoxResultBit28.Enter += Control_Enter;
 			checkBoxResultBit28.Leave += Control_Leave;
@@ -2128,6 +2232,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxResultByte3
 			// 
+			groupBoxResultByte3.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxResultByte3.Controls.Add(checkBoxResultBit23);
 			groupBoxResultByte3.Controls.Add(checkBoxResultBit21);
 			groupBoxResultByte3.Controls.Add(labelResultBit21);
@@ -2155,12 +2260,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit23
 			// 
+			checkBoxResultBit23.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit23.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit23.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit23.AutoCheck = false;
-			checkBoxResultBit23.Location = new Point(7, 37);
-			checkBoxResultBit23.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit23.Location = new Point(5, 38);
 			checkBoxResultBit23.Name = "checkBoxResultBit23";
 			checkBoxResultBit23.Size = new Size(19, 14);
 			checkBoxResultBit23.TabIndex = 48;
+			checkBoxResultBit23.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit23.Values.Text = "";
 			checkBoxResultBit23.Enter += Control_Enter;
 			checkBoxResultBit23.Leave += Control_Leave;
@@ -2169,12 +2277,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit21
 			// 
+			checkBoxResultBit21.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit21.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit21.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit21.AutoCheck = false;
-			checkBoxResultBit21.Location = new Point(51, 37);
-			checkBoxResultBit21.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit21.Location = new Point(49, 38);
 			checkBoxResultBit21.Name = "checkBoxResultBit21";
 			checkBoxResultBit21.Size = new Size(19, 14);
 			checkBoxResultBit21.TabIndex = 44;
+			checkBoxResultBit21.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit21.Values.Text = "";
 			checkBoxResultBit21.Enter += Control_Enter;
 			checkBoxResultBit21.Leave += Control_Leave;
@@ -2183,11 +2294,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit21
 			// 
-			labelResultBit21.Location = new Point(48, 18);
-			labelResultBit21.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit21.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit21.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit21.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit21.Location = new Point(44, 18);
 			labelResultBit21.Name = "labelResultBit21";
 			labelResultBit21.Size = new Size(24, 20);
 			labelResultBit21.TabIndex = 45;
+			labelResultBit21.ToolTipValues.EnableToolTips = true;
 			labelResultBit21.Values.Text = "21";
 			labelResultBit21.Enter += Control_Enter;
 			labelResultBit21.Leave += Control_Leave;
@@ -2196,11 +2310,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit20
 			// 
-			labelResultBit20.Location = new Point(70, 18);
-			labelResultBit20.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit20.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit20.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit20.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit20.Location = new Point(66, 18);
 			labelResultBit20.Name = "labelResultBit20";
 			labelResultBit20.Size = new Size(24, 20);
 			labelResultBit20.TabIndex = 43;
+			labelResultBit20.ToolTipValues.EnableToolTips = true;
 			labelResultBit20.Values.Text = "20";
 			labelResultBit20.Enter += Control_Enter;
 			labelResultBit20.Leave += Control_Leave;
@@ -2209,12 +2326,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit22
 			// 
+			checkBoxResultBit22.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit22.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit22.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit22.AutoCheck = false;
-			checkBoxResultBit22.Location = new Point(29, 37);
-			checkBoxResultBit22.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit22.Location = new Point(27, 38);
 			checkBoxResultBit22.Name = "checkBoxResultBit22";
 			checkBoxResultBit22.Size = new Size(19, 14);
 			checkBoxResultBit22.TabIndex = 46;
+			checkBoxResultBit22.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit22.Values.Text = "";
 			checkBoxResultBit22.Enter += Control_Enter;
 			checkBoxResultBit22.Leave += Control_Leave;
@@ -2223,12 +2343,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit20
 			// 
+			checkBoxResultBit20.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit20.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit20.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit20.AutoCheck = false;
-			checkBoxResultBit20.Location = new Point(74, 37);
-			checkBoxResultBit20.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit20.Location = new Point(71, 38);
 			checkBoxResultBit20.Name = "checkBoxResultBit20";
 			checkBoxResultBit20.Size = new Size(19, 14);
 			checkBoxResultBit20.TabIndex = 42;
+			checkBoxResultBit20.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit20.Values.Text = "";
 			checkBoxResultBit20.Enter += Control_Enter;
 			checkBoxResultBit20.Leave += Control_Leave;
@@ -2237,11 +2360,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit22
 			// 
-			labelResultBit22.Location = new Point(26, 18);
-			labelResultBit22.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit22.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit22.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit22.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit22.Location = new Point(22, 18);
 			labelResultBit22.Name = "labelResultBit22";
 			labelResultBit22.Size = new Size(24, 20);
 			labelResultBit22.TabIndex = 47;
+			labelResultBit22.ToolTipValues.EnableToolTips = true;
 			labelResultBit22.Values.Text = "22";
 			labelResultBit22.Enter += Control_Enter;
 			labelResultBit22.Leave += Control_Leave;
@@ -2250,11 +2376,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit19
 			// 
-			labelResultBit19.Location = new Point(105, 18);
-			labelResultBit19.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit19.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit19.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit19.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit19.Location = new Point(101, 18);
 			labelResultBit19.Name = "labelResultBit19";
 			labelResultBit19.Size = new Size(24, 20);
 			labelResultBit19.TabIndex = 41;
+			labelResultBit19.ToolTipValues.EnableToolTips = true;
 			labelResultBit19.Values.Text = "19";
 			labelResultBit19.Enter += Control_Enter;
 			labelResultBit19.Leave += Control_Leave;
@@ -2263,12 +2392,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit16
 			// 
+			checkBoxResultBit16.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit16.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit16.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit16.AutoCheck = false;
-			checkBoxResultBit16.Location = new Point(175, 37);
-			checkBoxResultBit16.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit16.Location = new Point(174, 38);
 			checkBoxResultBit16.Name = "checkBoxResultBit16";
 			checkBoxResultBit16.Size = new Size(19, 14);
 			checkBoxResultBit16.TabIndex = 34;
+			checkBoxResultBit16.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit16.Values.Text = "";
 			checkBoxResultBit16.Enter += Control_Enter;
 			checkBoxResultBit16.Leave += Control_Leave;
@@ -2277,12 +2409,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit19
 			// 
+			checkBoxResultBit19.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit19.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit19.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit19.AutoCheck = false;
-			checkBoxResultBit19.Location = new Point(108, 37);
-			checkBoxResultBit19.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit19.Location = new Point(107, 38);
 			checkBoxResultBit19.Name = "checkBoxResultBit19";
 			checkBoxResultBit19.Size = new Size(19, 14);
 			checkBoxResultBit19.TabIndex = 40;
+			checkBoxResultBit19.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit19.Values.Text = "";
 			checkBoxResultBit19.Enter += Control_Enter;
 			checkBoxResultBit19.Leave += Control_Leave;
@@ -2291,11 +2426,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit23
 			// 
-			labelResultBit23.Location = new Point(4, 18);
-			labelResultBit23.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit23.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit23.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit23.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit23.Location = new Point(0, 18);
 			labelResultBit23.Name = "labelResultBit23";
 			labelResultBit23.Size = new Size(24, 20);
 			labelResultBit23.TabIndex = 49;
+			labelResultBit23.ToolTipValues.EnableToolTips = true;
 			labelResultBit23.Values.Text = "23";
 			labelResultBit23.Enter += Control_Enter;
 			labelResultBit23.Leave += Control_Leave;
@@ -2304,11 +2442,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit18
 			// 
-			labelResultBit18.Location = new Point(127, 18);
-			labelResultBit18.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit18.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit18.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit18.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit18.Location = new Point(125, 18);
 			labelResultBit18.Name = "labelResultBit18";
 			labelResultBit18.Size = new Size(24, 20);
 			labelResultBit18.TabIndex = 39;
+			labelResultBit18.ToolTipValues.EnableToolTips = true;
 			labelResultBit18.Values.Text = "18";
 			labelResultBit18.Enter += Control_Enter;
 			labelResultBit18.Leave += Control_Leave;
@@ -2317,11 +2458,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit16
 			// 
-			labelResultBit16.Location = new Point(172, 18);
-			labelResultBit16.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit16.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit16.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit16.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit16.Location = new Point(168, 18);
 			labelResultBit16.Name = "labelResultBit16";
 			labelResultBit16.Size = new Size(24, 20);
 			labelResultBit16.TabIndex = 35;
+			labelResultBit16.ToolTipValues.EnableToolTips = true;
 			labelResultBit16.Values.Text = "16";
 			labelResultBit16.Enter += Control_Enter;
 			labelResultBit16.Leave += Control_Leave;
@@ -2330,12 +2474,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit18
 			// 
+			checkBoxResultBit18.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit18.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit18.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit18.AutoCheck = false;
-			checkBoxResultBit18.Location = new Point(131, 37);
-			checkBoxResultBit18.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit18.Location = new Point(130, 38);
 			checkBoxResultBit18.Name = "checkBoxResultBit18";
 			checkBoxResultBit18.Size = new Size(19, 14);
 			checkBoxResultBit18.TabIndex = 38;
+			checkBoxResultBit18.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit18.Values.Text = "";
 			checkBoxResultBit18.Enter += Control_Enter;
 			checkBoxResultBit18.Leave += Control_Leave;
@@ -2344,11 +2491,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit17
 			// 
-			labelResultBit17.Location = new Point(149, 18);
-			labelResultBit17.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit17.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			labelResultBit17.AccessibleName = "Bit XX of byte 3 in R";
+			labelResultBit17.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit17.Location = new Point(147, 18);
 			labelResultBit17.Name = "labelResultBit17";
 			labelResultBit17.Size = new Size(24, 20);
 			labelResultBit17.TabIndex = 37;
+			labelResultBit17.ToolTipValues.EnableToolTips = true;
 			labelResultBit17.Values.Text = "17";
 			labelResultBit17.Enter += Control_Enter;
 			labelResultBit17.Leave += Control_Leave;
@@ -2357,12 +2507,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit17
 			// 
+			checkBoxResultBit17.AccessibleDescription = "Shows bit XX of byte 3 in R";
+			checkBoxResultBit17.AccessibleName = "Bit XX of byte 3 in R";
+			checkBoxResultBit17.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit17.AutoCheck = false;
-			checkBoxResultBit17.Location = new Point(153, 37);
-			checkBoxResultBit17.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit17.Location = new Point(152, 38);
 			checkBoxResultBit17.Name = "checkBoxResultBit17";
 			checkBoxResultBit17.Size = new Size(19, 14);
 			checkBoxResultBit17.TabIndex = 36;
+			checkBoxResultBit17.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit17.Values.Text = "";
 			checkBoxResultBit17.Enter += Control_Enter;
 			checkBoxResultBit17.Leave += Control_Leave;
@@ -2371,6 +2524,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxResultByte2
 			// 
+			groupBoxResultByte2.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxResultByte2.Controls.Add(checkBoxResultBit15);
 			groupBoxResultByte2.Controls.Add(checkBoxResultBit10);
 			groupBoxResultByte2.Controls.Add(labelResultBit10);
@@ -2398,12 +2552,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit15
 			// 
+			checkBoxResultBit15.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit15.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit15.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit15.AutoCheck = false;
-			checkBoxResultBit15.Location = new Point(7, 37);
-			checkBoxResultBit15.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit15.Location = new Point(5, 38);
 			checkBoxResultBit15.Name = "checkBoxResultBit15";
 			checkBoxResultBit15.Size = new Size(19, 14);
 			checkBoxResultBit15.TabIndex = 32;
+			checkBoxResultBit15.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit15.Values.Text = "";
 			checkBoxResultBit15.Enter += Control_Enter;
 			checkBoxResultBit15.Leave += Control_Leave;
@@ -2412,12 +2569,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit10
 			// 
+			checkBoxResultBit10.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit10.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit10.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit10.AutoCheck = false;
-			checkBoxResultBit10.Location = new Point(131, 37);
-			checkBoxResultBit10.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit10.Location = new Point(130, 38);
 			checkBoxResultBit10.Name = "checkBoxResultBit10";
 			checkBoxResultBit10.Size = new Size(19, 14);
 			checkBoxResultBit10.TabIndex = 22;
+			checkBoxResultBit10.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit10.Values.Text = "";
 			checkBoxResultBit10.Enter += Control_Enter;
 			checkBoxResultBit10.Leave += Control_Leave;
@@ -2426,11 +2586,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit10
 			// 
-			labelResultBit10.Location = new Point(127, 18);
-			labelResultBit10.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit10.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit10.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit10.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit10.Location = new Point(125, 18);
 			labelResultBit10.Name = "labelResultBit10";
 			labelResultBit10.Size = new Size(24, 20);
 			labelResultBit10.TabIndex = 23;
+			labelResultBit10.ToolTipValues.EnableToolTips = true;
 			labelResultBit10.Values.Text = "10";
 			labelResultBit10.Enter += Control_Enter;
 			labelResultBit10.Leave += Control_Leave;
@@ -2439,11 +2602,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit09
 			// 
-			labelResultBit09.Location = new Point(149, 18);
-			labelResultBit09.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit09.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit09.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit09.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit09.Location = new Point(147, 18);
 			labelResultBit09.Name = "labelResultBit09";
 			labelResultBit09.Size = new Size(24, 20);
 			labelResultBit09.TabIndex = 21;
+			labelResultBit09.ToolTipValues.EnableToolTips = true;
 			labelResultBit09.Values.Text = "09";
 			labelResultBit09.Enter += Control_Enter;
 			labelResultBit09.Leave += Control_Leave;
@@ -2452,12 +2618,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit11
 			// 
+			checkBoxResultBit11.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit11.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit11.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit11.AutoCheck = false;
-			checkBoxResultBit11.Location = new Point(108, 37);
-			checkBoxResultBit11.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit11.Location = new Point(107, 38);
 			checkBoxResultBit11.Name = "checkBoxResultBit11";
 			checkBoxResultBit11.Size = new Size(19, 14);
 			checkBoxResultBit11.TabIndex = 24;
+			checkBoxResultBit11.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit11.Values.Text = "";
 			checkBoxResultBit11.Enter += Control_Enter;
 			checkBoxResultBit11.Leave += Control_Leave;
@@ -2466,12 +2635,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit09
 			// 
+			checkBoxResultBit09.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit09.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit09.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit09.AutoCheck = false;
-			checkBoxResultBit09.Location = new Point(153, 37);
-			checkBoxResultBit09.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit09.Location = new Point(152, 38);
 			checkBoxResultBit09.Name = "checkBoxResultBit09";
 			checkBoxResultBit09.Size = new Size(19, 14);
 			checkBoxResultBit09.TabIndex = 20;
+			checkBoxResultBit09.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit09.Values.Text = "";
 			checkBoxResultBit09.Enter += Control_Enter;
 			checkBoxResultBit09.Leave += Control_Leave;
@@ -2480,11 +2652,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit11
 			// 
-			labelResultBit11.Location = new Point(105, 18);
-			labelResultBit11.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit11.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit11.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit11.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit11.Location = new Point(101, 18);
 			labelResultBit11.Name = "labelResultBit11";
 			labelResultBit11.Size = new Size(24, 20);
 			labelResultBit11.TabIndex = 25;
+			labelResultBit11.ToolTipValues.EnableToolTips = true;
 			labelResultBit11.Values.Text = "11";
 			labelResultBit11.Enter += Control_Enter;
 			labelResultBit11.Leave += Control_Leave;
@@ -2493,11 +2668,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit15
 			// 
-			labelResultBit15.Location = new Point(4, 18);
-			labelResultBit15.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit15.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit15.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit15.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit15.Location = new Point(0, 18);
 			labelResultBit15.Name = "labelResultBit15";
 			labelResultBit15.Size = new Size(24, 20);
 			labelResultBit15.TabIndex = 33;
+			labelResultBit15.ToolTipValues.EnableToolTips = true;
 			labelResultBit15.Values.Text = "15";
 			labelResultBit15.Enter += Control_Enter;
 			labelResultBit15.Leave += Control_Leave;
@@ -2506,11 +2684,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit08
 			// 
-			labelResultBit08.Location = new Point(173, 18);
-			labelResultBit08.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit08.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit08.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit08.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit08.Location = new Point(168, 18);
 			labelResultBit08.Name = "labelResultBit08";
 			labelResultBit08.Size = new Size(24, 20);
 			labelResultBit08.TabIndex = 19;
+			labelResultBit08.ToolTipValues.EnableToolTips = true;
 			labelResultBit08.Values.Text = "08";
 			labelResultBit08.Enter += Control_Enter;
 			labelResultBit08.Leave += Control_Leave;
@@ -2519,12 +2700,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit12
 			// 
+			checkBoxResultBit12.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit12.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit12.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit12.AutoCheck = false;
-			checkBoxResultBit12.Location = new Point(74, 37);
-			checkBoxResultBit12.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit12.Location = new Point(71, 38);
 			checkBoxResultBit12.Name = "checkBoxResultBit12";
 			checkBoxResultBit12.Size = new Size(19, 14);
 			checkBoxResultBit12.TabIndex = 26;
+			checkBoxResultBit12.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit12.Values.Text = "";
 			checkBoxResultBit12.Enter += Control_Enter;
 			checkBoxResultBit12.Leave += Control_Leave;
@@ -2533,12 +2717,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit08
 			// 
+			checkBoxResultBit08.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit08.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit08.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit08.AutoCheck = false;
-			checkBoxResultBit08.Location = new Point(175, 37);
-			checkBoxResultBit08.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit08.Location = new Point(174, 38);
 			checkBoxResultBit08.Name = "checkBoxResultBit08";
 			checkBoxResultBit08.Size = new Size(19, 14);
 			checkBoxResultBit08.TabIndex = 18;
+			checkBoxResultBit08.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit08.Values.Text = "";
 			checkBoxResultBit08.Enter += Control_Enter;
 			checkBoxResultBit08.Leave += Control_Leave;
@@ -2547,11 +2734,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit12
 			// 
-			labelResultBit12.Location = new Point(70, 18);
-			labelResultBit12.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit12.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit12.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit12.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit12.Location = new Point(66, 18);
 			labelResultBit12.Name = "labelResultBit12";
 			labelResultBit12.Size = new Size(24, 20);
 			labelResultBit12.TabIndex = 27;
+			labelResultBit12.ToolTipValues.EnableToolTips = true;
 			labelResultBit12.Values.Text = "12";
 			labelResultBit12.Enter += Control_Enter;
 			labelResultBit12.Leave += Control_Leave;
@@ -2560,12 +2750,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit13
 			// 
+			checkBoxResultBit13.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit13.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit13.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit13.AutoCheck = false;
-			checkBoxResultBit13.Location = new Point(51, 37);
-			checkBoxResultBit13.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit13.Location = new Point(49, 38);
 			checkBoxResultBit13.Name = "checkBoxResultBit13";
 			checkBoxResultBit13.Size = new Size(19, 14);
 			checkBoxResultBit13.TabIndex = 28;
+			checkBoxResultBit13.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit13.Values.Text = "";
 			checkBoxResultBit13.Enter += Control_Enter;
 			checkBoxResultBit13.Leave += Control_Leave;
@@ -2574,11 +2767,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit13
 			// 
-			labelResultBit13.Location = new Point(48, 18);
-			labelResultBit13.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit13.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit13.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit13.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit13.Location = new Point(44, 18);
 			labelResultBit13.Name = "labelResultBit13";
 			labelResultBit13.Size = new Size(24, 20);
 			labelResultBit13.TabIndex = 29;
+			labelResultBit13.ToolTipValues.EnableToolTips = true;
 			labelResultBit13.Values.Text = "13";
 			labelResultBit13.Enter += Control_Enter;
 			labelResultBit13.Leave += Control_Leave;
@@ -2587,12 +2783,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit14
 			// 
+			checkBoxResultBit14.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			checkBoxResultBit14.AccessibleName = "Bit XX of byte 2 in R";
+			checkBoxResultBit14.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit14.AutoCheck = false;
-			checkBoxResultBit14.Location = new Point(29, 37);
-			checkBoxResultBit14.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit14.Location = new Point(27, 38);
 			checkBoxResultBit14.Name = "checkBoxResultBit14";
 			checkBoxResultBit14.Size = new Size(19, 14);
 			checkBoxResultBit14.TabIndex = 30;
+			checkBoxResultBit14.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit14.Values.Text = "";
 			checkBoxResultBit14.Enter += Control_Enter;
 			checkBoxResultBit14.Leave += Control_Leave;
@@ -2601,11 +2800,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit14
 			// 
-			labelResultBit14.Location = new Point(26, 18);
-			labelResultBit14.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit14.AccessibleDescription = "Shows bit XX of byte 2 in R";
+			labelResultBit14.AccessibleName = "Bit XX of byte 2 in R";
+			labelResultBit14.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit14.Location = new Point(22, 18);
 			labelResultBit14.Name = "labelResultBit14";
 			labelResultBit14.Size = new Size(24, 20);
 			labelResultBit14.TabIndex = 31;
+			labelResultBit14.ToolTipValues.EnableToolTips = true;
 			labelResultBit14.Values.Text = "14";
 			labelResultBit14.Enter += Control_Enter;
 			labelResultBit14.Leave += Control_Leave;
@@ -2614,6 +2816,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxResultByte1
 			// 
+			groupBoxResultByte1.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxResultByte1.Controls.Add(labelResultBit07);
 			groupBoxResultByte1.Controls.Add(checkBoxResultBit07);
 			groupBoxResultByte1.Controls.Add(labelResultBit06);
@@ -2641,11 +2844,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit07
 			// 
-			labelResultBit07.Location = new Point(1, 18);
-			labelResultBit07.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit07.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit07.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit07.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit07.Location = new Point(0, 18);
 			labelResultBit07.Name = "labelResultBit07";
 			labelResultBit07.Size = new Size(24, 20);
 			labelResultBit07.TabIndex = 17;
+			labelResultBit07.ToolTipValues.EnableToolTips = true;
 			labelResultBit07.Values.Text = "07";
 			labelResultBit07.Enter += Control_Enter;
 			labelResultBit07.Leave += Control_Leave;
@@ -2654,12 +2860,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit07
 			// 
+			checkBoxResultBit07.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit07.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit07.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit07.AutoCheck = false;
-			checkBoxResultBit07.Location = new Point(5, 37);
-			checkBoxResultBit07.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit07.Location = new Point(5, 38);
 			checkBoxResultBit07.Name = "checkBoxResultBit07";
 			checkBoxResultBit07.Size = new Size(19, 14);
 			checkBoxResultBit07.TabIndex = 16;
+			checkBoxResultBit07.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit07.Values.Text = "";
 			checkBoxResultBit07.Enter += Control_Enter;
 			checkBoxResultBit07.Leave += Control_Leave;
@@ -2668,11 +2877,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit06
 			// 
-			labelResultBit06.Location = new Point(23, 18);
-			labelResultBit06.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit06.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit06.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit06.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit06.Location = new Point(22, 18);
 			labelResultBit06.Name = "labelResultBit06";
 			labelResultBit06.Size = new Size(24, 20);
 			labelResultBit06.TabIndex = 15;
+			labelResultBit06.ToolTipValues.EnableToolTips = true;
 			labelResultBit06.Values.Text = "06";
 			labelResultBit06.Enter += Control_Enter;
 			labelResultBit06.Leave += Control_Leave;
@@ -2681,12 +2893,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit00
 			// 
+			checkBoxResultBit00.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit00.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit00.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit00.AutoCheck = false;
-			checkBoxResultBit00.Location = new Point(174, 37);
-			checkBoxResultBit00.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit00.Location = new Point(174, 38);
 			checkBoxResultBit00.Name = "checkBoxResultBit00";
 			checkBoxResultBit00.Size = new Size(19, 14);
 			checkBoxResultBit00.TabIndex = 0;
+			checkBoxResultBit00.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit00.Values.Text = "";
 			checkBoxResultBit00.Enter += Control_Enter;
 			checkBoxResultBit00.Leave += Control_Leave;
@@ -2695,12 +2910,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit06
 			// 
+			checkBoxResultBit06.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit06.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit06.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit06.AutoCheck = false;
-			checkBoxResultBit06.Location = new Point(27, 37);
-			checkBoxResultBit06.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit06.Location = new Point(27, 38);
 			checkBoxResultBit06.Name = "checkBoxResultBit06";
 			checkBoxResultBit06.Size = new Size(19, 14);
 			checkBoxResultBit06.TabIndex = 14;
+			checkBoxResultBit06.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit06.Values.Text = "";
 			checkBoxResultBit06.Enter += Control_Enter;
 			checkBoxResultBit06.Leave += Control_Leave;
@@ -2709,11 +2927,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit00
 			// 
-			labelResultBit00.Location = new Point(170, 18);
-			labelResultBit00.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit00.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit00.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit00.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit00.Location = new Point(168, 18);
 			labelResultBit00.Name = "labelResultBit00";
 			labelResultBit00.Size = new Size(24, 20);
 			labelResultBit00.TabIndex = 1;
+			labelResultBit00.ToolTipValues.EnableToolTips = true;
 			labelResultBit00.Values.Text = "00";
 			labelResultBit00.Enter += Control_Enter;
 			labelResultBit00.Leave += Control_Leave;
@@ -2722,11 +2943,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit05
 			// 
-			labelResultBit05.Location = new Point(46, 18);
-			labelResultBit05.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit05.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit05.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit05.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit05.Location = new Point(44, 18);
 			labelResultBit05.Name = "labelResultBit05";
 			labelResultBit05.Size = new Size(24, 20);
 			labelResultBit05.TabIndex = 13;
+			labelResultBit05.ToolTipValues.EnableToolTips = true;
 			labelResultBit05.Values.Text = "05";
 			labelResultBit05.Enter += Control_Enter;
 			labelResultBit05.Leave += Control_Leave;
@@ -2735,12 +2959,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit05
 			// 
+			checkBoxResultBit05.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit05.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit05.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit05.AutoCheck = false;
-			checkBoxResultBit05.Location = new Point(49, 37);
-			checkBoxResultBit05.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit05.Location = new Point(49, 38);
 			checkBoxResultBit05.Name = "checkBoxResultBit05";
 			checkBoxResultBit05.Size = new Size(19, 14);
 			checkBoxResultBit05.TabIndex = 12;
+			checkBoxResultBit05.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit05.Values.Text = "";
 			checkBoxResultBit05.Enter += Control_Enter;
 			checkBoxResultBit05.Leave += Control_Leave;
@@ -2749,12 +2976,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit01
 			// 
+			checkBoxResultBit01.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit01.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit01.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit01.AutoCheck = false;
-			checkBoxResultBit01.Location = new Point(152, 37);
-			checkBoxResultBit01.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit01.Location = new Point(152, 38);
 			checkBoxResultBit01.Name = "checkBoxResultBit01";
 			checkBoxResultBit01.Size = new Size(19, 14);
 			checkBoxResultBit01.TabIndex = 2;
+			checkBoxResultBit01.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit01.Values.Text = "";
 			checkBoxResultBit01.Enter += Control_Enter;
 			checkBoxResultBit01.Leave += Control_Leave;
@@ -2763,11 +2993,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit04
 			// 
-			labelResultBit04.Location = new Point(68, 18);
-			labelResultBit04.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit04.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit04.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit04.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit04.Location = new Point(66, 18);
 			labelResultBit04.Name = "labelResultBit04";
 			labelResultBit04.Size = new Size(24, 20);
 			labelResultBit04.TabIndex = 11;
+			labelResultBit04.ToolTipValues.EnableToolTips = true;
 			labelResultBit04.Values.Text = "04";
 			labelResultBit04.Enter += Control_Enter;
 			labelResultBit04.Leave += Control_Leave;
@@ -2776,12 +3009,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit04
 			// 
+			checkBoxResultBit04.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit04.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit04.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit04.AutoCheck = false;
-			checkBoxResultBit04.Location = new Point(71, 37);
-			checkBoxResultBit04.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit04.Location = new Point(71, 38);
 			checkBoxResultBit04.Name = "checkBoxResultBit04";
 			checkBoxResultBit04.Size = new Size(19, 14);
 			checkBoxResultBit04.TabIndex = 10;
+			checkBoxResultBit04.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit04.Values.Text = "";
 			checkBoxResultBit04.Enter += Control_Enter;
 			checkBoxResultBit04.Leave += Control_Leave;
@@ -2790,11 +3026,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit01
 			// 
-			labelResultBit01.Location = new Point(148, 18);
-			labelResultBit01.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit01.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit01.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit01.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit01.Location = new Point(147, 18);
 			labelResultBit01.Name = "labelResultBit01";
 			labelResultBit01.Size = new Size(24, 20);
 			labelResultBit01.TabIndex = 3;
+			labelResultBit01.ToolTipValues.EnableToolTips = true;
 			labelResultBit01.Values.Text = "01";
 			labelResultBit01.Enter += Control_Enter;
 			labelResultBit01.Leave += Control_Leave;
@@ -2803,11 +3042,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit03
 			// 
-			labelResultBit03.Location = new Point(104, 18);
-			labelResultBit03.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit03.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit03.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit03.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit03.Location = new Point(101, 18);
 			labelResultBit03.Name = "labelResultBit03";
 			labelResultBit03.Size = new Size(24, 20);
 			labelResultBit03.TabIndex = 7;
+			labelResultBit03.ToolTipValues.EnableToolTips = true;
 			labelResultBit03.Values.Text = "03";
 			labelResultBit03.Enter += Control_Enter;
 			labelResultBit03.Leave += Control_Leave;
@@ -2816,12 +3058,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit03
 			// 
+			checkBoxResultBit03.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit03.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit03.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit03.AutoCheck = false;
-			checkBoxResultBit03.Location = new Point(107, 37);
-			checkBoxResultBit03.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit03.Location = new Point(107, 38);
 			checkBoxResultBit03.Name = "checkBoxResultBit03";
 			checkBoxResultBit03.Size = new Size(19, 14);
 			checkBoxResultBit03.TabIndex = 6;
+			checkBoxResultBit03.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit03.Values.Text = "";
 			checkBoxResultBit03.Enter += Control_Enter;
 			checkBoxResultBit03.Leave += Control_Leave;
@@ -2830,12 +3075,15 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxResultBit02
 			// 
+			checkBoxResultBit02.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			checkBoxResultBit02.AccessibleName = "Bit XX of byte 1 in R";
+			checkBoxResultBit02.AccessibleRole = AccessibleRole.CheckButton;
 			checkBoxResultBit02.AutoCheck = false;
-			checkBoxResultBit02.Location = new Point(130, 37);
-			checkBoxResultBit02.Margin = new Padding(4, 3, 4, 3);
+			checkBoxResultBit02.Location = new Point(130, 38);
 			checkBoxResultBit02.Name = "checkBoxResultBit02";
 			checkBoxResultBit02.Size = new Size(19, 14);
 			checkBoxResultBit02.TabIndex = 4;
+			checkBoxResultBit02.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit02.Values.Text = "";
 			checkBoxResultBit02.Enter += Control_Enter;
 			checkBoxResultBit02.Leave += Control_Leave;
@@ -2844,11 +3092,14 @@ namespace BitLogicCalculator
 			// 
 			// labelResultBit02
 			// 
-			labelResultBit02.Location = new Point(126, 18);
-			labelResultBit02.Margin = new Padding(4, 0, 4, 0);
+			labelResultBit02.AccessibleDescription = "Shows bit XX of byte 1 in R";
+			labelResultBit02.AccessibleName = "Bit XX of byte 1 in R";
+			labelResultBit02.AccessibleRole = AccessibleRole.StaticText;
+			labelResultBit02.Location = new Point(125, 18);
 			labelResultBit02.Name = "labelResultBit02";
 			labelResultBit02.Size = new Size(24, 20);
 			labelResultBit02.TabIndex = 5;
+			labelResultBit02.ToolTipValues.EnableToolTips = true;
 			labelResultBit02.Values.Text = "02";
 			labelResultBit02.Enter += Control_Enter;
 			labelResultBit02.Leave += Control_Leave;
@@ -2857,6 +3108,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxAccumulator2
 			// 
+			groupBoxAccumulator2.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxAccumulator2.BackColor = Color.Transparent;
 			groupBoxAccumulator2.Controls.Add(textBoxA2Octal);
 			groupBoxAccumulator2.Controls.Add(labelA2Octal);
@@ -2881,6 +3133,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA2Octal
 			// 
+			textBoxA2Octal.AccessibleDescription = "Shows the octal value of A2";
+			textBoxA2Octal.AccessibleName = "Octal value of A2";
+			textBoxA2Octal.AccessibleRole = AccessibleRole.Text;
 			textBoxA2Octal.Location = new Point(456, 28);
 			textBoxA2Octal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA2Octal.Name = "textBoxA2Octal";
@@ -2893,6 +3148,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Octal
 			// 
+			labelA2Octal.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Octal.Location = new Point(411, 31);
 			labelA2Octal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Octal.Name = "labelA2Octal";
@@ -2906,6 +3162,9 @@ namespace BitLogicCalculator
 			// 
 			// maskedTextBoxA2Network
 			// 
+			maskedTextBoxA2Network.AccessibleDescription = "Shows the network value of A2";
+			maskedTextBoxA2Network.AccessibleName = "Network value of A2";
+			maskedTextBoxA2Network.AccessibleRole = AccessibleRole.Text;
 			maskedTextBoxA2Network.Location = new Point(665, 28);
 			maskedTextBoxA2Network.Margin = new Padding(4, 3, 4, 3);
 			maskedTextBoxA2Network.Name = "maskedTextBoxA2Network";
@@ -2918,6 +3177,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Network
 			// 
+			labelA2Network.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Network.Location = new Point(614, 31);
 			labelA2Network.Margin = new Padding(4, 0, 4, 0);
 			labelA2Network.Name = "labelA2Network";
@@ -2931,6 +3191,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA2Decimal
 			// 
+			textBoxA2Decimal.AccessibleDescription = "Shows the decimal value of A2";
+			textBoxA2Decimal.AccessibleName = "Decimal value of A2";
+			textBoxA2Decimal.AccessibleRole = AccessibleRole.Text;
 			textBoxA2Decimal.Location = new Point(253, 28);
 			textBoxA2Decimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA2Decimal.Name = "textBoxA2Decimal";
@@ -2943,6 +3206,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA2Hexadecimal
 			// 
+			textBoxA2Hexadecimal.AccessibleDescription = "Shows the hexadecimal value of A2";
+			textBoxA2Hexadecimal.AccessibleName = "Hexadecimal value of A2";
+			textBoxA2Hexadecimal.AccessibleRole = AccessibleRole.Text;
 			textBoxA2Hexadecimal.Location = new Point(50, 28);
 			textBoxA2Hexadecimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA2Hexadecimal.Name = "textBoxA2Hexadecimal";
@@ -2955,6 +3221,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Decimal
 			// 
+			labelA2Decimal.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Decimal.Location = new Point(208, 31);
 			labelA2Decimal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Decimal.Name = "labelA2Decimal";
@@ -2968,6 +3235,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Hexadecimal
 			// 
+			labelA2Hexadecimal.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Hexadecimal.Location = new Point(6, 31);
 			labelA2Hexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelA2Hexadecimal.Name = "labelA2Hexadecimal";
@@ -2981,6 +3249,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA2Byte4
 			// 
+			groupBoxA2Byte4.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA2Byte4.Controls.Add(labelA2Bit31);
 			groupBoxA2Byte4.Controls.Add(checkBoxA2Bit31);
 			groupBoxA2Byte4.Controls.Add(checkBoxA2Bit24);
@@ -3008,11 +3277,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit31
 			// 
-			labelA2Bit31.Location = new Point(7, 18);
-			labelA2Bit31.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit31.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit31.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit31.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit31.Location = new Point(0, 18);
 			labelA2Bit31.Name = "labelA2Bit31";
 			labelA2Bit31.Size = new Size(24, 20);
 			labelA2Bit31.TabIndex = 65;
+			labelA2Bit31.ToolTipValues.EnableToolTips = true;
 			labelA2Bit31.Values.Text = "31";
 			labelA2Bit31.Click += LabelA2Bit31_Click;
 			labelA2Bit31.Enter += Control_Enter;
@@ -3022,11 +3294,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit31
 			// 
-			checkBoxA2Bit31.Location = new Point(10, 37);
-			checkBoxA2Bit31.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit31.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit31.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit31.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit31.Location = new Point(5, 38);
 			checkBoxA2Bit31.Name = "checkBoxA2Bit31";
 			checkBoxA2Bit31.Size = new Size(19, 14);
 			checkBoxA2Bit31.TabIndex = 64;
+			checkBoxA2Bit31.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit31.Values.Text = "";
 			checkBoxA2Bit31.CheckedChanged += CheckBoxA2Bit31_CheckedChanged;
 			checkBoxA2Bit31.Enter += Control_Enter;
@@ -3036,11 +3311,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit24
 			// 
-			checkBoxA2Bit24.Location = new Point(172, 37);
-			checkBoxA2Bit24.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit24.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit24.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit24.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit24.Location = new Point(174, 38);
 			checkBoxA2Bit24.Name = "checkBoxA2Bit24";
 			checkBoxA2Bit24.Size = new Size(19, 14);
 			checkBoxA2Bit24.TabIndex = 50;
+			checkBoxA2Bit24.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit24.Values.Text = "";
 			checkBoxA2Bit24.CheckedChanged += CheckBoxA2Bit24_CheckedChanged;
 			checkBoxA2Bit24.Enter += Control_Enter;
@@ -3050,11 +3328,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit24
 			// 
+			labelA2Bit24.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit24.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit24.AccessibleRole = AccessibleRole.StaticText;
 			labelA2Bit24.Location = new Point(168, 18);
-			labelA2Bit24.Margin = new Padding(4, 0, 4, 0);
 			labelA2Bit24.Name = "labelA2Bit24";
 			labelA2Bit24.Size = new Size(24, 20);
 			labelA2Bit24.TabIndex = 51;
+			labelA2Bit24.ToolTipValues.EnableToolTips = true;
 			labelA2Bit24.Values.Text = "24";
 			labelA2Bit24.Click += LabelA2Bit24_Click;
 			labelA2Bit24.Enter += Control_Enter;
@@ -3064,11 +3345,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit25
 			// 
-			checkBoxA2Bit25.Location = new Point(149, 37);
-			checkBoxA2Bit25.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit25.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit25.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit25.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit25.Location = new Point(152, 38);
 			checkBoxA2Bit25.Name = "checkBoxA2Bit25";
 			checkBoxA2Bit25.Size = new Size(19, 14);
 			checkBoxA2Bit25.TabIndex = 52;
+			checkBoxA2Bit25.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit25.Values.Text = "";
 			checkBoxA2Bit25.CheckedChanged += CheckBoxA2Bit25_CheckedChanged;
 			checkBoxA2Bit25.Enter += Control_Enter;
@@ -3078,11 +3362,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit30
 			// 
-			labelA2Bit30.Location = new Point(29, 18);
-			labelA2Bit30.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit30.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit30.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit30.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit30.Location = new Point(22, 18);
 			labelA2Bit30.Name = "labelA2Bit30";
 			labelA2Bit30.Size = new Size(24, 20);
 			labelA2Bit30.TabIndex = 63;
+			labelA2Bit30.ToolTipValues.EnableToolTips = true;
 			labelA2Bit30.Values.Text = "30";
 			labelA2Bit30.Click += LabelA2Bit30_Click;
 			labelA2Bit30.Enter += Control_Enter;
@@ -3092,11 +3379,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit25
 			// 
-			labelA2Bit25.Location = new Point(146, 18);
-			labelA2Bit25.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit25.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit25.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit25.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit25.Location = new Point(147, 18);
 			labelA2Bit25.Name = "labelA2Bit25";
 			labelA2Bit25.Size = new Size(24, 20);
 			labelA2Bit25.TabIndex = 53;
+			labelA2Bit25.ToolTipValues.EnableToolTips = true;
 			labelA2Bit25.Values.Text = "25";
 			labelA2Bit25.Click += LabelA2Bit25_Click;
 			labelA2Bit25.Enter += Control_Enter;
@@ -3106,11 +3396,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit26
 			// 
-			checkBoxA2Bit26.Location = new Point(127, 37);
-			checkBoxA2Bit26.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit26.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit26.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit26.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit26.Location = new Point(130, 38);
 			checkBoxA2Bit26.Name = "checkBoxA2Bit26";
 			checkBoxA2Bit26.Size = new Size(19, 14);
 			checkBoxA2Bit26.TabIndex = 54;
+			checkBoxA2Bit26.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit26.Values.Text = "";
 			checkBoxA2Bit26.CheckedChanged += CheckBoxA2Bit26_CheckedChanged;
 			checkBoxA2Bit26.Enter += Control_Enter;
@@ -3120,11 +3413,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit30
 			// 
-			checkBoxA2Bit30.Location = new Point(33, 37);
-			checkBoxA2Bit30.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit30.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit30.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit30.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit30.Location = new Point(27, 38);
 			checkBoxA2Bit30.Name = "checkBoxA2Bit30";
 			checkBoxA2Bit30.Size = new Size(19, 14);
 			checkBoxA2Bit30.TabIndex = 62;
+			checkBoxA2Bit30.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit30.Values.Text = "";
 			checkBoxA2Bit30.CheckedChanged += CheckBoxA2Bit30_CheckedChanged;
 			checkBoxA2Bit30.Enter += Control_Enter;
@@ -3134,11 +3430,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit26
 			// 
-			labelA2Bit26.Location = new Point(124, 18);
-			labelA2Bit26.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit26.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit26.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit26.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit26.Location = new Point(125, 18);
 			labelA2Bit26.Name = "labelA2Bit26";
 			labelA2Bit26.Size = new Size(24, 20);
 			labelA2Bit26.TabIndex = 55;
+			labelA2Bit26.ToolTipValues.EnableToolTips = true;
 			labelA2Bit26.Values.Text = "26";
 			labelA2Bit26.Click += LabelA2Bit26_Click;
 			labelA2Bit26.Enter += Control_Enter;
@@ -3148,11 +3447,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit29
 			// 
-			labelA2Bit29.Location = new Point(51, 18);
-			labelA2Bit29.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit29.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit29.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit29.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit29.Location = new Point(44, 18);
 			labelA2Bit29.Name = "labelA2Bit29";
 			labelA2Bit29.Size = new Size(24, 20);
 			labelA2Bit29.TabIndex = 61;
+			labelA2Bit29.ToolTipValues.EnableToolTips = true;
 			labelA2Bit29.Values.Text = "29";
 			labelA2Bit29.Click += LabelA2Bit29_Click;
 			labelA2Bit29.Enter += Control_Enter;
@@ -3162,11 +3464,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit27
 			// 
-			checkBoxA2Bit27.Location = new Point(105, 37);
-			checkBoxA2Bit27.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit27.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit27.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit27.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit27.Location = new Point(107, 38);
 			checkBoxA2Bit27.Name = "checkBoxA2Bit27";
 			checkBoxA2Bit27.Size = new Size(19, 14);
 			checkBoxA2Bit27.TabIndex = 56;
+			checkBoxA2Bit27.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit27.Values.Text = "";
 			checkBoxA2Bit27.CheckedChanged += CheckBoxA2Bit27_CheckedChanged;
 			checkBoxA2Bit27.Enter += Control_Enter;
@@ -3176,11 +3481,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit29
 			// 
-			checkBoxA2Bit29.Location = new Point(55, 37);
-			checkBoxA2Bit29.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit29.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit29.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit29.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit29.Location = new Point(49, 38);
 			checkBoxA2Bit29.Name = "checkBoxA2Bit29";
 			checkBoxA2Bit29.Size = new Size(19, 14);
 			checkBoxA2Bit29.TabIndex = 60;
+			checkBoxA2Bit29.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit29.Values.Text = "";
 			checkBoxA2Bit29.CheckedChanged += CheckBoxA2Bit29_CheckedChanged;
 			checkBoxA2Bit29.Enter += Control_Enter;
@@ -3190,11 +3498,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit27
 			// 
-			labelA2Bit27.Location = new Point(102, 18);
-			labelA2Bit27.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit27.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit27.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit27.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit27.Location = new Point(101, 18);
 			labelA2Bit27.Name = "labelA2Bit27";
 			labelA2Bit27.Size = new Size(24, 20);
 			labelA2Bit27.TabIndex = 57;
+			labelA2Bit27.ToolTipValues.EnableToolTips = true;
 			labelA2Bit27.Values.Text = "27";
 			labelA2Bit27.Click += LabelA2Bit27_Click;
 			labelA2Bit27.Enter += Control_Enter;
@@ -3204,11 +3515,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit28
 			// 
-			labelA2Bit28.Location = new Point(74, 18);
-			labelA2Bit28.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit28.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			labelA2Bit28.AccessibleName = "Bit XX of byte 4 in A2";
+			labelA2Bit28.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit28.Location = new Point(66, 18);
 			labelA2Bit28.Name = "labelA2Bit28";
 			labelA2Bit28.Size = new Size(24, 20);
 			labelA2Bit28.TabIndex = 59;
+			labelA2Bit28.ToolTipValues.EnableToolTips = true;
 			labelA2Bit28.Values.Text = "28";
 			labelA2Bit28.Click += LabelA2Bit28_Click;
 			labelA2Bit28.Enter += Control_Enter;
@@ -3218,11 +3532,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit28
 			// 
-			checkBoxA2Bit28.Location = new Point(77, 37);
-			checkBoxA2Bit28.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit28.AccessibleDescription = "Shows bit XX of byte 4 in A2";
+			checkBoxA2Bit28.AccessibleName = "Bit XX of byte 4 in A2";
+			checkBoxA2Bit28.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit28.Location = new Point(71, 38);
 			checkBoxA2Bit28.Name = "checkBoxA2Bit28";
 			checkBoxA2Bit28.Size = new Size(19, 14);
 			checkBoxA2Bit28.TabIndex = 58;
+			checkBoxA2Bit28.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit28.Values.Text = "";
 			checkBoxA2Bit28.CheckedChanged += CheckBoxA2Bit28_CheckedChanged;
 			checkBoxA2Bit28.Enter += Control_Enter;
@@ -3232,6 +3549,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA2Byte3
 			// 
+			groupBoxA2Byte3.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA2Byte3.Controls.Add(checkBoxA2Bit23);
 			groupBoxA2Byte3.Controls.Add(checkBoxA2Bit21);
 			groupBoxA2Byte3.Controls.Add(labelA2Bit21);
@@ -3259,8 +3577,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit23
 			// 
-			checkBoxA2Bit23.Location = new Point(7, 37);
-			checkBoxA2Bit23.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit23.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit23.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit23.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit23.Location = new Point(5, 38);
 			checkBoxA2Bit23.Name = "checkBoxA2Bit23";
 			checkBoxA2Bit23.Size = new Size(19, 14);
 			checkBoxA2Bit23.TabIndex = 48;
@@ -3273,8 +3593,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit21
 			// 
-			checkBoxA2Bit21.Location = new Point(51, 37);
-			checkBoxA2Bit21.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit21.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit21.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit21.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit21.Location = new Point(49, 38);
 			checkBoxA2Bit21.Name = "checkBoxA2Bit21";
 			checkBoxA2Bit21.Size = new Size(19, 14);
 			checkBoxA2Bit21.TabIndex = 44;
@@ -3287,8 +3609,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit21
 			// 
-			labelA2Bit21.Location = new Point(48, 18);
-			labelA2Bit21.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit21.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit21.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit21.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit21.Location = new Point(44, 18);
 			labelA2Bit21.Name = "labelA2Bit21";
 			labelA2Bit21.Size = new Size(24, 20);
 			labelA2Bit21.TabIndex = 45;
@@ -3301,8 +3625,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit20
 			// 
-			labelA2Bit20.Location = new Point(70, 18);
-			labelA2Bit20.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit20.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit20.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit20.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit20.Location = new Point(66, 18);
 			labelA2Bit20.Name = "labelA2Bit20";
 			labelA2Bit20.Size = new Size(24, 20);
 			labelA2Bit20.TabIndex = 43;
@@ -3315,8 +3641,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit22
 			// 
-			checkBoxA2Bit22.Location = new Point(29, 37);
-			checkBoxA2Bit22.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit22.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit22.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit22.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit22.Location = new Point(27, 38);
 			checkBoxA2Bit22.Name = "checkBoxA2Bit22";
 			checkBoxA2Bit22.Size = new Size(19, 14);
 			checkBoxA2Bit22.TabIndex = 46;
@@ -3329,8 +3657,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit20
 			// 
-			checkBoxA2Bit20.Location = new Point(74, 37);
-			checkBoxA2Bit20.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit20.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit20.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit20.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit20.Location = new Point(71, 38);
 			checkBoxA2Bit20.Name = "checkBoxA2Bit20";
 			checkBoxA2Bit20.Size = new Size(19, 14);
 			checkBoxA2Bit20.TabIndex = 42;
@@ -3343,8 +3673,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit22
 			// 
-			labelA2Bit22.Location = new Point(26, 18);
-			labelA2Bit22.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit22.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit22.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit22.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit22.Location = new Point(22, 18);
 			labelA2Bit22.Name = "labelA2Bit22";
 			labelA2Bit22.Size = new Size(24, 20);
 			labelA2Bit22.TabIndex = 47;
@@ -3357,8 +3689,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit19
 			// 
-			labelA2Bit19.Location = new Point(104, 18);
-			labelA2Bit19.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit19.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit19.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit19.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit19.Location = new Point(101, 18);
 			labelA2Bit19.Name = "labelA2Bit19";
 			labelA2Bit19.Size = new Size(24, 20);
 			labelA2Bit19.TabIndex = 41;
@@ -3371,8 +3705,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit16
 			// 
-			checkBoxA2Bit16.Location = new Point(174, 37);
-			checkBoxA2Bit16.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit16.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit16.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit16.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit16.Location = new Point(174, 38);
 			checkBoxA2Bit16.Name = "checkBoxA2Bit16";
 			checkBoxA2Bit16.Size = new Size(19, 14);
 			checkBoxA2Bit16.TabIndex = 34;
@@ -3385,8 +3721,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit19
 			// 
-			checkBoxA2Bit19.Location = new Point(107, 37);
-			checkBoxA2Bit19.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit19.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit19.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit19.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit19.Location = new Point(107, 38);
 			checkBoxA2Bit19.Name = "checkBoxA2Bit19";
 			checkBoxA2Bit19.Size = new Size(19, 14);
 			checkBoxA2Bit19.TabIndex = 40;
@@ -3399,8 +3737,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit23
 			// 
-			labelA2Bit23.Location = new Point(4, 18);
-			labelA2Bit23.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit23.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit23.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit23.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit23.Location = new Point(0, 18);
 			labelA2Bit23.Name = "labelA2Bit23";
 			labelA2Bit23.Size = new Size(24, 20);
 			labelA2Bit23.TabIndex = 49;
@@ -3413,8 +3753,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit18
 			// 
-			labelA2Bit18.Location = new Point(126, 18);
-			labelA2Bit18.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit18.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit18.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit18.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit18.Location = new Point(125, 18);
 			labelA2Bit18.Name = "labelA2Bit18";
 			labelA2Bit18.Size = new Size(24, 20);
 			labelA2Bit18.TabIndex = 39;
@@ -3427,8 +3769,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit16
 			// 
-			labelA2Bit16.Location = new Point(170, 18);
-			labelA2Bit16.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit16.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit16.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit16.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit16.Location = new Point(168, 18);
 			labelA2Bit16.Name = "labelA2Bit16";
 			labelA2Bit16.Size = new Size(24, 20);
 			labelA2Bit16.TabIndex = 35;
@@ -3441,8 +3785,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit18
 			// 
-			checkBoxA2Bit18.Location = new Point(130, 37);
-			checkBoxA2Bit18.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit18.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit18.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit18.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit18.Location = new Point(130, 38);
 			checkBoxA2Bit18.Name = "checkBoxA2Bit18";
 			checkBoxA2Bit18.Size = new Size(19, 14);
 			checkBoxA2Bit18.TabIndex = 38;
@@ -3455,8 +3801,10 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit17
 			// 
-			labelA2Bit17.Location = new Point(148, 18);
-			labelA2Bit17.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit17.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			labelA2Bit17.AccessibleName = "Bit XX of byte 3 in A2";
+			labelA2Bit17.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit17.Location = new Point(147, 18);
 			labelA2Bit17.Name = "labelA2Bit17";
 			labelA2Bit17.Size = new Size(24, 20);
 			labelA2Bit17.TabIndex = 37;
@@ -3469,8 +3817,10 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit17
 			// 
-			checkBoxA2Bit17.Location = new Point(152, 37);
-			checkBoxA2Bit17.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit17.AccessibleDescription = "Shows bit XX of byte 3 in A2";
+			checkBoxA2Bit17.AccessibleName = "Bit XX of byte 3 in A2";
+			checkBoxA2Bit17.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit17.Location = new Point(152, 38);
 			checkBoxA2Bit17.Name = "checkBoxA2Bit17";
 			checkBoxA2Bit17.Size = new Size(19, 14);
 			checkBoxA2Bit17.TabIndex = 36;
@@ -3483,6 +3833,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA2Byte2
 			// 
+			groupBoxA2Byte2.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA2Byte2.Controls.Add(checkBoxA2Bit15);
 			groupBoxA2Byte2.Controls.Add(checkBoxA2Bit10);
 			groupBoxA2Byte2.Controls.Add(labelA2Bit10);
@@ -3510,11 +3861,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit15
 			// 
-			checkBoxA2Bit15.Location = new Point(7, 37);
-			checkBoxA2Bit15.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit15.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit15.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit15.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit15.Location = new Point(5, 38);
 			checkBoxA2Bit15.Name = "checkBoxA2Bit15";
 			checkBoxA2Bit15.Size = new Size(19, 14);
 			checkBoxA2Bit15.TabIndex = 32;
+			checkBoxA2Bit15.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit15.Values.Text = "";
 			checkBoxA2Bit15.CheckedChanged += CheckBoxA2Bit15_CheckedChanged;
 			checkBoxA2Bit15.Enter += Control_Enter;
@@ -3524,11 +3878,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit10
 			// 
-			checkBoxA2Bit10.Location = new Point(130, 37);
-			checkBoxA2Bit10.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit10.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit10.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit10.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit10.Location = new Point(130, 38);
 			checkBoxA2Bit10.Name = "checkBoxA2Bit10";
 			checkBoxA2Bit10.Size = new Size(19, 14);
 			checkBoxA2Bit10.TabIndex = 22;
+			checkBoxA2Bit10.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit10.Values.Text = "";
 			checkBoxA2Bit10.CheckedChanged += CheckBoxA2Bit10_CheckedChanged;
 			checkBoxA2Bit10.Enter += Control_Enter;
@@ -3538,11 +3895,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit10
 			// 
-			labelA2Bit10.Location = new Point(126, 18);
-			labelA2Bit10.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit10.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit10.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit10.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit10.Location = new Point(125, 18);
 			labelA2Bit10.Name = "labelA2Bit10";
 			labelA2Bit10.Size = new Size(24, 20);
 			labelA2Bit10.TabIndex = 23;
+			labelA2Bit10.ToolTipValues.EnableToolTips = true;
 			labelA2Bit10.Values.Text = "10";
 			labelA2Bit10.Click += LabelA2Bit10_Click;
 			labelA2Bit10.Enter += Control_Enter;
@@ -3552,11 +3912,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit09
 			// 
-			labelA2Bit09.Location = new Point(148, 18);
-			labelA2Bit09.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit09.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit09.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit09.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit09.Location = new Point(147, 18);
 			labelA2Bit09.Name = "labelA2Bit09";
 			labelA2Bit09.Size = new Size(24, 20);
 			labelA2Bit09.TabIndex = 21;
+			labelA2Bit09.ToolTipValues.EnableToolTips = true;
 			labelA2Bit09.Values.Text = "09";
 			labelA2Bit09.Click += LabelA2Bit09_Click;
 			labelA2Bit09.Enter += Control_Enter;
@@ -3566,11 +3929,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit11
 			// 
-			checkBoxA2Bit11.Location = new Point(107, 37);
-			checkBoxA2Bit11.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit11.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit11.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit11.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit11.Location = new Point(107, 38);
 			checkBoxA2Bit11.Name = "checkBoxA2Bit11";
 			checkBoxA2Bit11.Size = new Size(19, 14);
 			checkBoxA2Bit11.TabIndex = 24;
+			checkBoxA2Bit11.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit11.Values.Text = "";
 			checkBoxA2Bit11.CheckedChanged += CheckBoxA2Bit11_CheckedChanged;
 			checkBoxA2Bit11.Enter += Control_Enter;
@@ -3580,11 +3946,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit09
 			// 
-			checkBoxA2Bit09.Location = new Point(152, 37);
-			checkBoxA2Bit09.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit09.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit09.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit09.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit09.Location = new Point(152, 38);
 			checkBoxA2Bit09.Name = "checkBoxA2Bit09";
 			checkBoxA2Bit09.Size = new Size(19, 14);
 			checkBoxA2Bit09.TabIndex = 20;
+			checkBoxA2Bit09.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit09.Values.Text = "";
 			checkBoxA2Bit09.CheckedChanged += CheckBoxA2Bit09_CheckedChanged;
 			checkBoxA2Bit09.Enter += Control_Enter;
@@ -3594,11 +3963,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit11
 			// 
-			labelA2Bit11.Location = new Point(104, 18);
-			labelA2Bit11.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit11.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit11.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit11.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit11.Location = new Point(101, 18);
 			labelA2Bit11.Name = "labelA2Bit11";
 			labelA2Bit11.Size = new Size(24, 20);
 			labelA2Bit11.TabIndex = 25;
+			labelA2Bit11.ToolTipValues.EnableToolTips = true;
 			labelA2Bit11.Values.Text = "11";
 			labelA2Bit11.Click += LabelA2Bit11_Click;
 			labelA2Bit11.Enter += Control_Enter;
@@ -3608,11 +3980,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit15
 			// 
-			labelA2Bit15.Location = new Point(4, 18);
-			labelA2Bit15.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit15.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit15.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit15.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit15.Location = new Point(0, 18);
 			labelA2Bit15.Name = "labelA2Bit15";
 			labelA2Bit15.Size = new Size(24, 20);
 			labelA2Bit15.TabIndex = 33;
+			labelA2Bit15.ToolTipValues.EnableToolTips = true;
 			labelA2Bit15.Values.Text = "15";
 			labelA2Bit15.Click += LabelA2Bit15_Click;
 			labelA2Bit15.Enter += Control_Enter;
@@ -3622,11 +3997,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit08
 			// 
-			labelA2Bit08.Location = new Point(170, 18);
-			labelA2Bit08.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit08.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit08.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit08.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit08.Location = new Point(168, 18);
 			labelA2Bit08.Name = "labelA2Bit08";
 			labelA2Bit08.Size = new Size(24, 20);
 			labelA2Bit08.TabIndex = 19;
+			labelA2Bit08.ToolTipValues.EnableToolTips = true;
 			labelA2Bit08.Values.Text = "08";
 			labelA2Bit08.Click += LabelA2Bit08_Click;
 			labelA2Bit08.Enter += Control_Enter;
@@ -3636,11 +4014,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit12
 			// 
-			checkBoxA2Bit12.Location = new Point(74, 37);
-			checkBoxA2Bit12.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit12.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit12.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit12.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit12.Location = new Point(71, 38);
 			checkBoxA2Bit12.Name = "checkBoxA2Bit12";
 			checkBoxA2Bit12.Size = new Size(19, 14);
 			checkBoxA2Bit12.TabIndex = 26;
+			checkBoxA2Bit12.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit12.Values.Text = "";
 			checkBoxA2Bit12.CheckedChanged += CheckBoxA2Bit12_CheckedChanged;
 			checkBoxA2Bit12.Enter += Control_Enter;
@@ -3650,11 +4031,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit08
 			// 
-			checkBoxA2Bit08.Location = new Point(174, 37);
-			checkBoxA2Bit08.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit08.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit08.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit08.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit08.Location = new Point(174, 38);
 			checkBoxA2Bit08.Name = "checkBoxA2Bit08";
 			checkBoxA2Bit08.Size = new Size(19, 14);
 			checkBoxA2Bit08.TabIndex = 18;
+			checkBoxA2Bit08.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit08.Values.Text = "";
 			checkBoxA2Bit08.CheckedChanged += CheckBoxA2Bit08_CheckedChanged;
 			checkBoxA2Bit08.Enter += Control_Enter;
@@ -3664,11 +4048,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit12
 			// 
-			labelA2Bit12.Location = new Point(70, 18);
-			labelA2Bit12.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit12.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit12.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit12.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit12.Location = new Point(66, 18);
 			labelA2Bit12.Name = "labelA2Bit12";
 			labelA2Bit12.Size = new Size(24, 20);
 			labelA2Bit12.TabIndex = 27;
+			labelA2Bit12.ToolTipValues.EnableToolTips = true;
 			labelA2Bit12.Values.Text = "12";
 			labelA2Bit12.Click += LabelA2Bit12_Click;
 			labelA2Bit12.Enter += Control_Enter;
@@ -3678,11 +4065,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit13
 			// 
-			checkBoxA2Bit13.Location = new Point(51, 37);
-			checkBoxA2Bit13.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit13.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit13.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit13.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit13.Location = new Point(49, 38);
 			checkBoxA2Bit13.Name = "checkBoxA2Bit13";
 			checkBoxA2Bit13.Size = new Size(19, 14);
 			checkBoxA2Bit13.TabIndex = 28;
+			checkBoxA2Bit13.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit13.Values.Text = "";
 			checkBoxA2Bit13.CheckedChanged += CheckBoxA2Bit13_CheckedChanged;
 			checkBoxA2Bit13.Enter += Control_Enter;
@@ -3692,11 +4082,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit13
 			// 
-			labelA2Bit13.Location = new Point(48, 18);
-			labelA2Bit13.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit13.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit13.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit13.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit13.Location = new Point(44, 18);
 			labelA2Bit13.Name = "labelA2Bit13";
 			labelA2Bit13.Size = new Size(24, 20);
 			labelA2Bit13.TabIndex = 29;
+			labelA2Bit13.ToolTipValues.EnableToolTips = true;
 			labelA2Bit13.Values.Text = "13";
 			labelA2Bit13.Click += LabelA2Bit13_Click;
 			labelA2Bit13.Enter += Control_Enter;
@@ -3706,11 +4099,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit14
 			// 
-			checkBoxA2Bit14.Location = new Point(29, 37);
-			checkBoxA2Bit14.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit14.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			checkBoxA2Bit14.AccessibleName = "Bit XX of byte 2 in A2";
+			checkBoxA2Bit14.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit14.Location = new Point(27, 38);
 			checkBoxA2Bit14.Name = "checkBoxA2Bit14";
 			checkBoxA2Bit14.Size = new Size(19, 14);
 			checkBoxA2Bit14.TabIndex = 30;
+			checkBoxA2Bit14.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit14.Values.Text = "";
 			checkBoxA2Bit14.CheckedChanged += CheckBoxA2Bit14_CheckedChanged;
 			checkBoxA2Bit14.Enter += Control_Enter;
@@ -3720,11 +4116,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit14
 			// 
-			labelA2Bit14.Location = new Point(26, 18);
-			labelA2Bit14.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit14.AccessibleDescription = "Shows bit XX of byte 2 in A2";
+			labelA2Bit14.AccessibleName = "Bit XX of byte 2 in A2";
+			labelA2Bit14.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit14.Location = new Point(22, 18);
 			labelA2Bit14.Name = "labelA2Bit14";
 			labelA2Bit14.Size = new Size(24, 20);
 			labelA2Bit14.TabIndex = 31;
+			labelA2Bit14.ToolTipValues.EnableToolTips = true;
 			labelA2Bit14.Values.Text = "14";
 			labelA2Bit14.Click += LabelA2Bit14_Click;
 			labelA2Bit14.Enter += Control_Enter;
@@ -3734,6 +4133,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA2Byte1
 			// 
+			groupBoxA2Byte1.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA2Byte1.Controls.Add(labelA2Bit07);
 			groupBoxA2Byte1.Controls.Add(checkBoxA2Bit07);
 			groupBoxA2Byte1.Controls.Add(labelA2Bit06);
@@ -3761,11 +4161,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit07
 			// 
-			labelA2Bit07.Location = new Point(1, 18);
-			labelA2Bit07.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit07.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit07.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit07.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit07.Location = new Point(0, 18);
 			labelA2Bit07.Name = "labelA2Bit07";
 			labelA2Bit07.Size = new Size(24, 20);
 			labelA2Bit07.TabIndex = 17;
+			labelA2Bit07.ToolTipValues.EnableToolTips = true;
 			labelA2Bit07.Values.Text = "07";
 			labelA2Bit07.Click += LabelA2Bit07_Click;
 			labelA2Bit07.Enter += Control_Enter;
@@ -3775,11 +4178,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit07
 			// 
-			checkBoxA2Bit07.Location = new Point(5, 37);
-			checkBoxA2Bit07.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit07.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit07.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit07.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit07.Location = new Point(5, 38);
 			checkBoxA2Bit07.Name = "checkBoxA2Bit07";
 			checkBoxA2Bit07.Size = new Size(19, 14);
 			checkBoxA2Bit07.TabIndex = 16;
+			checkBoxA2Bit07.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit07.Values.Text = "";
 			checkBoxA2Bit07.CheckedChanged += CheckBoxA2Bit07_CheckedChanged;
 			checkBoxA2Bit07.Enter += Control_Enter;
@@ -3789,11 +4195,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit06
 			// 
-			labelA2Bit06.Location = new Point(23, 18);
-			labelA2Bit06.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit06.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit06.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit06.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit06.Location = new Point(22, 18);
 			labelA2Bit06.Name = "labelA2Bit06";
 			labelA2Bit06.Size = new Size(24, 20);
 			labelA2Bit06.TabIndex = 15;
+			labelA2Bit06.ToolTipValues.EnableToolTips = true;
 			labelA2Bit06.Values.Text = "06";
 			labelA2Bit06.Click += LabelA2Bit06_Click;
 			labelA2Bit06.Enter += Control_Enter;
@@ -3803,11 +4212,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit00
 			// 
-			checkBoxA2Bit00.Location = new Point(174, 37);
-			checkBoxA2Bit00.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit00.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit00.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit00.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit00.Location = new Point(174, 38);
 			checkBoxA2Bit00.Name = "checkBoxA2Bit00";
 			checkBoxA2Bit00.Size = new Size(19, 14);
 			checkBoxA2Bit00.TabIndex = 0;
+			checkBoxA2Bit00.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit00.Values.Text = "";
 			checkBoxA2Bit00.CheckedChanged += CheckBoxA2Bit00_CheckedChanged;
 			checkBoxA2Bit00.Enter += Control_Enter;
@@ -3817,11 +4229,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit06
 			// 
-			checkBoxA2Bit06.Location = new Point(27, 37);
-			checkBoxA2Bit06.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit06.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit06.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit06.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit06.Location = new Point(27, 38);
 			checkBoxA2Bit06.Name = "checkBoxA2Bit06";
 			checkBoxA2Bit06.Size = new Size(19, 14);
 			checkBoxA2Bit06.TabIndex = 14;
+			checkBoxA2Bit06.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit06.Values.Text = "";
 			checkBoxA2Bit06.CheckedChanged += CheckBoxA2Bit06_CheckedChanged;
 			checkBoxA2Bit06.Enter += Control_Enter;
@@ -3831,11 +4246,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit00
 			// 
-			labelA2Bit00.Location = new Point(170, 18);
-			labelA2Bit00.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit00.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit00.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit00.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit00.Location = new Point(168, 18);
 			labelA2Bit00.Name = "labelA2Bit00";
 			labelA2Bit00.Size = new Size(24, 20);
 			labelA2Bit00.TabIndex = 1;
+			labelA2Bit00.ToolTipValues.EnableToolTips = true;
 			labelA2Bit00.Values.Text = "00";
 			labelA2Bit00.Click += LabelA2Bit00_Click;
 			labelA2Bit00.Enter += Control_Enter;
@@ -3845,11 +4263,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit05
 			// 
-			labelA2Bit05.Location = new Point(46, 18);
-			labelA2Bit05.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit05.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit05.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit05.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit05.Location = new Point(44, 18);
 			labelA2Bit05.Name = "labelA2Bit05";
 			labelA2Bit05.Size = new Size(24, 20);
 			labelA2Bit05.TabIndex = 13;
+			labelA2Bit05.ToolTipValues.EnableToolTips = true;
 			labelA2Bit05.Values.Text = "05";
 			labelA2Bit05.Click += LabelA2Bit05_Click;
 			labelA2Bit05.Enter += Control_Enter;
@@ -3859,11 +4280,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit05
 			// 
-			checkBoxA2Bit05.Location = new Point(49, 37);
-			checkBoxA2Bit05.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit05.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit05.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit05.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit05.Location = new Point(49, 38);
 			checkBoxA2Bit05.Name = "checkBoxA2Bit05";
 			checkBoxA2Bit05.Size = new Size(19, 14);
 			checkBoxA2Bit05.TabIndex = 12;
+			checkBoxA2Bit05.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit05.Values.Text = "";
 			checkBoxA2Bit05.CheckedChanged += CheckBoxA2Bit05_CheckedChanged;
 			checkBoxA2Bit05.Enter += Control_Enter;
@@ -3873,11 +4297,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit01
 			// 
-			checkBoxA2Bit01.Location = new Point(152, 37);
-			checkBoxA2Bit01.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit01.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit01.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit01.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit01.Location = new Point(152, 38);
 			checkBoxA2Bit01.Name = "checkBoxA2Bit01";
 			checkBoxA2Bit01.Size = new Size(19, 14);
 			checkBoxA2Bit01.TabIndex = 2;
+			checkBoxA2Bit01.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit01.Values.Text = "";
 			checkBoxA2Bit01.CheckedChanged += CheckBoxA2Bit01_CheckedChanged;
 			checkBoxA2Bit01.Enter += Control_Enter;
@@ -3887,11 +4314,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit04
 			// 
-			labelA2Bit04.Location = new Point(68, 18);
-			labelA2Bit04.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit04.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit04.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit04.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit04.Location = new Point(66, 18);
 			labelA2Bit04.Name = "labelA2Bit04";
 			labelA2Bit04.Size = new Size(24, 20);
 			labelA2Bit04.TabIndex = 11;
+			labelA2Bit04.ToolTipValues.EnableToolTips = true;
 			labelA2Bit04.Values.Text = "04";
 			labelA2Bit04.Click += LabelA2Bit04_Click;
 			labelA2Bit04.Enter += Control_Enter;
@@ -3901,11 +4331,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit04
 			// 
-			checkBoxA2Bit04.Location = new Point(71, 37);
-			checkBoxA2Bit04.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit04.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit04.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit04.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit04.Location = new Point(71, 38);
 			checkBoxA2Bit04.Name = "checkBoxA2Bit04";
 			checkBoxA2Bit04.Size = new Size(19, 14);
 			checkBoxA2Bit04.TabIndex = 10;
+			checkBoxA2Bit04.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit04.Values.Text = "";
 			checkBoxA2Bit04.CheckedChanged += CheckBoxA2Bit04_CheckedChanged;
 			checkBoxA2Bit04.Enter += Control_Enter;
@@ -3915,11 +4348,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit01
 			// 
-			labelA2Bit01.Location = new Point(148, 18);
-			labelA2Bit01.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit01.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit01.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit01.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit01.Location = new Point(147, 18);
 			labelA2Bit01.Name = "labelA2Bit01";
 			labelA2Bit01.Size = new Size(24, 20);
 			labelA2Bit01.TabIndex = 3;
+			labelA2Bit01.ToolTipValues.EnableToolTips = true;
 			labelA2Bit01.Values.Text = "01";
 			labelA2Bit01.Click += LabelA2Bit01_Click;
 			labelA2Bit01.Enter += Control_Enter;
@@ -3929,11 +4365,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit03
 			// 
-			labelA2Bit03.Location = new Point(104, 18);
-			labelA2Bit03.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit03.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit03.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit03.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit03.Location = new Point(101, 18);
 			labelA2Bit03.Name = "labelA2Bit03";
 			labelA2Bit03.Size = new Size(24, 20);
 			labelA2Bit03.TabIndex = 7;
+			labelA2Bit03.ToolTipValues.EnableToolTips = true;
 			labelA2Bit03.Values.Text = "03";
 			labelA2Bit03.Click += LabelA2Bit03_Click;
 			labelA2Bit03.Enter += Control_Enter;
@@ -3943,11 +4382,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit03
 			// 
-			checkBoxA2Bit03.Location = new Point(107, 37);
-			checkBoxA2Bit03.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit03.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit03.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit03.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit03.Location = new Point(107, 38);
 			checkBoxA2Bit03.Name = "checkBoxA2Bit03";
 			checkBoxA2Bit03.Size = new Size(19, 14);
 			checkBoxA2Bit03.TabIndex = 6;
+			checkBoxA2Bit03.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit03.Values.Text = "";
 			checkBoxA2Bit03.CheckedChanged += CheckBoxA2Bit03_CheckedChanged;
 			checkBoxA2Bit03.Enter += Control_Enter;
@@ -3957,11 +4399,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA2Bit02
 			// 
-			checkBoxA2Bit02.Location = new Point(130, 37);
-			checkBoxA2Bit02.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA2Bit02.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			checkBoxA2Bit02.AccessibleName = "Bit XX of byte 1 in A2";
+			checkBoxA2Bit02.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA2Bit02.Location = new Point(130, 38);
 			checkBoxA2Bit02.Name = "checkBoxA2Bit02";
 			checkBoxA2Bit02.Size = new Size(19, 14);
 			checkBoxA2Bit02.TabIndex = 4;
+			checkBoxA2Bit02.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit02.Values.Text = "";
 			checkBoxA2Bit02.CheckedChanged += CheckBoxA2Bit02_CheckedChanged;
 			checkBoxA2Bit02.Enter += Control_Enter;
@@ -3971,11 +4416,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA2Bit02
 			// 
-			labelA2Bit02.Location = new Point(126, 18);
-			labelA2Bit02.Margin = new Padding(4, 0, 4, 0);
+			labelA2Bit02.AccessibleDescription = "Shows bit XX of byte 1 in A2";
+			labelA2Bit02.AccessibleName = "Bit XX of byte 1 in A2";
+			labelA2Bit02.AccessibleRole = AccessibleRole.StaticText;
+			labelA2Bit02.Location = new Point(125, 18);
 			labelA2Bit02.Name = "labelA2Bit02";
 			labelA2Bit02.Size = new Size(24, 20);
 			labelA2Bit02.TabIndex = 5;
+			labelA2Bit02.ToolTipValues.EnableToolTips = true;
 			labelA2Bit02.Values.Text = "02";
 			labelA2Bit02.Click += LabelA2Bit02_Click;
 			labelA2Bit02.Enter += Control_Enter;
@@ -3985,6 +4433,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxAccumulator1
 			// 
+			groupBoxAccumulator1.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxAccumulator1.BackColor = Color.Transparent;
 			groupBoxAccumulator1.Controls.Add(textBoxA1Octal);
 			groupBoxAccumulator1.Controls.Add(labelA1Octal);
@@ -4009,6 +4458,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA1Octal
 			// 
+			textBoxA1Octal.AccessibleDescription = "Shows octal value of A1";
+			textBoxA1Octal.AccessibleName = "Octal value of A1";
+			textBoxA1Octal.AccessibleRole = AccessibleRole.Text;
 			textBoxA1Octal.Location = new Point(457, 28);
 			textBoxA1Octal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA1Octal.Name = "textBoxA1Octal";
@@ -4021,6 +4473,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Octal
 			// 
+			labelA1Octal.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Octal.Location = new Point(412, 31);
 			labelA1Octal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Octal.Name = "labelA1Octal";
@@ -4034,6 +4487,9 @@ namespace BitLogicCalculator
 			// 
 			// maskedTextBoxA1Network
 			// 
+			maskedTextBoxA1Network.AccessibleDescription = "Shows the network value of A1";
+			maskedTextBoxA1Network.AccessibleName = "Network value of A1";
+			maskedTextBoxA1Network.AccessibleRole = AccessibleRole.Text;
 			maskedTextBoxA1Network.Location = new Point(665, 28);
 			maskedTextBoxA1Network.Margin = new Padding(4, 3, 4, 3);
 			maskedTextBoxA1Network.Name = "maskedTextBoxA1Network";
@@ -4046,6 +4502,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Network
 			// 
+			labelA1Network.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Network.Location = new Point(614, 31);
 			labelA1Network.Margin = new Padding(4, 0, 4, 0);
 			labelA1Network.Name = "labelA1Network";
@@ -4059,6 +4516,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA1Decimal
 			// 
+			textBoxA1Decimal.AccessibleDescription = "Shows the decimal value of A1";
+			textBoxA1Decimal.AccessibleName = "Decimal value of A1";
+			textBoxA1Decimal.AccessibleRole = AccessibleRole.Text;
 			textBoxA1Decimal.Location = new Point(253, 28);
 			textBoxA1Decimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA1Decimal.Name = "textBoxA1Decimal";
@@ -4071,6 +4531,9 @@ namespace BitLogicCalculator
 			// 
 			// textBoxA1Hexadecimal
 			// 
+			textBoxA1Hexadecimal.AccessibleDescription = "Shows the hexadecimal value of A1";
+			textBoxA1Hexadecimal.AccessibleName = "Hexadecimal value of A1";
+			textBoxA1Hexadecimal.AccessibleRole = AccessibleRole.Text;
 			textBoxA1Hexadecimal.Location = new Point(50, 28);
 			textBoxA1Hexadecimal.Margin = new Padding(4, 3, 4, 3);
 			textBoxA1Hexadecimal.Name = "textBoxA1Hexadecimal";
@@ -4083,6 +4546,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Decimal
 			// 
+			labelA1Decimal.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Decimal.Location = new Point(208, 31);
 			labelA1Decimal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Decimal.Name = "labelA1Decimal";
@@ -4096,6 +4560,7 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Hexadecimal
 			// 
+			labelA1Hexadecimal.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Hexadecimal.Location = new Point(6, 31);
 			labelA1Hexadecimal.Margin = new Padding(4, 0, 4, 0);
 			labelA1Hexadecimal.Name = "labelA1Hexadecimal";
@@ -4109,6 +4574,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA1Byte4
 			// 
+			groupBoxA1Byte4.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA1Byte4.Controls.Add(labelA1Bit31);
 			groupBoxA1Byte4.Controls.Add(checkBoxA1Bit31);
 			groupBoxA1Byte4.Controls.Add(checkBoxA1Bit24);
@@ -4136,11 +4602,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit31
 			// 
-			labelA1Bit31.Location = new Point(7, 18);
-			labelA1Bit31.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit31.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit31.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit31.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit31.Location = new Point(0, 18);
 			labelA1Bit31.Name = "labelA1Bit31";
 			labelA1Bit31.Size = new Size(24, 20);
 			labelA1Bit31.TabIndex = 0;
+			labelA1Bit31.ToolTipValues.EnableToolTips = true;
 			labelA1Bit31.Values.Text = "31";
 			labelA1Bit31.Click += LabelA1Bit31_Click;
 			labelA1Bit31.Enter += Control_Enter;
@@ -4150,11 +4619,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit31
 			// 
-			checkBoxA1Bit31.Location = new Point(10, 37);
-			checkBoxA1Bit31.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit31.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit31.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit31.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit31.Location = new Point(5, 38);
 			checkBoxA1Bit31.Name = "checkBoxA1Bit31";
 			checkBoxA1Bit31.Size = new Size(19, 14);
 			checkBoxA1Bit31.TabIndex = 7;
+			checkBoxA1Bit31.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit31.Values.Text = "";
 			checkBoxA1Bit31.CheckedChanged += CheckBoxA1Bit31_CheckedChanged;
 			checkBoxA1Bit31.Enter += Control_Enter;
@@ -4164,11 +4636,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit24
 			// 
-			checkBoxA1Bit24.Location = new Point(172, 37);
-			checkBoxA1Bit24.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit24.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit24.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit24.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit24.Location = new Point(174, 38);
 			checkBoxA1Bit24.Name = "checkBoxA1Bit24";
 			checkBoxA1Bit24.Size = new Size(19, 14);
 			checkBoxA1Bit24.TabIndex = 13;
+			checkBoxA1Bit24.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit24.Values.Text = "";
 			checkBoxA1Bit24.CheckedChanged += CheckBoxA1Bit24_CheckedChanged;
 			checkBoxA1Bit24.Enter += Control_Enter;
@@ -4178,11 +4653,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit24
 			// 
+			labelA1Bit24.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit24.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit24.AccessibleRole = AccessibleRole.StaticText;
 			labelA1Bit24.Location = new Point(168, 18);
-			labelA1Bit24.Margin = new Padding(4, 0, 4, 0);
 			labelA1Bit24.Name = "labelA1Bit24";
 			labelA1Bit24.Size = new Size(24, 20);
 			labelA1Bit24.TabIndex = 6;
+			labelA1Bit24.ToolTipValues.EnableToolTips = true;
 			labelA1Bit24.Values.Text = "24";
 			labelA1Bit24.Click += LabelA1Bit24_Click;
 			labelA1Bit24.Enter += Control_Enter;
@@ -4192,11 +4670,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit25
 			// 
-			checkBoxA1Bit25.Location = new Point(149, 37);
-			checkBoxA1Bit25.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit25.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit25.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit25.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit25.Location = new Point(152, 38);
 			checkBoxA1Bit25.Name = "checkBoxA1Bit25";
 			checkBoxA1Bit25.Size = new Size(19, 14);
 			checkBoxA1Bit25.TabIndex = 12;
+			checkBoxA1Bit25.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit25.Values.Text = "";
 			checkBoxA1Bit25.CheckedChanged += CheckBoxA1Bit25_CheckedChanged;
 			checkBoxA1Bit25.Enter += Control_Enter;
@@ -4206,11 +4687,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit30
 			// 
-			labelA1Bit30.Location = new Point(29, 18);
-			labelA1Bit30.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit30.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit30.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit30.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit30.Location = new Point(22, 18);
 			labelA1Bit30.Name = "labelA1Bit30";
 			labelA1Bit30.Size = new Size(24, 20);
 			labelA1Bit30.TabIndex = 1;
+			labelA1Bit30.ToolTipValues.EnableToolTips = true;
 			labelA1Bit30.Values.Text = "30";
 			labelA1Bit30.Click += LabelA1Bit30_Click;
 			labelA1Bit30.Enter += Control_Enter;
@@ -4220,11 +4704,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit25
 			// 
-			labelA1Bit25.Location = new Point(146, 18);
-			labelA1Bit25.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit25.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit25.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit25.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit25.Location = new Point(147, 18);
 			labelA1Bit25.Name = "labelA1Bit25";
 			labelA1Bit25.Size = new Size(24, 20);
 			labelA1Bit25.TabIndex = 5;
+			labelA1Bit25.ToolTipValues.EnableToolTips = true;
 			labelA1Bit25.Values.Text = "25";
 			labelA1Bit25.Click += LabelA1Bit25_Click;
 			labelA1Bit25.Enter += Control_Enter;
@@ -4234,11 +4721,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit26
 			// 
-			checkBoxA1Bit26.Location = new Point(127, 37);
-			checkBoxA1Bit26.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit26.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit26.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit26.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit26.Location = new Point(130, 38);
 			checkBoxA1Bit26.Name = "checkBoxA1Bit26";
 			checkBoxA1Bit26.Size = new Size(19, 14);
 			checkBoxA1Bit26.TabIndex = 11;
+			checkBoxA1Bit26.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit26.Values.Text = "";
 			checkBoxA1Bit26.CheckedChanged += CheckBoxA1Bit26_CheckedChanged;
 			checkBoxA1Bit26.Enter += Control_Enter;
@@ -4248,11 +4738,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit30
 			// 
-			checkBoxA1Bit30.Location = new Point(33, 37);
-			checkBoxA1Bit30.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit30.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit30.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit30.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit30.Location = new Point(27, 38);
 			checkBoxA1Bit30.Name = "checkBoxA1Bit30";
 			checkBoxA1Bit30.Size = new Size(19, 14);
 			checkBoxA1Bit30.TabIndex = 8;
+			checkBoxA1Bit30.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit30.Values.Text = "";
 			checkBoxA1Bit30.CheckedChanged += CheckBoxA1Bit30_CheckedChanged;
 			checkBoxA1Bit30.Enter += Control_Enter;
@@ -4262,11 +4755,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit26
 			// 
-			labelA1Bit26.Location = new Point(124, 18);
-			labelA1Bit26.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit26.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit26.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit26.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit26.Location = new Point(125, 18);
 			labelA1Bit26.Name = "labelA1Bit26";
 			labelA1Bit26.Size = new Size(24, 20);
 			labelA1Bit26.TabIndex = 4;
+			labelA1Bit26.ToolTipValues.EnableToolTips = true;
 			labelA1Bit26.Values.Text = "26";
 			labelA1Bit26.Click += LabelA1Bit26_Click;
 			labelA1Bit26.Enter += Control_Enter;
@@ -4276,11 +4772,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit29
 			// 
-			labelA1Bit29.Location = new Point(51, 18);
-			labelA1Bit29.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit29.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit29.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit29.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit29.Location = new Point(44, 18);
 			labelA1Bit29.Name = "labelA1Bit29";
 			labelA1Bit29.Size = new Size(24, 20);
 			labelA1Bit29.TabIndex = 2;
+			labelA1Bit29.ToolTipValues.EnableToolTips = true;
 			labelA1Bit29.Values.Text = "29";
 			labelA1Bit29.Click += LabelA1Bit29_Click;
 			labelA1Bit29.Enter += Control_Enter;
@@ -4290,11 +4789,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit27
 			// 
-			checkBoxA1Bit27.Location = new Point(105, 37);
-			checkBoxA1Bit27.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit27.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit27.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit27.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit27.Location = new Point(107, 38);
 			checkBoxA1Bit27.Name = "checkBoxA1Bit27";
 			checkBoxA1Bit27.Size = new Size(19, 14);
 			checkBoxA1Bit27.TabIndex = 10;
+			checkBoxA1Bit27.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit27.Values.Text = "";
 			checkBoxA1Bit27.CheckedChanged += CheckBoxA1Bit27_CheckedChanged;
 			checkBoxA1Bit27.Enter += Control_Enter;
@@ -4304,11 +4806,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit29
 			// 
-			checkBoxA1Bit29.Location = new Point(55, 37);
-			checkBoxA1Bit29.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit29.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit29.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit29.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit29.Location = new Point(49, 38);
 			checkBoxA1Bit29.Name = "checkBoxA1Bit29";
 			checkBoxA1Bit29.Size = new Size(19, 14);
 			checkBoxA1Bit29.TabIndex = 9;
+			checkBoxA1Bit29.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit29.Values.Text = "";
 			checkBoxA1Bit29.CheckedChanged += CheckBoxA1Bit29_CheckedChanged;
 			checkBoxA1Bit29.Enter += Control_Enter;
@@ -4318,11 +4823,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit27
 			// 
-			labelA1Bit27.Location = new Point(102, 18);
-			labelA1Bit27.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit27.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit27.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit27.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit27.Location = new Point(101, 18);
 			labelA1Bit27.Name = "labelA1Bit27";
 			labelA1Bit27.Size = new Size(24, 20);
 			labelA1Bit27.TabIndex = 3;
+			labelA1Bit27.ToolTipValues.EnableToolTips = true;
 			labelA1Bit27.Values.Text = "27";
 			labelA1Bit27.Click += LabelA1Bit27_Click;
 			labelA1Bit27.Enter += Control_Enter;
@@ -4332,11 +4840,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit28
 			// 
-			labelA1Bit28.Location = new Point(74, 18);
-			labelA1Bit28.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit28.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			labelA1Bit28.AccessibleName = "Bit XX of byte 4 in A1";
+			labelA1Bit28.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit28.Location = new Point(66, 18);
 			labelA1Bit28.Name = "labelA1Bit28";
 			labelA1Bit28.Size = new Size(24, 20);
 			labelA1Bit28.TabIndex = 59;
+			labelA1Bit28.ToolTipValues.EnableToolTips = true;
 			labelA1Bit28.Values.Text = "28";
 			labelA1Bit28.Click += LabelA1Bit28_Click;
 			labelA1Bit28.Enter += Control_Enter;
@@ -4346,11 +4857,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit28
 			// 
-			checkBoxA1Bit28.Location = new Point(77, 37);
-			checkBoxA1Bit28.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit28.AccessibleDescription = "Shows bit XX of byte 4 in A1";
+			checkBoxA1Bit28.AccessibleName = "Bit XX of byte 4 in A1";
+			checkBoxA1Bit28.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit28.Location = new Point(71, 38);
 			checkBoxA1Bit28.Name = "checkBoxA1Bit28";
 			checkBoxA1Bit28.Size = new Size(19, 14);
 			checkBoxA1Bit28.TabIndex = 58;
+			checkBoxA1Bit28.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit28.Values.Text = "";
 			checkBoxA1Bit28.CheckedChanged += CheckBoxA1Bit28_CheckedChanged;
 			checkBoxA1Bit28.Enter += Control_Enter;
@@ -4360,6 +4874,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA1Byte3
 			// 
+			groupBoxA1Byte3.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA1Byte3.Controls.Add(checkBoxA1Bit23);
 			groupBoxA1Byte3.Controls.Add(checkBoxA1Bit21);
 			groupBoxA1Byte3.Controls.Add(labelA1Bit21);
@@ -4387,11 +4902,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit23
 			// 
-			checkBoxA1Bit23.Location = new Point(7, 37);
-			checkBoxA1Bit23.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit23.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit23.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit23.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit23.Location = new Point(5, 38);
 			checkBoxA1Bit23.Name = "checkBoxA1Bit23";
 			checkBoxA1Bit23.Size = new Size(19, 14);
 			checkBoxA1Bit23.TabIndex = 6;
+			checkBoxA1Bit23.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit23.Values.Text = "";
 			checkBoxA1Bit23.CheckedChanged += CheckBoxA1Bit23_CheckedChanged;
 			checkBoxA1Bit23.Enter += Control_Enter;
@@ -4401,11 +4919,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit21
 			// 
-			checkBoxA1Bit21.Location = new Point(51, 37);
-			checkBoxA1Bit21.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit21.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit21.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit21.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit21.Location = new Point(49, 38);
 			checkBoxA1Bit21.Name = "checkBoxA1Bit21";
 			checkBoxA1Bit21.Size = new Size(19, 14);
 			checkBoxA1Bit21.TabIndex = 7;
+			checkBoxA1Bit21.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit21.Values.Text = "";
 			checkBoxA1Bit21.CheckedChanged += CheckBoxA1Bit21_CheckedChanged;
 			checkBoxA1Bit21.Enter += Control_Enter;
@@ -4415,11 +4936,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit21
 			// 
-			labelA1Bit21.Location = new Point(48, 18);
-			labelA1Bit21.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit21.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit21.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit21.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit21.Location = new Point(44, 18);
 			labelA1Bit21.Name = "labelA1Bit21";
 			labelA1Bit21.Size = new Size(24, 20);
 			labelA1Bit21.TabIndex = 1;
+			labelA1Bit21.ToolTipValues.EnableToolTips = true;
 			labelA1Bit21.Values.Text = "21";
 			labelA1Bit21.Click += LabelA1Bit21_Click;
 			labelA1Bit21.Enter += Control_Enter;
@@ -4429,11 +4953,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit20
 			// 
-			labelA1Bit20.Location = new Point(70, 18);
-			labelA1Bit20.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit20.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit20.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit20.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit20.Location = new Point(66, 18);
 			labelA1Bit20.Name = "labelA1Bit20";
 			labelA1Bit20.Size = new Size(24, 20);
 			labelA1Bit20.TabIndex = 2;
+			labelA1Bit20.ToolTipValues.EnableToolTips = true;
 			labelA1Bit20.Values.Text = "20";
 			labelA1Bit20.Click += LabelA1Bit20_Click;
 			labelA1Bit20.Enter += Control_Enter;
@@ -4443,11 +4970,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit22
 			// 
-			checkBoxA1Bit22.Location = new Point(29, 37);
-			checkBoxA1Bit22.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit22.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit22.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit22.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit22.Location = new Point(27, 38);
 			checkBoxA1Bit22.Name = "checkBoxA1Bit22";
 			checkBoxA1Bit22.Size = new Size(19, 14);
 			checkBoxA1Bit22.TabIndex = 46;
+			checkBoxA1Bit22.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit22.Values.Text = "";
 			checkBoxA1Bit22.CheckedChanged += CheckBoxA1Bit22_CheckedChanged;
 			checkBoxA1Bit22.Enter += Control_Enter;
@@ -4457,11 +4987,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit20
 			// 
-			checkBoxA1Bit20.Location = new Point(74, 37);
-			checkBoxA1Bit20.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit20.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit20.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit20.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit20.Location = new Point(71, 38);
 			checkBoxA1Bit20.Name = "checkBoxA1Bit20";
 			checkBoxA1Bit20.Size = new Size(19, 14);
 			checkBoxA1Bit20.TabIndex = 8;
+			checkBoxA1Bit20.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit20.Values.Text = "";
 			checkBoxA1Bit20.CheckedChanged += CheckBoxA1Bit20_CheckedChanged;
 			checkBoxA1Bit20.Enter += Control_Enter;
@@ -4471,11 +5004,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit22
 			// 
-			labelA1Bit22.Location = new Point(26, 18);
-			labelA1Bit22.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit22.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit22.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit22.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit22.Location = new Point(22, 18);
 			labelA1Bit22.Name = "labelA1Bit22";
 			labelA1Bit22.Size = new Size(24, 20);
 			labelA1Bit22.TabIndex = 0;
+			labelA1Bit22.ToolTipValues.EnableToolTips = true;
 			labelA1Bit22.Values.Text = "22";
 			labelA1Bit22.Click += LabelA1Bit22_Click;
 			labelA1Bit22.Enter += Control_Enter;
@@ -4485,11 +5021,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit19
 			// 
-			labelA1Bit19.Location = new Point(104, 18);
-			labelA1Bit19.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit19.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit19.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit19.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit19.Location = new Point(101, 18);
 			labelA1Bit19.Name = "labelA1Bit19";
 			labelA1Bit19.Size = new Size(24, 20);
 			labelA1Bit19.TabIndex = 3;
+			labelA1Bit19.ToolTipValues.EnableToolTips = true;
 			labelA1Bit19.Values.Text = "19";
 			labelA1Bit19.Click += LabelA1Bit19_Click;
 			labelA1Bit19.Enter += Control_Enter;
@@ -4499,11 +5038,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit16
 			// 
-			checkBoxA1Bit16.Location = new Point(174, 37);
-			checkBoxA1Bit16.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit16.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit16.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit16.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit16.Location = new Point(174, 38);
 			checkBoxA1Bit16.Name = "checkBoxA1Bit16";
 			checkBoxA1Bit16.Size = new Size(19, 14);
 			checkBoxA1Bit16.TabIndex = 10;
+			checkBoxA1Bit16.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit16.Values.Text = "";
 			checkBoxA1Bit16.CheckedChanged += CheckBoxA1Bit16_CheckedChanged;
 			checkBoxA1Bit16.Enter += Control_Enter;
@@ -4513,11 +5055,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit19
 			// 
-			checkBoxA1Bit19.Location = new Point(107, 37);
-			checkBoxA1Bit19.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit19.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit19.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit19.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit19.Location = new Point(107, 38);
 			checkBoxA1Bit19.Name = "checkBoxA1Bit19";
 			checkBoxA1Bit19.Size = new Size(19, 14);
 			checkBoxA1Bit19.TabIndex = 9;
+			checkBoxA1Bit19.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit19.Values.Text = "";
 			checkBoxA1Bit19.CheckedChanged += CheckBoxA1Bit19_CheckedChanged;
 			checkBoxA1Bit19.Enter += Control_Enter;
@@ -4527,11 +5072,12 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit23
 			// 
-			labelA1Bit23.Location = new Point(4, 18);
-			labelA1Bit23.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit23.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit23.Location = new Point(0, 18);
 			labelA1Bit23.Name = "labelA1Bit23";
 			labelA1Bit23.Size = new Size(24, 20);
 			labelA1Bit23.TabIndex = 49;
+			labelA1Bit23.ToolTipValues.EnableToolTips = true;
 			labelA1Bit23.Values.Text = "23";
 			labelA1Bit23.Click += LabelA1Bit23_Click;
 			labelA1Bit23.Enter += Control_Enter;
@@ -4541,11 +5087,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit18
 			// 
-			labelA1Bit18.Location = new Point(126, 18);
-			labelA1Bit18.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit18.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit18.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit18.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit18.Location = new Point(125, 18);
 			labelA1Bit18.Name = "labelA1Bit18";
 			labelA1Bit18.Size = new Size(24, 20);
 			labelA1Bit18.TabIndex = 4;
+			labelA1Bit18.ToolTipValues.EnableToolTips = true;
 			labelA1Bit18.Values.Text = "18";
 			labelA1Bit18.Click += LabelA1Bit18_Click;
 			labelA1Bit18.Enter += Control_Enter;
@@ -4555,11 +5104,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit16
 			// 
-			labelA1Bit16.Location = new Point(170, 18);
-			labelA1Bit16.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit16.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit16.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit16.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit16.Location = new Point(168, 18);
 			labelA1Bit16.Name = "labelA1Bit16";
 			labelA1Bit16.Size = new Size(24, 20);
 			labelA1Bit16.TabIndex = 5;
+			labelA1Bit16.ToolTipValues.EnableToolTips = true;
 			labelA1Bit16.Values.Text = "16";
 			labelA1Bit16.Click += LabelA1Bit16_Click;
 			labelA1Bit16.Enter += Control_Enter;
@@ -4569,11 +5121,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit18
 			// 
-			checkBoxA1Bit18.Location = new Point(130, 37);
-			checkBoxA1Bit18.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit18.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit18.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit18.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit18.Location = new Point(130, 38);
 			checkBoxA1Bit18.Name = "checkBoxA1Bit18";
 			checkBoxA1Bit18.Size = new Size(19, 14);
 			checkBoxA1Bit18.TabIndex = 38;
+			checkBoxA1Bit18.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit18.Values.Text = "";
 			checkBoxA1Bit18.CheckedChanged += CheckBoxA1Bit18_CheckedChanged;
 			checkBoxA1Bit18.Enter += Control_Enter;
@@ -4583,11 +5138,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit17
 			// 
-			labelA1Bit17.Location = new Point(148, 18);
-			labelA1Bit17.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit17.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			labelA1Bit17.AccessibleName = "Bit XX of byte 3 in A1";
+			labelA1Bit17.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit17.Location = new Point(147, 18);
 			labelA1Bit17.Name = "labelA1Bit17";
 			labelA1Bit17.Size = new Size(24, 20);
 			labelA1Bit17.TabIndex = 37;
+			labelA1Bit17.ToolTipValues.EnableToolTips = true;
 			labelA1Bit17.Values.Text = "17";
 			labelA1Bit17.Click += LabelA1Bit17_Click;
 			labelA1Bit17.Enter += Control_Enter;
@@ -4597,11 +5155,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit17
 			// 
-			checkBoxA1Bit17.Location = new Point(152, 37);
-			checkBoxA1Bit17.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit17.AccessibleDescription = "Shows bit XX of byte 3 in A1";
+			checkBoxA1Bit17.AccessibleName = "Bit XX of byte 3 in A1";
+			checkBoxA1Bit17.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit17.Location = new Point(152, 38);
 			checkBoxA1Bit17.Name = "checkBoxA1Bit17";
 			checkBoxA1Bit17.Size = new Size(19, 14);
 			checkBoxA1Bit17.TabIndex = 36;
+			checkBoxA1Bit17.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit17.Values.Text = "";
 			checkBoxA1Bit17.CheckedChanged += CheckBoxA1Bit17_CheckedChanged;
 			checkBoxA1Bit17.Enter += Control_Enter;
@@ -4611,6 +5172,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA1Byte2
 			// 
+			groupBoxA1Byte2.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA1Byte2.Controls.Add(checkBoxA1Bit15);
 			groupBoxA1Byte2.Controls.Add(checkBoxA1Bit10);
 			groupBoxA1Byte2.Controls.Add(labelA1Bit10);
@@ -4638,11 +5200,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit15
 			// 
-			checkBoxA1Bit15.Location = new Point(7, 37);
-			checkBoxA1Bit15.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit15.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit15.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit15.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit15.Location = new Point(5, 38);
 			checkBoxA1Bit15.Name = "checkBoxA1Bit15";
 			checkBoxA1Bit15.Size = new Size(19, 14);
 			checkBoxA1Bit15.TabIndex = 6;
+			checkBoxA1Bit15.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit15.Values.Text = "";
 			checkBoxA1Bit15.CheckedChanged += CheckBoxA1Bit15_CheckedChanged;
 			checkBoxA1Bit15.Enter += Control_Enter;
@@ -4652,11 +5217,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit10
 			// 
-			checkBoxA1Bit10.Location = new Point(130, 37);
-			checkBoxA1Bit10.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit10.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit10.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit10.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit10.Location = new Point(130, 38);
 			checkBoxA1Bit10.Name = "checkBoxA1Bit10";
 			checkBoxA1Bit10.Size = new Size(19, 14);
 			checkBoxA1Bit10.TabIndex = 9;
+			checkBoxA1Bit10.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit10.Values.Text = "";
 			checkBoxA1Bit10.CheckedChanged += CheckBoxA1Bit10_CheckedChanged;
 			checkBoxA1Bit10.Enter += Control_Enter;
@@ -4666,11 +5234,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit10
 			// 
-			labelA1Bit10.Location = new Point(126, 18);
-			labelA1Bit10.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit10.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit10.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit10.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit10.Location = new Point(125, 18);
 			labelA1Bit10.Name = "labelA1Bit10";
 			labelA1Bit10.Size = new Size(24, 20);
 			labelA1Bit10.TabIndex = 3;
+			labelA1Bit10.ToolTipValues.EnableToolTips = true;
 			labelA1Bit10.Values.Text = "10";
 			labelA1Bit10.Click += LabelA1Bit10_Click;
 			labelA1Bit10.Enter += Control_Enter;
@@ -4680,11 +5251,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit09
 			// 
-			labelA1Bit09.Location = new Point(148, 18);
-			labelA1Bit09.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit09.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit09.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit09.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit09.Location = new Point(147, 18);
 			labelA1Bit09.Name = "labelA1Bit09";
 			labelA1Bit09.Size = new Size(24, 20);
 			labelA1Bit09.TabIndex = 4;
+			labelA1Bit09.ToolTipValues.EnableToolTips = true;
 			labelA1Bit09.Values.Text = "09";
 			labelA1Bit09.Click += LabelA1Bit09_Click;
 			labelA1Bit09.Enter += Control_Enter;
@@ -4694,11 +5268,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit11
 			// 
-			checkBoxA1Bit11.Location = new Point(107, 37);
-			checkBoxA1Bit11.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit11.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit11.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit11.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit11.Location = new Point(107, 38);
 			checkBoxA1Bit11.Name = "checkBoxA1Bit11";
 			checkBoxA1Bit11.Size = new Size(19, 14);
 			checkBoxA1Bit11.TabIndex = 8;
+			checkBoxA1Bit11.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit11.Values.Text = "";
 			checkBoxA1Bit11.CheckedChanged += CheckBoxA1Bit11_CheckedChanged;
 			checkBoxA1Bit11.Enter += Control_Enter;
@@ -4708,11 +5285,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit09
 			// 
-			checkBoxA1Bit09.Location = new Point(152, 37);
-			checkBoxA1Bit09.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit09.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit09.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit09.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit09.Location = new Point(152, 38);
 			checkBoxA1Bit09.Name = "checkBoxA1Bit09";
 			checkBoxA1Bit09.Size = new Size(19, 14);
 			checkBoxA1Bit09.TabIndex = 10;
+			checkBoxA1Bit09.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit09.Values.Text = "";
 			checkBoxA1Bit09.CheckedChanged += CheckBoxA1Bit09_CheckedChanged;
 			checkBoxA1Bit09.Enter += Control_Enter;
@@ -4722,11 +5302,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit11
 			// 
-			labelA1Bit11.Location = new Point(104, 18);
-			labelA1Bit11.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit11.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit11.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit11.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit11.Location = new Point(101, 18);
 			labelA1Bit11.Name = "labelA1Bit11";
 			labelA1Bit11.Size = new Size(24, 20);
 			labelA1Bit11.TabIndex = 2;
+			labelA1Bit11.ToolTipValues.EnableToolTips = true;
 			labelA1Bit11.Values.Text = "11";
 			labelA1Bit11.Click += LabelA1Bit11_Click;
 			labelA1Bit11.Enter += Control_Enter;
@@ -4736,11 +5319,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit15
 			// 
-			labelA1Bit15.Location = new Point(4, 18);
-			labelA1Bit15.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit15.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit15.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit15.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit15.Location = new Point(0, 18);
 			labelA1Bit15.Name = "labelA1Bit15";
 			labelA1Bit15.Size = new Size(24, 20);
 			labelA1Bit15.TabIndex = 0;
+			labelA1Bit15.ToolTipValues.EnableToolTips = true;
 			labelA1Bit15.Values.Text = "15";
 			labelA1Bit15.Click += LabelA1Bit15_Click;
 			labelA1Bit15.Enter += Control_Enter;
@@ -4750,11 +5336,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit08
 			// 
-			labelA1Bit08.Location = new Point(170, 18);
-			labelA1Bit08.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit08.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit08.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit08.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit08.Location = new Point(168, 18);
 			labelA1Bit08.Name = "labelA1Bit08";
 			labelA1Bit08.Size = new Size(24, 20);
 			labelA1Bit08.TabIndex = 5;
+			labelA1Bit08.ToolTipValues.EnableToolTips = true;
 			labelA1Bit08.Values.Text = "08";
 			labelA1Bit08.Click += LabelA1Bit08_Click;
 			labelA1Bit08.Enter += Control_Enter;
@@ -4764,11 +5353,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit12
 			// 
-			checkBoxA1Bit12.Location = new Point(74, 37);
-			checkBoxA1Bit12.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit12.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit12.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit12.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit12.Location = new Point(71, 38);
 			checkBoxA1Bit12.Name = "checkBoxA1Bit12";
 			checkBoxA1Bit12.Size = new Size(19, 14);
 			checkBoxA1Bit12.TabIndex = 7;
+			checkBoxA1Bit12.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit12.Values.Text = "";
 			checkBoxA1Bit12.CheckedChanged += CheckBoxA1Bit12_CheckedChanged;
 			checkBoxA1Bit12.Enter += Control_Enter;
@@ -4778,11 +5370,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit08
 			// 
-			checkBoxA1Bit08.Location = new Point(174, 37);
-			checkBoxA1Bit08.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit08.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit08.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit08.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit08.Location = new Point(174, 38);
 			checkBoxA1Bit08.Name = "checkBoxA1Bit08";
 			checkBoxA1Bit08.Size = new Size(19, 14);
 			checkBoxA1Bit08.TabIndex = 11;
+			checkBoxA1Bit08.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit08.Values.Text = "";
 			checkBoxA1Bit08.CheckedChanged += CheckBoxA1Bit08_CheckedChanged;
 			checkBoxA1Bit08.Enter += Control_Enter;
@@ -4792,11 +5387,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit12
 			// 
-			labelA1Bit12.Location = new Point(70, 18);
-			labelA1Bit12.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit12.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit12.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit12.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit12.Location = new Point(66, 18);
 			labelA1Bit12.Name = "labelA1Bit12";
 			labelA1Bit12.Size = new Size(24, 20);
 			labelA1Bit12.TabIndex = 1;
+			labelA1Bit12.ToolTipValues.EnableToolTips = true;
 			labelA1Bit12.Values.Text = "12";
 			labelA1Bit12.Click += LabelA1Bit12_Click;
 			labelA1Bit12.Enter += Control_Enter;
@@ -4806,11 +5404,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit13
 			// 
-			checkBoxA1Bit13.Location = new Point(51, 37);
-			checkBoxA1Bit13.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit13.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit13.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit13.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit13.Location = new Point(49, 38);
 			checkBoxA1Bit13.Name = "checkBoxA1Bit13";
 			checkBoxA1Bit13.Size = new Size(19, 14);
 			checkBoxA1Bit13.TabIndex = 28;
+			checkBoxA1Bit13.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit13.Values.Text = "";
 			checkBoxA1Bit13.CheckedChanged += CheckBoxA1Bit13_CheckedChanged;
 			checkBoxA1Bit13.Enter += Control_Enter;
@@ -4820,11 +5421,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit13
 			// 
-			labelA1Bit13.Location = new Point(48, 18);
-			labelA1Bit13.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit13.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit13.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit13.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit13.Location = new Point(44, 18);
 			labelA1Bit13.Name = "labelA1Bit13";
 			labelA1Bit13.Size = new Size(24, 20);
 			labelA1Bit13.TabIndex = 29;
+			labelA1Bit13.ToolTipValues.EnableToolTips = true;
 			labelA1Bit13.Values.Text = "13";
 			labelA1Bit13.Click += LabelA1Bit13_Click;
 			labelA1Bit13.Enter += Control_Enter;
@@ -4834,11 +5438,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit14
 			// 
-			checkBoxA1Bit14.Location = new Point(29, 37);
-			checkBoxA1Bit14.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit14.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			checkBoxA1Bit14.AccessibleName = "Bit XX of byte 2 in A1";
+			checkBoxA1Bit14.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit14.Location = new Point(27, 38);
 			checkBoxA1Bit14.Name = "checkBoxA1Bit14";
 			checkBoxA1Bit14.Size = new Size(19, 14);
 			checkBoxA1Bit14.TabIndex = 30;
+			checkBoxA1Bit14.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit14.Values.Text = "";
 			checkBoxA1Bit14.CheckedChanged += CheckBoxA1Bit14_CheckedChanged;
 			checkBoxA1Bit14.Enter += Control_Enter;
@@ -4848,11 +5455,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit14
 			// 
-			labelA1Bit14.Location = new Point(26, 18);
-			labelA1Bit14.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit14.AccessibleDescription = "Shows bit XX of byte 2 in A1";
+			labelA1Bit14.AccessibleName = "Bit XX of byte 2 in A1";
+			labelA1Bit14.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit14.Location = new Point(22, 18);
 			labelA1Bit14.Name = "labelA1Bit14";
 			labelA1Bit14.Size = new Size(24, 20);
 			labelA1Bit14.TabIndex = 31;
+			labelA1Bit14.ToolTipValues.EnableToolTips = true;
 			labelA1Bit14.Values.Text = "14";
 			labelA1Bit14.Click += LabelA1Bit14_Click;
 			labelA1Bit14.Enter += Control_Enter;
@@ -4862,6 +5472,7 @@ namespace BitLogicCalculator
 			// 
 			// groupBoxA1Byte1
 			// 
+			groupBoxA1Byte1.AccessibleRole = AccessibleRole.Grouping;
 			groupBoxA1Byte1.Controls.Add(labelA1Bit07);
 			groupBoxA1Byte1.Controls.Add(checkBoxA1Bit07);
 			groupBoxA1Byte1.Controls.Add(labelA1Bit06);
@@ -4889,11 +5500,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit07
 			// 
-			labelA1Bit07.Location = new Point(1, 18);
-			labelA1Bit07.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit07.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit07.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit07.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit07.Location = new Point(0, 18);
 			labelA1Bit07.Name = "labelA1Bit07";
 			labelA1Bit07.Size = new Size(24, 20);
 			labelA1Bit07.TabIndex = 0;
+			labelA1Bit07.ToolTipValues.EnableToolTips = true;
 			labelA1Bit07.Values.Text = "07";
 			labelA1Bit07.Click += LabelA1Bit07_Click;
 			labelA1Bit07.Enter += Control_Enter;
@@ -4903,11 +5517,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit07
 			// 
-			checkBoxA1Bit07.Location = new Point(5, 37);
-			checkBoxA1Bit07.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit07.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit07.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit07.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit07.Location = new Point(5, 38);
 			checkBoxA1Bit07.Name = "checkBoxA1Bit07";
 			checkBoxA1Bit07.Size = new Size(19, 14);
 			checkBoxA1Bit07.TabIndex = 7;
+			checkBoxA1Bit07.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit07.Values.Text = "";
 			checkBoxA1Bit07.CheckedChanged += CheckBoxA1Bit07_CheckedChanged;
 			checkBoxA1Bit07.Enter += Control_Enter;
@@ -4917,11 +5534,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit06
 			// 
-			labelA1Bit06.Location = new Point(23, 18);
-			labelA1Bit06.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit06.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit06.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit06.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit06.Location = new Point(22, 18);
 			labelA1Bit06.Name = "labelA1Bit06";
 			labelA1Bit06.Size = new Size(24, 20);
 			labelA1Bit06.TabIndex = 1;
+			labelA1Bit06.ToolTipValues.EnableToolTips = true;
 			labelA1Bit06.Values.Text = "06";
 			labelA1Bit06.Click += LabelA1Bit06_Click;
 			labelA1Bit06.Enter += Control_Enter;
@@ -4931,11 +5551,16 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit00
 			// 
-			checkBoxA1Bit00.Location = new Point(174, 37);
-			checkBoxA1Bit00.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit00.AccessibleDescription = "Shows bit 00 of byte 1 in A1";
+			checkBoxA1Bit00.AccessibleName = "Bit 00 of byte 1 in A1";
+			checkBoxA1Bit00.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit00.Location = new Point(174, 38);
 			checkBoxA1Bit00.Name = "checkBoxA1Bit00";
 			checkBoxA1Bit00.Size = new Size(19, 14);
 			checkBoxA1Bit00.TabIndex = 12;
+			checkBoxA1Bit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in A1";
+			checkBoxA1Bit00.ToolTipValues.EnableToolTips = true;
+			checkBoxA1Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A1";
 			checkBoxA1Bit00.Values.Text = "";
 			checkBoxA1Bit00.CheckedChanged += CheckBoxA1Bit00_CheckedChanged;
 			checkBoxA1Bit00.Enter += Control_Enter;
@@ -4945,11 +5570,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit06
 			// 
-			checkBoxA1Bit06.Location = new Point(27, 37);
-			checkBoxA1Bit06.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit06.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit06.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit06.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit06.Location = new Point(27, 38);
 			checkBoxA1Bit06.Name = "checkBoxA1Bit06";
 			checkBoxA1Bit06.Size = new Size(19, 14);
 			checkBoxA1Bit06.TabIndex = 8;
+			checkBoxA1Bit06.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit06.Values.Text = "";
 			checkBoxA1Bit06.CheckedChanged += CheckBoxA1Bit06_CheckedChanged;
 			checkBoxA1Bit06.Enter += Control_Enter;
@@ -4959,11 +5587,16 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit00
 			// 
-			labelA1Bit00.Location = new Point(170, 18);
-			labelA1Bit00.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit00.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit00.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit00.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit00.Location = new Point(168, 18);
 			labelA1Bit00.Name = "labelA1Bit00";
 			labelA1Bit00.Size = new Size(24, 20);
 			labelA1Bit00.TabIndex = 6;
+			labelA1Bit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in A1";
+			labelA1Bit00.ToolTipValues.EnableToolTips = true;
+			labelA1Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A1";
 			labelA1Bit00.Values.Text = "00";
 			labelA1Bit00.Click += LabelA1Bit00_Click;
 			labelA1Bit00.Enter += Control_Enter;
@@ -4973,11 +5606,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit05
 			// 
-			labelA1Bit05.Location = new Point(46, 18);
-			labelA1Bit05.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit05.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit05.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit05.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit05.Location = new Point(44, 18);
 			labelA1Bit05.Name = "labelA1Bit05";
 			labelA1Bit05.Size = new Size(24, 20);
 			labelA1Bit05.TabIndex = 2;
+			labelA1Bit05.ToolTipValues.EnableToolTips = true;
 			labelA1Bit05.Values.Text = "05";
 			labelA1Bit05.Click += LabelA1Bit05_Click;
 			labelA1Bit05.Enter += Control_Enter;
@@ -4987,11 +5623,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit05
 			// 
-			checkBoxA1Bit05.Location = new Point(49, 37);
-			checkBoxA1Bit05.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit05.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit05.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit05.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit05.Location = new Point(49, 38);
 			checkBoxA1Bit05.Name = "checkBoxA1Bit05";
 			checkBoxA1Bit05.Size = new Size(19, 14);
 			checkBoxA1Bit05.TabIndex = 9;
+			checkBoxA1Bit05.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit05.Values.Text = "";
 			checkBoxA1Bit05.CheckedChanged += CheckBoxA1Bit05_CheckedChanged;
 			checkBoxA1Bit05.Enter += Control_Enter;
@@ -5001,11 +5640,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit01
 			// 
-			checkBoxA1Bit01.Location = new Point(152, 37);
-			checkBoxA1Bit01.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit01.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit01.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit01.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit01.Location = new Point(152, 38);
 			checkBoxA1Bit01.Name = "checkBoxA1Bit01";
 			checkBoxA1Bit01.Size = new Size(19, 14);
 			checkBoxA1Bit01.TabIndex = 11;
+			checkBoxA1Bit01.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit01.Values.Text = "";
 			checkBoxA1Bit01.CheckedChanged += CheckBoxA1Bit01_CheckedChanged;
 			checkBoxA1Bit01.Enter += Control_Enter;
@@ -5015,11 +5657,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit04
 			// 
-			labelA1Bit04.Location = new Point(68, 18);
-			labelA1Bit04.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit04.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit04.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit04.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit04.Location = new Point(66, 18);
 			labelA1Bit04.Name = "labelA1Bit04";
 			labelA1Bit04.Size = new Size(24, 20);
 			labelA1Bit04.TabIndex = 3;
+			labelA1Bit04.ToolTipValues.EnableToolTips = true;
 			labelA1Bit04.Values.Text = "04";
 			labelA1Bit04.Click += LabelA1Bit04_Click;
 			labelA1Bit04.Enter += Control_Enter;
@@ -5029,11 +5674,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit04
 			// 
-			checkBoxA1Bit04.Location = new Point(71, 37);
-			checkBoxA1Bit04.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit04.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit04.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit04.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit04.Location = new Point(71, 38);
 			checkBoxA1Bit04.Name = "checkBoxA1Bit04";
 			checkBoxA1Bit04.Size = new Size(19, 14);
 			checkBoxA1Bit04.TabIndex = 10;
+			checkBoxA1Bit04.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit04.Values.Text = "";
 			checkBoxA1Bit04.CheckedChanged += CheckBoxA1Bit04_CheckedChanged;
 			checkBoxA1Bit04.Enter += Control_Enter;
@@ -5043,11 +5691,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit01
 			// 
-			labelA1Bit01.Location = new Point(148, 18);
-			labelA1Bit01.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit01.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit01.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit01.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit01.Location = new Point(147, 18);
 			labelA1Bit01.Name = "labelA1Bit01";
 			labelA1Bit01.Size = new Size(24, 20);
 			labelA1Bit01.TabIndex = 5;
+			labelA1Bit01.ToolTipValues.EnableToolTips = true;
 			labelA1Bit01.Values.Text = "01";
 			labelA1Bit01.Click += LabelA1Bit01_Click;
 			labelA1Bit01.Enter += Control_Enter;
@@ -5057,11 +5708,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit03
 			// 
-			labelA1Bit03.Location = new Point(104, 18);
-			labelA1Bit03.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit03.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit03.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit03.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit03.Location = new Point(101, 18);
 			labelA1Bit03.Name = "labelA1Bit03";
 			labelA1Bit03.Size = new Size(24, 20);
 			labelA1Bit03.TabIndex = 4;
+			labelA1Bit03.ToolTipValues.EnableToolTips = true;
 			labelA1Bit03.Values.Text = "03";
 			labelA1Bit03.Click += LabelA1Bit03_Click;
 			labelA1Bit03.Enter += Control_Enter;
@@ -5071,11 +5725,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit03
 			// 
-			checkBoxA1Bit03.Location = new Point(107, 37);
-			checkBoxA1Bit03.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit03.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit03.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit03.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit03.Location = new Point(107, 38);
 			checkBoxA1Bit03.Name = "checkBoxA1Bit03";
 			checkBoxA1Bit03.Size = new Size(19, 14);
 			checkBoxA1Bit03.TabIndex = 6;
+			checkBoxA1Bit03.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit03.Values.Text = "";
 			checkBoxA1Bit03.CheckedChanged += CheckBoxA1Bit03_CheckedChanged;
 			checkBoxA1Bit03.Enter += Control_Enter;
@@ -5085,11 +5742,14 @@ namespace BitLogicCalculator
 			// 
 			// checkBoxA1Bit02
 			// 
-			checkBoxA1Bit02.Location = new Point(130, 37);
-			checkBoxA1Bit02.Margin = new Padding(4, 3, 4, 3);
+			checkBoxA1Bit02.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			checkBoxA1Bit02.AccessibleName = "Bit XX of byte 1 in A1";
+			checkBoxA1Bit02.AccessibleRole = AccessibleRole.CheckButton;
+			checkBoxA1Bit02.Location = new Point(130, 38);
 			checkBoxA1Bit02.Name = "checkBoxA1Bit02";
 			checkBoxA1Bit02.Size = new Size(19, 14);
 			checkBoxA1Bit02.TabIndex = 4;
+			checkBoxA1Bit02.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit02.Values.Text = "";
 			checkBoxA1Bit02.CheckedChanged += CheckBoxA1Bit02_CheckedChanged;
 			checkBoxA1Bit02.Enter += Control_Enter;
@@ -5099,11 +5759,14 @@ namespace BitLogicCalculator
 			// 
 			// labelA1Bit02
 			// 
-			labelA1Bit02.Location = new Point(126, 18);
-			labelA1Bit02.Margin = new Padding(4, 0, 4, 0);
+			labelA1Bit02.AccessibleDescription = "Shows bit XX of byte 1 in A1";
+			labelA1Bit02.AccessibleName = "Bit XX of byte 1 in A1";
+			labelA1Bit02.AccessibleRole = AccessibleRole.StaticText;
+			labelA1Bit02.Location = new Point(125, 18);
 			labelA1Bit02.Name = "labelA1Bit02";
 			labelA1Bit02.Size = new Size(24, 20);
 			labelA1Bit02.TabIndex = 5;
+			labelA1Bit02.ToolTipValues.EnableToolTips = true;
 			labelA1Bit02.Values.Text = "02";
 			labelA1Bit02.Click += LabelA1Bit02_Click;
 			labelA1Bit02.Enter += Control_Enter;
@@ -5118,6 +5781,9 @@ namespace BitLogicCalculator
 			// 
 			// MainForm
 			// 
+			AccessibleDescription = "Shows the application";
+			AccessibleName = "application";
+			AccessibleRole = AccessibleRole.Window;
 			AllowButtonSpecToolTips = true;
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -5139,10 +5805,14 @@ namespace BitLogicCalculator
 			toolStripContainer.PerformLayout();
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)comboBoxConversionOutputUnit).EndInit();
+			((System.ComponentModel.ISupportInitialize)comboBoxConversionInputUnit).EndInit();
 			groupBoxApplicationSettings.ResumeLayout(false);
 			groupBoxApplicationSettings.PerformLayout();
 			groupBoxDataFormat.ResumeLayout(false);
 			groupBoxDataFormat.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)comboBoxDataSize).EndInit();
+			((System.ComponentModel.ISupportInitialize)comboBoxMsbRepresentation).EndInit();
 			groupBoxOperations.ResumeLayout(false);
 			groupBoxShiftIndicator.ResumeLayout(false);
 			groupBoxShiftIndicator.PerformLayout();
@@ -5434,10 +6104,10 @@ namespace BitLogicCalculator
 		private Krypton.Toolkit.KryptonButton buttonRotateRightA1;
 		private Krypton.Toolkit.KryptonButton buttonCopyResultToA2;
 		private Krypton.Toolkit.KryptonButton buttonCopyResultToA1;
-		private System.Windows.Forms.ComboBox comboBoxMsbRepresentation;
+		private Krypton.Toolkit.KryptonComboBox comboBoxMsbRepresentation;
 		private Krypton.Toolkit.KryptonLabel labelDataSize;
 		private System.Windows.Forms.GroupBox groupBoxDataFormat;
-		private System.Windows.Forms.ComboBox comboBoxDataSize;
+		private Krypton.Toolkit.KryptonComboBox comboBoxDataSize;
 		private Krypton.Toolkit.KryptonLabel labelMsbRepresentation;
 		private Krypton.Toolkit.KryptonButton buttonSwapA1A2;
 		private Krypton.Toolkit.KryptonButton buttonFillA2;
@@ -5455,8 +6125,8 @@ namespace BitLogicCalculator
 		private Krypton.Toolkit.KryptonCheckBox checkBoxAlwaysOnTop;
 		private Krypton.Toolkit.KryptonButton buttonRandomizeA1;
 		private Krypton.Toolkit.KryptonButton buttonRandomizeA2;
-		private Krypton.Toolkit.KryptonButton buttonSubjunktionA2A1;
-		private Krypton.Toolkit.KryptonButton buttonSubjunktionA1A2;
+		private Krypton.Toolkit.KryptonButton buttonSubjunctionA2A1;
+		private Krypton.Toolkit.KryptonButton buttonSubjunctionA1A2;
 		private Krypton.Toolkit.KryptonButton buttonInhibitionA2A1;
 		private Krypton.Toolkit.KryptonButton buttonInhibitionA1A2;
 		private Krypton.Toolkit.KryptonTextBox textBoxResultOctal;
@@ -5470,17 +6140,17 @@ namespace BitLogicCalculator
 		private Krypton.Toolkit.KryptonCheckBox checkBoxFadeInOut;
 		private Krypton.Toolkit.KryptonNumericUpDown numericUpDownTransparency;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.ComboBox comboBoxConversionOutputUnit;
-		private System.Windows.Forms.ComboBox comboBoxConversionInputUnit;
+		private Krypton.Toolkit.KryptonComboBox comboBoxConversionOutputUnit;
+		private Krypton.Toolkit.KryptonComboBox comboBoxConversionInputUnit;
 		private Krypton.Toolkit.KryptonTextBox textBoxConversionOutput;
 		private Krypton.Toolkit.KryptonTextBox textBoxConversionInput;
 		private Krypton.Toolkit.KryptonButton buttonAbout;
 		private Krypton.Toolkit.KryptonButton buttonTwosComponentA2;
 		private Krypton.Toolkit.KryptonButton buttonTwosComponentA1;
-		private Krypton.Toolkit.KryptonButton button1;
+		private Krypton.Toolkit.KryptonButton buttonLogicalNandA1AndA2;
 		private Krypton.Toolkit.KryptonButton buttonStatistics;
 		private System.Windows.Forms.GroupBox groupBoxShiftIndicator;
-		private Krypton.Toolkit.KryptonLabel label1;
+		private Krypton.Toolkit.KryptonLabel labelShiftIndicator;
 		private Krypton.Toolkit.KryptonNumericUpDown numericUpDownShiftIndicator;
 		private Krypton.Toolkit.KryptonButton buttonBitSwapA2;
 		private Krypton.Toolkit.KryptonButton buttonBitSwapA1;
