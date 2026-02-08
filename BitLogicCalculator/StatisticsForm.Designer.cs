@@ -336,7 +336,7 @@
 			labelResultBit1Number.TabIndex = 10;
 			labelResultBit1Number.ToolTipValues.Description = "Shows the number of bit 1 in result";
 			labelResultBit1Number.ToolTipValues.EnableToolTips = true;
-			labelResultBit1Number.ToolTipValues.Heading = "Number of bit 0 in result";
+			labelResultBit1Number.ToolTipValues.Heading = "Number of bit 1 in result";
 			labelResultBit1Number.Values.Text = "---";
 			labelResultBit1Number.DoubleClick += LabelResultBit1Number_DoubleClick;
 			labelResultBit1Number.Enter += Control_Enter;
@@ -497,7 +497,6 @@
 			Text = "Statistics";
 			Load += StatisticsForm_Load;
 			Enter += Control_Enter;
-			KeyDown += BaseKryptonForm_KeyDown;
 			Leave += Control_Leave;
 			MouseEnter += Control_Enter;
 			MouseLeave += Control_Leave;
