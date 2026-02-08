@@ -2,31 +2,83 @@
 
 using Krypton.Toolkit;
 
+using NLog;
+
 using System.Collections;
+using System.Globalization;
 
 namespace BitLogicCalculator;
 
+/// <summary>
+/// Main form for the Bit Logic Calculator application.
+/// </summary>
 public partial class MainForm : KryptonForm
 {
 	#region Constants and variables
 
+	/// <summary>
+	/// Indicates whether the least significant bit (LSB) is set.
+	/// </summary>
 	private bool isLsbSignSet;
 
+	/// <summary>
+	/// Length of the bit arrays used in the calculator.
+	/// </summary>
 	private const int length = 32;
 
+	/// <summary>
+	/// BitArray to hold the first accumulator value. It is initialized with a length of 32 bits, which allows it to store values for operations on 32-bit data sizes.
+	/// </summary>
 	private BitArray accumulator1 = new(length: length);
 
+	/// <summary>
+	/// BitArray to hold the second accumulator value. It is initialized with a length of 32 bits, which allows it to store values for operations on 32-bit data sizes.
+	/// </summary>
 	private BitArray accumulator2 = new(length: length);
 
+	/// <summary>
+	/// BitArray to hold the result of operations performed on the accumulators. It is initialized with a length of 32 bits, which allows it to store results for operations on 32-bit data sizes.
+	/// </summary>
 	private BitArray result = new(length: length);
 
+	/// <summary>
+	/// Random number generator for generating random values.
+	/// </summary>
 	private readonly Random random = new();
 
+	/// <summary>
+	/// Contains a sequence of numbers representing powers of two, starting from 1 up to 2,147,483,648.
+	/// </summary>
 	private readonly long[] squaredByteNumbers = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648];
+
+	/// <summary>
+	/// Logger instance for logging messages and exceptions
+	/// </summary>
+	private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
+	/// <summary>
+	/// Culture info
+	/// </summary>
+	private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
 
 	#endregion
 
 	#region Helpers
+
+	/// <summary>
+	/// Handles exceptions by logging the error and showing a message box
+	/// </summary>
+	/// <param name="ex">The exception that occurred</param>
+	/// <param name="message">The message to log and display</param>
+	/// <param name="sender">The source of the event that caused the exception</param>
+	/// <param name="e">The event data associated with the exception</param>
+	private static void HandleException(Exception ex, string message, object? sender = null, EventArgs? e = null)
+	{
+		// Structured logging; detailed information is in the log
+		logger.Error(exception: ex, message: "Exception occurred. Message: {Message} | Sender: {Sender}", args: [message, sender]);
+		// Show only a generic message to the user (details are in the log)
+		_ = MessageBox.Show(text: message, caption: "Error", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Error);
+	}
 
 	/// <summary>
 	/// Sets the status bar text and enables the information label when text is provided.
@@ -60,6 +112,33 @@ public partial class MainForm : KryptonForm
 		// Clear the status bar text and disable it
 		labelInformation.Enabled = false;
 		labelInformation.Text = string.Empty;
+	}
+
+
+	/// <summary>
+	/// Copies the specified text to the clipboard and displays a confirmation message
+	/// </summary>
+	/// <param name="text">The text to be copied</param>
+	private static void CopyToClipboard(string text)
+	{
+		// Do not attempt to copy if the text is null, empty, or whitespace
+		if (string.IsNullOrWhiteSpace(value: text))
+		{
+			return;
+		}
+		// Attempt to copy the text to the clipboard and handle any potential exceptions
+		try
+		{
+			// Clipboard operations can fail if the clipboard is being used by another process, so we catch exceptions to prevent crashes
+			Clipboard.SetText(text: text);
+			MessageBox.Show(text: "Copied to clipboard.", caption: "Information", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
+		}
+		// Catching general exceptions here to prevent the application from crashing due to clipboard access issues
+		catch (Exception ex)
+		{
+			// Log the exception and show a user-friendly message without exposing technical details
+			HandleException(ex: ex, message: "An error occurred while copying to clipboard.");
+		}
 	}
 
 	private void ShowAccumulator1States()
@@ -1083,7 +1162,7 @@ public partial class MainForm : KryptonForm
 	{
 		for (int i = 1; i <= (int)numericUpDownShiftIndicator.Value; i++)
 		{
-			ArithmeticShiftRightA2(fillWithOne: false);
+			ArithmeticShiftRightA2(fillWithOne: true);
 		}
 		ShowAccumulator2States();
 	}
@@ -1351,7 +1430,7 @@ public partial class MainForm : KryptonForm
 		ShowResultStates();
 	}
 
-	private void ButtonSubjunktionA1A2_Click(object sender, EventArgs e)
+	private void ButtonSubjunctionA1A2_Click(object sender, EventArgs e)
 	{
 		result = (BitArray)accumulator1.Clone();
 		BitArray bitArray = (BitArray)accumulator2.Clone();
@@ -1360,7 +1439,7 @@ public partial class MainForm : KryptonForm
 		ShowResultStates();
 	}
 
-	private void ButtonSubjunktionA2A1_Click(object sender, EventArgs e)
+	private void ButtonSubjunctionA2A1_Click(object sender, EventArgs e)
 	{
 		result = (BitArray)accumulator2.Clone();
 		BitArray bitArray = (BitArray)accumulator1.Clone();
