@@ -3669,7 +3669,6 @@ namespace BitLogicCalculator
 			labelA2Bit31.ToolTipValues.EnableToolTips = true;
 			labelA2Bit31.ToolTipValues.Heading = "Bit 31 of byte 4 in A2";
 			labelA2Bit31.Values.Text = "31";
-			labelA2Bit31.Click += BitLabel_Click;
 			labelA2Bit31.Enter += Control_Enter;
 			labelA2Bit31.Leave += Control_Leave;
 			labelA2Bit31.MouseEnter += Control_Enter;
@@ -3728,7 +3727,6 @@ namespace BitLogicCalculator
 			labelA2Bit24.ToolTipValues.EnableToolTips = true;
 			labelA2Bit24.ToolTipValues.Heading = "Bit 24 of byte 4 in A2";
 			labelA2Bit24.Values.Text = "24";
-			labelA2Bit24.Click += BitLabel_Click;
 			labelA2Bit24.Enter += Control_Enter;
 			labelA2Bit24.Leave += Control_Leave;
 			labelA2Bit24.MouseEnter += Control_Enter;
@@ -3767,7 +3765,6 @@ namespace BitLogicCalculator
 			labelA2Bit30.ToolTipValues.EnableToolTips = true;
 			labelA2Bit30.ToolTipValues.Heading = "Bit 30 of byte 4 in A2";
 			labelA2Bit30.Values.Text = "30";
-			labelA2Bit30.Click += BitLabel_Click;
 			labelA2Bit30.Enter += Control_Enter;
 			labelA2Bit30.Leave += Control_Leave;
 			labelA2Bit30.MouseEnter += Control_Enter;
@@ -3786,7 +3783,6 @@ namespace BitLogicCalculator
 			labelA2Bit25.ToolTipValues.EnableToolTips = true;
 			labelA2Bit25.ToolTipValues.Heading = "Bit 25 of byte 4 in A2";
 			labelA2Bit25.Values.Text = "25";
-			labelA2Bit25.Click += BitLabel_Click;
 			labelA2Bit25.Enter += Control_Enter;
 			labelA2Bit25.Leave += Control_Leave;
 			labelA2Bit25.MouseEnter += Control_Enter;
@@ -3845,7 +3841,6 @@ namespace BitLogicCalculator
 			labelA2Bit26.ToolTipValues.EnableToolTips = true;
 			labelA2Bit26.ToolTipValues.Heading = "Bit 26 of byte 4 in A2";
 			labelA2Bit26.Values.Text = "26";
-			labelA2Bit26.Click += BitLabel_Click;
 			labelA2Bit26.Enter += Control_Enter;
 			labelA2Bit26.Leave += Control_Leave;
 			labelA2Bit26.MouseEnter += Control_Enter;
@@ -3864,7 +3859,6 @@ namespace BitLogicCalculator
 			labelA2Bit29.ToolTipValues.EnableToolTips = true;
 			labelA2Bit29.ToolTipValues.Heading = "Bit 29 of byte 4 in A2";
 			labelA2Bit29.Values.Text = "29";
-			labelA2Bit29.Click += BitLabel_Click;
 			labelA2Bit29.Enter += Control_Enter;
 			labelA2Bit29.Leave += Control_Leave;
 			labelA2Bit29.MouseEnter += Control_Enter;
@@ -3923,7 +3917,6 @@ namespace BitLogicCalculator
 			labelA2Bit27.ToolTipValues.EnableToolTips = true;
 			labelA2Bit27.ToolTipValues.Heading = "Bit 27 of byte 4 in A2";
 			labelA2Bit27.Values.Text = "27";
-			labelA2Bit27.Click += BitLabel_Click;
 			labelA2Bit27.Enter += Control_Enter;
 			labelA2Bit27.Leave += Control_Leave;
 			labelA2Bit27.MouseEnter += Control_Enter;
@@ -3942,7 +3935,6 @@ namespace BitLogicCalculator
 			labelA2Bit28.ToolTipValues.EnableToolTips = true;
 			labelA2Bit28.ToolTipValues.Heading = "Bit 28 of byte 4 in A2";
 			labelA2Bit28.Values.Text = "28";
-			labelA2Bit28.Click += BitLabel_Click;
 			labelA2Bit28.Enter += Control_Enter;
 			labelA2Bit28.Leave += Control_Leave;
 			labelA2Bit28.MouseEnter += Control_Enter;
@@ -4049,7 +4041,6 @@ namespace BitLogicCalculator
 			labelA2Bit21.ToolTipValues.EnableToolTips = true;
 			labelA2Bit21.ToolTipValues.Heading = "Bit 21 of byte 3 in A2";
 			labelA2Bit21.Values.Text = "21";
-			labelA2Bit21.Click += BitLabel_Click;
 			labelA2Bit21.Enter += Control_Enter;
 			labelA2Bit21.MouseEnter += Control_Enter;
 			labelA2Bit21.MouseLeave += Control_Leave;
@@ -4068,7 +4059,6 @@ namespace BitLogicCalculator
 			labelA2Bit20.ToolTipValues.EnableToolTips = true;
 			labelA2Bit20.ToolTipValues.Heading = "Bit 20 of byte 3 in A2";
 			labelA2Bit20.Values.Text = "20";
-			labelA2Bit20.Click += BitLabel_Click;
 			labelA2Bit20.Enter += Control_Enter;
 			labelA2Bit20.MouseEnter += Control_Enter;
 			labelA2Bit20.MouseLeave += Control_Leave;
@@ -4125,7 +4115,6 @@ namespace BitLogicCalculator
 			labelA2Bit22.TabIndex = 47;
 			labelA2Bit22.ToolTipValues.EnableToolTips = true;
 			labelA2Bit22.Values.Text = "22";
-			labelA2Bit22.Click += BitLabel_Click;
 			labelA2Bit22.Enter += Control_Enter;
 			labelA2Bit22.MouseEnter += Control_Enter;
 			labelA2Bit22.MouseLeave += Control_Leave;
@@ -4144,7 +4133,6 @@ namespace BitLogicCalculator
 			labelA2Bit19.ToolTipValues.EnableToolTips = true;
 			labelA2Bit19.ToolTipValues.Heading = "Bit 19 of byte 3 in A2";
 			labelA2Bit19.Values.Text = "19";
-			labelA2Bit19.Click += BitLabel_Click;
 			labelA2Bit19.Enter += Control_Enter;
 			labelA2Bit19.MouseEnter += Control_Enter;
 			labelA2Bit19.MouseLeave += Control_Leave;
@@ -4203,7 +4191,6 @@ namespace BitLogicCalculator
 			labelA2Bit23.ToolTipValues.EnableToolTips = true;
 			labelA2Bit23.ToolTipValues.Heading = "Bit 23 of byte 3 in A2";
 			labelA2Bit23.Values.Text = "23";
-			labelA2Bit23.Click += BitLabel_Click;
 			labelA2Bit23.Enter += Control_Enter;
 			labelA2Bit23.MouseEnter += Control_Enter;
 			labelA2Bit23.MouseLeave += Control_Leave;
@@ -4222,7 +4209,6 @@ namespace BitLogicCalculator
 			labelA2Bit18.ToolTipValues.EnableToolTips = true;
 			labelA2Bit18.ToolTipValues.Heading = "Bit 18 of byte 3 in A2";
 			labelA2Bit18.Values.Text = "18";
-			labelA2Bit18.Click += BitLabel_Click;
 			labelA2Bit18.Enter += Control_Enter;
 			labelA2Bit18.MouseEnter += Control_Enter;
 			labelA2Bit18.MouseLeave += Control_Leave;
@@ -4241,7 +4227,6 @@ namespace BitLogicCalculator
 			labelA2Bit16.ToolTipValues.EnableToolTips = true;
 			labelA2Bit16.ToolTipValues.Heading = "Bit 16 of byte 3 in A2";
 			labelA2Bit16.Values.Text = "16";
-			labelA2Bit16.Click += BitLabel_Click;
 			labelA2Bit16.Enter += Control_Enter;
 			labelA2Bit16.MouseEnter += Control_Enter;
 			labelA2Bit16.MouseLeave += Control_Leave;
@@ -4280,7 +4265,6 @@ namespace BitLogicCalculator
 			labelA2Bit17.ToolTipValues.EnableToolTips = true;
 			labelA2Bit17.ToolTipValues.Heading = "Bit 17 of byte 3 in A2";
 			labelA2Bit17.Values.Text = "17";
-			labelA2Bit17.Click += BitLabel_Click;
 			labelA2Bit17.Enter += Control_Enter;
 			labelA2Bit17.MouseEnter += Control_Enter;
 			labelA2Bit17.MouseLeave += Control_Leave;
@@ -4387,7 +4371,6 @@ namespace BitLogicCalculator
 			labelA2Bit10.ToolTipValues.EnableToolTips = true;
 			labelA2Bit10.ToolTipValues.Heading = "Bit 10 of byte 2 in A2";
 			labelA2Bit10.Values.Text = "10";
-			labelA2Bit10.Click += BitLabel_Click;
 			labelA2Bit10.Enter += Control_Enter;
 			labelA2Bit10.Leave += Control_Leave;
 			labelA2Bit10.MouseEnter += Control_Enter;
@@ -4406,7 +4389,6 @@ namespace BitLogicCalculator
 			labelA2Bit09.ToolTipValues.EnableToolTips = true;
 			labelA2Bit09.ToolTipValues.Heading = "Bit 09 of byte 2 in A2";
 			labelA2Bit09.Values.Text = "09";
-			labelA2Bit09.Click += BitLabel_Click;
 			labelA2Bit09.Enter += Control_Enter;
 			labelA2Bit09.Leave += Control_Leave;
 			labelA2Bit09.MouseEnter += Control_Enter;
@@ -4465,7 +4447,6 @@ namespace BitLogicCalculator
 			labelA2Bit11.ToolTipValues.EnableToolTips = true;
 			labelA2Bit11.ToolTipValues.Heading = "Bit 11 of byte 2 in A2";
 			labelA2Bit11.Values.Text = "11";
-			labelA2Bit11.Click += BitLabel_Click;
 			labelA2Bit11.Enter += Control_Enter;
 			labelA2Bit11.Leave += Control_Leave;
 			labelA2Bit11.MouseEnter += Control_Enter;
@@ -4484,7 +4465,6 @@ namespace BitLogicCalculator
 			labelA2Bit15.ToolTipValues.EnableToolTips = true;
 			labelA2Bit15.ToolTipValues.Heading = "Bit 15 of byte 2 in A2";
 			labelA2Bit15.Values.Text = "15";
-			labelA2Bit15.Click += BitLabel_Click;
 			labelA2Bit15.Enter += Control_Enter;
 			labelA2Bit15.Leave += Control_Leave;
 			labelA2Bit15.MouseEnter += Control_Enter;
@@ -4503,7 +4483,6 @@ namespace BitLogicCalculator
 			labelA2Bit08.ToolTipValues.EnableToolTips = true;
 			labelA2Bit08.ToolTipValues.Heading = "Bit 08 of byte 2 in A2";
 			labelA2Bit08.Values.Text = "08";
-			labelA2Bit08.Click += BitLabel_Click;
 			labelA2Bit08.Enter += Control_Enter;
 			labelA2Bit08.Leave += Control_Leave;
 			labelA2Bit08.MouseEnter += Control_Enter;
@@ -4562,7 +4541,6 @@ namespace BitLogicCalculator
 			labelA2Bit12.ToolTipValues.EnableToolTips = true;
 			labelA2Bit12.ToolTipValues.Heading = "Bit 12 of byte 2 in A2";
 			labelA2Bit12.Values.Text = "12";
-			labelA2Bit12.Click += BitLabel_Click;
 			labelA2Bit12.Enter += Control_Enter;
 			labelA2Bit12.Leave += Control_Leave;
 			labelA2Bit12.MouseEnter += Control_Enter;
@@ -4601,7 +4579,6 @@ namespace BitLogicCalculator
 			labelA2Bit13.ToolTipValues.EnableToolTips = true;
 			labelA2Bit13.ToolTipValues.Heading = "Bit 13 of byte 2 in A2";
 			labelA2Bit13.Values.Text = "13";
-			labelA2Bit13.Click += BitLabel_Click;
 			labelA2Bit13.Enter += Control_Enter;
 			labelA2Bit13.Leave += Control_Leave;
 			labelA2Bit13.MouseEnter += Control_Enter;
@@ -4640,7 +4617,6 @@ namespace BitLogicCalculator
 			labelA2Bit14.ToolTipValues.EnableToolTips = true;
 			labelA2Bit14.ToolTipValues.Heading = "Bit 14 of byte 2 in A2";
 			labelA2Bit14.Values.Text = "14";
-			labelA2Bit14.Click += BitLabel_Click;
 			labelA2Bit14.Enter += Control_Enter;
 			labelA2Bit14.Leave += Control_Leave;
 			labelA2Bit14.MouseEnter += Control_Enter;
@@ -4687,7 +4663,6 @@ namespace BitLogicCalculator
 			labelA2Bit07.ToolTipValues.EnableToolTips = true;
 			labelA2Bit07.ToolTipValues.Heading = "Bit 07 of byte 1 in A2";
 			labelA2Bit07.Values.Text = "07";
-			labelA2Bit07.Click += BitLabel_Click;
 			labelA2Bit07.Enter += Control_Enter;
 			labelA2Bit07.Leave += Control_Leave;
 			labelA2Bit07.MouseEnter += Control_Enter;
@@ -4726,7 +4701,6 @@ namespace BitLogicCalculator
 			labelA2Bit06.ToolTipValues.EnableToolTips = true;
 			labelA2Bit06.ToolTipValues.Heading = "Bit 06 of byte 1 in A2";
 			labelA2Bit06.Values.Text = "06";
-			labelA2Bit06.Click += BitLabel_Click;
 			labelA2Bit06.Enter += Control_Enter;
 			labelA2Bit06.Leave += Control_Leave;
 			labelA2Bit06.MouseEnter += Control_Enter;
@@ -4785,7 +4759,6 @@ namespace BitLogicCalculator
 			labelA2Bit00.ToolTipValues.EnableToolTips = true;
 			labelA2Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A2";
 			labelA2Bit00.Values.Text = "00";
-			labelA2Bit00.Click += BitLabel_Click;
 			labelA2Bit00.Enter += Control_Enter;
 			labelA2Bit00.Leave += Control_Leave;
 			labelA2Bit00.MouseEnter += Control_Enter;
@@ -4804,7 +4777,6 @@ namespace BitLogicCalculator
 			labelA2Bit05.ToolTipValues.EnableToolTips = true;
 			labelA2Bit05.ToolTipValues.Heading = "Bit 05 of byte 1 in A2";
 			labelA2Bit05.Values.Text = "05";
-			labelA2Bit05.Click += BitLabel_Click;
 			labelA2Bit05.Enter += Control_Enter;
 			labelA2Bit05.Leave += Control_Leave;
 			labelA2Bit05.MouseEnter += Control_Enter;
@@ -4863,7 +4835,6 @@ namespace BitLogicCalculator
 			labelA2Bit04.ToolTipValues.EnableToolTips = true;
 			labelA2Bit04.ToolTipValues.Heading = "Bit 04 of byte 1 in A2";
 			labelA2Bit04.Values.Text = "04";
-			labelA2Bit04.Click += BitLabel_Click;
 			labelA2Bit04.Enter += Control_Enter;
 			labelA2Bit04.Leave += Control_Leave;
 			labelA2Bit04.MouseEnter += Control_Enter;
@@ -4902,7 +4873,6 @@ namespace BitLogicCalculator
 			labelA2Bit01.ToolTipValues.EnableToolTips = true;
 			labelA2Bit01.ToolTipValues.Heading = "Bit 01 of byte 1 in A2";
 			labelA2Bit01.Values.Text = "01";
-			labelA2Bit01.Click += BitLabel_Click;
 			labelA2Bit01.Enter += Control_Enter;
 			labelA2Bit01.Leave += Control_Leave;
 			labelA2Bit01.MouseEnter += Control_Enter;
@@ -4921,7 +4891,6 @@ namespace BitLogicCalculator
 			labelA2Bit03.ToolTipValues.EnableToolTips = true;
 			labelA2Bit03.ToolTipValues.Heading = "Bit 03 of byte 1 in A2";
 			labelA2Bit03.Values.Text = "03";
-			labelA2Bit03.Click += BitLabel_Click;
 			labelA2Bit03.Enter += Control_Enter;
 			labelA2Bit03.Leave += Control_Leave;
 			labelA2Bit03.MouseEnter += Control_Enter;
@@ -4980,7 +4949,6 @@ namespace BitLogicCalculator
 			labelA2Bit02.ToolTipValues.EnableToolTips = true;
 			labelA2Bit02.ToolTipValues.Heading = "Bit 02 of byte 1 in A2";
 			labelA2Bit02.Values.Text = "02";
-			labelA2Bit02.Click += BitLabel_Click;
 			labelA2Bit02.Enter += Control_Enter;
 			labelA2Bit02.Leave += Control_Leave;
 			labelA2Bit02.MouseEnter += Control_Enter;
@@ -5180,7 +5148,6 @@ namespace BitLogicCalculator
 			labelA1Bit31.ToolTipValues.EnableToolTips = true;
 			labelA1Bit31.ToolTipValues.Heading = "Bit 31 of byte 4 in A1";
 			labelA1Bit31.Values.Text = "31";
-			labelA1Bit31.Click += BitLabel_Click;
 			labelA1Bit31.Enter += Control_Enter;
 			labelA1Bit31.Leave += Control_Leave;
 			labelA1Bit31.MouseEnter += Control_Enter;
@@ -5239,7 +5206,6 @@ namespace BitLogicCalculator
 			labelA1Bit24.ToolTipValues.EnableToolTips = true;
 			labelA1Bit24.ToolTipValues.Heading = "Bit 24 of byte 4 in A1";
 			labelA1Bit24.Values.Text = "24";
-			labelA1Bit24.Click += BitLabel_Click;
 			labelA1Bit24.Enter += Control_Enter;
 			labelA1Bit24.Leave += Control_Leave;
 			labelA1Bit24.MouseEnter += Control_Enter;
@@ -5278,7 +5244,6 @@ namespace BitLogicCalculator
 			labelA1Bit30.ToolTipValues.EnableToolTips = true;
 			labelA1Bit30.ToolTipValues.Heading = "Bit 30 of byte 4 in A1";
 			labelA1Bit30.Values.Text = "30";
-			labelA1Bit30.Click += BitLabel_Click;
 			labelA1Bit30.Enter += Control_Enter;
 			labelA1Bit30.Leave += Control_Leave;
 			labelA1Bit30.MouseEnter += Control_Enter;
@@ -5297,7 +5262,6 @@ namespace BitLogicCalculator
 			labelA1Bit25.ToolTipValues.EnableToolTips = true;
 			labelA1Bit25.ToolTipValues.Heading = "Bit 25 of byte 4 in A1";
 			labelA1Bit25.Values.Text = "25";
-			labelA1Bit25.Click += BitLabel_Click;
 			labelA1Bit25.Enter += Control_Enter;
 			labelA1Bit25.Leave += Control_Leave;
 			labelA1Bit25.MouseEnter += Control_Enter;
@@ -5356,7 +5320,6 @@ namespace BitLogicCalculator
 			labelA1Bit26.ToolTipValues.EnableToolTips = true;
 			labelA1Bit26.ToolTipValues.Heading = "Bit 26 of byte 4 in A1";
 			labelA1Bit26.Values.Text = "26";
-			labelA1Bit26.Click += BitLabel_Click;
 			labelA1Bit26.Enter += Control_Enter;
 			labelA1Bit26.Leave += Control_Leave;
 			labelA1Bit26.MouseEnter += Control_Enter;
@@ -5375,7 +5338,6 @@ namespace BitLogicCalculator
 			labelA1Bit29.ToolTipValues.EnableToolTips = true;
 			labelA1Bit29.ToolTipValues.Heading = "Bit 29 of byte 4 in A1";
 			labelA1Bit29.Values.Text = "29";
-			labelA1Bit29.Click += BitLabel_Click;
 			labelA1Bit29.Enter += Control_Enter;
 			labelA1Bit29.Leave += Control_Leave;
 			labelA1Bit29.MouseEnter += Control_Enter;
@@ -5434,7 +5396,6 @@ namespace BitLogicCalculator
 			labelA1Bit27.ToolTipValues.EnableToolTips = true;
 			labelA1Bit27.ToolTipValues.Heading = "Bit 27 of byte 4 in A1";
 			labelA1Bit27.Values.Text = "27";
-			labelA1Bit27.Click += BitLabel_Click;
 			labelA1Bit27.Enter += Control_Enter;
 			labelA1Bit27.Leave += Control_Leave;
 			labelA1Bit27.MouseEnter += Control_Enter;
@@ -5453,7 +5414,6 @@ namespace BitLogicCalculator
 			labelA1Bit28.ToolTipValues.EnableToolTips = true;
 			labelA1Bit28.ToolTipValues.Heading = "Bit 28 of byte 4 in A1";
 			labelA1Bit28.Values.Text = "28";
-			labelA1Bit28.Click += BitLabel_Click;
 			labelA1Bit28.Enter += Control_Enter;
 			labelA1Bit28.Leave += Control_Leave;
 			labelA1Bit28.MouseEnter += Control_Enter;
@@ -5560,7 +5520,6 @@ namespace BitLogicCalculator
 			labelA1Bit21.ToolTipValues.EnableToolTips = true;
 			labelA1Bit21.ToolTipValues.Heading = "Bit 21 of byte 3 in A1";
 			labelA1Bit21.Values.Text = "21";
-			labelA1Bit21.Click += BitLabel_Click;
 			labelA1Bit21.Enter += Control_Enter;
 			labelA1Bit21.Leave += Control_Leave;
 			labelA1Bit21.MouseEnter += Control_Enter;
@@ -5579,7 +5538,6 @@ namespace BitLogicCalculator
 			labelA1Bit20.ToolTipValues.EnableToolTips = true;
 			labelA1Bit20.ToolTipValues.Heading = "Bit 20 of byte 3 in A1";
 			labelA1Bit20.Values.Text = "20";
-			labelA1Bit20.Click += BitLabel_Click;
 			labelA1Bit20.Enter += Control_Enter;
 			labelA1Bit20.Leave += Control_Leave;
 			labelA1Bit20.MouseEnter += Control_Enter;
@@ -5638,7 +5596,6 @@ namespace BitLogicCalculator
 			labelA1Bit22.ToolTipValues.EnableToolTips = true;
 			labelA1Bit22.ToolTipValues.Heading = "Bit 22 of byte 3 in A1";
 			labelA1Bit22.Values.Text = "22";
-			labelA1Bit22.Click += BitLabel_Click;
 			labelA1Bit22.Enter += Control_Enter;
 			labelA1Bit22.Leave += Control_Leave;
 			labelA1Bit22.MouseEnter += Control_Enter;
@@ -5657,7 +5614,6 @@ namespace BitLogicCalculator
 			labelA1Bit19.ToolTipValues.EnableToolTips = true;
 			labelA1Bit19.ToolTipValues.Heading = "Bit 19 of byte 3 in A1";
 			labelA1Bit19.Values.Text = "19";
-			labelA1Bit19.Click += BitLabel_Click;
 			labelA1Bit19.Enter += Control_Enter;
 			labelA1Bit19.Leave += Control_Leave;
 			labelA1Bit19.MouseEnter += Control_Enter;
@@ -5716,7 +5672,6 @@ namespace BitLogicCalculator
 			labelA1Bit23.ToolTipValues.EnableToolTips = true;
 			labelA1Bit23.ToolTipValues.Heading = "Bit 23 of byte 3 in A1";
 			labelA1Bit23.Values.Text = "23";
-			labelA1Bit23.Click += BitLabel_Click;
 			labelA1Bit23.Enter += Control_Enter;
 			labelA1Bit23.Leave += Control_Leave;
 			labelA1Bit23.MouseEnter += Control_Enter;
@@ -5735,7 +5690,6 @@ namespace BitLogicCalculator
 			labelA1Bit18.ToolTipValues.EnableToolTips = true;
 			labelA1Bit18.ToolTipValues.Heading = "Bit 18 of byte 3 in A1";
 			labelA1Bit18.Values.Text = "18";
-			labelA1Bit18.Click += BitLabel_Click;
 			labelA1Bit18.Enter += Control_Enter;
 			labelA1Bit18.Leave += Control_Leave;
 			labelA1Bit18.MouseEnter += Control_Enter;
@@ -5754,7 +5708,6 @@ namespace BitLogicCalculator
 			labelA1Bit16.ToolTipValues.EnableToolTips = true;
 			labelA1Bit16.ToolTipValues.Heading = "Bit 16 of byte 3 in A1";
 			labelA1Bit16.Values.Text = "16";
-			labelA1Bit16.Click += BitLabel_Click;
 			labelA1Bit16.Enter += Control_Enter;
 			labelA1Bit16.Leave += Control_Leave;
 			labelA1Bit16.MouseEnter += Control_Enter;
@@ -5793,7 +5746,6 @@ namespace BitLogicCalculator
 			labelA1Bit17.ToolTipValues.EnableToolTips = true;
 			labelA1Bit17.ToolTipValues.Heading = "Bit 17 of byte 3 in A1";
 			labelA1Bit17.Values.Text = "17";
-			labelA1Bit17.Click += BitLabel_Click;
 			labelA1Bit17.Enter += Control_Enter;
 			labelA1Bit17.Leave += Control_Leave;
 			labelA1Bit17.MouseEnter += Control_Enter;
@@ -5900,7 +5852,6 @@ namespace BitLogicCalculator
 			labelA1Bit10.ToolTipValues.EnableToolTips = true;
 			labelA1Bit10.ToolTipValues.Heading = "Bit 10 of byte 2 in A1";
 			labelA1Bit10.Values.Text = "10";
-			labelA1Bit10.Click += BitLabel_Click;
 			labelA1Bit10.Enter += Control_Enter;
 			labelA1Bit10.Leave += Control_Leave;
 			labelA1Bit10.MouseEnter += Control_Enter;
@@ -5919,7 +5870,6 @@ namespace BitLogicCalculator
 			labelA1Bit09.ToolTipValues.EnableToolTips = true;
 			labelA1Bit09.ToolTipValues.Heading = "Bit 09 of byte 2 in A1";
 			labelA1Bit09.Values.Text = "09";
-			labelA1Bit09.Click += BitLabel_Click;
 			labelA1Bit09.Enter += Control_Enter;
 			labelA1Bit09.Leave += Control_Leave;
 			labelA1Bit09.MouseEnter += Control_Enter;
@@ -5978,7 +5928,6 @@ namespace BitLogicCalculator
 			labelA1Bit11.ToolTipValues.EnableToolTips = true;
 			labelA1Bit11.ToolTipValues.Heading = "Bit 11 of byte 2 in A1";
 			labelA1Bit11.Values.Text = "11";
-			labelA1Bit11.Click += BitLabel_Click;
 			labelA1Bit11.Enter += Control_Enter;
 			labelA1Bit11.Leave += Control_Leave;
 			labelA1Bit11.MouseEnter += Control_Enter;
@@ -5997,7 +5946,6 @@ namespace BitLogicCalculator
 			labelA1Bit15.ToolTipValues.EnableToolTips = true;
 			labelA1Bit15.ToolTipValues.Heading = "Bit 15 of byte 2 in A1";
 			labelA1Bit15.Values.Text = "15";
-			labelA1Bit15.Click += BitLabel_Click;
 			labelA1Bit15.Enter += Control_Enter;
 			labelA1Bit15.Leave += Control_Leave;
 			labelA1Bit15.MouseEnter += Control_Enter;
@@ -6016,7 +5964,6 @@ namespace BitLogicCalculator
 			labelA1Bit08.ToolTipValues.EnableToolTips = true;
 			labelA1Bit08.ToolTipValues.Heading = "Bit 08 of byte 2 in A1";
 			labelA1Bit08.Values.Text = "08";
-			labelA1Bit08.Click += BitLabel_Click;
 			labelA1Bit08.Enter += Control_Enter;
 			labelA1Bit08.Leave += Control_Leave;
 			labelA1Bit08.MouseEnter += Control_Enter;
@@ -6075,7 +6022,6 @@ namespace BitLogicCalculator
 			labelA1Bit12.ToolTipValues.EnableToolTips = true;
 			labelA1Bit12.ToolTipValues.Heading = "Bit 12 of byte 2 in A1";
 			labelA1Bit12.Values.Text = "12";
-			labelA1Bit12.Click += BitLabel_Click;
 			labelA1Bit12.Enter += Control_Enter;
 			labelA1Bit12.Leave += Control_Leave;
 			labelA1Bit12.MouseEnter += Control_Enter;
@@ -6114,7 +6060,6 @@ namespace BitLogicCalculator
 			labelA1Bit13.ToolTipValues.EnableToolTips = true;
 			labelA1Bit13.ToolTipValues.Heading = "Bit 13 of byte 2 in A1";
 			labelA1Bit13.Values.Text = "13";
-			labelA1Bit13.Click += BitLabel_Click;
 			labelA1Bit13.Enter += Control_Enter;
 			labelA1Bit13.Leave += Control_Leave;
 			labelA1Bit13.MouseEnter += Control_Enter;
@@ -6153,7 +6098,6 @@ namespace BitLogicCalculator
 			labelA1Bit14.ToolTipValues.EnableToolTips = true;
 			labelA1Bit14.ToolTipValues.Heading = "Bit 14 of byte 2 in A1";
 			labelA1Bit14.Values.Text = "14";
-			labelA1Bit14.Click += BitLabel_Click;
 			labelA1Bit14.Enter += Control_Enter;
 			labelA1Bit14.Leave += Control_Leave;
 			labelA1Bit14.MouseEnter += Control_Enter;
@@ -6200,7 +6144,6 @@ namespace BitLogicCalculator
 			labelA1Bit07.ToolTipValues.EnableToolTips = true;
 			labelA1Bit07.ToolTipValues.Heading = "Bit 07 of byte 1 in A1";
 			labelA1Bit07.Values.Text = "07";
-			labelA1Bit07.Click += BitLabel_Click;
 			labelA1Bit07.Enter += Control_Enter;
 			labelA1Bit07.Leave += Control_Leave;
 			labelA1Bit07.MouseEnter += Control_Enter;
@@ -6239,7 +6182,6 @@ namespace BitLogicCalculator
 			labelA1Bit06.ToolTipValues.EnableToolTips = true;
 			labelA1Bit06.ToolTipValues.Heading = "Bit 06 of byte 1 in A1";
 			labelA1Bit06.Values.Text = "06";
-			labelA1Bit06.Click += BitLabel_Click;
 			labelA1Bit06.Enter += Control_Enter;
 			labelA1Bit06.Leave += Control_Leave;
 			labelA1Bit06.MouseEnter += Control_Enter;
@@ -6299,7 +6241,6 @@ namespace BitLogicCalculator
 			labelA1Bit00.ToolTipValues.EnableToolTips = true;
 			labelA1Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A1";
 			labelA1Bit00.Values.Text = "00";
-			labelA1Bit00.Click += BitLabel_Click;
 			labelA1Bit00.Enter += Control_Enter;
 			labelA1Bit00.Leave += Control_Leave;
 			labelA1Bit00.MouseEnter += Control_Enter;
@@ -6318,7 +6259,6 @@ namespace BitLogicCalculator
 			labelA1Bit05.ToolTipValues.EnableToolTips = true;
 			labelA1Bit05.ToolTipValues.Heading = "Bit 05 of byte 1 in A1";
 			labelA1Bit05.Values.Text = "05";
-			labelA1Bit05.Click += BitLabel_Click;
 			labelA1Bit05.Enter += Control_Enter;
 			labelA1Bit05.Leave += Control_Leave;
 			labelA1Bit05.MouseEnter += Control_Enter;
@@ -6375,7 +6315,6 @@ namespace BitLogicCalculator
 			labelA1Bit04.ToolTipValues.EnableToolTips = true;
 			labelA1Bit04.ToolTipValues.Heading = "Bit 04 of byte 1 in A1";
 			labelA1Bit04.Values.Text = "04";
-			labelA1Bit04.Click += BitLabel_Click;
 			labelA1Bit04.Enter += Control_Enter;
 			labelA1Bit04.Leave += Control_Leave;
 			labelA1Bit04.MouseEnter += Control_Enter;
@@ -6414,7 +6353,6 @@ namespace BitLogicCalculator
 			labelA1Bit01.ToolTipValues.EnableToolTips = true;
 			labelA1Bit01.ToolTipValues.Heading = "Bit 01 of byte 1 in A1";
 			labelA1Bit01.Values.Text = "01";
-			labelA1Bit01.Click += BitLabel_Click;
 			labelA1Bit01.Enter += Control_Enter;
 			labelA1Bit01.Leave += Control_Leave;
 			labelA1Bit01.MouseEnter += Control_Enter;
@@ -6433,7 +6371,6 @@ namespace BitLogicCalculator
 			labelA1Bit03.ToolTipValues.EnableToolTips = true;
 			labelA1Bit03.ToolTipValues.Heading = "Bit 03 of byte 1 in A1";
 			labelA1Bit03.Values.Text = "03";
-			labelA1Bit03.Click += BitLabel_Click;
 			labelA1Bit03.Enter += Control_Enter;
 			labelA1Bit03.Leave += Control_Leave;
 			labelA1Bit03.MouseEnter += Control_Enter;
@@ -6492,7 +6429,6 @@ namespace BitLogicCalculator
 			labelA1Bit02.ToolTipValues.EnableToolTips = true;
 			labelA1Bit02.ToolTipValues.Heading = "Bit 02 of byte 1 in A1";
 			labelA1Bit02.Values.Text = "02";
-			labelA1Bit02.Click += BitLabel_Click;
 			labelA1Bit02.Enter += Control_Enter;
 			labelA1Bit02.Leave += Control_Leave;
 			labelA1Bit02.MouseEnter += Control_Enter;

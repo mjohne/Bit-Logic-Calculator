@@ -71,64 +71,7 @@ public partial class MainForm : BaseKryptonForm
 		_ => 32
 	};
 
-	private void ApplyDataSize()
-	{
-		int bits = GetActiveBitCount();
 
-		for (int i = bits; i < length; i++)
-		{
-			accumulator1[i] = false;
-			accumulator2[i] = false;
-			result[i] = false;
-		}
-	}
-
-	private static void ShiftLeft(BitArray bits, bool fill)
-	{
-		for (int i = bits.Length - 1; i > 0; i--)
-		{
-			bits[i] = bits[i - 1];
-		}
-
-		bits[0] = fill;
-	}
-
-	private static void ShiftRight(BitArray bits, bool fill)
-	{
-		for (int i = 0; i < bits.Length - 1; i++)
-		{
-			bits[i] = bits[i + 1];
-		}
-
-		bits[^1] = fill;
-	}
-
-	private static BitArray Add(BitArray a, BitArray b)
-	{
-		var result = new BitArray(a.Length);
-		bool carry = false;
-
-		for (int i = 0; i < a.Length; i++)
-		{
-			bool sum = a[i] ^ b[i] ^ carry;
-			carry = (a[i] && b[i]) || (carry && (a[i] ^ b[i]));
-			result[i] = sum;
-		}
-		return result;
-	}
-
-	//result = Add(accumulator1, accumulator2);
-	//ShowBits(result, _resultBits, GetActiveBitCount());
-
-	private void BitLabel_Click(object sender, EventArgs e)
-	{
-		if (sender is not KryptonLabel lbl || lbl.Tag is not KryptonCheckBox cb)
-		{
-			return;
-		}
-
-		cb.Checked = !cb.Checked;
-	}
 
 
 
