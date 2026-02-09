@@ -2203,6 +2203,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit31.Name = "checkBoxResultBit31";
 			checkBoxResultBit31.Size = new Size(19, 14);
 			checkBoxResultBit31.TabIndex = 64;
+			checkBoxResultBit31.Tag = "checkBoxResultBit31";
 			checkBoxResultBit31.ToolTipValues.Description = "Shows bit 31 of byte 4 in R";
 			checkBoxResultBit31.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit31.ToolTipValues.Heading = "Bit 31 of byte 4 in R";
@@ -2222,6 +2223,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit24.Name = "checkBoxResultBit24";
 			checkBoxResultBit24.Size = new Size(19, 14);
 			checkBoxResultBit24.TabIndex = 50;
+			checkBoxResultBit24.Tag = "checkBoxResultBit24";
 			checkBoxResultBit24.ToolTipValues.Description = "Shows bit 24 of byte 4 in R";
 			checkBoxResultBit24.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit24.ToolTipValues.Heading = "Bit 24 of byte 4 in R";
@@ -2259,6 +2261,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit25.Name = "checkBoxResultBit25";
 			checkBoxResultBit25.Size = new Size(19, 14);
 			checkBoxResultBit25.TabIndex = 52;
+			checkBoxResultBit25.Tag = "checkBoxResultBit25";
 			checkBoxResultBit25.ToolTipValues.Description = "Shows bit 25 of byte 4 in R";
 			checkBoxResultBit25.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit25.ToolTipValues.Heading = "Bit 25 of byte 4 in R";
@@ -2314,6 +2317,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit26.Name = "checkBoxResultBit26";
 			checkBoxResultBit26.Size = new Size(19, 14);
 			checkBoxResultBit26.TabIndex = 54;
+			checkBoxResultBit26.Tag = "checkBoxResultBit26";
 			checkBoxResultBit26.ToolTipValues.Description = "Shows bit 26 of byte 4 in R";
 			checkBoxResultBit26.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit26.ToolTipValues.Heading = "Bit 26 of byte 4 in R";
@@ -2333,6 +2337,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit30.Name = "checkBoxResultBit30";
 			checkBoxResultBit30.Size = new Size(19, 14);
 			checkBoxResultBit30.TabIndex = 62;
+			checkBoxResultBit30.Tag = "checkBoxResultBit30";
 			checkBoxResultBit30.ToolTipValues.Description = "Shows bit 30 of byte 4 in R";
 			checkBoxResultBit30.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit30.ToolTipValues.Heading = "Bit 30 of byte 4 in R";
@@ -2388,6 +2393,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit27.Name = "checkBoxResultBit27";
 			checkBoxResultBit27.Size = new Size(19, 14);
 			checkBoxResultBit27.TabIndex = 56;
+			checkBoxResultBit27.Tag = "checkBoxResultBit27";
 			checkBoxResultBit27.ToolTipValues.Description = "Shows bit 27 of byte 4 in R";
 			checkBoxResultBit27.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit27.ToolTipValues.Heading = "Bit 27 of byte 4 in R";
@@ -2407,6 +2413,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit29.Name = "checkBoxResultBit29";
 			checkBoxResultBit29.Size = new Size(19, 14);
 			checkBoxResultBit29.TabIndex = 60;
+			checkBoxResultBit29.Tag = "checkBoxResultBit29";
 			checkBoxResultBit29.ToolTipValues.Description = "Shpws bit 29 of byte 4 in R";
 			checkBoxResultBit29.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit29.ToolTipValues.Heading = "Bit 29 of byte 4 in R";
@@ -2462,6 +2469,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit28.Name = "checkBoxResultBit28";
 			checkBoxResultBit28.Size = new Size(19, 14);
 			checkBoxResultBit28.TabIndex = 58;
+			checkBoxResultBit28.Tag = "checkBoxResultBit28";
 			checkBoxResultBit28.ToolTipValues.Description = "Shows bit 28 of byte 4 in R";
 			checkBoxResultBit28.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit28.ToolTipValues.Heading = "Bit 28 of byte 4 in R";
@@ -2509,6 +2517,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit23.Name = "checkBoxResultBit23";
 			checkBoxResultBit23.Size = new Size(19, 14);
 			checkBoxResultBit23.TabIndex = 48;
+			checkBoxResultBit23.Tag = "checkBoxResultBit23";
 			checkBoxResultBit23.ToolTipValues.Description = "Shows bit 23 of byte 3 in R";
 			checkBoxResultBit23.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit23.ToolTipValues.Heading = "Bit 23 of byte 3 in R";
@@ -2528,6 +2537,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit21.Name = "checkBoxResultBit21";
 			checkBoxResultBit21.Size = new Size(19, 14);
 			checkBoxResultBit21.TabIndex = 44;
+			checkBoxResultBit21.Tag = "checkBoxResultBit21";
 			checkBoxResultBit21.ToolTipValues.Description = "Shows bit 21 of byte 3 in R";
 			checkBoxResultBit21.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit21.ToolTipValues.Heading = "Bit 21 of byte 3 in R";
@@ -2583,6 +2593,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit22.Name = "checkBoxResultBit22";
 			checkBoxResultBit22.Size = new Size(19, 14);
 			checkBoxResultBit22.TabIndex = 46;
+			checkBoxResultBit22.Tag = "checkBoxResultBit22";
 			checkBoxResultBit22.ToolTipValues.Description = "Shows bit 22 of byte 3 in R";
 			checkBoxResultBit22.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit22.ToolTipValues.Heading = "Bit 22 of byte 3 in R";
@@ -2602,6 +2613,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit20.Name = "checkBoxResultBit20";
 			checkBoxResultBit20.Size = new Size(19, 14);
 			checkBoxResultBit20.TabIndex = 42;
+			checkBoxResultBit20.Tag = "checkBoxResultBit20";
 			checkBoxResultBit20.ToolTipValues.Description = "Shows bit 20 of byte 3 in R";
 			checkBoxResultBit20.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit20.ToolTipValues.Heading = "Bit 20 of byte 3 in R";
@@ -2657,6 +2669,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit16.Name = "checkBoxResultBit16";
 			checkBoxResultBit16.Size = new Size(19, 14);
 			checkBoxResultBit16.TabIndex = 34;
+			checkBoxResultBit16.Tag = "checkBoxResultBit16";
 			checkBoxResultBit16.ToolTipValues.Description = "Shows bit 16 of byte 3 in R";
 			checkBoxResultBit16.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit16.ToolTipValues.Heading = "Bit 16 of byte 3 in R";
@@ -2676,6 +2689,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit19.Name = "checkBoxResultBit19";
 			checkBoxResultBit19.Size = new Size(19, 14);
 			checkBoxResultBit19.TabIndex = 40;
+			checkBoxResultBit19.Tag = "checkBoxResultBit19";
 			checkBoxResultBit19.ToolTipValues.Description = "Shows bit 19 of byte 3 in R";
 			checkBoxResultBit19.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit19.ToolTipValues.Heading = "Bit 19 of byte 3 in R";
@@ -2749,6 +2763,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit18.Name = "checkBoxResultBit18";
 			checkBoxResultBit18.Size = new Size(19, 14);
 			checkBoxResultBit18.TabIndex = 38;
+			checkBoxResultBit18.Tag = "checkBoxResultBit18";
 			checkBoxResultBit18.ToolTipValues.Description = "Shows bit 18 of byte 3 in R";
 			checkBoxResultBit18.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit18.ToolTipValues.Heading = "Bit 18 of byte 3 in R";
@@ -2786,6 +2801,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit17.Name = "checkBoxResultBit17";
 			checkBoxResultBit17.Size = new Size(19, 14);
 			checkBoxResultBit17.TabIndex = 36;
+			checkBoxResultBit17.Tag = "checkBoxResultBit17";
 			checkBoxResultBit17.ToolTipValues.Description = "Shows bit 17 of byte 3 in R";
 			checkBoxResultBit17.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit17.ToolTipValues.Heading = "Bit 17 of byte 3 in R";
@@ -2833,6 +2849,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit15.Name = "checkBoxResultBit15";
 			checkBoxResultBit15.Size = new Size(19, 14);
 			checkBoxResultBit15.TabIndex = 32;
+			checkBoxResultBit15.Tag = "checkBoxResultBit15";
 			checkBoxResultBit15.ToolTipValues.Description = "Shows bit 15 of byte 2 in R";
 			checkBoxResultBit15.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit15.ToolTipValues.Heading = "Bit 15 of byte 2 in R";
@@ -2852,6 +2869,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit10.Name = "checkBoxResultBit10";
 			checkBoxResultBit10.Size = new Size(19, 14);
 			checkBoxResultBit10.TabIndex = 22;
+			checkBoxResultBit10.Tag = "checkBoxResultBit10";
 			checkBoxResultBit10.ToolTipValues.Description = "Shows bit 10 of byte 2 in R";
 			checkBoxResultBit10.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit10.ToolTipValues.Heading = "Bit 10 of byte 2 in R";
@@ -2907,6 +2925,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit11.Name = "checkBoxResultBit11";
 			checkBoxResultBit11.Size = new Size(19, 14);
 			checkBoxResultBit11.TabIndex = 24;
+			checkBoxResultBit11.Tag = "checkBoxResultBit11";
 			checkBoxResultBit11.ToolTipValues.Description = "Shows bit 11 of byte 2 in R";
 			checkBoxResultBit11.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit11.ToolTipValues.Heading = "Bit 11 of byte 2 in R";
@@ -2926,6 +2945,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit09.Name = "checkBoxResultBit09";
 			checkBoxResultBit09.Size = new Size(19, 14);
 			checkBoxResultBit09.TabIndex = 20;
+			checkBoxResultBit09.Tag = "checkBoxResultBit09";
 			checkBoxResultBit09.ToolTipValues.Description = "Shows bit 09 of byte 2 in R";
 			checkBoxResultBit09.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit09.ToolTipValues.Heading = "Bit 09 of byte 2 in R";
@@ -2999,6 +3019,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit12.Name = "checkBoxResultBit12";
 			checkBoxResultBit12.Size = new Size(19, 14);
 			checkBoxResultBit12.TabIndex = 26;
+			checkBoxResultBit12.Tag = "checkBoxResultBit12";
 			checkBoxResultBit12.ToolTipValues.Description = "Shows bit 12 of byte 2 in R";
 			checkBoxResultBit12.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit12.ToolTipValues.Heading = "Bit 12 of byte 2 in R";
@@ -3018,6 +3039,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit08.Name = "checkBoxResultBit08";
 			checkBoxResultBit08.Size = new Size(19, 14);
 			checkBoxResultBit08.TabIndex = 18;
+			checkBoxResultBit08.Tag = "checkBoxResultBit08";
 			checkBoxResultBit08.ToolTipValues.Description = "Shows bit 08 of byte 2 in R";
 			checkBoxResultBit08.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit08.ToolTipValues.Heading = "Bit 08 of byte 2 in R";
@@ -3055,6 +3077,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit13.Name = "checkBoxResultBit13";
 			checkBoxResultBit13.Size = new Size(19, 14);
 			checkBoxResultBit13.TabIndex = 28;
+			checkBoxResultBit13.Tag = "checkBoxResultBit13";
 			checkBoxResultBit13.ToolTipValues.Description = "Shows bit 13 of byte 2 in R";
 			checkBoxResultBit13.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit13.ToolTipValues.Heading = "Bit 13 of byte 2 in R";
@@ -3092,6 +3115,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit14.Name = "checkBoxResultBit14";
 			checkBoxResultBit14.Size = new Size(19, 14);
 			checkBoxResultBit14.TabIndex = 30;
+			checkBoxResultBit14.Tag = "checkBoxResultBit14";
 			checkBoxResultBit14.ToolTipValues.Description = "Shows bit 14 of byte 2 in R";
 			checkBoxResultBit14.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit14.ToolTipValues.Heading = "Bit 14 of byte 2 in R";
@@ -3175,6 +3199,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit07.Name = "checkBoxResultBit07";
 			checkBoxResultBit07.Size = new Size(19, 14);
 			checkBoxResultBit07.TabIndex = 16;
+			checkBoxResultBit07.Tag = "checkBoxResultBit07";
 			checkBoxResultBit07.ToolTipValues.Description = "Shows bit 07 of byte 1 in R";
 			checkBoxResultBit07.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit07.ToolTipValues.Heading = "Bit 07 of byte 1 in R";
@@ -3212,6 +3237,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit00.Name = "checkBoxResultBit00";
 			checkBoxResultBit00.Size = new Size(19, 14);
 			checkBoxResultBit00.TabIndex = 0;
+			checkBoxResultBit00.Tag = "checkBoxResultBit00";
 			checkBoxResultBit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in R";
 			checkBoxResultBit00.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit00.ToolTipValues.Heading = "Bit 00 of byte 1 in R";
@@ -3231,6 +3257,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit06.Name = "checkBoxResultBit06";
 			checkBoxResultBit06.Size = new Size(19, 14);
 			checkBoxResultBit06.TabIndex = 14;
+			checkBoxResultBit06.Tag = "checkBoxResultBit06";
 			checkBoxResultBit06.ToolTipValues.Description = "Shows bit 06 of byte 1 in R";
 			checkBoxResultBit06.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit06.ToolTipValues.Heading = "Bit 06 of byte 1 in R";
@@ -3286,6 +3313,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit05.Name = "checkBoxResultBit05";
 			checkBoxResultBit05.Size = new Size(19, 14);
 			checkBoxResultBit05.TabIndex = 12;
+			checkBoxResultBit05.Tag = "checkBoxResultBit05";
 			checkBoxResultBit05.ToolTipValues.Description = "Shows bit 05 of byte 1 in R";
 			checkBoxResultBit05.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit05.ToolTipValues.Heading = "Bit 05 of byte 1 in R";
@@ -3305,6 +3333,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit01.Name = "checkBoxResultBit01";
 			checkBoxResultBit01.Size = new Size(19, 14);
 			checkBoxResultBit01.TabIndex = 2;
+			checkBoxResultBit01.Tag = "checkBoxResultBit01";
 			checkBoxResultBit01.ToolTipValues.Description = "Shows bit 01 of byte 1 in R";
 			checkBoxResultBit01.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit01.ToolTipValues.Heading = "Bit 01 of byte 1 in R";
@@ -3342,6 +3371,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit04.Name = "checkBoxResultBit04";
 			checkBoxResultBit04.Size = new Size(19, 14);
 			checkBoxResultBit04.TabIndex = 10;
+			checkBoxResultBit04.Tag = "checkBoxResultBit04";
 			checkBoxResultBit04.ToolTipValues.Description = "Shows bit 04 of byte 1 in R";
 			checkBoxResultBit04.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit04.ToolTipValues.Heading = "Bit 04 of byte 1 in R";
@@ -3397,6 +3427,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit03.Name = "checkBoxResultBit03";
 			checkBoxResultBit03.Size = new Size(19, 14);
 			checkBoxResultBit03.TabIndex = 6;
+			checkBoxResultBit03.Tag = "checkBoxResultBit03";
 			checkBoxResultBit03.ToolTipValues.Description = "Shows bit 03 of byte 1 in R";
 			checkBoxResultBit03.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit03.ToolTipValues.Heading = "Bit 03 of byte 1 in R";
@@ -3416,6 +3447,7 @@ namespace BitLogicCalculator
 			checkBoxResultBit02.Name = "checkBoxResultBit02";
 			checkBoxResultBit02.Size = new Size(19, 14);
 			checkBoxResultBit02.TabIndex = 4;
+			checkBoxResultBit02.Tag = "checkBoxResultBit02";
 			checkBoxResultBit02.ToolTipValues.Description = "Shows bit 02 of byte 1 in R";
 			checkBoxResultBit02.ToolTipValues.EnableToolTips = true;
 			checkBoxResultBit02.ToolTipValues.Heading = "Bit 02 of byte 1 in R";
@@ -3652,6 +3684,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit31.Name = "checkBoxA2Bit31";
 			checkBoxA2Bit31.Size = new Size(19, 14);
 			checkBoxA2Bit31.TabIndex = 64;
+			checkBoxA2Bit31.Tag = "checkBoxA2Bit31";
 			checkBoxA2Bit31.ToolTipValues.Description = "Shows bit 31 of byte 4 in A2";
 			checkBoxA2Bit31.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit31.ToolTipValues.Heading = "Bit 31 of byte 4 in A2";
@@ -3671,6 +3704,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit24.Name = "checkBoxA2Bit24";
 			checkBoxA2Bit24.Size = new Size(19, 14);
 			checkBoxA2Bit24.TabIndex = 50;
+			checkBoxA2Bit24.Tag = "checkBoxA2Bit24";
 			checkBoxA2Bit24.ToolTipValues.Description = "Shows bit 24 of byte 4 in A2";
 			checkBoxA2Bit24.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit24.ToolTipValues.Heading = "Bit 24 of byte 4 in A2";
@@ -3709,6 +3743,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit25.Name = "checkBoxA2Bit25";
 			checkBoxA2Bit25.Size = new Size(19, 14);
 			checkBoxA2Bit25.TabIndex = 52;
+			checkBoxA2Bit25.Tag = "checkBoxA2Bit25";
 			checkBoxA2Bit25.ToolTipValues.Description = "Shows bit 25 of byte 4 in A2";
 			checkBoxA2Bit25.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit25.ToolTipValues.Heading = "Bit 25 of byte 4 in A2";
@@ -3766,6 +3801,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit26.Name = "checkBoxA2Bit26";
 			checkBoxA2Bit26.Size = new Size(19, 14);
 			checkBoxA2Bit26.TabIndex = 54;
+			checkBoxA2Bit26.Tag = "checkBoxA2Bit26";
 			checkBoxA2Bit26.ToolTipValues.Description = "Shows bit 26 of byte 4 in A2";
 			checkBoxA2Bit26.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit26.ToolTipValues.Heading = "Bit 26 of byte 4 in A2";
@@ -3785,6 +3821,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit30.Name = "checkBoxA2Bit30";
 			checkBoxA2Bit30.Size = new Size(19, 14);
 			checkBoxA2Bit30.TabIndex = 62;
+			checkBoxA2Bit30.Tag = "checkBoxA2Bit30";
 			checkBoxA2Bit30.ToolTipValues.Description = "Shows bit 30 of byte 4 in A2";
 			checkBoxA2Bit30.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit30.ToolTipValues.Heading = "Bit 30 of byte 4 in A2";
@@ -3842,6 +3879,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit27.Name = "checkBoxA2Bit27";
 			checkBoxA2Bit27.Size = new Size(19, 14);
 			checkBoxA2Bit27.TabIndex = 56;
+			checkBoxA2Bit27.Tag = "checkBoxA2Bit27";
 			checkBoxA2Bit27.ToolTipValues.Description = "Shows bit 27 of byte 4 in A2";
 			checkBoxA2Bit27.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit27.ToolTipValues.Heading = "Bit 27 of byte 4 in A2";
@@ -3861,6 +3899,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit29.Name = "checkBoxA2Bit29";
 			checkBoxA2Bit29.Size = new Size(19, 14);
 			checkBoxA2Bit29.TabIndex = 60;
+			checkBoxA2Bit29.Tag = "checkBoxA2Bit29";
 			checkBoxA2Bit29.ToolTipValues.Description = "Shows bit 29 of byte 4 in A2";
 			checkBoxA2Bit29.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit29.ToolTipValues.Heading = "Bit 29 of byte 4 in A2";
@@ -3918,6 +3957,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit28.Name = "checkBoxA2Bit28";
 			checkBoxA2Bit28.Size = new Size(19, 14);
 			checkBoxA2Bit28.TabIndex = 58;
+			checkBoxA2Bit28.Tag = "checkBoxA2Bit28";
 			checkBoxA2Bit28.ToolTipValues.Description = "Shows bit 28 of byte 4 in A2";
 			checkBoxA2Bit28.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit28.ToolTipValues.Heading = "Bit 28 of byte 4 in A2";
@@ -3965,6 +4005,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit23.Name = "checkBoxA2Bit23";
 			checkBoxA2Bit23.Size = new Size(19, 14);
 			checkBoxA2Bit23.TabIndex = 48;
+			checkBoxA2Bit23.Tag = "checkBoxA2Bit23";
 			checkBoxA2Bit23.ToolTipValues.Description = "Shows bit 23 of byte 3 in A2";
 			checkBoxA2Bit23.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit23.ToolTipValues.Heading = "Bit 23 of byte 3 in A2";
@@ -3984,6 +4025,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit21.Name = "checkBoxA2Bit21";
 			checkBoxA2Bit21.Size = new Size(19, 14);
 			checkBoxA2Bit21.TabIndex = 44;
+			checkBoxA2Bit21.Tag = "checkBoxA2Bit21";
 			checkBoxA2Bit21.ToolTipValues.Description = "Shows bit 21 of byte 3 in A2";
 			checkBoxA2Bit21.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit21.ToolTipValues.Heading = "Bit 21 of byte 3 in A2";
@@ -4041,6 +4083,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit22.Name = "checkBoxA2Bit22";
 			checkBoxA2Bit22.Size = new Size(19, 14);
 			checkBoxA2Bit22.TabIndex = 46;
+			checkBoxA2Bit22.Tag = "checkBoxA2Bit22";
 			checkBoxA2Bit22.ToolTipValues.Description = "Shows bit 22 of byte 3 in A2";
 			checkBoxA2Bit22.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit22.ToolTipValues.Heading = "Bit 22 of byte 3 in A2";
@@ -4060,6 +4103,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit20.Name = "checkBoxA2Bit20";
 			checkBoxA2Bit20.Size = new Size(19, 14);
 			checkBoxA2Bit20.TabIndex = 42;
+			checkBoxA2Bit20.Tag = "checkBoxA2Bit20";
 			checkBoxA2Bit20.ToolTipValues.Description = "Shows bit 20 of byte 3 in A2";
 			checkBoxA2Bit20.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit20.ToolTipValues.Heading = "Bit 20 of byte 3 in A2";
@@ -4115,6 +4159,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit16.Name = "checkBoxA2Bit16";
 			checkBoxA2Bit16.Size = new Size(19, 14);
 			checkBoxA2Bit16.TabIndex = 34;
+			checkBoxA2Bit16.Tag = "checkBoxA2Bit16";
 			checkBoxA2Bit16.ToolTipValues.Description = "Shows bit 16 of byte 3 in A2";
 			checkBoxA2Bit16.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit16.ToolTipValues.Heading = "Bit 16 of byte 3 in A2";
@@ -4134,6 +4179,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit19.Name = "checkBoxA2Bit19";
 			checkBoxA2Bit19.Size = new Size(19, 14);
 			checkBoxA2Bit19.TabIndex = 40;
+			checkBoxA2Bit19.Tag = "checkBoxA2Bit19";
 			checkBoxA2Bit19.ToolTipValues.Description = "Shows bit 19 of byte 3 in A2";
 			checkBoxA2Bit19.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit19.ToolTipValues.Heading = "Bit 19 of byte 3 in A2";
@@ -4210,6 +4256,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit18.Name = "checkBoxA2Bit18";
 			checkBoxA2Bit18.Size = new Size(19, 14);
 			checkBoxA2Bit18.TabIndex = 38;
+			checkBoxA2Bit18.Tag = "checkBoxA2Bit18";
 			checkBoxA2Bit18.ToolTipValues.Description = "Shows bit 18 of byte 3 in A2";
 			checkBoxA2Bit18.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit18.ToolTipValues.Heading = "Bit 18 of byte 3 in A2";
@@ -4248,6 +4295,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit17.Name = "checkBoxA2Bit17";
 			checkBoxA2Bit17.Size = new Size(19, 14);
 			checkBoxA2Bit17.TabIndex = 36;
+			checkBoxA2Bit17.Tag = "checkBoxA2Bit17";
 			checkBoxA2Bit17.ToolTipValues.Description = "Shows bit 17 of byte 3 in A2";
 			checkBoxA2Bit17.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit17.ToolTipValues.Heading = "Bit 17 of byte 3 in A2";
@@ -4295,6 +4343,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit15.Name = "checkBoxA2Bit15";
 			checkBoxA2Bit15.Size = new Size(19, 14);
 			checkBoxA2Bit15.TabIndex = 32;
+			checkBoxA2Bit15.Tag = "checkBoxA2Bit15";
 			checkBoxA2Bit15.ToolTipValues.Description = "Shows bit 15 of byte 2 in A2";
 			checkBoxA2Bit15.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit15.ToolTipValues.Heading = "Bit 15 of byte 2 in A2";
@@ -4314,6 +4363,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit10.Name = "checkBoxA2Bit10";
 			checkBoxA2Bit10.Size = new Size(19, 14);
 			checkBoxA2Bit10.TabIndex = 22;
+			checkBoxA2Bit10.Tag = "checkBoxA2Bit10";
 			checkBoxA2Bit10.ToolTipValues.Description = "Shows bit 10 of byte 2 in A2";
 			checkBoxA2Bit10.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit10.ToolTipValues.Heading = "Bit 10 of byte 2 in A2";
@@ -4371,6 +4421,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit11.Name = "checkBoxA2Bit11";
 			checkBoxA2Bit11.Size = new Size(19, 14);
 			checkBoxA2Bit11.TabIndex = 24;
+			checkBoxA2Bit11.Tag = "checkBoxA2Bit11";
 			checkBoxA2Bit11.ToolTipValues.Description = "Shows bit 11 of byte 2 in A2";
 			checkBoxA2Bit11.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit11.ToolTipValues.Heading = "Bit 11 of byte 2 in A2";
@@ -4390,6 +4441,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit09.Name = "checkBoxA2Bit09";
 			checkBoxA2Bit09.Size = new Size(19, 14);
 			checkBoxA2Bit09.TabIndex = 20;
+			checkBoxA2Bit09.Tag = "checkBoxA2Bit09";
 			checkBoxA2Bit09.ToolTipValues.Description = "Shows bit 09 of byte 2 in A2";
 			checkBoxA2Bit09.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit09.ToolTipValues.Heading = "Bit 09 of byte 2 in A2";
@@ -4466,6 +4518,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit12.Name = "checkBoxA2Bit12";
 			checkBoxA2Bit12.Size = new Size(19, 14);
 			checkBoxA2Bit12.TabIndex = 26;
+			checkBoxA2Bit12.Tag = "checkBoxA2Bit12";
 			checkBoxA2Bit12.ToolTipValues.Description = "Shows bit 12 of byte 2 in A2";
 			checkBoxA2Bit12.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit12.ToolTipValues.Heading = "Bit 12 of byte 2 in A2";
@@ -4485,6 +4538,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit08.Name = "checkBoxA2Bit08";
 			checkBoxA2Bit08.Size = new Size(19, 14);
 			checkBoxA2Bit08.TabIndex = 18;
+			checkBoxA2Bit08.Tag = "checkBoxA2Bit08";
 			checkBoxA2Bit08.ToolTipValues.Description = "Shows bit 08 of byte 2 in A2";
 			checkBoxA2Bit08.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit08.ToolTipValues.Heading = "Bit 08 of byte 2 in A2";
@@ -4523,6 +4577,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit13.Name = "checkBoxA2Bit13";
 			checkBoxA2Bit13.Size = new Size(19, 14);
 			checkBoxA2Bit13.TabIndex = 28;
+			checkBoxA2Bit13.Tag = "checkBoxA2Bit13";
 			checkBoxA2Bit13.ToolTipValues.Description = "Shows bit 13 of byte 2 in A2";
 			checkBoxA2Bit13.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit13.ToolTipValues.Heading = "Bit 13 of byte 2 in A2";
@@ -4561,6 +4616,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit14.Name = "checkBoxA2Bit14";
 			checkBoxA2Bit14.Size = new Size(19, 14);
 			checkBoxA2Bit14.TabIndex = 30;
+			checkBoxA2Bit14.Tag = "checkBoxA2Bit14";
 			checkBoxA2Bit14.ToolTipValues.Description = "Shows bit 14 of byte 2 in A2";
 			checkBoxA2Bit14.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit14.ToolTipValues.Heading = "Bit 14 of byte 2 in A2";
@@ -4646,6 +4702,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit07.Name = "checkBoxA2Bit07";
 			checkBoxA2Bit07.Size = new Size(19, 14);
 			checkBoxA2Bit07.TabIndex = 16;
+			checkBoxA2Bit07.Tag = "checkBoxA2Bit07";
 			checkBoxA2Bit07.ToolTipValues.Description = "Shows bit 07 of byte 1 in A2";
 			checkBoxA2Bit07.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit07.ToolTipValues.Heading = "Bit 07 of byte 1 in A2";
@@ -4684,6 +4741,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit00.Name = "checkBoxA2Bit00";
 			checkBoxA2Bit00.Size = new Size(19, 14);
 			checkBoxA2Bit00.TabIndex = 0;
+			checkBoxA2Bit00.Tag = "checkBoxA2Bit00";
 			checkBoxA2Bit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in A2";
 			checkBoxA2Bit00.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A2";
@@ -4703,6 +4761,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit06.Name = "checkBoxA2Bit06";
 			checkBoxA2Bit06.Size = new Size(19, 14);
 			checkBoxA2Bit06.TabIndex = 14;
+			checkBoxA2Bit06.Tag = "checkBoxA2Bit06";
 			checkBoxA2Bit06.ToolTipValues.Description = "Shows bit 06 of byte 1 in A2";
 			checkBoxA2Bit06.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit06.ToolTipValues.Heading = "Bit 06 of byte 1 in A2";
@@ -4760,6 +4819,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit05.Name = "checkBoxA2Bit05";
 			checkBoxA2Bit05.Size = new Size(19, 14);
 			checkBoxA2Bit05.TabIndex = 12;
+			checkBoxA2Bit05.Tag = "checkBoxA2Bit05";
 			checkBoxA2Bit05.ToolTipValues.Description = "Shows bit 05 of byte 1 in A2";
 			checkBoxA2Bit05.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit05.ToolTipValues.Heading = "Bit 05 of byte 1 in A2";
@@ -4779,6 +4839,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit01.Name = "checkBoxA2Bit01";
 			checkBoxA2Bit01.Size = new Size(19, 14);
 			checkBoxA2Bit01.TabIndex = 2;
+			checkBoxA2Bit01.Tag = "checkBoxA2Bit01";
 			checkBoxA2Bit01.ToolTipValues.Description = "Shows bit 01 of byte 1 in A2";
 			checkBoxA2Bit01.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit01.ToolTipValues.Heading = "Bit 01 of byte 1 in A2";
@@ -4817,6 +4878,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit04.Name = "checkBoxA2Bit04";
 			checkBoxA2Bit04.Size = new Size(19, 14);
 			checkBoxA2Bit04.TabIndex = 10;
+			checkBoxA2Bit04.Tag = "checkBoxA2Bit04";
 			checkBoxA2Bit04.ToolTipValues.Description = "Shows bit 04 of byte 1 in A2";
 			checkBoxA2Bit04.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit04.ToolTipValues.Heading = "Bit 04 of byte 1 in A2";
@@ -4874,6 +4936,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit03.Name = "checkBoxA2Bit03";
 			checkBoxA2Bit03.Size = new Size(19, 14);
 			checkBoxA2Bit03.TabIndex = 6;
+			checkBoxA2Bit03.Tag = "checkBoxA2Bit03";
 			checkBoxA2Bit03.ToolTipValues.Description = "Shows bit 03 of byte 1 in A2";
 			checkBoxA2Bit03.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit03.ToolTipValues.Heading = "Bit 03 of byte 1 in A2";
@@ -4893,6 +4956,7 @@ namespace BitLogicCalculator
 			checkBoxA2Bit02.Name = "checkBoxA2Bit02";
 			checkBoxA2Bit02.Size = new Size(19, 14);
 			checkBoxA2Bit02.TabIndex = 4;
+			checkBoxA2Bit02.Tag = "checkBoxA2Bit02";
 			checkBoxA2Bit02.ToolTipValues.Description = "Shows bit 02 of byte 1 in A2";
 			checkBoxA2Bit02.ToolTipValues.EnableToolTips = true;
 			checkBoxA2Bit02.ToolTipValues.Heading = "Bit 02 of byte 1 in A2";
@@ -5131,6 +5195,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit31.Name = "checkBoxA1Bit31";
 			checkBoxA1Bit31.Size = new Size(19, 14);
 			checkBoxA1Bit31.TabIndex = 7;
+			checkBoxA1Bit31.Tag = "checkBoxA1Bit31";
 			checkBoxA1Bit31.ToolTipValues.Description = "Shows bit 31 of byte 4 in A1";
 			checkBoxA1Bit31.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit31.ToolTipValues.Heading = "Bit 31 of byte 4 in A1";
@@ -5150,6 +5215,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit24.Name = "checkBoxA1Bit24";
 			checkBoxA1Bit24.Size = new Size(19, 14);
 			checkBoxA1Bit24.TabIndex = 13;
+			checkBoxA1Bit24.Tag = "checkBoxA1Bit24";
 			checkBoxA1Bit24.ToolTipValues.Description = "Shows bit 24 of byte 4 in A1";
 			checkBoxA1Bit24.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit24.ToolTipValues.Heading = "Bit 24 of byte 4 in A1";
@@ -5188,6 +5254,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit25.Name = "checkBoxA1Bit25";
 			checkBoxA1Bit25.Size = new Size(19, 14);
 			checkBoxA1Bit25.TabIndex = 12;
+			checkBoxA1Bit25.Tag = "checkBoxA1Bit25";
 			checkBoxA1Bit25.ToolTipValues.Description = "Shows bit 25 of byte 4 in A1";
 			checkBoxA1Bit25.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit25.ToolTipValues.Heading = "Bit 25 of byte 4 in A1";
@@ -5245,6 +5312,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit26.Name = "checkBoxA1Bit26";
 			checkBoxA1Bit26.Size = new Size(19, 14);
 			checkBoxA1Bit26.TabIndex = 11;
+			checkBoxA1Bit26.Tag = "checkBoxA1Bit26";
 			checkBoxA1Bit26.ToolTipValues.Description = "Shows bit 26 of byte 4 in A1";
 			checkBoxA1Bit26.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit26.ToolTipValues.Heading = "Bit 26 of byte 4 in A1";
@@ -5264,6 +5332,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit30.Name = "checkBoxA1Bit30";
 			checkBoxA1Bit30.Size = new Size(19, 14);
 			checkBoxA1Bit30.TabIndex = 8;
+			checkBoxA1Bit30.Tag = "checkBoxA1Bit30";
 			checkBoxA1Bit30.ToolTipValues.Description = "Shows bit 30 of byte 4 in A1";
 			checkBoxA1Bit30.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit30.ToolTipValues.Heading = "Bit 30 of byte 4 in A1";
@@ -5321,6 +5390,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit27.Name = "checkBoxA1Bit27";
 			checkBoxA1Bit27.Size = new Size(19, 14);
 			checkBoxA1Bit27.TabIndex = 10;
+			checkBoxA1Bit27.Tag = "checkBoxA1Bit27";
 			checkBoxA1Bit27.ToolTipValues.Description = "Shows bit 27 of byte 4 in A1";
 			checkBoxA1Bit27.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit27.ToolTipValues.Heading = "Bit 27 of byte 4 in A1";
@@ -5340,6 +5410,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit29.Name = "checkBoxA1Bit29";
 			checkBoxA1Bit29.Size = new Size(19, 14);
 			checkBoxA1Bit29.TabIndex = 9;
+			checkBoxA1Bit29.Tag = "checkBoxA1Bit29";
 			checkBoxA1Bit29.ToolTipValues.Description = "Shows bit 29 of byte 4 in A1";
 			checkBoxA1Bit29.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit29.ToolTipValues.Heading = "Bit 29 of byte 4 in A1";
@@ -5397,6 +5468,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit28.Name = "checkBoxA1Bit28";
 			checkBoxA1Bit28.Size = new Size(19, 14);
 			checkBoxA1Bit28.TabIndex = 58;
+			checkBoxA1Bit28.Tag = "checkBoxA1Bit28";
 			checkBoxA1Bit28.ToolTipValues.Description = "Shows bit 28 of byte 4 in A1";
 			checkBoxA1Bit28.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit28.ToolTipValues.Heading = "Bit 28 of byte 4 in A1";
@@ -5444,6 +5516,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit23.Name = "checkBoxA1Bit23";
 			checkBoxA1Bit23.Size = new Size(19, 14);
 			checkBoxA1Bit23.TabIndex = 6;
+			checkBoxA1Bit23.Tag = "checkBoxA1Bit23";
 			checkBoxA1Bit23.ToolTipValues.Description = "Shows bit 23 of byte 3 in A1";
 			checkBoxA1Bit23.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit23.ToolTipValues.Heading = "Bit 23 of byte 3 in A1";
@@ -5463,6 +5536,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit21.Name = "checkBoxA1Bit21";
 			checkBoxA1Bit21.Size = new Size(19, 14);
 			checkBoxA1Bit21.TabIndex = 7;
+			checkBoxA1Bit21.Tag = "checkBoxA1Bit21";
 			checkBoxA1Bit21.ToolTipValues.Description = "Shows bit 21 of byte 3 in A1";
 			checkBoxA1Bit21.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit21.ToolTipValues.Heading = "Bit 21 of byte 3 in A1";
@@ -5520,6 +5594,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit22.Name = "checkBoxA1Bit22";
 			checkBoxA1Bit22.Size = new Size(19, 14);
 			checkBoxA1Bit22.TabIndex = 46;
+			checkBoxA1Bit22.Tag = "checkBoxA1Bit22";
 			checkBoxA1Bit22.ToolTipValues.Description = "Shows bit 22 of byte 3 in A1";
 			checkBoxA1Bit22.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit22.ToolTipValues.Heading = "Bit 22 of byte 3 in A1";
@@ -5539,6 +5614,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit20.Name = "checkBoxA1Bit20";
 			checkBoxA1Bit20.Size = new Size(19, 14);
 			checkBoxA1Bit20.TabIndex = 8;
+			checkBoxA1Bit20.Tag = "checkBoxA1Bit20";
 			checkBoxA1Bit20.ToolTipValues.Description = "Shows bit 20 of byte 3 in A1";
 			checkBoxA1Bit20.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit20.ToolTipValues.Heading = "Bit 20 of byte 3 in A1";
@@ -5596,6 +5672,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit16.Name = "checkBoxA1Bit16";
 			checkBoxA1Bit16.Size = new Size(19, 14);
 			checkBoxA1Bit16.TabIndex = 10;
+			checkBoxA1Bit16.Tag = "checkBoxA1Bit16";
 			checkBoxA1Bit16.ToolTipValues.Description = "Shows bit 16 of byte 3 in A1";
 			checkBoxA1Bit16.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit16.ToolTipValues.Heading = "Bit 16 of byte 3 in A1";
@@ -5615,6 +5692,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit19.Name = "checkBoxA1Bit19";
 			checkBoxA1Bit19.Size = new Size(19, 14);
 			checkBoxA1Bit19.TabIndex = 9;
+			checkBoxA1Bit19.Tag = "checkBoxA1Bit19";
 			checkBoxA1Bit19.ToolTipValues.Description = "Shows bit 19 of byte 3 in A1";
 			checkBoxA1Bit19.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit19.ToolTipValues.Heading = "Bit 19 of byte 3 in A1";
@@ -5691,6 +5769,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit18.Name = "checkBoxA1Bit18";
 			checkBoxA1Bit18.Size = new Size(19, 14);
 			checkBoxA1Bit18.TabIndex = 38;
+			checkBoxA1Bit18.Tag = "checkBoxA1Bit18";
 			checkBoxA1Bit18.ToolTipValues.Description = "Shows bit 18 of byte 3 in A1";
 			checkBoxA1Bit18.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit18.ToolTipValues.Heading = "Bit 18 of byte 3 in A1";
@@ -5729,6 +5808,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit17.Name = "checkBoxA1Bit17";
 			checkBoxA1Bit17.Size = new Size(19, 14);
 			checkBoxA1Bit17.TabIndex = 36;
+			checkBoxA1Bit17.Tag = "checkBoxA1Bit17";
 			checkBoxA1Bit17.ToolTipValues.Description = "Shows bit 17 of byte 3 in A1";
 			checkBoxA1Bit17.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit17.ToolTipValues.Heading = "Bit 17 of byte 3 in A1";
@@ -5776,6 +5856,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit15.Name = "checkBoxA1Bit15";
 			checkBoxA1Bit15.Size = new Size(19, 14);
 			checkBoxA1Bit15.TabIndex = 6;
+			checkBoxA1Bit15.Tag = "checkBoxA1Bit15";
 			checkBoxA1Bit15.ToolTipValues.Description = "Shows bit 15 of byte 2 in A1";
 			checkBoxA1Bit15.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit15.ToolTipValues.Heading = "Bit 15 of byte 2 in A1";
@@ -5795,6 +5876,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit10.Name = "checkBoxA1Bit10";
 			checkBoxA1Bit10.Size = new Size(19, 14);
 			checkBoxA1Bit10.TabIndex = 9;
+			checkBoxA1Bit10.Tag = "checkBoxA1Bit10";
 			checkBoxA1Bit10.ToolTipValues.Description = "Shows bit 10 of byte 2 in A1";
 			checkBoxA1Bit10.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit10.ToolTipValues.Heading = "Bit 10 of byte 2 in A1";
@@ -5852,6 +5934,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit11.Name = "checkBoxA1Bit11";
 			checkBoxA1Bit11.Size = new Size(19, 14);
 			checkBoxA1Bit11.TabIndex = 8;
+			checkBoxA1Bit11.Tag = "checkBoxA1Bit11";
 			checkBoxA1Bit11.ToolTipValues.Description = "Shows bit 11 of byte 2 in A1";
 			checkBoxA1Bit11.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit11.ToolTipValues.Heading = "Bit 11 of byte 2 in A1";
@@ -5871,6 +5954,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit09.Name = "checkBoxA1Bit09";
 			checkBoxA1Bit09.Size = new Size(19, 14);
 			checkBoxA1Bit09.TabIndex = 10;
+			checkBoxA1Bit09.Tag = "checkBoxA1Bit09";
 			checkBoxA1Bit09.ToolTipValues.Description = "Shows bit 09 of byte 2 in A1";
 			checkBoxA1Bit09.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit09.ToolTipValues.Heading = "Bit 09 of byte 2 in A1";
@@ -5947,6 +6031,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit12.Name = "checkBoxA1Bit12";
 			checkBoxA1Bit12.Size = new Size(19, 14);
 			checkBoxA1Bit12.TabIndex = 7;
+			checkBoxA1Bit12.Tag = "checkBoxA1Bit12";
 			checkBoxA1Bit12.ToolTipValues.Description = "Shows bit 12 of byte 2 in A1";
 			checkBoxA1Bit12.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit12.ToolTipValues.Heading = "Bit 12 of byte 2 in A1";
@@ -5966,6 +6051,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit08.Name = "checkBoxA1Bit08";
 			checkBoxA1Bit08.Size = new Size(19, 14);
 			checkBoxA1Bit08.TabIndex = 11;
+			checkBoxA1Bit08.Tag = "checkBoxA1Bit08";
 			checkBoxA1Bit08.ToolTipValues.Description = "Shows bit 08 of byte 2 in A1";
 			checkBoxA1Bit08.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit08.ToolTipValues.Heading = "Bit 08 of byte 2 in A1";
@@ -6004,6 +6090,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit13.Name = "checkBoxA1Bit13";
 			checkBoxA1Bit13.Size = new Size(19, 14);
 			checkBoxA1Bit13.TabIndex = 28;
+			checkBoxA1Bit13.Tag = "checkBoxA1Bit13";
 			checkBoxA1Bit13.ToolTipValues.Description = "Shows bit 13 of byte 2 in A1";
 			checkBoxA1Bit13.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit13.ToolTipValues.Heading = "Bit 13 of byte 2 in A1";
@@ -6042,6 +6129,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit14.Name = "checkBoxA1Bit14";
 			checkBoxA1Bit14.Size = new Size(19, 14);
 			checkBoxA1Bit14.TabIndex = 30;
+			checkBoxA1Bit14.Tag = "checkBoxA1Bit14";
 			checkBoxA1Bit14.ToolTipValues.Description = "Shows bit 14 of byte 2 in A1";
 			checkBoxA1Bit14.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit14.ToolTipValues.Heading = "Bit 14 of byte 2 in A1";
@@ -6127,6 +6215,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit07.Name = "checkBoxA1Bit07";
 			checkBoxA1Bit07.Size = new Size(19, 14);
 			checkBoxA1Bit07.TabIndex = 7;
+			checkBoxA1Bit07.Tag = "checkBoxA1Bit07";
 			checkBoxA1Bit07.ToolTipValues.Description = "Shows bit 07 of byte 1 in A1";
 			checkBoxA1Bit07.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit07.ToolTipValues.Heading = "Bit 07 of byte 1 in A1";
@@ -6165,6 +6254,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit00.Name = "checkBoxA1Bit00";
 			checkBoxA1Bit00.Size = new Size(19, 14);
 			checkBoxA1Bit00.TabIndex = 12;
+			checkBoxA1Bit00.Tag = "checkBoxA1Bit00";
 			checkBoxA1Bit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in A1";
 			checkBoxA1Bit00.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A1";
@@ -6184,6 +6274,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit06.Name = "checkBoxA1Bit06";
 			checkBoxA1Bit06.Size = new Size(19, 14);
 			checkBoxA1Bit06.TabIndex = 8;
+			checkBoxA1Bit06.Tag = "checkBoxA1Bit06";
 			checkBoxA1Bit06.ToolTipValues.Description = "Shows bit 06 of byte 1 in A1";
 			checkBoxA1Bit06.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit06.ToolTipValues.Heading = "Bit 06 of byte 1 in A1";
@@ -6203,6 +6294,7 @@ namespace BitLogicCalculator
 			labelA1Bit00.Name = "labelA1Bit00";
 			labelA1Bit00.Size = new Size(24, 20);
 			labelA1Bit00.TabIndex = 6;
+			labelA1Bit00.Tag = "checkBoxA1Bit00";
 			labelA1Bit00.ToolTipValues.Description = "Shows bit 00 of byte 1 in A1";
 			labelA1Bit00.ToolTipValues.EnableToolTips = true;
 			labelA1Bit00.ToolTipValues.Heading = "Bit 00 of byte 1 in A1";
@@ -6241,6 +6333,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit05.Name = "checkBoxA1Bit05";
 			checkBoxA1Bit05.Size = new Size(19, 14);
 			checkBoxA1Bit05.TabIndex = 9;
+			checkBoxA1Bit05.Tag = "checkBoxA1Bit05";
 			checkBoxA1Bit05.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit05.Values.Text = "";
 			checkBoxA1Bit05.CheckedChanged += CheckBoxA1Bit05_CheckedChanged;
@@ -6258,6 +6351,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit01.Name = "checkBoxA1Bit01";
 			checkBoxA1Bit01.Size = new Size(19, 14);
 			checkBoxA1Bit01.TabIndex = 11;
+			checkBoxA1Bit01.Tag = "checkBoxA1Bit01";
 			checkBoxA1Bit01.ToolTipValues.Description = "Shows bit 01 of byte 1 in A1";
 			checkBoxA1Bit01.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit01.ToolTipValues.Heading = "Bit 01 of byte 1 in A1";
@@ -6296,6 +6390,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit04.Name = "checkBoxA1Bit04";
 			checkBoxA1Bit04.Size = new Size(19, 14);
 			checkBoxA1Bit04.TabIndex = 10;
+			checkBoxA1Bit04.Tag = "checkBoxA1Bit04";
 			checkBoxA1Bit04.ToolTipValues.Description = "Shows bit 04 of byte 1 in A1";
 			checkBoxA1Bit04.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit04.ToolTipValues.Heading = "Bit 04 of byte 1 in A1";
@@ -6353,6 +6448,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit03.Name = "checkBoxA1Bit03";
 			checkBoxA1Bit03.Size = new Size(19, 14);
 			checkBoxA1Bit03.TabIndex = 6;
+			checkBoxA1Bit03.Tag = "checkBoxA1Bit03";
 			checkBoxA1Bit03.ToolTipValues.Description = "Shows bit 03 of byte 1 in A1";
 			checkBoxA1Bit03.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit03.ToolTipValues.Heading = "Bit 03 of byte 1 in A1";
@@ -6372,6 +6468,7 @@ namespace BitLogicCalculator
 			checkBoxA1Bit02.Name = "checkBoxA1Bit02";
 			checkBoxA1Bit02.Size = new Size(19, 14);
 			checkBoxA1Bit02.TabIndex = 4;
+			checkBoxA1Bit02.Tag = "checkBoxA1Bit02";
 			checkBoxA1Bit02.ToolTipValues.Description = "Shows bit 02 of byte 1 in A1";
 			checkBoxA1Bit02.ToolTipValues.EnableToolTips = true;
 			checkBoxA1Bit02.ToolTipValues.Heading = "Bit 02 of byte 1 in A1";
@@ -6420,7 +6517,6 @@ namespace BitLogicCalculator
 			FormTitleAlign = PaletteRelativeAlign.Center;
 			Icon = (Icon)resources.GetObject("$this.Icon");
 			Margin = new Padding(4, 3, 4, 3);
-			MaximizeBox = false;
 			Name = "MainForm";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Bit Logic Calculator (BLC)";
