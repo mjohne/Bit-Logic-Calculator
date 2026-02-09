@@ -1,7 +1,8 @@
 ﻿using BitLogicCalculator.Properties;
 
+using Krypton.Toolkit;
+
 using System.Collections;
-using System.Globalization;
 
 namespace BitLogicCalculator;
 
@@ -11,6 +12,129 @@ namespace BitLogicCalculator;
 public partial class MainForm : BaseKryptonForm
 {
 	#region Constants and variables
+
+	private KryptonCheckBox[] _a1Bits;
+	private KryptonCheckBox[] _a2Bits;
+	private KryptonCheckBox[] _resultBits;
+
+	private void InitializeBitArrays()
+	{
+		_a1Bits =
+		[
+			checkBoxA1Bit00, checkBoxA1Bit01, checkBoxA1Bit02, checkBoxA1Bit03,
+			checkBoxA1Bit04, checkBoxA1Bit05, checkBoxA1Bit06, checkBoxA1Bit07,
+			checkBoxA1Bit08, checkBoxA1Bit09, checkBoxA1Bit10, checkBoxA1Bit11,
+			checkBoxA1Bit12, checkBoxA1Bit13, checkBoxA1Bit14, checkBoxA1Bit15,
+			checkBoxA1Bit16, checkBoxA1Bit17, checkBoxA1Bit18, checkBoxA1Bit19,
+			checkBoxA1Bit20, checkBoxA1Bit21, checkBoxA1Bit22, checkBoxA1Bit23,
+			checkBoxA1Bit24, checkBoxA1Bit25, checkBoxA1Bit26, checkBoxA1Bit27,
+			checkBoxA1Bit28, checkBoxA1Bit29, checkBoxA1Bit30, checkBoxA1Bit31
+		];
+
+		_a2Bits =
+		[
+			checkBoxA2Bit00, checkBoxA2Bit01, checkBoxA2Bit02, checkBoxA2Bit03,
+			checkBoxA2Bit04, checkBoxA2Bit05, checkBoxA2Bit06, checkBoxA2Bit07,
+			checkBoxA2Bit08, checkBoxA2Bit09, checkBoxA2Bit10, checkBoxA2Bit11,
+			checkBoxA2Bit12, checkBoxA2Bit13, checkBoxA2Bit14, checkBoxA2Bit15,
+			checkBoxA2Bit16, checkBoxA2Bit17, checkBoxA2Bit18, checkBoxA2Bit19,
+			checkBoxA2Bit20, checkBoxA2Bit21, checkBoxA2Bit22, checkBoxA2Bit23,
+			checkBoxA2Bit24, checkBoxA2Bit25, checkBoxA2Bit26, checkBoxA2Bit27,
+			checkBoxA2Bit28, checkBoxA2Bit29, checkBoxA2Bit30, checkBoxA2Bit31
+		];
+
+		_resultBits =
+		[
+			checkBoxResultBit00, checkBoxResultBit01, checkBoxResultBit02, checkBoxResultBit03,
+			checkBoxResultBit04, checkBoxResultBit05, checkBoxResultBit06, checkBoxResultBit07,
+			checkBoxResultBit08, checkBoxResultBit09, checkBoxResultBit10, checkBoxResultBit11,
+			checkBoxResultBit12, checkBoxResultBit13, checkBoxResultBit14, checkBoxResultBit15,
+			checkBoxResultBit16, checkBoxResultBit17, checkBoxResultBit18, checkBoxResultBit19,
+			checkBoxResultBit20, checkBoxResultBit21, checkBoxResultBit22, checkBoxResultBit23,
+			checkBoxResultBit24, checkBoxResultBit25, checkBoxResultBit26, checkBoxResultBit27,
+			checkBoxResultBit28, checkBoxResultBit29, checkBoxResultBit30, checkBoxResultBit31
+		];
+	}
+
+	private static void ShowBits(BitArray source, KryptonCheckBox[] targets, int visibleBits)
+	{
+		for (int i = 0; i < visibleBits; i++)
+		{
+			targets[i].Checked = source.Get(index: i);
+		}
+	}
+
+	private int GetActiveBitCount() => comboBoxDataSize.SelectedIndex switch
+	{
+		0 => 8,
+		1 => 16,
+		_ => 32
+	};
+
+	private void ApplyDataSize()
+	{
+		int bits = GetActiveBitCount();
+
+		for (int i = bits; i < length; i++)
+		{
+			accumulator1[i] = false;
+			accumulator2[i] = false;
+			result[i] = false;
+		}
+	}
+
+	private static void ShiftLeft(BitArray bits, bool fill)
+	{
+		for (int i = bits.Length - 1; i > 0; i--)
+		{
+			bits[i] = bits[i - 1];
+		}
+
+		bits[0] = fill;
+	}
+
+	private static void ShiftRight(BitArray bits, bool fill)
+	{
+		for (int i = 0; i < bits.Length - 1; i++)
+		{
+			bits[i] = bits[i + 1];
+		}
+
+		bits[^1] = fill;
+	}
+
+	private static BitArray Add(BitArray a, BitArray b)
+	{
+		var result = new BitArray(a.Length);
+		bool carry = false;
+
+		for (int i = 0; i < a.Length; i++)
+		{
+			bool sum = a[i] ^ b[i] ^ carry;
+			carry = (a[i] && b[i]) || (carry && (a[i] ^ b[i]));
+			result[i] = sum;
+		}
+		return result;
+	}
+
+	//result = Add(accumulator1, accumulator2);
+	//ShowBits(result, _resultBits, GetActiveBitCount());
+
+	private void BitLabel_Click(object sender, EventArgs e)
+	{
+		if (sender is not Label lbl || lbl.Tag is not CheckBox cb)
+		{
+			return;
+		}
+
+		cb.Checked = !cb.Checked;
+
+		MessageBox.Show(accumulator1.Get(index: 0).ToString());
+
+	}
+
+
+
 
 	/// <summary>
 	/// Indicates whether the least significant bit (LSB) is set.
@@ -41,16 +165,6 @@ public partial class MainForm : BaseKryptonForm
 	/// Random number generator for generating random values.
 	/// </summary>
 	private readonly Random random = new();
-
-	/// <summary>
-	/// Contains a sequence of numbers representing powers of two, starting from 1 up to 2,147,483,648.
-	/// </summary>
-	private readonly long[] squaredByteNumbers = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864, 134217728, 268435456, 536870912, 1073741824, 2147483648];
-
-	/// <summary>
-	/// Culture info
-	/// </summary>
-	private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
 
 	#endregion
 
@@ -88,141 +202,6 @@ public partial class MainForm : BaseKryptonForm
 		// Clear the status bar text and disable it
 		labelInformation.Enabled = false;
 		labelInformation.Text = string.Empty;
-	}
-
-	private void ShowAccumulator1States()
-	{
-		checkBoxA1Bit00.Checked = accumulator1.Get(index: 0);
-		checkBoxA1Bit01.Checked = accumulator1.Get(index: 1);
-		checkBoxA1Bit02.Checked = accumulator1.Get(index: 2);
-		checkBoxA1Bit03.Checked = accumulator1.Get(index: 3);
-		checkBoxA1Bit04.Checked = accumulator1.Get(index: 4);
-		checkBoxA1Bit05.Checked = accumulator1.Get(index: 5);
-		checkBoxA1Bit06.Checked = accumulator1.Get(index: 6);
-		checkBoxA1Bit07.Checked = accumulator1.Get(index: 7);
-		if (groupBoxA1Byte2.Enabled)
-		{
-			checkBoxA1Bit08.Checked = accumulator1.Get(index: 8);
-			checkBoxA1Bit09.Checked = accumulator1.Get(index: 9);
-			checkBoxA1Bit10.Checked = accumulator1.Get(index: 10);
-			checkBoxA1Bit11.Checked = accumulator1.Get(index: 11);
-			checkBoxA1Bit12.Checked = accumulator1.Get(index: 12);
-			checkBoxA1Bit13.Checked = accumulator1.Get(index: 13);
-			checkBoxA1Bit14.Checked = accumulator1.Get(index: 14);
-			checkBoxA1Bit15.Checked = accumulator1.Get(index: 15);
-		}
-		if (groupBoxA1Byte3.Enabled)
-		{
-			checkBoxA1Bit16.Checked = accumulator1.Get(index: 16);
-			checkBoxA1Bit17.Checked = accumulator1.Get(index: 17);
-			checkBoxA1Bit18.Checked = accumulator1.Get(index: 18);
-			checkBoxA1Bit19.Checked = accumulator1.Get(index: 19);
-			checkBoxA1Bit20.Checked = accumulator1.Get(index: 20);
-			checkBoxA1Bit21.Checked = accumulator1.Get(index: 21);
-			checkBoxA1Bit22.Checked = accumulator1.Get(index: 22);
-			checkBoxA1Bit23.Checked = accumulator1.Get(index: 23);
-		}
-		if (groupBoxA1Byte4.Enabled)
-		{
-			checkBoxA1Bit24.Checked = accumulator1.Get(index: 24);
-			checkBoxA1Bit25.Checked = accumulator1.Get(index: 25);
-			checkBoxA1Bit26.Checked = accumulator1.Get(index: 26);
-			checkBoxA1Bit27.Checked = accumulator1.Get(index: 27);
-			checkBoxA1Bit28.Checked = accumulator1.Get(index: 28);
-			checkBoxA1Bit29.Checked = accumulator1.Get(index: 29);
-			checkBoxA1Bit30.Checked = accumulator1.Get(index: 30);
-			checkBoxA1Bit31.Checked = accumulator1.Get(index: 31);
-		}
-	}
-
-	private void ShowAccumulator2States()
-	{
-		checkBoxA2Bit00.Checked = accumulator2.Get(index: 0);
-		checkBoxA2Bit01.Checked = accumulator2.Get(index: 1);
-		checkBoxA2Bit02.Checked = accumulator2.Get(index: 2);
-		checkBoxA2Bit03.Checked = accumulator2.Get(index: 3);
-		checkBoxA2Bit04.Checked = accumulator2.Get(index: 4);
-		checkBoxA2Bit05.Checked = accumulator2.Get(index: 5);
-		checkBoxA2Bit06.Checked = accumulator2.Get(index: 6);
-		checkBoxA2Bit07.Checked = accumulator2.Get(index: 7);
-		if (groupBoxA2Byte2.Enabled)
-		{
-			checkBoxA2Bit08.Checked = accumulator2.Get(index: 8);
-			checkBoxA2Bit09.Checked = accumulator2.Get(index: 9);
-			checkBoxA2Bit10.Checked = accumulator2.Get(index: 10);
-			checkBoxA2Bit11.Checked = accumulator2.Get(index: 11);
-			checkBoxA2Bit12.Checked = accumulator2.Get(index: 12);
-			checkBoxA2Bit13.Checked = accumulator2.Get(index: 13);
-			checkBoxA2Bit14.Checked = accumulator2.Get(index: 14);
-			checkBoxA2Bit15.Checked = accumulator2.Get(index: 15);
-		}
-		if (groupBoxA2Byte3.Enabled)
-		{
-			checkBoxA2Bit16.Checked = accumulator2.Get(index: 16);
-			checkBoxA2Bit17.Checked = accumulator2.Get(index: 17);
-			checkBoxA2Bit18.Checked = accumulator2.Get(index: 18);
-			checkBoxA2Bit19.Checked = accumulator2.Get(index: 19);
-			checkBoxA2Bit20.Checked = accumulator2.Get(index: 20);
-			checkBoxA2Bit21.Checked = accumulator2.Get(index: 21);
-			checkBoxA2Bit22.Checked = accumulator2.Get(index: 22);
-			checkBoxA2Bit23.Checked = accumulator2.Get(index: 23);
-		}
-		if (groupBoxA2Byte4.Enabled)
-		{
-			checkBoxA2Bit24.Checked = accumulator2.Get(index: 24);
-			checkBoxA2Bit25.Checked = accumulator2.Get(index: 25);
-			checkBoxA2Bit26.Checked = accumulator2.Get(index: 26);
-			checkBoxA2Bit27.Checked = accumulator2.Get(index: 27);
-			checkBoxA2Bit28.Checked = accumulator2.Get(index: 28);
-			checkBoxA2Bit29.Checked = accumulator2.Get(index: 29);
-			checkBoxA2Bit30.Checked = accumulator2.Get(index: 30);
-			checkBoxA2Bit31.Checked = accumulator2.Get(index: 31);
-		}
-	}
-
-	private void ShowResultStates()
-	{
-		checkBoxResultBit00.Checked = result.Get(index: 0);
-		checkBoxResultBit01.Checked = result.Get(index: 1);
-		checkBoxResultBit02.Checked = result.Get(index: 2);
-		checkBoxResultBit03.Checked = result.Get(index: 3);
-		checkBoxResultBit04.Checked = result.Get(index: 4);
-		checkBoxResultBit05.Checked = result.Get(index: 5);
-		checkBoxResultBit06.Checked = result.Get(index: 6);
-		checkBoxResultBit07.Checked = result.Get(index: 7);
-		if (groupBoxResultByte2.Enabled)
-		{
-			checkBoxResultBit08.Checked = result.Get(index: 8);
-			checkBoxResultBit09.Checked = result.Get(index: 9);
-			checkBoxResultBit10.Checked = result.Get(index: 10);
-			checkBoxResultBit11.Checked = result.Get(index: 11);
-			checkBoxResultBit12.Checked = result.Get(index: 12);
-			checkBoxResultBit13.Checked = result.Get(index: 13);
-			checkBoxResultBit14.Checked = result.Get(index: 14);
-			checkBoxResultBit15.Checked = result.Get(index: 15);
-		}
-		if (groupBoxResultByte3.Enabled)
-		{
-			checkBoxResultBit16.Checked = result.Get(index: 16);
-			checkBoxResultBit17.Checked = result.Get(index: 17);
-			checkBoxResultBit18.Checked = result.Get(index: 18);
-			checkBoxResultBit19.Checked = result.Get(index: 19);
-			checkBoxResultBit20.Checked = result.Get(index: 20);
-			checkBoxResultBit21.Checked = result.Get(index: 21);
-			checkBoxResultBit22.Checked = result.Get(index: 22);
-			checkBoxResultBit23.Checked = result.Get(index: 23);
-		}
-		if (groupBoxResultByte4.Enabled)
-		{
-			checkBoxResultBit24.Checked = result.Get(index: 24);
-			checkBoxResultBit25.Checked = result.Get(index: 25);
-			checkBoxResultBit26.Checked = result.Get(index: 26);
-			checkBoxResultBit27.Checked = result.Get(index: 27);
-			checkBoxResultBit28.Checked = result.Get(index: 28);
-			checkBoxResultBit29.Checked = result.Get(index: 29);
-			checkBoxResultBit30.Checked = result.Get(index: 30);
-			checkBoxResultBit31.Checked = result.Get(index: 31);
-		}
 	}
 
 	private bool RandomBit() => (byte)random.Next(maxValue: 2) == 1;
@@ -457,10 +436,11 @@ public partial class MainForm : BaseKryptonForm
 		comboBoxDataSize.SelectedIndex = comboBoxDataSize.Items.Count - 1;
 		textBoxDataConversion.Text = Resources.number00;
 		comboBoxDataConversionUnit.SelectedIndex = 0;
+		InitializeBitArrays();
 		SetAccumulator1RandomBits();
 		SetAccumulator2RandomBits();
-		ShowAccumulator1States();
-		ShowAccumulator2States();
+		ShowBits(source: accumulator1, targets: _a1Bits, visibleBits: GetActiveBitCount());
+		ShowBits(source: accumulator2, targets: _a2Bits, visibleBits: GetActiveBitCount());
 	}
 
 	#endregion
@@ -875,43 +855,43 @@ public partial class MainForm : BaseKryptonForm
 				result.Set(index: i, value: Add(value1: result.Get(index: i), value2: accumulator2.Get(index: i), carry: ref carry));
 			}
 		}
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonSubtractionA1AndA2_Click(object sender, EventArgs e)
 	{
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonMultiplicationA1AndA2_Click(object sender, EventArgs e)
 	{
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonDivisionA1AndA2_Click(object sender, EventArgs e)
 	{
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalAndA1AndA2_Click(object sender, EventArgs e)
 	{
 		result = (BitArray)accumulator1.Clone();
 		result.And(value: accumulator2);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalOrA1AndA2_Click(object sender, EventArgs e)
 	{
 		result = (BitArray)accumulator1.Clone();
 		result.Or(value: accumulator2);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalXorA1AndA2_Click(object sender, EventArgs e)
 	{
 		result = (BitArray)accumulator1.Clone();
 		result.Xor(value: accumulator2);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalNandA1AndA2_Click_Click(object sender, EventArgs e)
@@ -919,7 +899,7 @@ public partial class MainForm : BaseKryptonForm
 		result = (BitArray)accumulator1.Clone();
 		result.And(value: accumulator2);
 		result.Not();
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalNorA1AndA2_Click(object sender, EventArgs e)
@@ -927,7 +907,7 @@ public partial class MainForm : BaseKryptonForm
 		result = (BitArray)accumulator1.Clone();
 		result.Or(value: accumulator2);
 		result.Not();
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonLogicalXnorA1AndA2_Click(object sender, EventArgs e)
@@ -935,31 +915,31 @@ public partial class MainForm : BaseKryptonForm
 		result = (BitArray)accumulator1.Clone();
 		result.Xor(value: accumulator2);
 		result.Not();
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonInvertA1_Click(object sender, EventArgs e)
 	{
 		accumulator1.Not();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonInvertA2_Click(object sender, EventArgs e)
 	{
 		accumulator2.Not();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonCopyResultToA1_Click(object sender, EventArgs e)
 	{
 		accumulator1 = (BitArray)result.Clone();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonCopyResultToA2_Click(object sender, EventArgs e)
 	{
 		accumulator2 = (BitArray)result.Clone();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftLeftWithZeroA1_Click(object sender, EventArgs e)
@@ -968,7 +948,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftLeftA1(fillWithOne: false);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftLeftWithZeroA2_Click(object sender, EventArgs e)
@@ -977,7 +957,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftLeftA2(fillWithOne: false);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftLeftWithOneA1_Click(object sender, EventArgs e)
@@ -986,7 +966,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftLeftA1(fillWithOne: true);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftLeftWithOneA2_Click(object sender, EventArgs e)
@@ -995,7 +975,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftLeftA2(fillWithOne: true);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftRightWithZeroA1_Click(object sender, EventArgs e)
@@ -1004,7 +984,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftRightA1(fillWithOne: false);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftRightWithZeroA2_Click(object sender, EventArgs e)
@@ -1013,7 +993,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftRightA2(fillWithOne: false);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftRightWithOneA1_Click(object sender, EventArgs e)
@@ -1022,7 +1002,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftRightA1(fillWithOne: true);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonShiftRightWithOneA2_Click(object sender, EventArgs e)
@@ -1031,7 +1011,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ShiftRightA2(fillWithOne: true);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftLeftWithZeroA1_Click(object sender, EventArgs e)
@@ -1040,7 +1020,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftLeftA1(fillWithOne: false);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftLeftWithZeroA2_Click(object sender, EventArgs e)
@@ -1049,7 +1029,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftLeftA2(fillWithOne: false);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftLeftWithOneA1_Click(object sender, EventArgs e)
@@ -1058,7 +1038,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftLeftA1(fillWithOne: true);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftLeftWithOneA2_Click(object sender, EventArgs e)
@@ -1067,7 +1047,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftLeftA2(fillWithOne: true);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftRightWithZeroA1_Click(object sender, EventArgs e)
@@ -1076,7 +1056,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftRightA1(fillWithOne: false);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftRightWithZeroA2_Click(object sender, EventArgs e)
@@ -1085,7 +1065,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftRightA2(fillWithOne: false);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftRightWithOneA1_Click(object sender, EventArgs e)
@@ -1094,7 +1074,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftRightA1(fillWithOne: true);
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonArithmeticShiftRightWithOneA2_Click(object sender, EventArgs e)
@@ -1103,7 +1083,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			ArithmeticShiftRightA2(fillWithOne: true);
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateLeftA1_Click(object sender, EventArgs e)
@@ -1112,7 +1092,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			RotateLeftA1();
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateLeftA2_Click(object sender, EventArgs e)
@@ -1121,7 +1101,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			RotateLeftA2();
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateRightA1_Click(object sender, EventArgs e)
@@ -1130,7 +1110,7 @@ public partial class MainForm : BaseKryptonForm
 		{
 			RotateRightA1();
 		}
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateRightA2_Click(object sender, EventArgs e)
@@ -1139,27 +1119,27 @@ public partial class MainForm : BaseKryptonForm
 		{
 			RotateRightA2();
 		}
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateLeftWithCarryA1_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateLeftWithCarryA2_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateRightWithCarryA1_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRotateRightWithCarryA2_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRevertA1_Click(object sender, EventArgs e)
@@ -1231,7 +1211,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 7, value: accumulator1.Get(index: 0));
 		}
 		accumulator1 = (BitArray)bitArray.Clone();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRevertA2_Click(object sender, EventArgs e)
@@ -1303,31 +1283,31 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 7, value: accumulator2.Get(index: 0));
 		}
 		accumulator2 = (BitArray)bitArray.Clone();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonClearA1_Click(object sender, EventArgs e)
 	{
 		accumulator1.SetAll(value: false);
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonClearA2_Click(object sender, EventArgs e)
 	{
 		accumulator2.SetAll(value: false);
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonFillA1_Click(object sender, EventArgs e)
 	{
 		accumulator1.SetAll(value: true);
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonFillA2_Click(object sender, EventArgs e)
 	{
 		accumulator2.SetAll(value: true);
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonSwapA1A2_Click(object sender, EventArgs e)
@@ -1335,20 +1315,20 @@ public partial class MainForm : BaseKryptonForm
 		BitArray bitArray = (BitArray)accumulator1.Clone();
 		accumulator1 = (BitArray)accumulator2.Clone();
 		accumulator2 = (BitArray)bitArray.Clone();
-		ShowAccumulator1States();
-		ShowAccumulator2States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRandomizeA1_Click(object sender, EventArgs e)
 	{
 		SetAccumulator1RandomBits();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonRandomizeA2_Click(object sender, EventArgs e)
 	{
 		SetAccumulator2RandomBits();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonInhibitionA1A2_Click(object sender, EventArgs e)
@@ -1357,7 +1337,7 @@ public partial class MainForm : BaseKryptonForm
 		BitArray bitArray = (BitArray)accumulator2.Clone();
 		bitArray.Not();
 		result.And(value: bitArray);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonInhibitionA2A1_Click(object sender, EventArgs e)
@@ -1366,7 +1346,7 @@ public partial class MainForm : BaseKryptonForm
 		BitArray bitArray = (BitArray)accumulator1.Clone();
 		bitArray.Not();
 		result.And(value: bitArray);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonSubjunctionA1A2_Click(object sender, EventArgs e)
@@ -1375,7 +1355,7 @@ public partial class MainForm : BaseKryptonForm
 		BitArray bitArray = (BitArray)accumulator2.Clone();
 		bitArray.Not();
 		result.Or(value: bitArray);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonSubjunctionA2A1_Click(object sender, EventArgs e)
@@ -1384,7 +1364,7 @@ public partial class MainForm : BaseKryptonForm
 		BitArray bitArray = (BitArray)accumulator1.Clone();
 		bitArray.Not();
 		result.Or(value: bitArray);
-		ShowResultStates();
+		ShowBits(result, _resultBits, GetActiveBitCount());
 	}
 
 	private void ButtonHalfSwapA1_Click(object sender, EventArgs e)
@@ -1456,7 +1436,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 7, value: accumulator1.Get(index: 3));
 		}
 		accumulator1 = (BitArray)bitArray.Clone();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonHalfSwapA2_Click(object sender, EventArgs e)
@@ -1528,7 +1508,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 7, value: accumulator2.Get(index: 3));
 		}
 		accumulator2 = (BitArray)bitArray.Clone();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonNibbleSwapA1_Click(object sender, EventArgs e)
@@ -1573,7 +1553,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 31, value: accumulator1.Get(index: 27));
 		}
 		accumulator1 = (BitArray)bitArray.Clone();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonNibbleSwapA2_Click(object sender, EventArgs e)
@@ -1618,7 +1598,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 31, value: accumulator2.Get(index: 27));
 		}
 		accumulator2 = (BitArray)bitArray.Clone();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonBitSwapA1_Click(object sender, EventArgs e)
@@ -1663,7 +1643,7 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 31, value: accumulator1.Get(index: 30));
 		}
 		accumulator1 = (BitArray)bitArray.Clone();
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonBitSwapA2_Click(object sender, EventArgs e)
@@ -1708,17 +1688,17 @@ public partial class MainForm : BaseKryptonForm
 			bitArray.Set(index: 31, value: accumulator2.Get(index: 30));
 		}
 		accumulator2 = (BitArray)bitArray.Clone();
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonFormingTwosComponentA1_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator1States();
+		ShowBits(accumulator1, _a1Bits, GetActiveBitCount());
 	}
 
 	private void ButtonFormingTwosComponentA2_Click(object sender, EventArgs e)
 	{
-		ShowAccumulator2States();
+		ShowBits(accumulator2, _a2Bits, GetActiveBitCount());
 	}
 
 	private void ButtonStatistics_Click(object sender, EventArgs e)
