@@ -15,7 +15,7 @@ public partial class MainForm : BaseKryptonForm
 
 	private KryptonCheckBox[] _a1Bits = null!;
 	private KryptonCheckBox[] _a2Bits = null!;
-	private KryptonCheckBox[] _resultBits;
+	private KryptonCheckBox[] _resultBits = null!;
 
 	private void InitializeBitArrays()
 	{
@@ -128,9 +128,6 @@ public partial class MainForm : BaseKryptonForm
 		}
 
 		cb.Checked = !cb.Checked;
-
-		MessageBox.Show(accumulator1.Get(index: 0).ToString());
-
 	}
 
 
@@ -436,107 +433,40 @@ public partial class MainForm : BaseKryptonForm
 		comboBoxDataSize.SelectedIndex = comboBoxDataSize.Items.Count - 1;
 		textBoxDataConversion.Text = Resources.number00;
 		comboBoxDataConversionUnit.SelectedIndex = 0;
-		labelA1Bit00.Tag = checkBoxA1Bit00;
-		labelA1Bit01.Tag = checkBoxA1Bit01;
-		labelA1Bit02.Tag = checkBoxA1Bit02;
-		labelA1Bit03.Tag = checkBoxA1Bit03;
-		labelA1Bit04.Tag = checkBoxA1Bit04;
-		labelA1Bit05.Tag = checkBoxA1Bit05;
-		labelA1Bit06.Tag = checkBoxA1Bit06;
-		labelA1Bit07.Tag = checkBoxA1Bit07;
-		labelA1Bit08.Tag = checkBoxA1Bit08;
-		labelA1Bit09.Tag = checkBoxA1Bit09;
-		labelA1Bit10.Tag = checkBoxA1Bit10;
-		labelA1Bit11.Tag = checkBoxA1Bit11;
-		labelA1Bit12.Tag = checkBoxA1Bit12;
-		labelA1Bit13.Tag = checkBoxA1Bit13;
-		labelA1Bit14.Tag = checkBoxA1Bit14;
-		labelA1Bit15.Tag = checkBoxA1Bit15;
-		labelA1Bit16.Tag = checkBoxA1Bit16;
-		labelA1Bit17.Tag = checkBoxA1Bit17;
-		labelA1Bit18.Tag = checkBoxA1Bit18;
-		labelA1Bit19.Tag = checkBoxA1Bit19;
-		labelA1Bit20.Tag = checkBoxA1Bit20;
-		labelA1Bit21.Tag = checkBoxA1Bit21;
-		labelA1Bit22.Tag = checkBoxA1Bit22;
-		labelA1Bit23.Tag = checkBoxA1Bit23;
-		labelA1Bit24.Tag = checkBoxA1Bit24;
-		labelA1Bit25.Tag = checkBoxA1Bit25;
-		labelA1Bit26.Tag = checkBoxA1Bit26;
-		labelA1Bit27.Tag = checkBoxA1Bit27;
-		labelA1Bit28.Tag = checkBoxA1Bit28;
-		labelA1Bit29.Tag = checkBoxA1Bit29;
-		labelA1Bit30.Tag = checkBoxA1Bit30;
-		labelA1Bit31.Tag = checkBoxA1Bit31;
-		labelA2Bit00.Tag = checkBoxA2Bit00;
-		labelA2Bit01.Tag = checkBoxA2Bit01;
-		labelA2Bit02.Tag = checkBoxA2Bit02;
-		labelA2Bit03.Tag = checkBoxA2Bit03;
-		labelA2Bit04.Tag = checkBoxA2Bit04;
-		labelA2Bit05.Tag = checkBoxA2Bit05;
-		labelA2Bit06.Tag = checkBoxA2Bit06;
-		labelA2Bit07.Tag = checkBoxA2Bit07;
-		labelA2Bit08.Tag = checkBoxA2Bit08;
-		labelA2Bit09.Tag = checkBoxA2Bit09;
-		labelA2Bit10.Tag = checkBoxA2Bit10;
-		labelA2Bit11.Tag = checkBoxA2Bit11;
-		labelA2Bit12.Tag = checkBoxA2Bit12;
-		labelA2Bit13.Tag = checkBoxA2Bit13;
-		labelA2Bit14.Tag = checkBoxA2Bit14;
-		labelA2Bit15.Tag = checkBoxA2Bit15;
-		labelA2Bit16.Tag = checkBoxA2Bit16;
-		labelA2Bit17.Tag = checkBoxA2Bit17;
-		labelA2Bit18.Tag = checkBoxA2Bit18;
-		labelA2Bit19.Tag = checkBoxA2Bit19;
-		labelA2Bit20.Tag = checkBoxA2Bit20;
-		labelA2Bit21.Tag = checkBoxA2Bit21;
-		labelA2Bit22.Tag = checkBoxA2Bit22;
-		labelA2Bit23.Tag = checkBoxA2Bit23;
-		labelA2Bit24.Tag = checkBoxA2Bit24;
-		labelA2Bit25.Tag = checkBoxA2Bit25;
-		labelA2Bit26.Tag = checkBoxA2Bit26;
-		labelA2Bit27.Tag = checkBoxA2Bit27;
-		labelA2Bit28.Tag = checkBoxA2Bit28;
-		labelA2Bit29.Tag = checkBoxA2Bit29;
-		labelA2Bit30.Tag = checkBoxA2Bit30;
-		labelA2Bit31.Tag = checkBoxA2Bit31;
-		labelResultBit00.Tag = checkBoxResultBit00;
-		labelResultBit01.Tag = checkBoxResultBit01;
-		labelResultBit02.Tag = checkBoxResultBit02;
-		labelResultBit03.Tag = checkBoxResultBit03;
-		labelResultBit04.Tag = checkBoxResultBit04;
-		labelResultBit05.Tag = checkBoxResultBit05;
-		labelResultBit06.Tag = checkBoxResultBit06;
-		labelResultBit07.Tag = checkBoxResultBit07;
-		labelResultBit08.Tag = checkBoxResultBit08;
-		labelResultBit09.Tag = checkBoxResultBit09;
-		labelResultBit10.Tag = checkBoxResultBit10;
-		labelResultBit11.Tag = checkBoxResultBit11;
-		labelResultBit12.Tag = checkBoxResultBit12;
-		labelResultBit13.Tag = checkBoxResultBit13;
-		labelResultBit14.Tag = checkBoxResultBit14;
-		labelResultBit15.Tag = checkBoxResultBit15;
-		labelResultBit16.Tag = checkBoxResultBit16;
-		labelResultBit17.Tag = checkBoxResultBit17;
-		labelResultBit18.Tag = checkBoxResultBit18;
-		labelResultBit19.Tag = checkBoxResultBit19;
-		labelResultBit20.Tag = checkBoxResultBit20;
-		labelResultBit21.Tag = checkBoxResultBit21;
-		labelResultBit22.Tag = checkBoxResultBit22;
-		labelResultBit23.Tag = checkBoxResultBit23;
-		labelResultBit24.Tag = checkBoxResultBit24;
-		labelResultBit25.Tag = checkBoxResultBit25;
-		labelResultBit26.Tag = checkBoxResultBit26;
-		labelResultBit27.Tag = checkBoxResultBit27;
-		labelResultBit28.Tag = checkBoxResultBit28;
-		labelResultBit29.Tag = checkBoxResultBit29;
-		labelResultBit30.Tag = checkBoxResultBit30;
-		labelResultBit31.Tag = checkBoxResultBit31;
 		InitializeBitArrays();
 		SetAccumulator1RandomBits();
 		SetAccumulator2RandomBits();
 		ShowBits(source: accumulator1, targets: _a1Bits, visibleBits: GetActiveBitCount());
 		ShowBits(source: accumulator2, targets: _a2Bits, visibleBits: GetActiveBitCount());
+
+		KryptonLabel[] a1Labels = [
+			labelA1Bit00, labelA1Bit01, labelA1Bit02, labelA1Bit03, labelA1Bit04,
+			labelA1Bit05, labelA1Bit06, labelA1Bit07, labelA1Bit08, labelA1Bit09,
+			labelA1Bit10, labelA1Bit11, labelA1Bit12, labelA1Bit13, labelA1Bit14,
+			labelA1Bit15, labelA1Bit16, labelA1Bit17, labelA1Bit18, labelA1Bit19,
+			labelA1Bit20, labelA1Bit21, labelA1Bit22, labelA1Bit23, labelA1Bit24,
+			labelA1Bit25, labelA1Bit26, labelA1Bit27, labelA1Bit28, labelA1Bit29,
+			labelA1Bit30, labelA1Bit31
+		];
+		for (int i = 0; i < a1Labels.Length && i < _a1Bits.Length; i++)
+		{
+			a1Labels[i].Tag = _a1Bits[i];
+		}
+
+		KryptonLabel[] a2Labels = [
+			labelA2Bit00, labelA2Bit01, labelA2Bit02, labelA2Bit03, labelA2Bit04,
+			labelA2Bit05, labelA2Bit06, labelA2Bit07, labelA2Bit08, labelA2Bit09,
+			labelA2Bit10, labelA2Bit11, labelA2Bit12, labelA2Bit13, labelA2Bit14,
+			labelA2Bit15, labelA2Bit16, labelA2Bit17, labelA2Bit18, labelA2Bit19,
+			labelA2Bit20, labelA2Bit21, labelA2Bit22, labelA2Bit23, labelA2Bit24,
+			labelA2Bit25, labelA2Bit26, labelA2Bit27, labelA2Bit28, labelA2Bit29,
+			labelA2Bit30, labelA2Bit31
+		];
+
+		for (int i = 0; i < a2Labels.Length && i < _a2Bits.Length; i++)
+		{
+			a2Labels[i].Tag = _a2Bits[i];
+		}
 	}
 
 	#endregion
