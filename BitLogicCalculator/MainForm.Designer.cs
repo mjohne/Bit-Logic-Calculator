@@ -2374,7 +2374,7 @@ namespace BitLogicCalculator
 			labelResultBit29.Name = "labelResultBit29";
 			labelResultBit29.Size = new Size(24, 20);
 			labelResultBit29.TabIndex = 61;
-			labelResultBit29.ToolTipValues.Description = "Shpws bit 29 of byte 4 in R";
+			labelResultBit29.ToolTipValues.Description = "Shows bit 29 of byte 4 in R";
 			labelResultBit29.ToolTipValues.EnableToolTips = true;
 			labelResultBit29.ToolTipValues.Heading = "Bit 29 of byte 4 in R";
 			labelResultBit29.Values.Text = "29";
