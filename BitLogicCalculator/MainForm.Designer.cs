@@ -2188,7 +2188,6 @@ namespace BitLogicCalculator
 			labelResultBit31.ToolTipValues.EnableToolTips = true;
 			labelResultBit31.ToolTipValues.Heading = "Bit 31 of byte 4 in R";
 			labelResultBit31.Values.Text = "31";
-			labelResultBit31.Click += BitLabel_Click;
 			labelResultBit31.Enter += Control_Enter;
 			labelResultBit31.Leave += Control_Leave;
 			labelResultBit31.MouseEnter += Control_Enter;
@@ -2247,7 +2246,6 @@ namespace BitLogicCalculator
 			labelResultBit24.ToolTipValues.EnableToolTips = true;
 			labelResultBit24.ToolTipValues.Heading = "Bit 24 of byte 4 in R";
 			labelResultBit24.Values.Text = "24";
-			labelResultBit24.Click += BitLabel_Click;
 			labelResultBit24.Enter += Control_Enter;
 			labelResultBit24.Leave += Control_Leave;
 			labelResultBit24.MouseEnter += Control_Enter;
@@ -2286,7 +2284,6 @@ namespace BitLogicCalculator
 			labelResultBit30.ToolTipValues.EnableToolTips = true;
 			labelResultBit30.ToolTipValues.Heading = "Bit 30 of byte 4 in R";
 			labelResultBit30.Values.Text = "30";
-			labelResultBit30.Click += BitLabel_Click;
 			labelResultBit30.Enter += Control_Enter;
 			labelResultBit30.Leave += Control_Leave;
 			labelResultBit30.MouseEnter += Control_Enter;
@@ -2305,7 +2302,6 @@ namespace BitLogicCalculator
 			labelResultBit25.ToolTipValues.EnableToolTips = true;
 			labelResultBit25.ToolTipValues.Heading = "Bit 25 of byte 4 in R";
 			labelResultBit25.Values.Text = "25";
-			labelResultBit25.Click += BitLabel_Click;
 			labelResultBit25.Enter += Control_Enter;
 			labelResultBit25.Leave += Control_Leave;
 			labelResultBit25.MouseEnter += Control_Enter;
@@ -2364,7 +2360,6 @@ namespace BitLogicCalculator
 			labelResultBit26.ToolTipValues.EnableToolTips = true;
 			labelResultBit26.ToolTipValues.Heading = "Bit 26 of byte 4 in R";
 			labelResultBit26.Values.Text = "26";
-			labelResultBit26.Click += BitLabel_Click;
 			labelResultBit26.Enter += Control_Enter;
 			labelResultBit26.Leave += Control_Leave;
 			labelResultBit26.MouseEnter += Control_Enter;
@@ -2383,7 +2378,6 @@ namespace BitLogicCalculator
 			labelResultBit29.ToolTipValues.EnableToolTips = true;
 			labelResultBit29.ToolTipValues.Heading = "Bit 29 of byte 4 in R";
 			labelResultBit29.Values.Text = "29";
-			labelResultBit29.Click += BitLabel_Click;
 			labelResultBit29.Enter += Control_Enter;
 			labelResultBit29.Leave += Control_Leave;
 			labelResultBit29.MouseEnter += Control_Enter;
@@ -2442,7 +2436,6 @@ namespace BitLogicCalculator
 			labelResultBit27.ToolTipValues.EnableToolTips = true;
 			labelResultBit27.ToolTipValues.Heading = "Bit 27 of byte 4 in R";
 			labelResultBit27.Values.Text = "27";
-			labelResultBit27.Click += BitLabel_Click;
 			labelResultBit27.Enter += Control_Enter;
 			labelResultBit27.Leave += Control_Leave;
 			labelResultBit27.MouseEnter += Control_Enter;
@@ -2461,7 +2454,6 @@ namespace BitLogicCalculator
 			labelResultBit28.ToolTipValues.EnableToolTips = true;
 			labelResultBit28.ToolTipValues.Heading = "Bit 28 of byte 4 in R";
 			labelResultBit28.Values.Text = "28";
-			labelResultBit28.Click += BitLabel_Click;
 			labelResultBit28.Enter += Control_Enter;
 			labelResultBit28.Leave += Control_Leave;
 			labelResultBit28.MouseEnter += Control_Enter;
@@ -2568,7 +2560,6 @@ namespace BitLogicCalculator
 			labelResultBit21.ToolTipValues.EnableToolTips = true;
 			labelResultBit21.ToolTipValues.Heading = "Bit 21 of byte 3 in R";
 			labelResultBit21.Values.Text = "21";
-			labelResultBit21.Click += BitLabel_Click;
 			labelResultBit21.Enter += Control_Enter;
 			labelResultBit21.Leave += Control_Leave;
 			labelResultBit21.MouseEnter += Control_Enter;
@@ -2587,7 +2578,6 @@ namespace BitLogicCalculator
 			labelResultBit20.ToolTipValues.EnableToolTips = true;
 			labelResultBit20.ToolTipValues.Heading = "Bit 20 of byte 3 in R";
 			labelResultBit20.Values.Text = "20";
-			labelResultBit20.Click += BitLabel_Click;
 			labelResultBit20.Enter += Control_Enter;
 			labelResultBit20.Leave += Control_Leave;
 			labelResultBit20.MouseEnter += Control_Enter;
@@ -2646,7 +2636,6 @@ namespace BitLogicCalculator
 			labelResultBit22.ToolTipValues.EnableToolTips = true;
 			labelResultBit22.ToolTipValues.Heading = "Bit 22 of byte 3 in R";
 			labelResultBit22.Values.Text = "22";
-			labelResultBit22.Click += BitLabel_Click;
 			labelResultBit22.Enter += Control_Enter;
 			labelResultBit22.Leave += Control_Leave;
 			labelResultBit22.MouseEnter += Control_Enter;
@@ -2665,7 +2654,6 @@ namespace BitLogicCalculator
 			labelResultBit19.ToolTipValues.EnableToolTips = true;
 			labelResultBit19.ToolTipValues.Heading = "Bit 19 of byte 3 in R";
 			labelResultBit19.Values.Text = "19";
-			labelResultBit19.Click += BitLabel_Click;
 			labelResultBit19.Enter += Control_Enter;
 			labelResultBit19.Leave += Control_Leave;
 			labelResultBit19.MouseEnter += Control_Enter;
@@ -2724,7 +2712,6 @@ namespace BitLogicCalculator
 			labelResultBit23.ToolTipValues.EnableToolTips = true;
 			labelResultBit23.ToolTipValues.Heading = "Bit 23 of byte 3 in R";
 			labelResultBit23.Values.Text = "23";
-			labelResultBit23.Click += BitLabel_Click;
 			labelResultBit23.Enter += Control_Enter;
 			labelResultBit23.Leave += Control_Leave;
 			labelResultBit23.MouseEnter += Control_Enter;
@@ -2743,7 +2730,6 @@ namespace BitLogicCalculator
 			labelResultBit18.ToolTipValues.EnableToolTips = true;
 			labelResultBit18.ToolTipValues.Heading = "Bit 18 of byte 3 in R";
 			labelResultBit18.Values.Text = "18";
-			labelResultBit18.Click += BitLabel_Click;
 			labelResultBit18.Enter += Control_Enter;
 			labelResultBit18.Leave += Control_Leave;
 			labelResultBit18.MouseEnter += Control_Enter;
@@ -2762,7 +2748,6 @@ namespace BitLogicCalculator
 			labelResultBit16.ToolTipValues.EnableToolTips = true;
 			labelResultBit16.ToolTipValues.Heading = "Bit 16 of byte 3 in R";
 			labelResultBit16.Values.Text = "16";
-			labelResultBit16.Click += BitLabel_Click;
 			labelResultBit16.Enter += Control_Enter;
 			labelResultBit16.Leave += Control_Leave;
 			labelResultBit16.MouseEnter += Control_Enter;
@@ -2801,7 +2786,6 @@ namespace BitLogicCalculator
 			labelResultBit17.ToolTipValues.EnableToolTips = true;
 			labelResultBit17.ToolTipValues.Heading = "Bit 17 of byte 3 in R";
 			labelResultBit17.Values.Text = "17";
-			labelResultBit17.Click += BitLabel_Click;
 			labelResultBit17.Enter += Control_Enter;
 			labelResultBit17.Leave += Control_Leave;
 			labelResultBit17.MouseEnter += Control_Enter;
@@ -2908,7 +2892,6 @@ namespace BitLogicCalculator
 			labelResultBit10.ToolTipValues.EnableToolTips = true;
 			labelResultBit10.ToolTipValues.Heading = "Bit 10 of byte 2 in R";
 			labelResultBit10.Values.Text = "10";
-			labelResultBit10.Click += BitLabel_Click;
 			labelResultBit10.Enter += Control_Enter;
 			labelResultBit10.Leave += Control_Leave;
 			labelResultBit10.MouseEnter += Control_Enter;
@@ -2927,7 +2910,6 @@ namespace BitLogicCalculator
 			labelResultBit09.ToolTipValues.EnableToolTips = true;
 			labelResultBit09.ToolTipValues.Heading = "Bit 09 of byte 2 in R";
 			labelResultBit09.Values.Text = "09";
-			labelResultBit09.Click += BitLabel_Click;
 			labelResultBit09.Enter += Control_Enter;
 			labelResultBit09.Leave += Control_Leave;
 			labelResultBit09.MouseEnter += Control_Enter;
@@ -2986,7 +2968,6 @@ namespace BitLogicCalculator
 			labelResultBit11.ToolTipValues.EnableToolTips = true;
 			labelResultBit11.ToolTipValues.Heading = "Bit 11 of byte 2 in R";
 			labelResultBit11.Values.Text = "11";
-			labelResultBit11.Click += BitLabel_Click;
 			labelResultBit11.Enter += Control_Enter;
 			labelResultBit11.Leave += Control_Leave;
 			labelResultBit11.MouseEnter += Control_Enter;
@@ -3005,7 +2986,6 @@ namespace BitLogicCalculator
 			labelResultBit15.ToolTipValues.EnableToolTips = true;
 			labelResultBit15.ToolTipValues.Heading = "Bit 15 of byte 2 in R";
 			labelResultBit15.Values.Text = "15";
-			labelResultBit15.Click += BitLabel_Click;
 			labelResultBit15.Enter += Control_Enter;
 			labelResultBit15.Leave += Control_Leave;
 			labelResultBit15.MouseEnter += Control_Enter;
@@ -3024,7 +3004,6 @@ namespace BitLogicCalculator
 			labelResultBit08.ToolTipValues.EnableToolTips = true;
 			labelResultBit08.ToolTipValues.Heading = "Bit 08 of byte 2 in R";
 			labelResultBit08.Values.Text = "08";
-			labelResultBit08.Click += BitLabel_Click;
 			labelResultBit08.Enter += Control_Enter;
 			labelResultBit08.Leave += Control_Leave;
 			labelResultBit08.MouseEnter += Control_Enter;
@@ -3083,7 +3062,6 @@ namespace BitLogicCalculator
 			labelResultBit12.ToolTipValues.EnableToolTips = true;
 			labelResultBit12.ToolTipValues.Heading = "Bit 12 of byte 2 in R";
 			labelResultBit12.Values.Text = "12";
-			labelResultBit12.Click += BitLabel_Click;
 			labelResultBit12.Enter += Control_Enter;
 			labelResultBit12.Leave += Control_Leave;
 			labelResultBit12.MouseEnter += Control_Enter;
@@ -3122,7 +3100,6 @@ namespace BitLogicCalculator
 			labelResultBit13.ToolTipValues.EnableToolTips = true;
 			labelResultBit13.ToolTipValues.Heading = "Bit 13 of byte 2 in R";
 			labelResultBit13.Values.Text = "13";
-			labelResultBit13.Click += BitLabel_Click;
 			labelResultBit13.Enter += Control_Enter;
 			labelResultBit13.Leave += Control_Leave;
 			labelResultBit13.MouseEnter += Control_Enter;
@@ -3161,7 +3138,6 @@ namespace BitLogicCalculator
 			labelResultBit14.ToolTipValues.EnableToolTips = true;
 			labelResultBit14.ToolTipValues.Heading = "Bit 14 of byte 2 in R";
 			labelResultBit14.Values.Text = "14";
-			labelResultBit14.Click += BitLabel_Click;
 			labelResultBit14.Enter += Control_Enter;
 			labelResultBit14.Leave += Control_Leave;
 			labelResultBit14.MouseEnter += Control_Enter;
@@ -3208,7 +3184,6 @@ namespace BitLogicCalculator
 			labelResultBit07.ToolTipValues.EnableToolTips = true;
 			labelResultBit07.ToolTipValues.Heading = "Bit 07 of byte 1 in R";
 			labelResultBit07.Values.Text = "07";
-			labelResultBit07.Click += BitLabel_Click;
 			labelResultBit07.Enter += Control_Enter;
 			labelResultBit07.Leave += Control_Leave;
 			labelResultBit07.MouseEnter += Control_Enter;
@@ -3247,7 +3222,6 @@ namespace BitLogicCalculator
 			labelResultBit06.ToolTipValues.EnableToolTips = true;
 			labelResultBit06.ToolTipValues.Heading = "Bit 06 of byte 1 in R";
 			labelResultBit06.Values.Text = "06";
-			labelResultBit06.Click += BitLabel_Click;
 			labelResultBit06.Enter += Control_Enter;
 			labelResultBit06.Leave += Control_Leave;
 			labelResultBit06.MouseEnter += Control_Enter;
@@ -3306,7 +3280,6 @@ namespace BitLogicCalculator
 			labelResultBit00.ToolTipValues.EnableToolTips = true;
 			labelResultBit00.ToolTipValues.Heading = "Bit 00 of byte 1 in R";
 			labelResultBit00.Values.Text = "00";
-			labelResultBit00.Click += BitLabel_Click;
 			labelResultBit00.Enter += Control_Enter;
 			labelResultBit00.Leave += Control_Leave;
 			labelResultBit00.MouseEnter += Control_Enter;
@@ -3325,7 +3298,6 @@ namespace BitLogicCalculator
 			labelResultBit05.ToolTipValues.EnableToolTips = true;
 			labelResultBit05.ToolTipValues.Heading = "Bit 05 of byte 1 in R";
 			labelResultBit05.Values.Text = "05";
-			labelResultBit05.Click += BitLabel_Click;
 			labelResultBit05.Enter += Control_Enter;
 			labelResultBit05.Leave += Control_Leave;
 			labelResultBit05.MouseEnter += Control_Enter;
@@ -3384,7 +3356,6 @@ namespace BitLogicCalculator
 			labelResultBit04.ToolTipValues.EnableToolTips = true;
 			labelResultBit04.ToolTipValues.Heading = "Bit 04 of byte 1 in R";
 			labelResultBit04.Values.Text = "04";
-			labelResultBit04.Click += BitLabel_Click;
 			labelResultBit04.Enter += Control_Enter;
 			labelResultBit04.Leave += Control_Leave;
 			labelResultBit04.MouseEnter += Control_Enter;
@@ -3423,7 +3394,6 @@ namespace BitLogicCalculator
 			labelResultBit01.ToolTipValues.EnableToolTips = true;
 			labelResultBit01.ToolTipValues.Heading = "Bit 01 of byte 1 in R";
 			labelResultBit01.Values.Text = "01";
-			labelResultBit01.Click += BitLabel_Click;
 			labelResultBit01.Enter += Control_Enter;
 			labelResultBit01.Leave += Control_Leave;
 			labelResultBit01.MouseEnter += Control_Enter;
@@ -3442,7 +3412,6 @@ namespace BitLogicCalculator
 			labelResultBit03.ToolTipValues.EnableToolTips = true;
 			labelResultBit03.ToolTipValues.Heading = "Bit 03 of byte 1 in R";
 			labelResultBit03.Values.Text = "03";
-			labelResultBit03.Click += BitLabel_Click;
 			labelResultBit03.Enter += Control_Enter;
 			labelResultBit03.Leave += Control_Leave;
 			labelResultBit03.MouseEnter += Control_Enter;
@@ -3501,7 +3470,6 @@ namespace BitLogicCalculator
 			labelResultBit02.ToolTipValues.EnableToolTips = true;
 			labelResultBit02.ToolTipValues.Heading = "Bit 02 of byte 1 in R";
 			labelResultBit02.Values.Text = "02";
-			labelResultBit02.Click += BitLabel_Click;
 			labelResultBit02.Enter += Control_Enter;
 			labelResultBit02.Leave += Control_Leave;
 			labelResultBit02.MouseEnter += Control_Enter;
