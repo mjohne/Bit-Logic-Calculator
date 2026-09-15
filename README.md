@@ -31,8 +31,12 @@ Bit Logic Calculator is a program for analyzing, displaying and manipulating num
 - Software development (low-level programming, C/C++, C#, Java)
 - Embedded systems & microcontrollers
 - Low-level programming (registers, protocols)
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=/Bit-Logic-Calculator)
 - Debugging of binary and hexadecimal values
 - Data analysis in networks and file formats
 
 ## Screenshot
 <img width="1372" height="596" alt="bit-logic-calculator" src="https://github.com/user-attachments/assets/13f7ab89-25b9-403a-9055-9c48b47cc3c4" />
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=Bit-Logic-Calculator)
